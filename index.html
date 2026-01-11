@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Light Boxes Catalog - Lit Layer Creations</title>
+
+<style>
+body {
+  font-family: system-ui, sans-serif;
+  background: #0b1220;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #00d4ff;
+}
+
+.category {
+  margin-top: 40px;
+}
+
+.category h2 {
+  border-bottom: 2px solid #00d4ff;
+  padding-bottom: 10px;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #141c2f;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  color: #00d4ff;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.price {
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.media {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.media img, .media video {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn {
+  background: #00d4ff;
+  color: #000;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #0099cc;
+}
+</style>
+</head>
+
+<body>
+<header>
+<img src="Images/Logo.png" alt="Lit Layer Creations Logo" style="max-width: 200px; height: auto; margin-bottom: 10px;">
+<h1>Lit Layer Creations</h1>
+<p>Custom 3D Printed Light Boxes</p>
+</header>
+<div id="catalog"></div>
+
+<script>
+fetch("catalog.json")
+  .then(res => res.json())
+  .then(data => {
+    const root = document.getElementById("catalog");
+
+    data.forEach(cat => {
+      const section = document.createElement("div");
+      section.className = "category";
+      section.innerHTML = `<h2>${cat.category}</h2>`;
+
+      const grid = document.createElement("div");
+      grid.className = "items";
+
+      cat.items.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "card";
+
+        const media = document.createElement("div");
+        media.className = "media";
+
+        item.media.forEach(src => {
+          if (src.endsWith(".mp4")) {
+            const v = document.createElement("video");
+            v.src = src;
+            v.controls = true;
+            media.appendChild(v);
+          } else {
+            const img = document.createElement("img");
+            img.src = src;
+            img.onclick = () => window.open(src, "_blank");
+            media.appendChild(img);
+          }
+        });
+
+        card.innerHTML = `
+          <h3>${item.name}</h3>
+          <p>${item.description || 'Custom 3D printed light box.'}</p>
+          <p>Sizes: ${item.sizes ? item.sizes.join(', ') : '7-8 inch, 9 inch'}</p>
+          <p class="price">$20-25</p>
+        `;
+
+        card.appendChild(media);
+
+        grid.appendChild(card);
+      });
+
+      section.appendChild(grid);
+      root.appendChild(section);
+    });
+  });
+</script>
+</body>
+</html>
+
+      section.appendChild(grid);
+      root.appendChild(section);
+    });
+  });
+</script>
+</body>
+</html>

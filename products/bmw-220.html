@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>BMW 220 Light Box - Lit Layer Creations</title>
+<style>
+body {
+  font-family: system-ui, sans-serif;
+  background: #0b1220;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: #00d4ff;
+}
+
+.product-details {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.media-gallery {
+  flex: 1;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.thumbnail.active {
+  border-color: #00d4ff;
+}
+
+.details {
+  flex: 1;
+}
+
+.details h2 {
+  color: #00d4ff;
+}
+
+.details p {
+  margin: 10px 0;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.options {
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+select {
+  padding: 8px;
+  background: #141c2f;
+  color: #fff;
+  border: 1px solid #00d4ff;
+  border-radius: 5px;
+}
+
+.btn {
+  background: #00d4ff;
+  color: #000;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background: #0099cc;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #00d4ff;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<a href="../index.html" class="back-link">&larr; Back to Gallery</a>
+
+<header>
+<h1>Lit Layer Creations</h1>
+</header>
+
+<div class="product-details">
+  <div class="media-gallery">
+    <img id="main-image" class="main-image" src="Automotive/Media/BMW 220/4843868b-effa-4a07-bb38-561686f44120.jpg" alt="BMW 220 Light Box">
+    <div class="thumbnails">
+      <img class="thumbnail active" src="Automotive/Media/BMW 220/4843868b-effa-4a07-bb38-561686f44120.jpg" onclick="changeImage(this)">
+      <img class="thumbnail" src="Automotive/Media/BMW 220/6bd78bfd-ccf5-47b1-8022-eeb53217d471.jpg" onclick="changeImage(this)">
+      <img class="thumbnail" src="Automotive/Media/BMW 220/cb85a4d7-c647-4f9e-a36d-77ffff6beea3.jpg" onclick="changeImage(this)">
+      <img class="thumbnail" src="Automotive/Media/BMW 220/d59025e2-0720-4489-8694-b8e4d88ef6a1.jpg" onclick="changeImage(this)">
+      <img class="thumbnail" src="Automotive/Media/BMW 220/ead9c532-3b68-4e0e-8b9d-b27ed14290ae.jpg" onclick="changeImage(this)">
+      <img class="thumbnail" src="Automotive/Media/BMW 220/fa6ac44d-7a03-41a1-9dc9-e356e4eec16e.jpg" onclick="changeImage(this)">
+      <video class="thumbnail" src="Automotive/Media/BMW 220/dfb884d4-0590-478a-b9bd-336e7b06aefc.mp4" onclick="changeImage(this)"></video>
+    </div>
+  </div>
+
+  <div class="details">
+    <h2>BMW 220 Light Box</h2>
+    <p>Custom 3D printed light box featuring BMW 220 design. Available in 7-8 inch or 9 inch heights with 20mm or 25mm thickness.</p>
+    <p class="price">$25.00</p>
+
+    <div class="options">
+      <label for="size">Size:</label>
+      <select id="size">
+        <option>7-8 inch</option>
+        <option>9 inch</option>
+      </select>
+
+      <label for="thickness">Thickness:</label>
+      <select id="thickness">
+        <option>20mm</option>
+        <option>25mm</option>
+      </select>
+    </div>
+
+    <button class="btn" onclick="purchase('paypal')">Buy with PayPal</button>
+    <button class="btn" onclick="purchase('venmo')">Buy with Venmo</button>
+    <button class="btn" onclick="purchase('cashapp')">Buy with Cash App</button>
+  </div>
+</div>
+
+<script>
+function changeImage(thumb) {
+  const main = document.getElementById('main-image');
+  if (thumb.tagName === 'VIDEO') {
+    // Handle video
+    main.outerHTML = '<video id="main-image" class="main-image" controls autoplay><source src="' + thumb.src + '" type="video/mp4"></video>';
+  } else {
+    main.src = thumb.src;
+  }
+  document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+  thumb.classList.add('active');
+}
+
+function purchase(method) {
+  const size = document.getElementById('size').value;
+  const thickness = document.getElementById('thickness').value;
+  const message = `Interested in BMW 220 Light Box - Size: ${size}, Thickness: ${thickness}`;
+  
+  if (method === 'paypal') {
+    // Replace with your PayPal link
+    window.open('https://www.paypal.com/paypalme/yourusername?amount=25&currency=USD&note=' + encodeURIComponent(message), '_blank');
+  } else if (method === 'venmo') {
+    window.open('venmo://paycharge?txn=pay&recipients=yourusername&amount=25&note=' + encodeURIComponent(message), '_blank');
+  } else if (method === 'cashapp') {
+    window.open('https://cash.app/$yourusername', '_blank');
+  }
+}
+</script>
+</body>
+</html>
