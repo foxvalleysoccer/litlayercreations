@@ -13,11 +13,16 @@ function scanCategory(categoryPath, categoryName) {
 
   const files = fs.readdirSync(categoryPath, { withFileTypes: true });
 
+  // Find the actual media folder name (case-insensitive)
+  const categoryFiles = fs.readdirSync(categoryPath, { withFileTypes: true });
+  const mediaFolder = categoryFiles.find(d => d.isDirectory() && d.name.toLowerCase() === "media");
+  const mediaFolderName = mediaFolder ? mediaFolder.name : "media";
+
   files.forEach(dirent => {
     if (dirent.isFile() && dirent.name.endsWith(".3mf")) {
       const baseName = dirent.name.replace(".3mf", "");
 
-      const mediaDir = path.join(categoryPath, "Media", baseName);
+      const mediaDir = path.join(categoryPath, mediaFolderName, baseName);
       let media = [];
 
       if (fs.existsSync(mediaDir)) {
@@ -26,7 +31,7 @@ function scanCategory(categoryPath, categoryName) {
           .filter(isMediaFile)
           .map(f => path.join(
             categoryName,
-            "Media",
+            mediaFolderName,
             baseName,
             f
           ).replace(/\\/g, "/"));
@@ -50,7 +55,11 @@ fs.readdirSync(ROOT, { withFileTypes: true }).forEach(dirent => {
     const categoryName = dirent.name;
     const categoryPath = path.join(ROOT, categoryName);
 
-    if (fs.existsSync(path.join(categoryPath, "Media"))) {
+    // Check for media folder (case-insensitive)
+    const hasMediaFolder = fs.readdirSync(categoryPath, { withFileTypes: true })
+      .some(d => d.isDirectory() && d.name.toLowerCase() === "media");
+
+    if (hasMediaFolder) {
       const items = scanCategory(categoryPath, categoryName);
       if (items.length) {
         catalog.push({
