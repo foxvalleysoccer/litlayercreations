@@ -71,7 +71,9 @@
       {
         "name": "MOPARBOX",
         "file": "Automotive/MOPARBOX.3mf",
-        "media": []
+        "media": [
+          "Automotive/media/MOPARBOX/Screenshot 2026-01-18 113353.png"
+        ]
       },
       {
         "name": "MoparDiagnol",
@@ -121,12 +123,16 @@
       {
         "name": "Mopar_Square_200",
         "file": "Automotive/Mopar_Square_200.3mf",
-        "media": []
+        "media": [
+          "Automotive/media/Mopar_Square_200/Screenshot 2026-01-18 113849.png"
+        ]
       },
       {
         "name": "Mopar_Square_224",
         "file": "Automotive/Mopar_Square_224.3mf",
-        "media": []
+        "media": [
+          "Automotive/media/Mopar_Square_224/Screenshot 2026-01-18 113849.png"
+        ]
       },
       {
         "name": "PorscheColor 30mm thick",
@@ -494,12 +500,30 @@
       {
         "name": "VampDog 170mm",
         "file": "halloween/VampDog 170mm.3mf",
-        "media": []
+        "media": [
+          "halloween/media/VampDog 170mm/0299fbbe-e4f8-4c74-957e-f319f9c2b8c9.jpg",
+          "halloween/media/VampDog 170mm/1e3cd07c-0fa2-449f-bbbb-183ceb641d46.mp4",
+          "halloween/media/VampDog 170mm/3b67c40f-4349-4a2d-b0bf-ab5a27f7b11b.jpg",
+          "halloween/media/VampDog 170mm/561747440_1178600077491053_2319215041396415776_n.jpg",
+          "halloween/media/VampDog 170mm/561825055_698137166029173_2266247984206863732_n (1).jpg",
+          "halloween/media/VampDog 170mm/561825055_698137166029173_2266247984206863732_n.jpg",
+          "halloween/media/VampDog 170mm/562076084_826287383264427_2926002571520079416_n (1).jpg",
+          "halloween/media/VampDog 170mm/562076084_826287383264427_2926002571520079416_n.jpg"
+        ]
       },
       {
         "name": "VampDog 200mm",
         "file": "halloween/VampDog 200mm.3mf",
-        "media": []
+        "media": [
+          "halloween/media/VampDog 200mm/0299fbbe-e4f8-4c74-957e-f319f9c2b8c9.jpg",
+          "halloween/media/VampDog 200mm/1e3cd07c-0fa2-449f-bbbb-183ceb641d46.mp4",
+          "halloween/media/VampDog 200mm/3b67c40f-4349-4a2d-b0bf-ab5a27f7b11b.jpg",
+          "halloween/media/VampDog 200mm/561747440_1178600077491053_2319215041396415776_n.jpg",
+          "halloween/media/VampDog 200mm/561825055_698137166029173_2266247984206863732_n (1).jpg",
+          "halloween/media/VampDog 200mm/561825055_698137166029173_2266247984206863732_n.jpg",
+          "halloween/media/VampDog 200mm/562076084_826287383264427_2926002571520079416_n (1).jpg",
+          "halloween/media/VampDog 200mm/562076084_826287383264427_2926002571520079416_n.jpg"
+        ]
       },
       {
         "name": "Yoda Pumpkin 175",
@@ -579,12 +603,23 @@
       {
         "name": "JackDaniels 220mm WBase",
         "file": "Pop Culture/JackDaniels 220mm WBase.3mf",
-        "media": []
+        "media": [
+          "Pop Culture/media/JackDaniels 220mm WBase/0cb77f64-ef9d-4fd2-9279-be3382982c01.jpg",
+          "Pop Culture/media/JackDaniels 220mm WBase/35116f32-c68e-4c8b-8817-cec3970cef9a.mp4",
+          "Pop Culture/media/JackDaniels 220mm WBase/372b4cef-86ad-4dfc-a534-5375f37ffc75.jpg",
+          "Pop Culture/media/JackDaniels 220mm WBase/68c26e4a-c271-4130-88e3-311808734398.jpg",
+          "Pop Culture/media/JackDaniels 220mm WBase/e16c3593-8a78-4fe7-a875-592aa2e7659f.jpg"
+        ]
       },
       {
         "name": "JordanShoe",
         "file": "Pop Culture/JordanShoe.3mf",
-        "media": []
+        "media": [
+          "Pop Culture/media/JordanShoe/8f063871-87cb-4925-b50b-5c45ab05b78a.mp4",
+          "Pop Culture/media/JordanShoe/91436841-6138-4de6-8692-45415efa9917.jpg",
+          "Pop Culture/media/JordanShoe/972e78ef-7ef0-42d5-a741-025f61a6b964.jpg",
+          "Pop Culture/media/JordanShoe/e43556ff-7788-4061-a4d6-ff867a300d76.jpg"
+        ]
       },
       {
         "name": "Lips",
@@ -721,7 +756,9 @@
       {
         "name": "BrewersCircle200",
         "file": "Sports/BrewersCircle200.3mf",
-        "media": []
+        "media": [
+          "Sports/Media/BrewersCircle200/Screenshot 2026-01-18 114502.png"
+        ]
       },
       {
         "name": "BrewersGlove",
@@ -792,7 +829,14 @@
       {
         "name": "BucksRetro",
         "file": "Sports/BucksRetro.3mf",
-        "media": []
+        "media": [
+          "Sports/Media/BucksRetro/957a4e9b-b196-41e8-ad94-024a86aac46e.mp4",
+          "Sports/Media/BucksRetro/9ac130a0-9e09-4d69-835d-5f99b3012b19.jpg",
+          "Sports/Media/BucksRetro/b1daf5a1-f963-408b-bf15-a02ae8c20061.jpg",
+          "Sports/Media/BucksRetro/c218dde9-ebb8-41fd-803e-87c0380a8899.jpg",
+          "Sports/Media/BucksRetro/c4246eea-9459-4391-94a8-4cb4e2fc2605.jpg",
+          "Sports/Media/BucksRetro/eb4a5434-6a8f-4f76-8e7a-fe43b83c8d19.jpg"
+        ]
       },
       {
         "name": "Lions 200mm",
