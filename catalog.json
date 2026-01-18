@@ -692,7 +692,9 @@
       {
         "name": "Bears224",
         "file": "Sports/Bears224.3mf",
-        "media": []
+        "media": [
+          "Sports/Media/Bears224/0e65708b-3443-43ab-9bec-9682ac6cd65d.jpg"
+        ]
       },
       {
         "name": "Brewers Barrelman",
@@ -718,19 +720,25 @@
         "media": []
       },
       {
-        "name": "BrewersGlover (1)",
-        "file": "Sports/BrewersGlover (1).3mf",
-        "media": []
+        "name": "BrewersGlove",
+        "file": "Sports/BrewersGlove.3mf",
+        "media": [
+          "Sports/Media/BrewersGlove/Screenshot 2026-01-18 103608.png"
+        ]
       },
       {
         "name": "BrewersWI",
         "file": "Sports/BrewersWI.3mf",
-        "media": []
+        "media": [
+          "Sports/Media/BrewersWI/Screenshot 2026-01-18 103243.png"
+        ]
       },
       {
         "name": "BrewersWI_Labeled",
         "file": "Sports/BrewersWI_Labeled.3mf",
-        "media": []
+        "media": [
+          "Sports/Media/BrewersWI_Labeled/Screenshot 2026-01-18 103418.png"
+        ]
       },
       {
         "name": "Bucks Mascot",
