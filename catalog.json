@@ -114,7 +114,9 @@
       {
         "name": "MOPAR_RedOnRed",
         "file": "Automotive/MOPAR_RedOnRed.3mf",
-        "media": []
+        "media": [
+          "Automotive/media/MOPAR_RedOnRed/610520131_1878879396349519_3865075599857095906_n.jpg"
+        ]
       },
       {
         "name": "Mopar_Square_200",
@@ -169,7 +171,9 @@
       {
         "name": "Road America",
         "file": "Automotive/Road America.3mf",
-        "media": []
+        "media": [
+          "Automotive/media/Road America/Gemini_Generated_Image_y9jga0y9jga0y9jg (1).png"
+        ]
       }
     ]
   },
