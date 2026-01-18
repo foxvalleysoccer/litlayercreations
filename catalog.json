@@ -804,12 +804,16 @@
       {
         "name": "Bucks Special",
         "file": "Sports/Bucks Special.3mf",
-        "media": []
+        "media": [
+          "Sports/Media/Bucks Special/Screenshot 2026-01-18 114900.png"
+        ]
       },
       {
         "name": "bucks square 220",
         "file": "Sports/bucks square 220.3mf",
-        "media": []
+        "media": [
+          "Sports/Media/bucks square 220/Screenshot 2026-01-18 115203.png"
+        ]
       },
       {
         "name": "BucksMaskot 225mm",
@@ -841,7 +845,9 @@
       {
         "name": "Lions 200mm",
         "file": "Sports/Lions 200mm.3mf",
-        "media": []
+        "media": [
+          "Sports/Media/Lions 200mm/c1e1a7d3-97b1-4d15-92e7-ff5df9f7a9f6.jpg"
+        ]
       },
       {
         "name": "Lions 224mm",
@@ -895,12 +901,16 @@
       {
         "name": "Packers Helmet_225 Width",
         "file": "Sports/Packers Helmet_225 Width.3mf",
-        "media": []
+        "media": [
+          "Sports/Media/Packers Helmet_225 Width/8cf2887a-1ae2-4268-8026-3b14c02a19c8 (1).jpg"
+        ]
       },
       {
         "name": "Packers Helmet_40mmbase",
         "file": "Sports/Packers Helmet_40mmbase.3mf",
-        "media": []
+        "media": [
+          "Sports/Media/Packers Helmet_40mmbase/8cf2887a-1ae2-4268-8026-3b14c02a19c8 (1).jpg"
+        ]
       },
       {
         "name": "Vikings Helmet",
@@ -913,7 +923,10 @@
       {
         "name": "Vikings224",
         "file": "Sports/Vikings224.3mf",
-        "media": []
+        "media": [
+          "Sports/Media/Vikings224/597105538_1586640549195009_7529714149806275818_n.jpg",
+          "Sports/Media/Vikings224/599810397_870298225644556_8213460441522727218_n.jpg"
+        ]
       },
       {
         "name": "Wisconsin Helmet",
@@ -928,22 +941,45 @@
       {
         "name": "Wisconsin W 40mm 225",
         "file": "Sports/Wisconsin W 40mm 225.3mf",
-        "media": []
+        "media": [
+          "Sports/Media/Wisconsin W 40mm 225/286c25e1-6821-4a8b-a996-ddc155146841.jpg",
+          "Sports/Media/Wisconsin W 40mm 225/84b074a7-e13e-4169-92f7-fc724e2fd69f.mp4",
+          "Sports/Media/Wisconsin W 40mm 225/8da1410c-501d-4a70-8b8e-7960bfb47e94.jpg",
+          "Sports/Media/Wisconsin W 40mm 225/cb564cae-69e2-44ca-a649-bda5dfd9df34.jpg",
+          "Sports/Media/Wisconsin W 40mm 225/e5085234-bc6b-4260-b86a-565ce1930752.jpg"
+        ]
       },
       {
         "name": "WisconsinBadgerHelmet_225",
         "file": "Sports/WisconsinBadgerHelmet_225.3mf",
-        "media": []
+        "media": [
+          "Sports/Media/WisconsinBadgerHelmet_225/badgerHelmet.mp4",
+          "Sports/Media/WisconsinBadgerHelmet_225/wiscon badger Helmet light (1).jpg",
+          "Sports/Media/WisconsinBadgerHelmet_225/wiscon badger Helmet light (2).jpg",
+          "Sports/Media/WisconsinBadgerHelmet_225/wiscon badger Helmet light (3).jpg"
+        ]
       },
       {
         "name": "WisconsinW_30mm",
         "file": "Sports/WisconsinW_30mm.3mf",
-        "media": []
+        "media": [
+          "Sports/Media/WisconsinW_30mm/286c25e1-6821-4a8b-a996-ddc155146841.jpg",
+          "Sports/Media/WisconsinW_30mm/84b074a7-e13e-4169-92f7-fc724e2fd69f.mp4",
+          "Sports/Media/WisconsinW_30mm/8da1410c-501d-4a70-8b8e-7960bfb47e94.jpg",
+          "Sports/Media/WisconsinW_30mm/cb564cae-69e2-44ca-a649-bda5dfd9df34.jpg",
+          "Sports/Media/WisconsinW_30mm/e5085234-bc6b-4260-b86a-565ce1930752.jpg"
+        ]
       },
       {
         "name": "WisconsinW_40mm",
         "file": "Sports/WisconsinW_40mm.3mf",
-        "media": []
+        "media": [
+          "Sports/Media/WisconsinW_40mm/286c25e1-6821-4a8b-a996-ddc155146841.jpg",
+          "Sports/Media/WisconsinW_40mm/84b074a7-e13e-4169-92f7-fc724e2fd69f.mp4",
+          "Sports/Media/WisconsinW_40mm/8da1410c-501d-4a70-8b8e-7960bfb47e94.jpg",
+          "Sports/Media/WisconsinW_40mm/cb564cae-69e2-44ca-a649-bda5dfd9df34.jpg",
+          "Sports/Media/WisconsinW_40mm/e5085234-bc6b-4260-b86a-565ce1930752.jpg"
+        ]
       }
     ]
   }
