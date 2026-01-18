@@ -64,7 +64,9 @@
       {
         "name": "HellCatBlueTrim_Eyes",
         "file": "Automotive/HellCatBlueTrim_Eyes.3mf",
-        "media": []
+        "media": [
+          "Automotive/media/HellCatBlueTrim_Eyes/Screenshot 2026-01-18 095254.png"
+        ]
       },
       {
         "name": "MOPARBOX",
@@ -595,7 +597,16 @@
       {
         "name": "LV",
         "file": "Pop Culture/LV.3mf",
-        "media": []
+        "media": [
+          "Pop Culture/media/LV/Screenshot 2026-01-18 102634.png"
+        ]
+      },
+      {
+        "name": "LVLetters",
+        "file": "Pop Culture/LVLetters.3mf",
+        "media": [
+          "Pop Culture/media/LVLetters/Screenshot 2026-01-18 102101.png"
+        ]
       },
       {
         "name": "qbert",
