@@ -74,7 +74,9 @@
       {
         "name": "MoparDiagnol",
         "file": "Automotive/MoparDiagnol.3mf",
-        "media": []
+        "media": [
+          "Automotive/media/MoparDiagnol/mopardiagnol.png"
+        ]
       },
       {
         "name": "MOPAR_Blue",
