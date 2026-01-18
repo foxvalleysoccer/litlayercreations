@@ -72,6 +72,11 @@
         "media": []
       },
       {
+        "name": "MoparDiagnol",
+        "file": "Automotive/MoparDiagnol.3mf",
+        "media": []
+      },
+      {
         "name": "MOPAR_Blue",
         "file": "Automotive/MOPAR_Blue.3mf",
         "media": [
@@ -140,6 +145,13 @@
         ]
       },
       {
+        "name": "PorscheColor_WithDifusion",
+        "file": "Automotive/PorscheColor_WithDifusion.3mf",
+        "media": [
+          "Automotive/media/PorscheColor_WithDifusion/661e841a-0503-4acb-8aa1-9e9386938f03.mp4"
+        ]
+      },
+      {
         "name": "PorscheGoodBW",
         "file": "Automotive/PorscheGoodBW.3mf",
         "media": [
@@ -163,7 +175,14 @@
       {
         "name": "ChristmasTree _wall Hole",
         "file": "Christmas/ChristmasTree _wall Hole.3mf",
-        "media": []
+        "media": [
+          "Christmas/Media/ChristmasTree _wall Hole/Christmas Tree Light  (1).jpg",
+          "Christmas/Media/ChristmasTree _wall Hole/Christmas Tree Light  (1).png",
+          "Christmas/Media/ChristmasTree _wall Hole/Christmas Tree Light  (2).jpg",
+          "Christmas/Media/ChristmasTree _wall Hole/Christmas Tree Light  (2).png",
+          "Christmas/Media/ChristmasTree _wall Hole/Christmas Tree Light  (3).jpg",
+          "Christmas/Media/ChristmasTree _wall Hole/WeWishYouAMerryChristmas.mp4"
+        ]
       },
       {
         "name": "ChristmasTree",
@@ -389,7 +408,12 @@
       {
         "name": "Gothic GIrl_225",
         "file": "halloween/Gothic GIrl_225.3mf",
-        "media": []
+        "media": [
+          "halloween/media/Gothic GIrl_225/598030234_884598043996962_3364829823640586517_n.jpg",
+          "halloween/media/Gothic GIrl_225/598604865_2237367483340209_3760083445690681422_n.jpg",
+          "halloween/media/Gothic GIrl_225/598927605_25368417466173202_6062222253690689500_n.jpg",
+          "halloween/media/Gothic GIrl_225/599255675_1411106457117095_7028909542648996908_n.jpg"
+        ]
       },
       {
         "name": "HalloweenScene_200",
@@ -452,7 +476,12 @@
       {
         "name": "SkullFace_200",
         "file": "halloween/SkullFace_200.3mf",
-        "media": []
+        "media": [
+          "halloween/media/SkullFace_200/1deefb4d-a1b0-48ff-b302-122d5427793a.jpg",
+          "halloween/media/SkullFace_200/d0c4528c-d7aa-406d-aaa0-374d4a52f22a.mp4",
+          "halloween/media/SkullFace_200/e94a761c-cda4-49fd-805d-29754d9824f7.jpg",
+          "halloween/media/SkullFace_200/f68e4686-671f-4a8b-add6-500257f6fbe5.jpg"
+        ]
       },
       {
         "name": "VampDog 170mm",
@@ -476,7 +505,11 @@
       {
         "name": "Yoda Pumpkin 200",
         "file": "halloween/Yoda Pumpkin 200.3mf",
-        "media": []
+        "media": [
+          "halloween/media/Yoda Pumpkin 200/0ce804a4-e3ab-44a7-918c-200cbd90fff7.jpg",
+          "halloween/media/Yoda Pumpkin 200/17515c72-8e53-4bb9-8216-9f4f1224e11d.jpg",
+          "halloween/media/Yoda Pumpkin 200/e3ece855-0ec2-4896-9bc2-c07c88f5e9b7.mp4"
+        ]
       }
     ]
   },
@@ -644,6 +677,11 @@
         ]
       },
       {
+        "name": "Bears224",
+        "file": "Sports/Bears224.3mf",
+        "media": []
+      },
+      {
         "name": "Brewers Barrelman",
         "file": "Sports/Brewers Barrelman.3mf",
         "media": [
@@ -735,6 +773,20 @@
         "name": "Lions 200mm",
         "file": "Sports/Lions 200mm.3mf",
         "media": []
+      },
+      {
+        "name": "Lions 224mm",
+        "file": "Sports/Lions 224mm.3mf",
+        "media": [
+          "Sports/Media/Lions 224mm/07361290-d86c-4676-bc5a-67cf91e3f2d6.jpg",
+          "Sports/Media/Lions 224mm/5972a340-9486-4dba-857b-cae0e7956bbc.jpg",
+          "Sports/Media/Lions 224mm/598672394_1249469603904525_8864989150232730378_n.jpg",
+          "Sports/Media/Lions 224mm/bb0c925f-d0e4-4014-b435-7c3c7288a239.jpg",
+          "Sports/Media/Lions 224mm/c1e1a7d3-97b1-4d15-92e7-ff5df9f7a9f6.jpg",
+          "Sports/Media/Lions 224mm/c443f2ee-dbd1-444a-86cf-ae8644e1ada7.jpg",
+          "Sports/Media/Lions 224mm/d66acdd1-c195-4157-b87c-9b2a5781c1d7.mp4",
+          "Sports/Media/Lions 224mm/dca6e84e-60f8-4d8b-8fd0-485a7834eb51.jpg"
+        ]
       },
       {
         "name": "NewPackerHelmet",
