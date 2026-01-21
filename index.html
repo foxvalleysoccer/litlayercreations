@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2NFK2Z8Q3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z2NFK2Z8Q3');
+</script>
 <meta charset="UTF-8" />
 <title>Light Boxes Catalog - Lit Layer Creations</title>
 
@@ -30,6 +39,32 @@ h1 {
 .category h2 {
   border-bottom: 2px solid #00d4ff;
   padding-bottom: 10px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category h2::after {
+  content: '▼';
+  font-size: 14px;
+  transition: transform 0.3s;
+}
+
+.category.collapsed h2::after {
+  transform: rotate(-90deg);
+}
+
+.category .items {
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  overflow: hidden;
+}
+
+.category.collapsed .items {
+  max-height: 0 !important;
+  opacity: 0;
+  margin: 0;
 }
 
 .items {
@@ -70,6 +105,29 @@ h1 {
   gap: 6px;
   flex-wrap: wrap;
   margin-bottom: 10px;
+  max-height: 258px;
+  overflow: hidden;
+}
+
+.media.has-more {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  max-height: none;
+  padding-bottom: 8px;
+}
+
+.media.has-more::-webkit-scrollbar {
+  height: 6px;
+}
+
+.media.has-more::-webkit-scrollbar-track {
+  background: #0b1220;
+  border-radius: 3px;
+}
+
+.media.has-more::-webkit-scrollbar-thumb {
+  background: #00d4ff;
+  border-radius: 3px;
 }
 
 .media img, .media video {
@@ -78,6 +136,7 @@ h1 {
   object-fit: cover;
   border-radius: 6px;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .btn {
@@ -126,7 +185,16 @@ fetch("catalog.json")
         const media = document.createElement("div");
         media.className = "media";
 
-        item.media.forEach(src => {
+        const maxVisible = 9;
+        const hasMore = item.media.length > maxVisible;
+
+        if (hasMore) {
+          media.classList.add('has-more');
+        }
+
+        item.media.forEach((src, index) => {
+          if (!hasMore && index >= maxVisible) return;
+
           if (src.endsWith(".mp4")) {
             const v = document.createElement("video");
             v.src = src;
@@ -144,7 +212,7 @@ fetch("catalog.json")
           <h3>${item.name}</h3>
           <p>${item.description || 'Custom 3D printed light box.'}</p>
           <p>Sizes: ${item.sizes ? item.sizes.join(', ') : '7-8 inch, 9 inch'}</p>
-          <p class="price">$20-25</p>
+         
         `;
 
         card.appendChild(media);
@@ -154,14 +222,12 @@ fetch("catalog.json")
 
       section.appendChild(grid);
       root.appendChild(section);
-    });
-  });
-</script>
-</body>
-</html>
 
-      section.appendChild(grid);
-      root.appendChild(section);
+      // Add click handler to toggle collapse
+      const header = section.querySelector('h2');
+      header.addEventListener('click', () => {
+        section.classList.toggle('collapsed');
+      });
     });
   });
 </script>
