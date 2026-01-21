@@ -877,6 +877,20 @@
         ]
       },
       {
+        "name": "OSU Football Helmet",
+        "file": "Sports/OSU Football Helmet.3mf",
+        "media": [
+          "Sports/Media/OSU Football Helmet/OSU football helmet light.png"
+        ]
+      },
+      {
+        "name": "OSU Helmet Angled",
+        "file": "Sports/OSU Helmet Angled.3mf",
+        "media": [
+          "Sports/Media/OSU Helmet Angled/OSU football helmet light angled.png"
+        ]
+      },
+      {
         "name": "Packers Helmet",
         "file": "Sports/Packers Helmet.3mf",
         "media": [
@@ -957,6 +971,13 @@
           "Sports/Media/WisconsinBadgerHelmet_225/wiscon badger Helmet light (1).jpg",
           "Sports/Media/WisconsinBadgerHelmet_225/wiscon badger Helmet light (2).jpg",
           "Sports/Media/WisconsinBadgerHelmet_225/wiscon badger Helmet light (3).jpg"
+        ]
+      },
+      {
+        "name": "WisconsinVolleyball",
+        "file": "Sports/WisconsinVolleyball.3mf",
+        "media": [
+          "Sports/Media/WisconsinVolleyball/OSU Helmet Angled Light.png"
         ]
       },
       {
