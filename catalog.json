@@ -697,10 +697,27 @@
         ]
       },
       {
-        "name": "MarioLugie",
-        "file": "Pop Culture/MarioLugie.3mf",
+        "name": "MarioYoshi",
+        "file": "Pop Culture/MarioYoshi.3mf",
         "media": [
-          "Pop Culture/media/MarioLugie/MarioLugie.png"
+          "Pop Culture/media/MarioYoshi/0c36a00d-2093-4ecf-820d-b67fd2fe147a.jpg",
+          "Pop Culture/media/MarioYoshi/2033ef79-76da-4c30-9dac-e705139cadc0 - Copy.jpg",
+          "Pop Culture/media/MarioYoshi/2033ef79-76da-4c30-9dac-e705139cadc0.jpg",
+          "Pop Culture/media/MarioYoshi/5197a757-df49-4dc4-906d-7bfe48ba4e18 - Copy.mp4",
+          "Pop Culture/media/MarioYoshi/5197a757-df49-4dc4-906d-7bfe48ba4e18.mp4",
+          "Pop Culture/media/MarioYoshi/b8bef166-83d6-4bec-98d9-45615204d2a5 - Copy.jpg",
+          "Pop Culture/media/MarioYoshi/b8bef166-83d6-4bec-98d9-45615204d2a5.jpg",
+          "Pop Culture/media/MarioYoshi/c0f25410-35e5-4f56-ae89-f28402fd2b5d - Copy.jpg",
+          "Pop Culture/media/MarioYoshi/c0f25410-35e5-4f56-ae89-f28402fd2b5d.jpg",
+          "Pop Culture/media/MarioYoshi/fe6ddbe4-0807-40f9-b578-0d7d23198c93 - Copy.jpg",
+          "Pop Culture/media/MarioYoshi/fe6ddbe4-0807-40f9-b578-0d7d23198c93.jpg"
+        ]
+      },
+      {
+        "name": "MTV",
+        "file": "Pop Culture/MTV.3mf",
+        "media": [
+          "Pop Culture/media/MTV/MTV_Light.png"
         ]
       },
       {
@@ -723,14 +740,14 @@
         ]
       },
       {
-        "name": "star wars",
-        "file": "Pop Culture/star wars.3mf",
+        "name": "Star_Wars",
+        "file": "Pop Culture/Star_Wars.3mf",
         "media": [
-          "Pop Culture/media/star wars/19c4772d-bbfd-4a80-81c0-1a79d52be805.mp4",
-          "Pop Culture/media/star wars/93ede177-d8ab-4fc0-a521-a87f362a28c9.jpg",
-          "Pop Culture/media/star wars/a87a92f2-3b45-491d-9cff-4f378d0e13e8.jpg",
-          "Pop Culture/media/star wars/c9536de6-1be4-4011-a43d-3c46ff40ab6e.jpg",
-          "Pop Culture/media/star wars/ef56cfef-6f88-4d83-bea4-7d215ebe5d2a.jpg"
+          "Pop Culture/media/Star_Wars/19c4772d-bbfd-4a80-81c0-1a79d52be805.mp4",
+          "Pop Culture/media/Star_Wars/93ede177-d8ab-4fc0-a521-a87f362a28c9.jpg",
+          "Pop Culture/media/Star_Wars/a87a92f2-3b45-491d-9cff-4f378d0e13e8.jpg",
+          "Pop Culture/media/Star_Wars/c9536de6-1be4-4011-a43d-3c46ff40ab6e.jpg",
+          "Pop Culture/media/Star_Wars/ef56cfef-6f88-4d83-bea4-7d215ebe5d2a.jpg"
         ]
       },
       {
@@ -779,6 +796,12 @@
         "name": "The_Mystery_Machine",
         "file": "Pop Culture/The_Mystery_Machine.3mf",
         "media": [
+          "Pop Culture/media/The_Mystery_Machine/3e3e1067-347b-429d-aa6d-6851c62d6f1d.jpg",
+          "Pop Culture/media/The_Mystery_Machine/9128abf3-8c1e-47ba-9a1f-cd6c10b43286 (1).jpg",
+          "Pop Culture/media/The_Mystery_Machine/9128abf3-8c1e-47ba-9a1f-cd6c10b43286.jpg",
+          "Pop Culture/media/The_Mystery_Machine/aa6b1d4e-5806-4115-bfb9-612f690b8d0f.jpg",
+          "Pop Culture/media/The_Mystery_Machine/d90266d1-ea90-4bc4-9686-305f2fb0e888.mp4",
+          "Pop Culture/media/The_Mystery_Machine/f5c89158-882d-4fd5-8782-70856a54fe79.jpg",
           "Pop Culture/media/The_Mystery_Machine/The Mystery Machine with Scooby.png"
         ]
       }
