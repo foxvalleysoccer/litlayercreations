@@ -16,6 +16,16 @@
         ]
       },
       {
+        "name": "ChevyBlueYellow",
+        "file": "Automotive/ChevyBlueYellow.3mf",
+        "media": []
+      },
+      {
+        "name": "CobraRoundBlack",
+        "file": "Automotive/CobraRoundBlack.3mf",
+        "media": []
+      },
+      {
         "name": "DodgeRealRam",
         "file": "Automotive/DodgeRealRam.3mf",
         "media": [
@@ -28,6 +38,11 @@
           "Automotive/media/DodgeRealRam/d7c2c520-dac8-4bb2-aece-1fa8994f1eea.jpg",
           "Automotive/media/DodgeRealRam/e9b36ae8-d50f-4c3f-bd46-566452a81480.jpg"
         ]
+      },
+      {
+        "name": "FordBLue",
+        "file": "Automotive/FordBLue.3mf",
+        "media": []
       },
       {
         "name": "HarleyBW",
@@ -111,7 +126,9 @@
       {
         "name": "MOPAR_Red",
         "file": "Automotive/MOPAR_Red.3mf",
-        "media": []
+        "media": [
+          "Automotive/media/MOPAR_Red/MOPAR_RED.png"
+        ]
       },
       {
         "name": "MOPAR_RedOnRed",
@@ -179,6 +196,13 @@
         "file": "Automotive/Road America.3mf",
         "media": [
           "Automotive/media/Road America/Gemini_Generated_Image_y9jga0y9jga0y9jg (1).png"
+        ]
+      },
+      {
+        "name": "SS Camaro",
+        "file": "Automotive/SS Camaro.3mf",
+        "media": [
+          "Automotive/media/SS Camaro/ssCameroLightBox.png"
         ]
       }
     ]
@@ -375,6 +399,31 @@
           "Christmas/Media/YodaWithGift 200mm/598765329_1537324784147871_5669641388217718279_n.jpg",
           "Christmas/Media/YodaWithGift 200mm/600449649_1425321962295394_5942373490188453208_n.jpg",
           "Christmas/Media/YodaWithGift 200mm/602150472_1521140182457186_4249531871388561037_n.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "CustomRequests",
+    "items": [
+      {
+        "name": "ChiltonC",
+        "file": "CustomRequests/ChiltonC.3mf",
+        "media": []
+      },
+      {
+        "name": "jody2",
+        "file": "CustomRequests/jody2.3mf",
+        "media": []
+      },
+      {
+        "name": "Semi",
+        "file": "CustomRequests/Semi.3mf",
+        "media": [
+          "CustomRequests/Media/Semi/615426584_25734216432935299_4103278642310490219_n.jpg",
+          "CustomRequests/Media/Semi/616462102_1226345556111352_1510889151426856827_n.jpg",
+          "CustomRequests/Media/Semi/616808558_1926632984913208_3524585908510141111_n.jpg",
+          "CustomRequests/Media/Semi/618572622_1107883428029873_7162648547630958773_n.jpg"
         ]
       }
     ]
@@ -648,6 +697,13 @@
         ]
       },
       {
+        "name": "MarioLugie",
+        "file": "Pop Culture/MarioLugie.3mf",
+        "media": [
+          "Pop Culture/media/MarioLugie/MarioLugie.png"
+        ]
+      },
+      {
         "name": "qbert",
         "file": "Pop Culture/qbert.3mf",
         "media": [
@@ -657,6 +713,13 @@
           "Pop Culture/media/qbert/a6c5f33d-dfba-42c6-91bd-bdc1208f9b1d.mp4",
           "Pop Culture/media/qbert/f5d9ab28-769e-4876-a467-29f07ce37d45.jpg",
           "Pop Culture/media/qbert/f5f19808-daf7-45c1-a0c8-c25e76ffe67b.jpg"
+        ]
+      },
+      {
+        "name": "Sega",
+        "file": "Pop Culture/Sega.3mf",
+        "media": [
+          "Pop Culture/media/Sega/Sega Light.png"
         ]
       },
       {
@@ -710,6 +773,13 @@
           "Pop Culture/media/TalesFromTheCrypt_Default_225mm/57f73833-8648-4a6f-95a9-999118a4b94d.mp4",
           "Pop Culture/media/TalesFromTheCrypt_Default_225mm/659dc8c6-2516-47ad-adf8-706e16526919.jpg",
           "Pop Culture/media/TalesFromTheCrypt_Default_225mm/8613f605-d052-49ca-9581-a58876bc0038.mp4"
+        ]
+      },
+      {
+        "name": "The_Mystery_Machine",
+        "file": "Pop Culture/The_Mystery_Machine.3mf",
+        "media": [
+          "Pop Culture/media/The_Mystery_Machine/The Mystery Machine with Scooby.png"
         ]
       }
     ]
@@ -864,6 +934,13 @@
         ]
       },
       {
+        "name": "Michigan Wolverines",
+        "file": "Sports/Michigan Wolverines.3mf",
+        "media": [
+          "Sports/Media/Michigan Wolverines/Michigan Wolverines.png"
+        ]
+      },
+      {
         "name": "NewPackerHelmet",
         "file": "Sports/NewPackerHelmet.3mf",
         "media": [
@@ -874,6 +951,13 @@
           "Sports/Media/NewPackerHelmet/8e32cd01-0103-428a-a3ff-0b1e95d5b904.mp4",
           "Sports/Media/NewPackerHelmet/b9cbd29d-39d8-48ac-b3fb-588cfbf921e4.jpg",
           "Sports/Media/NewPackerHelmet/d6e90865-269a-4ad5-b300-43fe4004e0a7.jpg"
+        ]
+      },
+      {
+        "name": "Ohio State Buckeyes",
+        "file": "Sports/Ohio State Buckeyes.3mf",
+        "media": [
+          "Sports/Media/Ohio State Buckeyes/Ohio State Buckeyes.png"
         ]
       },
       {
