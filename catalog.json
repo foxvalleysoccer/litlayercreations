@@ -21,6 +21,11 @@
         "media": []
       },
       {
+        "name": "Cobra",
+        "file": "Automotive/Cobra.3mf",
+        "media": []
+      },
+      {
         "name": "CobraRoundBlack",
         "file": "Automotive/CobraRoundBlack.3mf",
         "media": []
@@ -67,13 +72,13 @@
         "name": "HellCat",
         "file": "Automotive/HellCat.3mf",
         "media": [
-          "Automotive/media/HellCat/09f404c5-2ccf-4d5d-b742-44d69185307a.jpg",
-          "Automotive/media/HellCat/19818dbf-4434-4c59-86e6-830e98c90792.jpg",
-          "Automotive/media/HellCat/2989a91c-d1d8-49d1-a956-b4ee5cbc31aa.jpg",
-          "Automotive/media/HellCat/3e97a3a4-9f08-4a8f-9b80-3fe6c0412a3b.jpg",
-          "Automotive/media/HellCat/4ee131c3-b7a8-4a78-9df2-2c1dbdeb6683.jpg",
-          "Automotive/media/HellCat/90078507-5a46-4523-b103-d145e4bf0bcb.jpg",
-          "Automotive/media/HellCat/985f81f9-cbae-4c65-badf-0f8556891f72.mp4"
+          "Automotive/media/HellCat/helcat_Light (1).jpg",
+          "Automotive/media/HellCat/helcat_Light (1).mp4",
+          "Automotive/media/HellCat/helcat_Light (2).jpg",
+          "Automotive/media/HellCat/helcat_Light (3).jpg",
+          "Automotive/media/HellCat/helcat_Light (4).jpg",
+          "Automotive/media/HellCat/helcat_Light (5).jpg",
+          "Automotive/media/HellCat/helcat_Light (6).jpg"
         ]
       },
       {
@@ -82,6 +87,11 @@
         "media": [
           "Automotive/media/HellCatBlueTrim_Eyes/Screenshot 2026-01-18 095254.png"
         ]
+      },
+      {
+        "name": "Lincoln",
+        "file": "Automotive/Lincoln.3mf",
+        "media": []
       },
       {
         "name": "MOPARBOX",
@@ -204,6 +214,11 @@
         "media": [
           "Automotive/media/SS Camaro/ssCameroLightBox.png"
         ]
+      },
+      {
+        "name": "TransAm",
+        "file": "Automotive/TransAm.3mf",
+        "media": []
       }
     ]
   },
@@ -407,13 +422,18 @@
     "category": "CustomRequests",
     "items": [
       {
-        "name": "ChiltonC",
-        "file": "CustomRequests/ChiltonC.3mf",
+        "name": "Chilton_High_School_Logo",
+        "file": "CustomRequests/Chilton_High_School_Logo.3mf",
         "media": []
       },
       {
         "name": "jody2",
         "file": "CustomRequests/jody2.3mf",
+        "media": []
+      },
+      {
+        "name": "Racecar_Driver_Logo_Light",
+        "file": "CustomRequests/Racecar_Driver_Logo_Light.3mf",
         "media": []
       },
       {
@@ -459,23 +479,23 @@
         ]
       },
       {
-        "name": "Gothic GIrl",
-        "file": "halloween/Gothic GIrl.3mf",
+        "name": "Gothic_GIrl",
+        "file": "halloween/Gothic_GIrl.3mf",
         "media": [
-          "halloween/media/Gothic GIrl/598030234_884598043996962_3364829823640586517_n.jpg",
-          "halloween/media/Gothic GIrl/598604865_2237367483340209_3760083445690681422_n.jpg",
-          "halloween/media/Gothic GIrl/598927605_25368417466173202_6062222253690689500_n.jpg",
-          "halloween/media/Gothic GIrl/599255675_1411106457117095_7028909542648996908_n.jpg"
+          "halloween/media/Gothic_GIrl/598030234_884598043996962_3364829823640586517_n.jpg",
+          "halloween/media/Gothic_GIrl/598604865_2237367483340209_3760083445690681422_n.jpg",
+          "halloween/media/Gothic_GIrl/598927605_25368417466173202_6062222253690689500_n.jpg",
+          "halloween/media/Gothic_GIrl/599255675_1411106457117095_7028909542648996908_n.jpg"
         ]
       },
       {
-        "name": "Gothic GIrl_225",
-        "file": "halloween/Gothic GIrl_225.3mf",
+        "name": "Gothic_Girl_225",
+        "file": "halloween/Gothic_Girl_225.3mf",
         "media": [
-          "halloween/media/Gothic GIrl_225/598030234_884598043996962_3364829823640586517_n.jpg",
-          "halloween/media/Gothic GIrl_225/598604865_2237367483340209_3760083445690681422_n.jpg",
-          "halloween/media/Gothic GIrl_225/598927605_25368417466173202_6062222253690689500_n.jpg",
-          "halloween/media/Gothic GIrl_225/599255675_1411106457117095_7028909542648996908_n.jpg"
+          "halloween/media/Gothic_Girl_225/598030234_884598043996962_3364829823640586517_n.jpg",
+          "halloween/media/Gothic_Girl_225/598604865_2237367483340209_3760083445690681422_n.jpg",
+          "halloween/media/Gothic_Girl_225/598927605_25368417466173202_6062222253690689500_n.jpg",
+          "halloween/media/Gothic_Girl_225/599255675_1411106457117095_7028909542648996908_n.jpg"
         ]
       },
       {
