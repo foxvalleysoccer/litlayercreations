@@ -6,14 +6,19 @@
         "name": "BMW 220",
         "file": "Automotive/BMW 220.3mf",
         "media": [
-          "Automotive/media/BMW 220/4843868b-effa-4a07-bb38-561686f44120.jpg",
-          "Automotive/media/BMW 220/6bd78bfd-ccf5-47b1-8022-eeb53217d471.jpg",
-          "Automotive/media/BMW 220/cb85a4d7-c647-4f9e-a36d-77ffff6beea3.jpg",
-          "Automotive/media/BMW 220/d59025e2-0720-4489-8694-b8e4d88ef6a1.jpg",
-          "Automotive/media/BMW 220/dfb884d4-0590-478a-b9bd-336e7b06aefc.mp4",
-          "Automotive/media/BMW 220/ead9c532-3b68-4e0e-8b9d-b27ed14290ae.jpg",
-          "Automotive/media/BMW 220/fa6ac44d-7a03-41a1-9dc9-e356e4eec16e.jpg"
+          "Automotive/media/BMW 220/BMW Light (1).jpg",
+          "Automotive/media/BMW 220/BMW Light (1).mp4",
+          "Automotive/media/BMW 220/BMW Light (2).jpg",
+          "Automotive/media/BMW 220/BMW Light (3).jpg",
+          "Automotive/media/BMW 220/BMW Light (4).jpg",
+          "Automotive/media/BMW 220/BMW Light (5).jpg",
+          "Automotive/media/BMW 220/BMW Light (6).jpg"
         ]
+      },
+      {
+        "name": "BWMStripes",
+        "file": "Automotive/BWMStripes.3mf",
+        "media": []
       },
       {
         "name": "ChevyBlueYellow",
@@ -218,6 +223,11 @@
       {
         "name": "TransAm",
         "file": "Automotive/TransAm.3mf",
+        "media": []
+      },
+      {
+        "name": "Wolkswagon",
+        "file": "Automotive/Wolkswagon.3mf",
         "media": []
       }
     ]
@@ -982,6 +992,11 @@
         "media": [
           "Sports/Media/Michigan Wolverines/Michigan Wolverines.png"
         ]
+      },
+      {
+        "name": "NE Patriots Fan Light",
+        "file": "Sports/NE Patriots Fan Light.3mf",
+        "media": []
       },
       {
         "name": "NewPackerHelmet",
