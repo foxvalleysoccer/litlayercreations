@@ -1286,12 +1286,21 @@
       {
         "name": "Kayaking",
         "file": "Sports/Kayaking.3mf",
-        "media": []
+        "media": [
+          "Sports/Media/Kayaking/image1.jpg",
+          "Sports/Media/Kayaking/image2.jpg",
+          "Sports/Media/Kayaking/image3.jpg",
+          "Sports/Media/Kayaking/image4.jpg"
+        ]
       },
       {
         "name": "KayakingBlue",
         "file": "Sports/KayakingBlue.3mf",
         "media": [
+          "Sports/Media/KayakingBlue/image1.jpg",
+          "Sports/Media/KayakingBlue/image2.jpg",
+          "Sports/Media/KayakingBlue/image3.jpg",
+          "Sports/Media/KayakingBlue/image4.jpg",
           "Sports/Media/KayakingBlue/img_01.jpg",
           "Sports/Media/KayakingBlue/img_02.jpg",
           "Sports/Media/KayakingBlue/img_03.jpg",
