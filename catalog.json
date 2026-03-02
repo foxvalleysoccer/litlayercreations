@@ -3,6 +3,18 @@
     "category": "Automotive",
     "items": [
       {
+        "name": "AmericanMotors",
+        "file": "Automotive/AmericanMotors.3mf",
+        "media": [
+          "Automotive/media/AmericanMotors/430bac9f-0349-4450-9c6d-0032c10449b9.jpg",
+          "Automotive/media/AmericanMotors/6d8ea412-5a24-483d-96cc-5db3496dc445.jpg",
+          "Automotive/media/AmericanMotors/aee5e89e-ecde-41f3-8487-0096756e61b0.jpg",
+          "Automotive/media/AmericanMotors/AmericanMotors.png",
+          "Automotive/media/AmericanMotors/c80c3161-b6a0-44e9-9991-d48a23765ad3.mp4",
+          "Automotive/media/AmericanMotors/e86ba505-2dc9-4c41-a3ce-bf9ed93a8e0f.jpg"
+        ]
+      },
+      {
         "name": "BMW 220",
         "file": "Automotive/BMW 220.3mf",
         "media": [
@@ -18,7 +30,14 @@
       {
         "name": "BWMStripes",
         "file": "Automotive/BWMStripes.3mf",
-        "media": []
+        "media": [
+          "Automotive/media/BWMStripes/07bcca94-d9bb-4bbf-8ceb-c2e98c940e32.jpg",
+          "Automotive/media/BWMStripes/348cb3d6-c0bc-4f86-9811-8b3eec1659f7.mp4",
+          "Automotive/media/BWMStripes/54dcbfc9-d4e7-42ed-a6a0-8d1a28582667.jpg",
+          "Automotive/media/BWMStripes/77ccb14c-7037-484b-bf5d-f3be25cdfdce.jpg",
+          "Automotive/media/BWMStripes/9eeb900a-296b-4140-a34c-a5b6b1f1447c.jpg",
+          "Automotive/media/BWMStripes/d407da68-37a0-4a12-be34-c16087cdf499.jpg"
+        ]
       },
       {
         "name": "ChevyBlueYellow",
@@ -28,12 +47,31 @@
       {
         "name": "Cobra",
         "file": "Automotive/Cobra.3mf",
-        "media": []
+        "media": [
+          "Automotive/media/Cobra/Shelby Cobra (1).jpg",
+          "Automotive/media/Cobra/Shelby Cobra (1).mp4",
+          "Automotive/media/Cobra/Shelby Cobra (2).jpg",
+          "Automotive/media/Cobra/Shelby Cobra (3).jpg",
+          "Automotive/media/Cobra/Shelby Cobra (4).jpg",
+          "Automotive/media/Cobra/Shelby Cobra (5).jpg",
+          "Automotive/media/Cobra/Shelby Cobra (6).jpg"
+        ]
       },
       {
         "name": "CobraRoundBlack",
         "file": "Automotive/CobraRoundBlack.3mf",
-        "media": []
+        "media": [
+          "Automotive/media/CobraRoundBlack/1146faf4-5a8d-44eb-8529-42fbe64c39ab.jpg",
+          "Automotive/media/CobraRoundBlack/139ff98d-3323-4848-871e-7ab9148761a3.jpg",
+          "Automotive/media/CobraRoundBlack/56db3869-cb06-4a83-a8be-046a1f2c8496.jpg",
+          "Automotive/media/CobraRoundBlack/7fade1f7-8e48-49bc-8e4a-93e753eddaff.mp4",
+          "Automotive/media/CobraRoundBlack/a569f02d-7bcc-43c5-a5a6-6b508857b550.jpg",
+          "Automotive/media/CobraRoundBlack/abcc228b-324c-4bf5-9a8a-911daf1c8870.jpg",
+          "Automotive/media/CobraRoundBlack/e3f57f3a-64e7-41ab-998a-247d8c1bead0.jpg",
+          "Automotive/media/CobraRoundBlack/e6dd9727-1754-47fa-91d9-cd65d6dd2571.jpg",
+          "Automotive/media/CobraRoundBlack/e77920c8-0d62-4beb-932a-b7f0530390ae.mp4",
+          "Automotive/media/CobraRoundBlack/e8344368-fbe6-4c14-827e-b2a851a20255.jpg"
+        ]
       },
       {
         "name": "DodgeRealRam",
@@ -50,9 +88,40 @@
         ]
       },
       {
+        "name": "FireBird",
+        "file": "Automotive/FireBird.3mf",
+        "media": []
+      },
+      {
         "name": "FordBLue",
         "file": "Automotive/FordBLue.3mf",
         "media": []
+      },
+      {
+        "name": "FordMercuryLincolnLight",
+        "file": "Automotive/FordMercuryLincolnLight.3mf",
+        "media": [
+          "Automotive/media/FordMercuryLincolnLight/0fb0ab20-8b3d-4ad4-b725-2c3af537a58e.jpg",
+          "Automotive/media/FordMercuryLincolnLight/2c27994c-558f-4e5d-9976-6387dbeaa8f8.jpg",
+          "Automotive/media/FordMercuryLincolnLight/4cdc494d-56db-4405-b2f8-326f39570d34 (1).jpg",
+          "Automotive/media/FordMercuryLincolnLight/4cdc494d-56db-4405-b2f8-326f39570d34.jpg",
+          "Automotive/media/FordMercuryLincolnLight/5a781341-8d7f-4828-8f80-0a7374d82359.jpg",
+          "Automotive/media/FordMercuryLincolnLight/e9087a75-aff0-4018-90ad-6ddbe5a45916.jpg"
+        ]
+      },
+      {
+        "name": "Ford_Motor_Sport_Light",
+        "file": "Automotive/Ford_Motor_Sport_Light.3mf",
+        "media": [
+          "Automotive/media/Ford_Motor_Sport_Light/5498e84c-697a-409a-a8a5-89bd8ff1c56b.jpg",
+          "Automotive/media/Ford_Motor_Sport_Light/95cf5b25-0f0a-4ac3-917b-3e6ffff47002.jpg",
+          "Automotive/media/Ford_Motor_Sport_Light/c7cd31ea-d7b4-422b-b06d-756a92adc0b9.mp4",
+          "Automotive/media/Ford_Motor_Sport_Light/ca38921b-2a2a-462f-8471-9534a3589cb9.jpg",
+          "Automotive/media/Ford_Motor_Sport_Light/f96ca667-9689-44b5-b9b0-88abd2b549f4.jpg",
+          "Automotive/media/Ford_Motor_Sport_Light/Ford_Motor_Sport_Light black.png",
+          "Automotive/media/Ford_Motor_Sport_Light/Ford_Motor_Sport_Light bw.png",
+          "Automotive/media/Ford_Motor_Sport_Light/Ford_Motor_Sport_Light.png"
+        ]
       },
       {
         "name": "HarleyBW",
@@ -96,6 +165,16 @@
       {
         "name": "Lincoln",
         "file": "Automotive/Lincoln.3mf",
+        "media": [
+          "Automotive/media/Lincoln/737da997-c1f9-4b35-a2fb-1b40054c5ac7.jpg",
+          "Automotive/media/Lincoln/7feb78c9-27d2-408e-961c-8ae3c923f116.jpg",
+          "Automotive/media/Lincoln/d0ab2b6c-c687-411f-9749-26a865dd6b12.jpg",
+          "Automotive/media/Lincoln/fc52f6bc-f4d7-4cd8-919f-226f3ec4be03.jpg"
+        ]
+      },
+      {
+        "name": "Mercedes",
+        "file": "Automotive/Mercedes.3mf",
         "media": []
       },
       {
@@ -116,15 +195,15 @@
         "name": "MOPAR_Blue",
         "file": "Automotive/MOPAR_Blue.3mf",
         "media": [
-          "Automotive/media/MOPAR_Blue/26d554e8-d9a0-4c48-a530-0ca9cfdaac88.mp4",
-          "Automotive/media/MOPAR_Blue/446239d0-2b39-461e-9c29-d9c93ff86e31.jpg",
-          "Automotive/media/MOPAR_Blue/9abbe0e3-4adb-4489-a65e-46f1b580dc81.jpg",
-          "Automotive/media/MOPAR_Blue/b76d81ae-e4ea-4bd3-bd96-0c8ea8e6a2b7.jpg",
-          "Automotive/media/MOPAR_Blue/b7da3d58-d2ca-4bb0-a5e9-e54d98d7b0ef (1).jpg",
-          "Automotive/media/MOPAR_Blue/b7da3d58-d2ca-4bb0-a5e9-e54d98d7b0ef (2).jpg",
-          "Automotive/media/MOPAR_Blue/b7da3d58-d2ca-4bb0-a5e9-e54d98d7b0ef.jpg",
-          "Automotive/media/MOPAR_Blue/c4311ce4-3b35-44e4-a674-7eeae18baffa.mp4",
-          "Automotive/media/MOPAR_Blue/c6343c4b-a150-4579-9e70-f1f2cac22818.jpg"
+          "Automotive/media/MOPAR_Blue/Mopar Light BOx (1).jpg",
+          "Automotive/media/MOPAR_Blue/Mopar Light BOx (1).mp4",
+          "Automotive/media/MOPAR_Blue/Mopar Light BOx (2).jpg",
+          "Automotive/media/MOPAR_Blue/Mopar Light BOx (2).mp4",
+          "Automotive/media/MOPAR_Blue/Mopar Light BOx (3).jpg",
+          "Automotive/media/MOPAR_Blue/Mopar Light BOx (4).jpg",
+          "Automotive/media/MOPAR_Blue/Mopar Light BOx (5).jpg",
+          "Automotive/media/MOPAR_Blue/Mopar Light BOx (6).jpg",
+          "Automotive/media/MOPAR_Blue/Mopar Light BOx (7).jpg"
         ]
       },
       {
@@ -165,6 +244,11 @@
         "media": [
           "Automotive/media/Mopar_Square_224/Screenshot 2026-01-18 113849.png"
         ]
+      },
+      {
+        "name": "Pontiac",
+        "file": "Automotive/Pontiac.3mf",
+        "media": []
       },
       {
         "name": "PorscheColor 30mm thick",
@@ -211,6 +295,16 @@
         "file": "Automotive/Road America.3mf",
         "media": [
           "Automotive/media/Road America/Gemini_Generated_Image_y9jga0y9jga0y9jg (1).png"
+        ]
+      },
+      {
+        "name": "ShelbyGreen",
+        "file": "Automotive/ShelbyGreen.3mf",
+        "media": [
+          "Automotive/media/ShelbyGreen/img_01.jpg",
+          "Automotive/media/ShelbyGreen/img_02.jpg",
+          "Automotive/media/ShelbyGreen/img_03.jpg",
+          "Automotive/media/ShelbyGreen/img_04.jpg"
         ]
       },
       {
@@ -437,8 +531,41 @@
         "media": []
       },
       {
+        "name": "Crowe Thrifts",
+        "file": "CustomRequests/Crowe Thrifts.3mf",
+        "media": []
+      },
+      {
+        "name": "Filmation Ghostbusters",
+        "file": "CustomRequests/Filmation Ghostbusters.3mf",
+        "media": []
+      },
+      {
+        "name": "HawkHunter",
+        "file": "CustomRequests/HawkHunter.3mf",
+        "media": []
+      },
+      {
+        "name": "HomerOnDonut (1)",
+        "file": "CustomRequests/HomerOnDonut (1).3mf",
+        "media": []
+      },
+      {
         "name": "jody2",
         "file": "CustomRequests/jody2.3mf",
+        "media": []
+      },
+      {
+        "name": "JVC",
+        "file": "CustomRequests/JVC.3mf",
+        "media": [
+          "CustomRequests/Media/JVC/622275626_1326680302831419_3050439372246121992_n.jpg",
+          "CustomRequests/Media/JVC/623837751_1934656013928983_2376776495513632284_n.jpg"
+        ]
+      },
+      {
+        "name": "MorrisonFabrication",
+        "file": "CustomRequests/MorrisonFabrication.3mf",
         "media": []
       },
       {
@@ -625,6 +752,16 @@
     ]
   },
   {
+    "category": "Old Labels",
+    "items": [
+      {
+        "name": "CobraCB",
+        "file": "Old Labels/CobraCB.3mf",
+        "media": []
+      }
+    ]
+  },
+  {
     "category": "Pop Culture",
     "items": [
       {
@@ -655,6 +792,11 @@
         ]
       },
       {
+        "name": "BatmanBatWing",
+        "file": "Pop Culture/BatmanBatWing.3mf",
+        "media": []
+      },
+      {
         "name": "coffeeGirl",
         "file": "Pop Culture/coffeeGirl.3mf",
         "media": [
@@ -667,6 +809,42 @@
           "Pop Culture/media/coffeeGirl/c65a3ae2-4b7f-479e-89a0-8726ca3742e2.jpg",
           "Pop Culture/media/coffeeGirl/Video.mp4"
         ]
+      },
+      {
+        "name": "DonkeyKong",
+        "file": "Pop Culture/DonkeyKong.3mf",
+        "media": [
+          "Pop Culture/media/DonkeyKong/011ae1e8-4811-4a2f-96d7-f199c04587fd.jpg",
+          "Pop Culture/media/DonkeyKong/083bd2dd-e346-4263-8e7c-7d75fd99da0e.jpg",
+          "Pop Culture/media/DonkeyKong/1e7fc1ee-38dc-432b-aa3d-4c786fc51ed5.jpg",
+          "Pop Culture/media/DonkeyKong/28346bf7-26fe-42b0-9dd7-5cee248ed9a9.jpg",
+          "Pop Culture/media/DonkeyKong/36881865-c317-4fea-82e1-93a941838fbf.mp4",
+          "Pop Culture/media/DonkeyKong/85b6f3a6-a0a0-4d56-8b9a-d0cf7be5bdc5.jpg",
+          "Pop Culture/media/DonkeyKong/db26db3c-0fcc-42fd-9eee-11add64028a7.jpg",
+          "Pop Culture/media/DonkeyKong/DonkeyKong.png",
+          "Pop Culture/media/DonkeyKong/Screenshot 2026-02-24 142920.png"
+        ]
+      },
+      {
+        "name": "GhostbustersLogo",
+        "file": "Pop Culture/GhostbustersLogo.3mf",
+        "media": [
+          "Pop Culture/media/GhostbustersLogo/57b90571-6b08-4e0b-9c50-3b97e26c9065.jpg",
+          "Pop Culture/media/GhostbustersLogo/7d63bf81-32e8-4e00-b652-a7106b5d6dd9.jpg",
+          "Pop Culture/media/GhostbustersLogo/9f00ad8b-c6a5-4693-82ea-dfbe798052e8.jpg",
+          "Pop Culture/media/GhostbustersLogo/cfd27142-f7fe-462e-a315-9078502cdd80.jpg",
+          "Pop Culture/media/GhostbustersLogo/dbd670df-c878-4db1-b845-f3d8bccfd8d8.mp4"
+        ]
+      },
+      {
+        "name": "GoldenAxeLightBox",
+        "file": "Pop Culture/GoldenAxeLightBox.3mf",
+        "media": []
+      },
+      {
+        "name": "GuitarHeroLightBox",
+        "file": "Pop Culture/GuitarHeroLightBox.3mf",
+        "media": []
       },
       {
         "name": "JackDaniels 200mm",
@@ -701,6 +879,11 @@
         ]
       },
       {
+        "name": "Lightbox Draft (5)",
+        "file": "Pop Culture/Lightbox Draft (5).3mf",
+        "media": []
+      },
+      {
         "name": "Lips",
         "file": "Pop Culture/Lips.3mf",
         "media": [
@@ -730,43 +913,103 @@
         "name": "MarioYoshi",
         "file": "Pop Culture/MarioYoshi.3mf",
         "media": [
-          "Pop Culture/media/MarioYoshi/0c36a00d-2093-4ecf-820d-b67fd2fe147a.jpg",
-          "Pop Culture/media/MarioYoshi/2033ef79-76da-4c30-9dac-e705139cadc0 - Copy.jpg",
-          "Pop Culture/media/MarioYoshi/2033ef79-76da-4c30-9dac-e705139cadc0.jpg",
-          "Pop Culture/media/MarioYoshi/5197a757-df49-4dc4-906d-7bfe48ba4e18 - Copy.mp4",
-          "Pop Culture/media/MarioYoshi/5197a757-df49-4dc4-906d-7bfe48ba4e18.mp4",
-          "Pop Culture/media/MarioYoshi/b8bef166-83d6-4bec-98d9-45615204d2a5 - Copy.jpg",
-          "Pop Culture/media/MarioYoshi/b8bef166-83d6-4bec-98d9-45615204d2a5.jpg",
-          "Pop Culture/media/MarioYoshi/c0f25410-35e5-4f56-ae89-f28402fd2b5d - Copy.jpg",
-          "Pop Culture/media/MarioYoshi/c0f25410-35e5-4f56-ae89-f28402fd2b5d.jpg",
-          "Pop Culture/media/MarioYoshi/fe6ddbe4-0807-40f9-b578-0d7d23198c93 - Copy.jpg",
-          "Pop Culture/media/MarioYoshi/fe6ddbe4-0807-40f9-b578-0d7d23198c93.jpg"
+          "Pop Culture/media/MarioYoshi/Mario and Yoshi (1).jpg",
+          "Pop Culture/media/MarioYoshi/Mario and Yoshi (1).mp4",
+          "Pop Culture/media/MarioYoshi/Mario and Yoshi (2).jpg",
+          "Pop Culture/media/MarioYoshi/Mario and Yoshi (3).jpg",
+          "Pop Culture/media/MarioYoshi/Mario and Yoshi (4).jpg",
+          "Pop Culture/media/MarioYoshi/Mario and Yoshi (5).jpg"
         ]
+      },
+      {
+        "name": "MetalGearSolidLightBox",
+        "file": "Pop Culture/MetalGearSolidLightBox.3mf",
+        "media": []
       },
       {
         "name": "MTV",
         "file": "Pop Culture/MTV.3mf",
         "media": [
-          "Pop Culture/media/MTV/MTV_Light.png"
+          "Pop Culture/media/MTV/1eb12a02-2100-452f-869a-c87a0a1865f1.jpg",
+          "Pop Culture/media/MTV/30a84b55-e084-4e1b-92ac-06c1e9c90a91.mp4",
+          "Pop Culture/media/MTV/57d6eaac-7f65-4e13-92c9-c03a038b9017.jpg",
+          "Pop Culture/media/MTV/ef53d749-f423-4530-8bae-bbd19eecb6ea.jpg"
         ]
+      },
+      {
+        "name": "Packman",
+        "file": "Pop Culture/Packman.3mf",
+        "media": []
+      },
+      {
+        "name": "puzzleBobble",
+        "file": "Pop Culture/puzzleBobble.3mf",
+        "media": []
       },
       {
         "name": "qbert",
         "file": "Pop Culture/qbert.3mf",
         "media": [
-          "Pop Culture/media/qbert/026bb2c5-881c-47cc-a51e-00e5683b1d3a.jpg",
-          "Pop Culture/media/qbert/39e247a9-106a-4c93-9d74-6d498dbbce8c.jpg",
-          "Pop Culture/media/qbert/532c74d4-700e-4d9f-acd2-ecceb73f1888.mp4",
-          "Pop Culture/media/qbert/a6c5f33d-dfba-42c6-91bd-bdc1208f9b1d.mp4",
-          "Pop Culture/media/qbert/f5d9ab28-769e-4876-a467-29f07ce37d45.jpg",
-          "Pop Culture/media/qbert/f5f19808-daf7-45c1-a0c8-c25e76ffe67b.jpg"
+          "Pop Culture/media/qbert/Qbert Light (1).jpg",
+          "Pop Culture/media/qbert/Qbert Light (1).mp4",
+          "Pop Culture/media/qbert/Qbert Light (2).jpg",
+          "Pop Culture/media/qbert/Qbert Light (2).mp4",
+          "Pop Culture/media/qbert/Qbert Light (3).jpg",
+          "Pop Culture/media/qbert/Qbert Light (4).jpg"
         ]
+      },
+      {
+        "name": "residentEvil",
+        "file": "Pop Culture/residentEvil.3mf",
+        "media": []
       },
       {
         "name": "Sega",
         "file": "Pop Culture/Sega.3mf",
         "media": [
+          "Pop Culture/media/Sega/2dc5b41c-18c9-4783-96b8-b6adf39dc533.jpg",
+          "Pop Culture/media/Sega/4eb4681e-4278-4291-afbb-99590822f06d.jpg",
+          "Pop Culture/media/Sega/6a420d02-cdd5-4a04-bb5c-6b076066762d.jpg",
+          "Pop Culture/media/Sega/7df52030-fc13-4b98-9aa3-ff1b99925cf1.jpg",
+          "Pop Culture/media/Sega/820a4bbf-c56e-433b-9f54-789ec8b9d18a.jpg",
+          "Pop Culture/media/Sega/98a1c1ea-b3d3-4406-8efa-e079785b4bd2.jpg",
+          "Pop Culture/media/Sega/a49318c5-1b78-4a11-8f67-e7261e9c70b0.jpg",
+          "Pop Culture/media/Sega/de358421-53fc-441e-84d9-8b176dd6058a.mp4",
           "Pop Culture/media/Sega/Sega Light.png"
+        ]
+      },
+      {
+        "name": "slimer",
+        "file": "Pop Culture/slimer.3mf",
+        "media": [
+          "Pop Culture/media/slimer/06007113-8b5e-4b6f-8b85-5b89d78495df.mp4",
+          "Pop Culture/media/slimer/0be3bbb1-7d86-447d-8466-c143d3a19e5d.jpg",
+          "Pop Culture/media/slimer/4cc650b2-9cf6-4723-977d-33bc6dc9817a.jpg",
+          "Pop Culture/media/slimer/cbdbeeeb-a94f-46e1-8080-1367eb1cb282.jpg",
+          "Pop Culture/media/slimer/fb59a58d-98de-4cda-9c5c-714d21e6906a.jpg"
+        ]
+      },
+      {
+        "name": "Sonic",
+        "file": "Pop Culture/Sonic.3mf",
+        "media": []
+      },
+      {
+        "name": "spaceInvaders",
+        "file": "Pop Culture/spaceInvaders.3mf",
+        "media": []
+      },
+      {
+        "name": "spiderman",
+        "file": "Pop Culture/spiderman.3mf",
+        "media": [
+          "Pop Culture/media/spiderman/48370521-8563-4494-9cd5-21954b524c64.jpg",
+          "Pop Culture/media/spiderman/74363ca5-e598-4722-a8f7-60a8c78c9884.jpg",
+          "Pop Culture/media/spiderman/a8b25cd8-f1e9-4cfb-ad65-9df805e1514b.jpg",
+          "Pop Culture/media/spiderman/bb23a0c2-3516-43ff-8d73-44949ff13f49.jpg",
+          "Pop Culture/media/spiderman/ca8c5bb7-60e8-431c-b439-05635dffe72f.jpg",
+          "Pop Culture/media/spiderman/e4eb9e7d-5c90-4d2a-b19d-866660937683.mp4",
+          "Pop Culture/media/spiderman/e61af085-a50d-4dbf-b065-28828f632aa9.jpg"
         ]
       },
       {
@@ -779,6 +1022,38 @@
           "Pop Culture/media/Star_Wars/c9536de6-1be4-4011-a43d-3c46ff40ab6e.jpg",
           "Pop Culture/media/Star_Wars/ef56cfef-6f88-4d83-bea4-7d215ebe5d2a.jpg"
         ]
+      },
+      {
+        "name": "StayPuff",
+        "file": "Pop Culture/StayPuff.3mf",
+        "media": [
+          "Pop Culture/media/StayPuff/03263226-a1f2-42b7-8387-2399e5876acb.jpg",
+          "Pop Culture/media/StayPuff/0730d5d3-1ed8-42bc-a1db-b62773f63eb2.jpg",
+          "Pop Culture/media/StayPuff/411edc10-4c39-42d8-a82f-8f9eaa71032e.jpg",
+          "Pop Culture/media/StayPuff/8c47fcd6-a393-4d25-b487-a9192d1e8a06.jpg",
+          "Pop Culture/media/StayPuff/d133d885-20ef-4c8f-9436-94b3c0600599.jpg",
+          "Pop Culture/media/StayPuff/d2bc1941-4ff8-4504-a34c-0308660cc174.mp4"
+        ]
+      },
+      {
+        "name": "StrangerThings",
+        "file": "Pop Culture/StrangerThings.3mf",
+        "media": []
+      },
+      {
+        "name": "streetFighter",
+        "file": "Pop Culture/streetFighter.3mf",
+        "media": []
+      },
+      {
+        "name": "streetsOfRageLightBox",
+        "file": "Pop Culture/streetsOfRageLightBox.3mf",
+        "media": []
+      },
+      {
+        "name": "SuperNintendo",
+        "file": "Pop Culture/SuperNintendo.3mf",
+        "media": []
       },
       {
         "name": "TalesFromTheCrypt",
@@ -823,6 +1098,22 @@
         ]
       },
       {
+        "name": "ThefastAndTheFurious_Light",
+        "file": "Pop Culture/ThefastAndTheFurious_Light.3mf",
+        "media": []
+      },
+      {
+        "name": "TheSimpsonsLight",
+        "file": "Pop Culture/TheSimpsonsLight.3mf",
+        "media": [
+          "Pop Culture/media/TheSimpsonsLight/23fa5407-024a-48eb-9445-990495a1f8cb.mp4",
+          "Pop Culture/media/TheSimpsonsLight/37a6f2a6-3223-4da7-81b8-69383ed3be9c.jpg",
+          "Pop Culture/media/TheSimpsonsLight/6765582a-5b76-4892-9fd4-d0dccd889436.jpg",
+          "Pop Culture/media/TheSimpsonsLight/ac657e05-d3b6-43f8-b6e8-6b4300c24559.jpg",
+          "Pop Culture/media/TheSimpsonsLight/b8b17a8c-8d0e-44d8-bf26-d0a4ba621a60.jpg"
+        ]
+      },
+      {
         "name": "The_Mystery_Machine",
         "file": "Pop Culture/The_Mystery_Machine.3mf",
         "media": [
@@ -834,6 +1125,16 @@
           "Pop Culture/media/The_Mystery_Machine/f5c89158-882d-4fd5-8782-70856a54fe79.jpg",
           "Pop Culture/media/The_Mystery_Machine/The Mystery Machine with Scooby.png"
         ]
+      },
+      {
+        "name": "ThrasherLogoLight",
+        "file": "Pop Culture/ThrasherLogoLight.3mf",
+        "media": []
+      },
+      {
+        "name": "ThunderCats_LightBox",
+        "file": "Pop Culture/ThunderCats_LightBox.3mf",
+        "media": []
       }
     ]
   },
@@ -862,18 +1163,18 @@
         "name": "Brewers Barrelman",
         "file": "Sports/Brewers Barrelman.3mf",
         "media": [
-          "Sports/Media/Brewers Barrelman/063724ef-b1d7-4acb-b64a-2c4b33cb19a9.jpg",
-          "Sports/Media/Brewers Barrelman/1ed9baec-54df-4112-b9f3-82994f1cf10b.jpg",
-          "Sports/Media/Brewers Barrelman/45ebf379-9a96-414b-9de4-e1794b8ab273.jpg",
-          "Sports/Media/Brewers Barrelman/54367e81-c48b-4f27-8bea-6e43ec2559cc.jpg",
-          "Sports/Media/Brewers Barrelman/8245f019-813c-4068-bba7-4d52aabbf4ae.jpg",
-          "Sports/Media/Brewers Barrelman/92fc66ee-c22b-413f-a57a-6145c1942a63.jpg",
-          "Sports/Media/Brewers Barrelman/9c5e0fa6-73f1-4bce-ae56-3e220b5801cf.jpg",
-          "Sports/Media/Brewers Barrelman/9d0c3387-45d7-421a-bc7c-70b128807696.mp4",
-          "Sports/Media/Brewers Barrelman/a8894a62-2f4f-4b15-a3ad-c312c6113cc6.jpg",
-          "Sports/Media/Brewers Barrelman/c2db3de5-ad9a-4c37-b9b9-e109f5ab8cf7.jpg",
-          "Sports/Media/Brewers Barrelman/c8568884-d3d0-4d35-9053-97ea88cdb65f.mp4",
-          "Sports/Media/Brewers Barrelman/dff4d0a9-838d-4812-91b6-bf6733e79ccc.jpg"
+          "Sports/Media/Brewers Barrelman/Brewers Barrel Man (1).jpg",
+          "Sports/Media/Brewers Barrelman/Brewers Barrel Man (1).mp4",
+          "Sports/Media/Brewers Barrelman/Brewers Barrel Man (10).jpg",
+          "Sports/Media/Brewers Barrelman/Brewers Barrel Man (2).jpg",
+          "Sports/Media/Brewers Barrelman/Brewers Barrel Man (2).mp4",
+          "Sports/Media/Brewers Barrelman/Brewers Barrel Man (3).jpg",
+          "Sports/Media/Brewers Barrelman/Brewers Barrel Man (4).jpg",
+          "Sports/Media/Brewers Barrelman/Brewers Barrel Man (5).jpg",
+          "Sports/Media/Brewers Barrelman/Brewers Barrel Man (6).jpg",
+          "Sports/Media/Brewers Barrelman/Brewers Barrel Man (7).jpg",
+          "Sports/Media/Brewers Barrelman/Brewers Barrel Man (8).jpg",
+          "Sports/Media/Brewers Barrelman/Brewers Barrel Man (9).jpg"
         ]
       },
       {
@@ -964,6 +1265,16 @@
           "Sports/Media/BucksRetro/c4246eea-9459-4391-94a8-4cb4e2fc2605.jpg",
           "Sports/Media/BucksRetro/eb4a5434-6a8f-4f76-8e7a-fe43b83c8d19.jpg"
         ]
+      },
+      {
+        "name": "Kayaking",
+        "file": "Sports/Kayaking.3mf",
+        "media": []
+      },
+      {
+        "name": "KayakingBlue",
+        "file": "Sports/KayakingBlue.3mf",
+        "media": []
       },
       {
         "name": "Lions 200mm",

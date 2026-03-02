@@ -1,0 +1,27 @@
+{
+  "name": "lightboxes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scan-lightboxes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foxvalleysoccer/litlayercreations.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/foxvalleysoccer/litlayercreations/issues"
+  },
+  "homepage": "https://github.com/foxvalleysoccer/litlayercreations#readme",
+  "dependencies": {
+    "axios": "^1.13.6",
+    "fs": "^0.0.1-security",
+    "node-telegram-bot-api": "^0.67.0",
+    "path": "^0.12.7"
+  }
+}
