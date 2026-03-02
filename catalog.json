@@ -301,6 +301,7 @@
         "name": "ShelbyGreen",
         "file": "Automotive/ShelbyGreen.3mf",
         "media": [
+          "Automotive/media/ShelbyGreen/558a1a5c-427f-417f-a57d-0cee935ee62c.mp4",
           "Automotive/media/ShelbyGreen/img_01.jpg",
           "Automotive/media/ShelbyGreen/img_02.jpg",
           "Automotive/media/ShelbyGreen/img_03.jpg",
@@ -910,6 +911,17 @@
         ]
       },
       {
+        "name": "marioFlying",
+        "file": "Pop Culture/marioFlying.3mf",
+        "media": [
+          "Pop Culture/media/marioFlying/dd4399c1-ef9d-45bc-bfb7-f4d2f02ccc8a.mp4",
+          "Pop Culture/media/marioFlying/img_01.jpg",
+          "Pop Culture/media/marioFlying/img_02.jpg",
+          "Pop Culture/media/marioFlying/img_03.jpg",
+          "Pop Culture/media/marioFlying/img_04.jpg"
+        ]
+      },
+      {
         "name": "MarioYoshi",
         "file": "Pop Culture/MarioYoshi.3mf",
         "media": [
@@ -983,10 +995,10 @@
         "file": "Pop Culture/slimer.3mf",
         "media": [
           "Pop Culture/media/slimer/06007113-8b5e-4b6f-8b85-5b89d78495df.mp4",
-          "Pop Culture/media/slimer/0be3bbb1-7d86-447d-8466-c143d3a19e5d.jpg",
-          "Pop Culture/media/slimer/4cc650b2-9cf6-4723-977d-33bc6dc9817a.jpg",
-          "Pop Culture/media/slimer/cbdbeeeb-a94f-46e1-8080-1367eb1cb282.jpg",
-          "Pop Culture/media/slimer/fb59a58d-98de-4cda-9c5c-714d21e6906a.jpg"
+          "Pop Culture/media/slimer/15a2528d-e4fb-418d-aeae-20b755eada41.jpg",
+          "Pop Culture/media/slimer/2accc9ca-898e-452b-80ee-cf18fea38de9.jpg",
+          "Pop Culture/media/slimer/a9c50a9b-9ab0-42e1-b269-b26fed7c18a8.jpg",
+          "Pop Culture/media/slimer/cf5a2e10-f876-43a2-8445-984b559498ed.jpg"
         ]
       },
       {
@@ -1053,7 +1065,12 @@
       {
         "name": "SuperNintendo",
         "file": "Pop Culture/SuperNintendo.3mf",
-        "media": []
+        "media": [
+          "Pop Culture/media/SuperNintendo/img_01.jpg",
+          "Pop Culture/media/SuperNintendo/img_02.jpg",
+          "Pop Culture/media/SuperNintendo/img_03.jpg",
+          "Pop Culture/media/SuperNintendo/img_04.jpg"
+        ]
       },
       {
         "name": "TalesFromTheCrypt",
@@ -1274,7 +1291,12 @@
       {
         "name": "KayakingBlue",
         "file": "Sports/KayakingBlue.3mf",
-        "media": []
+        "media": [
+          "Sports/Media/KayakingBlue/img_01.jpg",
+          "Sports/Media/KayakingBlue/img_02.jpg",
+          "Sports/Media/KayakingBlue/img_03.jpg",
+          "Sports/Media/KayakingBlue/img_04.jpg"
+        ]
       },
       {
         "name": "Lions 200mm",

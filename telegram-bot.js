@@ -100,8 +100,11 @@ function getState(chatId) {
   if (!state.has(chatId)) {
     state.set(chatId, {
       stage: 'idle',
+      mode: null,              // 'new' or 'update'
       category: null,
       productName: null,
+      updateProductName: null, // for update mode: existing product name
+      updateCategory: null,    // for update mode: existing product category
       pendingImages: [],
       firstImageArrived: false,
       chatHistory: [],
@@ -113,8 +116,11 @@ function getState(chatId) {
 function resetWorkflow(chatId) {
   const s = getState(chatId);
   s.stage = 'idle';
+  s.mode = null;
   s.category = null;
   s.productName = null;
+  s.updateProductName = null;
+  s.updateCategory = null;
   s.pendingImages = [];
   s.firstImageArrived = false;
   // Keep chatHistory so conversation memory persists within session
@@ -527,6 +533,173 @@ async function runWorkflow(chatId) {
 }
 
 // ----------------------------
+// UPDATE WORKFLOW — fix/replace images for existing product
+// ----------------------------
+async function runUpdateWorkflow(chatId) {
+  const s = getState(chatId);
+  if (s.stage === 'running') return;
+  s.stage = 'running';
+
+  const productName = s.updateProductName;
+  const category = s.updateCategory;
+
+  try {
+    const mediaDir = path.join(ROOT, category, 'media', productName);
+
+    // Check media folder exists
+    try {
+      await fsp.stat(mediaDir);
+    } catch {
+      await bot.sendMessage(chatId, `⚠️ Media folder not found:\n${mediaDir}\n\nCheck the product name and category, then /reset and try again.`);
+      resetWorkflow(chatId);
+      return;
+    }
+
+    // Backup old images instead of deleting them
+    const backupDir = path.join(ROOT, '_backup', `${productName}_${Date.now()}`);
+    await ensureDir(backupDir);
+    const existingFiles = await fsp.readdir(mediaDir);
+    const oldImages = existingFiles.filter(f => /\.(jpg|jpeg|png|webp)$/i.test(f));
+    for (const f of oldImages) {
+      await fsp.rename(path.join(mediaDir, f), path.join(backupDir, f));
+    }
+
+    // Save new images
+    const movedPaths = [];
+    for (let i = 0; i < s.pendingImages.length; i++) {
+      const tempPath = s.pendingImages[i].tempPath;
+      const destName = `img_${String(i + 1).padStart(2, '0')}.jpg`;
+      const destPath = path.join(mediaDir, destName);
+      try {
+        await fsp.rename(tempPath, destPath);
+      } catch {
+        await fsp.copyFile(tempPath, destPath);
+        await fsp.unlink(tempPath);
+      }
+      movedPaths.push(destPath);
+    }
+
+    // Regenerate catalog
+    const scanScript = path.join(ROOT, 'scan-lightboxes.js');
+    await bot.sendMessage(chatId, `⏳ Rescanning catalog...`);
+    await runNodeScript(scanScript, ROOT);
+
+    await bot.sendMessage(
+      chatId,
+      `✅ Updated ${productName} (${category})\n` +
+      `Replaced ${oldImages.length} old image(s) with ${movedPaths.length} new image(s)\n` +
+      `✅ Catalog regenerated\n\n` +
+      `Images saved to:\n${mediaDir}`
+    );
+
+  } catch (err) {
+    await bot.sendMessage(chatId, `❌ Update failed:\n${err && err.message ? err.message : String(err)}\n\nSend /reset to start over.`);
+  } finally {
+    resetWorkflow(chatId);
+  }
+}
+
+// ----------------------------
+// AUDIT — check all images exist on disk
+// ----------------------------
+async function runAudit(chatId) {
+  await bot.sendMessage(chatId, `🔍 Auditing catalog and folders...`);
+
+  const catalogPath = path.join(ROOT, 'catalog.json');
+  let catalog = [];
+
+  try {
+    const raw = await fsp.readFile(catalogPath, 'utf8');
+    catalog = JSON.parse(raw);
+  } catch {
+    await bot.sendMessage(chatId, `❌ Could not read catalog.json at ${catalogPath}`);
+    return;
+  }
+
+  const broken = [];
+  const missing = [];
+  const ok = [];
+
+  for (const product of catalog) {
+    const productName = product.name || product.id || '(unknown)';
+    const category = product.category || '(unknown)';
+
+    // Check images array
+    const images = product.images || [];
+    if (images.length === 0) {
+      missing.push(`${productName} (${category}) — no images in catalog`);
+      continue;
+    }
+
+    let productOk = true;
+    for (const imgPath of images) {
+      // imgPath may be relative like "Pop Culture/media/Slimer/img_01.jpg"
+      // or absolute — normalize to absolute
+      const absPath = path.isAbsolute(imgPath)
+        ? imgPath
+        : path.join(ROOT, imgPath);
+
+      try {
+        await fsp.access(absPath, fs.constants.F_OK);
+      } catch {
+        broken.push(`${productName} (${category})\n  Missing: ${imgPath}`);
+        productOk = false;
+      }
+    }
+
+    if (productOk) ok.push(`${productName} (${category})`);
+  }
+
+  // Also scan folders for products NOT in catalog
+  const uncataloged = [];
+  for (const cat of ALLOWED_CATEGORIES) {
+    const mediaDir = path.join(ROOT, cat, 'media');
+    try {
+      const products = await fsp.readdir(mediaDir, { withFileTypes: true });
+      for (const p of products.filter(e => e.isDirectory())) {
+        const inCatalog = catalog.some(c =>
+          (c.name || c.id || '').toLowerCase() === p.name.toLowerCase()
+        );
+        if (!inCatalog) {
+          uncataloged.push(`${p.name} (${cat}) — folder exists but not in catalog`);
+        }
+      }
+    } catch {
+      // category has no media folder, skip
+    }
+  }
+
+  let report = `📋 Audit complete\n\n`;
+  report += `✅ OK: ${ok.length} product(s)\n`;
+  report += `❌ Broken images: ${broken.length}\n`;
+  report += `⚠️ Missing from catalog: ${uncataloged.length}\n\n`;
+
+  if (broken.length > 0) {
+    report += `❌ BROKEN IMAGE PATHS:\n${broken.join('\n')}\n\n`;
+  }
+  if (uncataloged.length > 0) {
+    report += `⚠️ IN FOLDERS BUT NOT CATALOGED:\n${uncataloged.join('\n')}\n\n`;
+  }
+  if (missing.length > 0) {
+    report += `⚠️ NO IMAGES IN CATALOG:\n${missing.join('\n')}\n\n`;
+  }
+
+  if (broken.length > 0 || uncataloged.length > 0) {
+    report += `Run /rescan to rebuild catalog from what's on disk.`;
+  } else {
+    report += `Everything looks good!`;
+  }
+
+  // Telegram has 4096 char limit — split if needed
+  if (report.length > 4000) {
+    await bot.sendMessage(chatId, report.slice(0, 4000));
+    await bot.sendMessage(chatId, report.slice(4000));
+  } else {
+    await bot.sendMessage(chatId, report);
+  }
+}
+
+// ----------------------------
 // Telegram Handlers
 // ----------------------------
 bot.onText(/\/start/, async (msg) => {
@@ -536,6 +709,22 @@ bot.onText(/\/start/, async (msg) => {
     await initializeBot(chatId);
   } else {
     await bot.sendMessage(chatId, `Hey Josh! ${memory.botName} here. Send a photo to start a listing, or just chat.\n\nType /help for commands.`);
+  }
+});
+
+bot.onText(/\/audit/, async (msg) => {
+  await runAudit(msg.chat.id);
+});
+
+bot.onText(/\/rescan/, async (msg) => {
+  const chatId = msg.chat.id;
+  const scanScript = path.join(ROOT, 'scan-lightboxes.js');
+  try {
+    await bot.sendMessage(chatId, `⏳ Rescanning catalog from disk...`);
+    await runNodeScript(scanScript, ROOT);
+    await bot.sendMessage(chatId, `✅ Catalog rebuilt. Run /audit to verify.`);
+  } catch (err) {
+    await bot.sendMessage(chatId, `❌ Rescan failed:\n${err.message}`);
   }
 });
 
@@ -571,7 +760,7 @@ bot.onText(/\/help/, async (msg) => {
   const chatId = msg.chat.id;
   await bot.sendMessage(
     chatId,
-    `Commands:\n/reset — start a new listing\n/cancel — cancel current listing\n/status — show current state\n/memory — show what I remember\n/help — this menu\n\nSend a photo anytime to start a listing.\nOr just chat — I'm here for both.`
+    `Commands:\n/reset — start a new listing\n/cancel — cancel current listing\n/audit — check for broken/missing images\n/rescan — rebuild catalog from disk\n/status — show current state\n/memory — show what I remember\n/help — this menu\n\nSend a photo anytime to start a listing.\nOr just chat — I'm here for both.`
   );
 });
 
@@ -594,19 +783,31 @@ bot.on('message', async (msg) => {
       const tempPath = await downloadTelegramPhotoToTemp(photo.file_id, chatId);
 
       if (s.stage === 'idle') {
-        s.stage = 'awaitingMeta';
+        s.stage = 'awaitingMode';
         s.firstImageArrived = true;
         s.pendingImages.push({ tempPath, originalName: path.basename(tempPath) });
         await bot.sendMessage(
           chatId,
-          `📸 Got it! Tell me:\n\n1) Category: (${ALLOWED_CATEGORIES.join(', ')})\n2) Product name: (PascalCase, no spaces — e.g. RaccoonMario)\n\nReply like:\nCategory: Pop Culture\nName: RaccoonMario`
+          `📸 Got it! Is this:\n\n1️⃣ new — New listing\n2️⃣ update — Fix/replace images for existing product\n\nReply: new or update`
         );
+        return;
+      }
+
+      if (s.stage === 'awaitingMode') {
+        s.pendingImages.push({ tempPath });
+        await bot.sendMessage(chatId, `Image buffered (${s.pendingImages.length}). Reply new or update to continue.`);
         return;
       }
 
       if (s.stage === 'awaitingMeta') {
         s.pendingImages.push({ tempPath });
         await bot.sendMessage(chatId, `Image buffered (${s.pendingImages.length}). Still need Category + Name.`);
+        return;
+      }
+
+      if (s.stage === 'awaitingUpdateMeta') {
+        s.pendingImages.push({ tempPath });
+        await bot.sendMessage(chatId, `Image buffered (${s.pendingImages.length}). Still need the product name to update.`);
         return;
       }
 
@@ -619,6 +820,19 @@ bot.on('message', async (msg) => {
         }
         await bot.sendMessage(chatId, `✅ Got 4 images. Running workflow...`);
         await runWorkflow(chatId);
+        return;
+      }
+
+      if (s.stage === 'collectingUpdateImages') {
+        s.pendingImages.push({ tempPath });
+        const remaining = Math.max(0, 4 - s.pendingImages.length);
+        if (remaining > 0) {
+          await bot.sendMessage(chatId, `✅ Got it (${s.pendingImages.length}/4). Send ${remaining} more, or type "done".`);
+          return;
+        }
+        // Require confirmation before replacing
+        s.stage = 'confirmUpdate';
+        await bot.sendMessage(chatId, `⚠️ Ready to replace ALL images in ${s.updateProductName} (${s.updateCategory}) with ${s.pendingImages.length} new image(s).\n\nOld images will be backed up to _backup folder.\n\nType YES to confirm or /cancel to abort.`);
         return;
       }
 
@@ -642,6 +856,110 @@ bot.on('message', async (msg) => {
       return;
     }
 
+    if (s.stage === 'awaitingMode') {
+      const lower = text.toLowerCase().trim();
+      if (lower === 'new' || lower === '1') {
+        s.mode = 'new';
+        s.stage = 'awaitingMeta';
+        await bot.sendMessage(
+          chatId,
+          `New listing ✅\n\nTell me:\n1) Category: (${ALLOWED_CATEGORIES.join(', ')})\n2) Product name: (PascalCase, no spaces — e.g. RaccoonMario)\n\nReply like:\nCategory: Pop Culture\nName: RaccoonMario`
+        );
+      } else if (lower === 'update' || lower === '2') {
+        s.mode = 'update';
+        s.stage = 'awaitingUpdateMeta';
+        await bot.sendMessage(
+          chatId,
+          `Update existing product ✅\n\nWhich product? Reply with:\nCategory: Pop Culture\nName: SpaceInvaders`
+        );
+      } else {
+        await bot.sendMessage(chatId, `Reply new or update.`);
+      }
+      return;
+    }
+
+    if (s.stage === 'awaitingUpdateMeta') {
+      let cat = null;
+      let name = null;
+      const catMatch = text.match(/category\s*:\s*([^\n\r]+)/i);
+      const nameMatch = text.match(/name\s*:\s*([^\n\r]+)/i);
+      if (catMatch) cat = catMatch[1].trim();
+      if (nameMatch) name = nameMatch[1].trim();
+      if (!cat || !name) {
+        // Try matching known multi-word categories first
+        const matched = ALLOWED_CATEGORIES.find(c => text.toLowerCase().startsWith(c.toLowerCase()));
+        if (matched) {
+          cat = cat || matched;
+          name = name || text.slice(matched.length).replace(/[,\s]+/, '').trim();
+        } else {
+          const parts = text.split(/[\s,]+/).filter(Boolean);
+          if (parts.length >= 2) { cat = cat || parts[0]; name = name || parts[parts.length - 1]; }
+        }
+      }
+
+      const normalizedCat = normalizeCategory(cat);
+      const cleanedName = safeBasename(name || '');
+
+      if (!normalizedCat) {
+        await bot.sendMessage(chatId, `⚠️ Invalid category. Use one of:\n${ALLOWED_CATEGORIES.join(', ')}`);
+        return;
+      }
+      if (!isValidProductName(cleanedName)) {
+        await bot.sendMessage(chatId, `⚠️ Invalid product name. PascalCase, one word.\nExample: SpaceInvaders`);
+        return;
+      }
+
+      const checkDir = path.join(ROOT, normalizedCat, 'media', cleanedName);
+      try {
+        await fsp.stat(checkDir);
+      } catch {
+        await bot.sendMessage(chatId, `⚠️ No media folder found for ${cleanedName} in ${normalizedCat}.\nCheck spelling and try again.`);
+        return;
+      }
+
+      s.updateCategory = normalizedCat;
+      s.updateProductName = cleanedName;
+      s.stage = 'collectingUpdateImages';
+
+      const buffered = s.pendingImages.length;
+      const remaining = Math.max(0, 4 - buffered);
+
+      if (remaining > 0) {
+        await bot.sendMessage(chatId, `✅ Found ${cleanedName} (${normalizedCat})\n\nSend ${remaining} more image(s) to replace existing ones, or type "done" to run now.`);
+      } else {
+        s.stage = 'confirmUpdate';
+        await bot.sendMessage(chatId, `⚠️ Ready to replace ALL images in ${cleanedName} (${normalizedCat}) with ${s.pendingImages.length} new image(s).\n\nOld images will be backed up.\n\nType YES to confirm or /cancel to abort.`);
+      }
+      return;
+    }
+
+    if (s.stage === 'collectingUpdateImages') {
+      if (/^(done|run|go)$/i.test(text)) {
+        if (s.pendingImages.length < 1) {
+          await bot.sendMessage(chatId, `No images yet — send a photo first.`);
+          return;
+        }
+        // Require confirmation
+        s.stage = 'confirmUpdate';
+        await bot.sendMessage(chatId, `⚠️ Ready to replace ALL images in ${s.updateProductName} (${s.updateCategory}) with ${s.pendingImages.length} new image(s).\n\nOld images will be backed up to _backup folder.\n\nType YES to confirm or /cancel to abort.`);
+        return;
+      }
+      const remaining = Math.max(0, 4 - s.pendingImages.length);
+      await bot.sendMessage(chatId, `Send ${remaining} more image(s), or type "done" to run now.`);
+      return;
+    }
+
+    if (s.stage === 'confirmUpdate') {
+      if (text.trim().toUpperCase() === 'YES') {
+        await bot.sendMessage(chatId, `Updating with ${s.pendingImages.length} image(s)...`);
+        await runUpdateWorkflow(chatId);
+      } else {
+        await bot.sendMessage(chatId, `Update cancelled. Type /reset to start over.`);
+        resetWorkflow(chatId);
+      }
+      return;
+    }
+
     if (s.stage === 'awaitingMeta') {
       let cat = null;
       let name = null;
@@ -650,8 +968,14 @@ bot.on('message', async (msg) => {
       if (catMatch) cat = catMatch[1].trim();
       if (nameMatch) name = nameMatch[1].trim();
       if (!cat || !name) {
-        const parts = text.split(/\s+/).filter(Boolean);
-        if (parts.length >= 2) { cat = cat || parts[0]; name = name || parts[1]; }
+        const matched = ALLOWED_CATEGORIES.find(c => text.toLowerCase().startsWith(c.toLowerCase()));
+        if (matched) {
+          cat = cat || matched;
+          name = name || text.slice(matched.length).replace(/[,\s]+/, '').trim();
+        } else {
+          const parts = text.split(/[\s,]+/).filter(Boolean);
+          if (parts.length >= 2) { cat = cat || parts[0]; name = name || parts[parts.length - 1]; }
+        }
       }
 
       const normalizedCat = normalizeCategory(cat);

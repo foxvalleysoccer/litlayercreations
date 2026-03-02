@@ -13,6 +13,43 @@
     ],
     "preferences": "Direct, practical responses. Honest over positive. Prefers complete answers."
   },
-  "recentListings": [],
+  "recentListings": [
+    {
+      "productName": "SuperNintendo",
+      "category": "Pop Culture",
+      "date": "3/1/2026",
+      "listingPreview": "**Pixelated Power**: Step into the nostalgic world of 90s gaming with our vibrant SuperNintendo LED light box, radiating..."
+    },
+    {
+      "productName": "marioFlying",
+      "category": "Pop Culture",
+      "date": "3/1/2026",
+      "listingPreview": "[Experience the magic of the Mushroom Kingdom come to life with this stunning LED light box, perfectly capturing the joy..."
+    },
+    {
+      "productName": "deleteMe",
+      "category": "CustomRequests",
+      "date": "3/1/2026",
+      "listingPreview": "[2-3 sentence punchy opening]\n\nDive into a vibrant underwater world with this stunning custom LED light box, showcasing ..."
+    },
+    {
+      "productName": "delete",
+      "category": "CustomRequests",
+      "date": "3/1/2026",
+      "listingPreview": "A glowing cityscape at dusk, with skyscrapers aglow and neon lights dancing across the concrete - this 9-inch wide LED l..."
+    },
+    {
+      "productName": "deleteMe",
+      "category": "CustomRequests",
+      "date": "3/1/2026",
+      "listingPreview": "[The night sky twinkles with vibrant stars and a shining crescent moon, casting an otherworldly glow on a retro-style sp..."
+    },
+    {
+      "productName": "kayakingBlue",
+      "category": "Sports",
+      "date": "3/1/2026",
+      "listingPreview": "Here's the listing:\n\nA serene lake scene at dusk, with a kayak paddling out towards the calm waters of a Wisconsin sunse..."
+    }
+  ],
   "notes": []
 }
