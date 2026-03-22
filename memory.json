@@ -15,40 +15,124 @@
   },
   "recentListings": [
     {
-      "productName": "SuperNintendo",
+      "productName": "jurassicPark",
       "category": "Pop Culture",
-      "date": "3/1/2026",
-      "listingPreview": "**Pixelated Power**: Step into the nostalgic world of 90s gaming with our vibrant SuperNintendo LED light box, radiating..."
+      "date": "3/20/2026",
+      "listingPreview": "jurassicPark LED Light Box\n\nBring the iconic gates of Isla Nublar to life with this stunning custom light box. When lit,..."
     },
     {
-      "productName": "marioFlying",
-      "category": "Pop Culture",
-      "date": "3/1/2026",
-      "listingPreview": "[Experience the magic of the Mushroom Kingdom come to life with this stunning LED light box, perfectly capturing the joy..."
-    },
-    {
-      "productName": "deleteMe",
+      "productName": "BloodyKlown",
       "category": "CustomRequests",
-      "date": "3/1/2026",
-      "listingPreview": "[2-3 sentence punchy opening]\n\nDive into a vibrant underwater world with this stunning custom LED light box, showcasing ..."
+      "date": "3/19/2026",
+      "listingPreview": "BloodyKlown LED Light Box\n\nThis custom BloodyKlown light box brings a chilling glow to your collection with its sinister..."
     },
     {
-      "productName": "delete",
+      "productName": "America",
       "category": "CustomRequests",
-      "date": "3/1/2026",
-      "listingPreview": "A glowing cityscape at dusk, with skyscrapers aglow and neon lights dancing across the concrete - this 9-inch wide LED l..."
+      "date": "3/15/2026",
+      "listingPreview": "America LED Light Box\n\nThis vibrant tribute shines with patriotic pride, blending bold red, white, and brilliant blue LE..."
     },
     {
-      "productName": "deleteMe",
+      "productName": "America",
       "category": "CustomRequests",
-      "date": "3/1/2026",
-      "listingPreview": "[The night sky twinkles with vibrant stars and a shining crescent moon, casting an otherworldly glow on a retro-style sp..."
+      "date": "3/15/2026",
+      "listingPreview": "<Title: America LED Light Box | Patriotic Glow>\n\n<This custom \"America\" LED light box shines with a vibrant, multi-color..."
     },
     {
-      "productName": "kayakingBlue",
+      "productName": "America",
+      "category": "CustomRequests",
+      "date": "3/15/2026",
+      "listingPreview": "[Amidst a vibrant sunset sky, towering mountains rise from the rugged landscape, their peaks kissed by warm golden light..."
+    },
+    {
+      "productName": "America",
+      "category": "CustomRequests",
+      "date": "3/15/2026",
+      "listingPreview": "A majestic American eagle soars across a vibrant night sky, its feathers illuminated in shimmering blues and reds, exudi..."
+    },
+    {
+      "productName": "shelbyGreen",
+      "category": "Automotive",
+      "date": "3/11/2026",
+      "listingPreview": "A stunning, handcrafted LED light box from Lit Layer Creations, perfectly capturing the essence of a sleek green Shelby ..."
+    },
+    {
+      "productName": "brewersGlove",
       "category": "Sports",
-      "date": "3/1/2026",
-      "listingPreview": "Here's the listing:\n\nA serene lake scene at dusk, with a kayak paddling out towards the calm waters of a Wisconsin sunse..."
+      "date": "3/10/2026",
+      "listingPreview": "**BrewersFan's Dream: Glowing Brewers Glove Light Box!**\n\nCatch the attention of fellow Brewers enthusiasts with this vi..."
+    },
+    {
+      "productName": "chicagoBulls",
+      "category": "Sports",
+      "date": "3/9/2026",
+      "listingPreview": "[Step into the United Center with our vibrant Chicago Bulls light box, radiating an electric energy as the team's iconic..."
+    },
+    {
+      "productName": "sonic",
+      "category": "Pop Culture",
+      "date": "3/9/2026",
+      "listingPreview": "[Ethereal, neon-lit portrait of the Blue Blur in mid-pose, illuminated by a kaleidoscope of colors that seem to dance ac..."
+    },
+    {
+      "productName": "corvette",
+      "category": "Automotive",
+      "date": "3/7/2026",
+      "listingPreview": "Here is the listing:\n\nA neon-lit Corvette rips through the night, its engine roaring as it speeds across the highway in ..."
+    },
+    {
+      "productName": "QBert",
+      "category": "Pop Culture",
+      "date": "3/7/2026",
+      "listingPreview": "[The iconic 8-bit QBert character stares out from a vibrant, pixelated world, bathed in a mesmerizing glow of bright blu..."
+    },
+    {
+      "productName": "Spiderman",
+      "category": "Pop Culture",
+      "date": "3/7/2026",
+      "listingPreview": "✅ Approximately 9 inches wide\n✅ Bright multi-color LED lighting with smooth glow effect\n✅ Freestanding display design or..."
+    },
+    {
+      "productName": "PlaystationLogo",
+      "category": "Pop Culture",
+      "date": "3/5/2026",
+      "listingPreview": "**Playstation Logo LED Light Box**\n\nBring the iconic PS logo to life in your gaming setup with this vibrant, multi-color..."
+    },
+    {
+      "productName": "MoparBlue",
+      "category": "Automotive",
+      "date": "3/5/2026",
+      "listingPreview": "A stunning MoparBlue custom LED light box, showcasing a vibrant electric blue hue that radiates a dynamic, high-octane e..."
+    },
+    {
+      "productName": "BucksRetro",
+      "category": "Sports",
+      "date": "3/5/2026",
+      "listingPreview": "Here is the listing:\n\nThe BucksRetro LED light box is a nostalgic nod to the Milwaukee Bucks' retro era, glowing bright ..."
+    },
+    {
+      "productName": "Mercedes",
+      "category": "Automotive",
+      "date": "3/4/2026",
+      "listingPreview": "A stunning, intricately designed LED light box featuring a Mercedes-Benz logo, radiating a vibrant, pulsing glow with sm..."
+    },
+    {
+      "productName": "Mercedes",
+      "category": "Automotive",
+      "date": "3/4/2026",
+      "listingPreview": "Here is the listing:\n\n✅ Approximately 9 inches wide\n✅ Bright multi-color LED lighting with smooth glow effect\n✅ Freestan..."
+    },
+    {
+      "productName": "PlaystationLogo",
+      "category": "Pop Culture",
+      "date": "3/3/2026",
+      "listingPreview": "✅ Approximately 9 inches wide\n✅ Bright multi-color LED lighting with smooth glow effect\n✅ Freestanding display design or..."
+    },
+    {
+      "productName": "KillerKlowns",
+      "category": "Pop Culture",
+      "date": "3/3/2026",
+      "listingPreview": "Meet KillerKlowns by Lit Layer Creations! This eye-catching LED light box brings the iconic horror movie characters to l..."
     }
   ],
   "notes": []

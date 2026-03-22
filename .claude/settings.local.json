@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk 'NR>=854 && NR<=920' \"C:\\\\Users\\\\josh\\\\Desktop\\\\Prints\\\\Prints\\\\LightBoxes\\\\telegram-bot.js\")",
+      "Bash(awk 'NR>=1095 && NR<=1230' \"C:\\\\Users\\\\josh\\\\Desktop\\\\Prints\\\\Prints\\\\LightBoxes\\\\telegram-bot.js\")",
+      "Bash(awk 'NR>=540 && NR<=590' \"C:\\\\Users\\\\josh\\\\Desktop\\\\Prints\\\\Prints\\\\LightBoxes\\\\telegram-bot.js\")",
+      "Bash(xargs grep -l \"listen.*3000\\\\|3000.*listen\")",
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(node -e \":*)",
+      "Bash(npm install @anthropic-ai/sdk)",
+      "Bash(dir \"C:\\\\Users\\\\josh\\\\Desktop\\\\Prints\\\\Prints\\\\LightBoxes\" /b /a)",
+      "Bash(powershell -Command \"[System.Environment]::GetEnvironmentVariable\\(''ANTHROPIC_API_KEY'', ''User''\\); [System.Environment]::GetEnvironmentVariable\\(''ANTHROPIC_API_KEY'', ''Machine''\\)\")",
+      "Bash(dir \"D:\\\\Users\\\\josh\\\\Source\\\\Repos\\\\Dementia\" /b)",
+      "Bash(grep -r \"forwardSource\\\\|moveSpeed\\\\|m_MoveSpeed\" D:/Users/josh/Source/Repos/Dementia/Assets --include=*.cs)",
+      "Bash(grep -r \"moveSpeed\\\\|ContinuousMoveProvider\\\\|forwardSource\" 'D:/Users/josh/Source/Repos/Dementia/Assets/Samples/XR Interaction Toolkit' --include=*.cs)",
+      "Bash(xargs grep:*)",
+      "Bash(grep -r \"moveSpeed\\\\|forwardSource\" D:/Users/josh/Source/Repos/Dementia/Assets --include=*.cs)",
+      "Bash(ollama list:*)"
+    ]
+  }
+}

@@ -1,0 +1,807 @@
+[
+  {
+    "category": "Automotive",
+    "oldName": "AmericanMotors",
+    "newName": "American Motors"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "BMW 220",
+    "newName": "BMW"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "BWMStripes",
+    "newName": "BWM Stripes"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "ChevyBlueYellow",
+    "newName": "Chevy"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "Cobra",
+    "newName": "Cobra Snake"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "CobraRoundBlack",
+    "newName": "Cobra Round Black Snake"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "DodgeRealRam",
+    "newName": "Dodge Ram"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "FireBird",
+    "newName": "FireBird"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "FordBLue",
+    "newName": "Ford Logo"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "FordMercuryLincolnLight",
+    "newName": "Ford Mercury Lincoln Light"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "Ford_Motor_Sport_Light",
+    "newName": "Ford Motor Sport Light"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "HarleyBW",
+    "newName": "Harley Black and White"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "HarleyColored",
+    "newName": "Harley Colored"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "HellCat",
+    "newName": "Hell Cat"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "HellCatBlueTrim_Eyes",
+    "newName": "Hell Cat Blue"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "Lincoln",
+    "newName": "Lincoln"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "LowRider",
+    "newName": "Low Rider"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "Mercedes",
+    "newName": "Mercedes"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "MoparBlue",
+    "newName": "Mopar Blue"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "MOPARBOX",
+    "newName": "MOPAR BOX"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "MoparDiagnol",
+    "newName": "Mopar Diagnol"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "MOPAR_Green_Yellow",
+    "newName": "MOPAR Green Yellow"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "MOPAR_Red",
+    "newName": "MOPAR Red"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "MOPAR_RedOnRed",
+    "newName": "MOPAR Red On Red"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "Mopar_Square_200",
+    "newName": "Mopar Square"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "Mopar_Square_224",
+    "newName": "Mopar Square"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "Pontiac",
+    "newName": "Pontiac"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "PorscheColor 30mm thick",
+    "newName": "Porsche Color"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "PorscheColor 40mm Thick",
+    "newName": "Porsche Color"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "PorscheColor_WithDifusion",
+    "newName": "Porsche Color With Difusion"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "PorscheGoodBW",
+    "newName": "Porsche Good BW"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "Road America",
+    "newName": "Road America"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "ShelbyGreen",
+    "newName": "Shelby Green"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "SS Camaro",
+    "newName": "SS Camaro"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "TransAm",
+    "newName": "Trans Am"
+  },
+  {
+    "category": "Automotive",
+    "oldName": "Wolkswagon",
+    "newName": "Wolkswagon"
+  },
+  {
+    "category": "Christmas",
+    "oldName": "ChristmasTree _wall Hole",
+    "newName": "Christmas Tree Wall Hole"
+  },
+  {
+    "category": "Christmas",
+    "oldName": "ChristmasTree",
+    "newName": "Christmas Tree"
+  },
+  {
+    "category": "Christmas",
+    "oldName": "FrostyTheSnowman_204",
+    "newName": "Frosty The Snowman"
+  },
+  {
+    "category": "Christmas",
+    "oldName": "FrostyTheSnowman_225",
+    "newName": "Frosty The Snowman"
+  },
+  {
+    "category": "Christmas",
+    "oldName": "grinch 194",
+    "newName": "Grinch"
+  },
+  {
+    "category": "Christmas",
+    "oldName": "grinch 200 30mm",
+    "newName": "Grinch"
+  },
+  {
+    "category": "Christmas",
+    "oldName": "Grinch Filthy Animal",
+    "newName": "Grinch Filthy Animal"
+  },
+  {
+    "category": "Christmas",
+    "oldName": "Grinch Stink",
+    "newName": "Grinch Stink"
+  },
+  {
+    "category": "Christmas",
+    "oldName": "Knomes",
+    "newName": "Knomes"
+  },
+  {
+    "category": "Christmas",
+    "oldName": "santa 190",
+    "newName": "Santa"
+  },
+  {
+    "category": "Christmas",
+    "oldName": "santa 210",
+    "newName": "Santa"
+  },
+  {
+    "category": "Christmas",
+    "oldName": "Snoopy",
+    "newName": "Snoopy"
+  },
+  {
+    "category": "Christmas",
+    "oldName": "Snowman Family 225",
+    "newName": "Snowman Family lg"
+  },
+  {
+    "category": "Christmas",
+    "oldName": "Snowman Family",
+    "newName": "Snowman Family"
+  },
+  {
+    "category": "Christmas",
+    "oldName": "YodaWithGift 194mm",
+    "newName": "Yoda With Gift"
+  },
+  {
+    "category": "Christmas",
+    "oldName": "YodaWithGift 200mm",
+    "newName": "Yoda With Gift lg"
+  },
+  {
+    "category": "CustomRequests",
+    "oldName": "Chilton_High_School_Logo",
+    "newName": "Chilton High School Logo"
+  },
+  {
+    "category": "CustomRequests",
+    "oldName": "Crowe Thrifts",
+    "newName": "Crowe Thrifts"
+  },
+  {
+    "category": "CustomRequests",
+    "oldName": "ELI",
+    "newName": "ELI"
+  },
+  {
+    "category": "CustomRequests",
+    "oldName": "Filmation Ghostbusters",
+    "newName": "Filmation Ghostbusters"
+  },
+  {
+    "category": "CustomRequests",
+    "oldName": "HawkHunter",
+    "newName": "Hawk Hunter"
+  },
+  {
+    "category": "CustomRequests",
+    "oldName": "HomerOnDonut (1)",
+    "newName": "Homer On Donut (1)"
+  },
+  {
+    "category": "CustomRequests",
+    "oldName": "jody2",
+    "newName": "Jody2"
+  },
+  {
+    "category": "CustomRequests",
+    "oldName": "JVC",
+    "newName": "JVC"
+  },
+  {
+    "category": "CustomRequests",
+    "oldName": "MorrisonFabrication",
+    "newName": "Morrison Fabrication"
+  },
+  {
+    "category": "CustomRequests",
+    "oldName": "Racecar_Driver_Logo_Light",
+    "newName": "Racecar Driver Logo Light"
+  },
+  {
+    "category": "CustomRequests",
+    "oldName": "Semi",
+    "newName": "Semi"
+  },
+  {
+    "category": "halloween",
+    "oldName": "BleadingHeartCoffin",
+    "newName": "Bleading Heart Coffin"
+  },
+  {
+    "category": "halloween",
+    "oldName": "CatCoffin_170Tall",
+    "newName": "Cat Coffin"
+  },
+  {
+    "category": "halloween",
+    "oldName": "CatCoffin_225Tall",
+    "newName": "Cat Coffin"
+  },
+  {
+    "category": "halloween",
+    "oldName": "Gothic_GIrl",
+    "newName": "Gothic GIrl"
+  },
+  {
+    "category": "halloween",
+    "oldName": "Gothic_Girl_225",
+    "newName": "Gothic Girl"
+  },
+  {
+    "category": "halloween",
+    "oldName": "HalloweenScene_200",
+    "newName": "Halloween Scene"
+  },
+  {
+    "category": "halloween",
+    "oldName": "OrangeMoonSkeleton",
+    "newName": "Orange Moon Skeleton"
+  },
+  {
+    "category": "halloween",
+    "oldName": "Pumpkin Witch_180",
+    "newName": "Pumpkin Witch"
+  },
+  {
+    "category": "halloween",
+    "oldName": "Pumpkin Witch_225",
+    "newName": "Pumpkin Witch"
+  },
+  {
+    "category": "halloween",
+    "oldName": "Pumpkin",
+    "newName": "Pumpkin"
+  },
+  {
+    "category": "halloween",
+    "oldName": "SkullFace",
+    "newName": "Skull Face"
+  },
+  {
+    "category": "halloween",
+    "oldName": "SkullFace_200",
+    "newName": "Skull Face lg"
+  },
+  {
+    "category": "halloween",
+    "oldName": "VampDog 170mm",
+    "newName": "Vamp Dog"
+  },
+  {
+    "category": "halloween",
+    "oldName": "VampDog 200mm",
+    "newName": "Vamp Dog"
+  },
+  {
+    "category": "halloween",
+    "oldName": "Yoda Pumpkin 175",
+    "newName": "Yoda Pumpkin"
+  },
+  {
+    "category": "halloween",
+    "oldName": "Yoda Pumpkin 200",
+    "newName": "Yoda Pumpkin lg"
+  },
+  {
+    "category": "Old Labels",
+    "oldName": "CobraCB",
+    "newName": "Cobra CB"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "67",
+    "newName": "67"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "Batman",
+    "newName": "Batman"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "BatmanBatWing",
+    "newName": "Batman Bat Wing"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "coffeeGirl",
+    "newName": "Coffee Girl"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "DonkeyKong",
+    "newName": "Donkey Kong"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "GhostbustersLogo",
+    "newName": "Ghostbusters Logo"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "GoldenAxeLightBox",
+    "newName": "Golden Axe Light Box"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "GuitarHeroLightBox",
+    "newName": "Guitar Hero Light Box"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "JackDaniels 200mm",
+    "newName": "Jack Daniels"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "JackDaniels 220mm WBase",
+    "newName": "Jack Daniels"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "JordanShoe",
+    "newName": "Jordan Shoe"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "Kerby",
+    "newName": "Kerby"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "KillerKlowns",
+    "newName": "Killer Klowns"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "Lightbox Draft (5)",
+    "newName": "Lightbox Draft"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "Lips",
+    "newName": "Lips"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "LV",
+    "newName": "LV"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "LVLetters",
+    "newName": "LV Letters"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "marioFlying",
+    "newName": "Mario Flying"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "MarioYoshi",
+    "newName": "Mario Yoshi"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "MetalGearSolidLightBox",
+    "newName": "Metal Gear Solid Light Box"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "MiniTrucking",
+    "newName": "Mini Trucking"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "MTV",
+    "newName": "MTV"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "Pacman",
+    "newName": "Pacman"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "PlaystationLogo",
+    "newName": "Playstation Logo"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "puzzleBobble",
+    "newName": "Puzzle Bobble"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "qbert",
+    "newName": "Qbert"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "residentEvil",
+    "newName": "Resident Evil"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "Sega",
+    "newName": "Sega"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "slimer",
+    "newName": "Slimer"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "Sonic",
+    "newName": "Sonic"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "spaceInvaders",
+    "newName": "Space Invaders"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "spiderman",
+    "newName": "Spiderman"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "SpidermanFace",
+    "newName": "Spiderman Face"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "Star_Wars",
+    "newName": "Star Wars"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "StayPuff",
+    "newName": "Stay Puff"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "StrangerThings",
+    "newName": "Stranger Things"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "streetFighter",
+    "newName": "Street Fighter"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "streetsOfRageLightBox",
+    "newName": "Streets Of Rage Light Box"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "SuperNintendo",
+    "newName": "Super Nintendo"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "TalesFromTheCrypt",
+    "newName": "Tales From The Crypt"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "TalesFromTheCrypt_225mm",
+    "newName": "Tales From The Crypt"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "TalesFromTheCrypt_Default_225mm",
+    "newName": "Tales From The Crypt Default"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "ThefastAndTheFurious_Light",
+    "newName": "Thefast And The Furious Light"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "TheSimpsonsLight",
+    "newName": "The Simpsons Light"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "The_Mystery_Machine",
+    "newName": "The Mystery Machine"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "ThrasherLogoLight",
+    "newName": "Thrasher Logo Light"
+  },
+  {
+    "category": "Pop Culture",
+    "oldName": "ThunderCats_LightBox",
+    "newName": "Thunder Cats Light Box"
+  },
+  {
+    "category": "Sports",
+    "oldName": "Bears Helmet",
+    "newName": "Bears Helmet"
+  },
+  {
+    "category": "Sports",
+    "oldName": "Bears224",
+    "newName": "Bears224"
+  },
+  {
+    "category": "Sports",
+    "oldName": "Brewers Barrelman",
+    "newName": "Brewers Barrelman"
+  },
+  {
+    "category": "Sports",
+    "oldName": "BrewersCircle200",
+    "newName": "Brewers Circle200"
+  },
+  {
+    "category": "Sports",
+    "oldName": "BrewersGlove",
+    "newName": "Brewers Glove"
+  },
+  {
+    "category": "Sports",
+    "oldName": "BrewersWI",
+    "newName": "Brewers WI"
+  },
+  {
+    "category": "Sports",
+    "oldName": "BrewersWI_Labeled",
+    "newName": "Brewers WI Labeled"
+  },
+  {
+    "category": "Sports",
+    "oldName": "Bucks Mascot",
+    "newName": "Bucks Mascot"
+  },
+  {
+    "category": "Sports",
+    "oldName": "Bucks rectangle",
+    "newName": "Bucks Rectangle"
+  },
+  {
+    "category": "Sports",
+    "oldName": "Bucks Special",
+    "newName": "Bucks Special"
+  },
+  {
+    "category": "Sports",
+    "oldName": "bucks square 220",
+    "newName": "Bucks Square"
+  },
+  {
+    "category": "Sports",
+    "oldName": "BucksMaskot 225mm",
+    "newName": "Bucks Maskot"
+  },
+  {
+    "category": "Sports",
+    "oldName": "BucksRetro",
+    "newName": "Bucks Retro"
+  },
+  {
+    "category": "Sports",
+    "oldName": "Kayaking",
+    "newName": "Kayaking"
+  },
+  {
+    "category": "Sports",
+    "oldName": "KayakingBlue",
+    "newName": "Kayaking Blue"
+  },
+  {
+    "category": "Sports",
+    "oldName": "Lions 200mm",
+    "newName": "Lions"
+  },
+  {
+    "category": "Sports",
+    "oldName": "Lions 224mm",
+    "newName": "Lions"
+  },
+  {
+    "category": "Sports",
+    "oldName": "Michigan Wolverines",
+    "newName": "Michigan Wolverines"
+  },
+  {
+    "category": "Sports",
+    "oldName": "NE Patriots Fan Light",
+    "newName": "NE Patriots Fan Light"
+  },
+  {
+    "category": "Sports",
+    "oldName": "NewPackerHelmet",
+    "newName": "New Packer Helmet"
+  },
+  {
+    "category": "Sports",
+    "oldName": "Ohio State Buckeyes",
+    "newName": "Ohio State Buckeyes"
+  },
+  {
+    "category": "Sports",
+    "oldName": "OSU Football Helmet",
+    "newName": "OSU Football Helmet"
+  },
+  {
+    "category": "Sports",
+    "oldName": "OSU Helmet Angled",
+    "newName": "OSU Helmet Angled"
+  },
+  {
+    "category": "Sports",
+    "oldName": "Packers Helmet",
+    "newName": "Packers Helmet"
+  },
+  {
+    "category": "Sports",
+    "oldName": "Packers Helmet_225 Width",
+    "newName": "Packers Helmet 225 Width"
+  },
+  {
+    "category": "Sports",
+    "oldName": "Packers Helmet_40mmbase",
+    "newName": "Packers Helmet"
+  },
+  {
+    "category": "Sports",
+    "oldName": "Vikings Helmet",
+    "newName": "Vikings Helmet"
+  },
+  {
+    "category": "Sports",
+    "oldName": "Vikings224",
+    "newName": "Vikings224"
+  },
+  {
+    "category": "Sports",
+    "oldName": "Wisconsin Helmet",
+    "newName": "Wisconsin Helmet"
+  },
+  {
+    "category": "Sports",
+    "oldName": "Wisconsin W 40mm 225",
+    "newName": "Wisconsin W"
+  },
+  {
+    "category": "Sports",
+    "oldName": "WisconsinBadgerHelmet_225",
+    "newName": "Wisconsin Badger Helmet"
+  },
+  {
+    "category": "Sports",
+    "oldName": "WisconsinVolleyball",
+    "newName": "Wisconsin Volleyball"
+  },
+  {
+    "category": "Sports",
+    "oldName": "WisconsinW_30mm",
+    "newName": "Wisconsin W"
+  },
+  {
+    "category": "Sports",
+    "oldName": "WisconsinW_40mm",
+    "newName": "Wisconsin W"
+  }
+]
