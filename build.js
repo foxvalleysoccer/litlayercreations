@@ -84,8 +84,6 @@ const sharedStyles = `
     font-weight: bold;
   }
   .btn:hover { background: #0099cc; color: #fff; }
-  .btn-paypal { background: #003087; color: #fff; }
-  .btn-paypal:hover { background: #001f5c; }
   .btn-fb { background: #1877f2; color: #fff; }
   .btn-fb:hover { background: #0d5fbd; }
 `;
@@ -229,8 +227,6 @@ function generateProductPage(item, category) {
     mainMediaHtml = `<div class="no-image">No photo yet — coming soon</div>`;
   }
 
-  const paypalLink = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${encodeURIComponent(PAYPAL_EMAIL)}&amount=${DEFAULT_PRICE}.00&currency_code=USD&item_name=${encodeURIComponent(item.name + ' LED Light Box')}`;
-
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -347,7 +343,6 @@ ${productPageStyles}
 
     <div class="cta-buttons">
       <a href="${FB_PROFILE}" target="_blank" class="btn btn-fb">📬 Message on Facebook</a>
-      <a href="${paypalLink}" target="_blank" class="btn btn-paypal">💳 Pay with PayPal</a>
     </div>
 
     <p class="shipping-note">
