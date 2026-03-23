@@ -16,7 +16,7 @@ const path = require('path');
 const BASE_URL        = 'https://litlayercreations.com';
 const FB_PROFILE      = 'https://www.facebook.com/marketplace/profile/208200551/';
 const PAYPAL_EMAIL    = 'foxvalleysoccer@gmail.com';
-const PHONE           = '920-707-6185';
+const PHONE           = '';
 const DEFAULT_PRICE   = '25';
 const PRODUCTS_DIR    = path.join(__dirname, 'products');
 // ──────────────────────────────────────────────────────────────────────────────
@@ -346,8 +346,7 @@ ${productPageStyles}
     </div>
 
     <p class="shipping-note">
-      Also accepts Venmo &amp; Cash App · Local pickup available in Neenah, WI · Ships nationwide<br>
-      Questions? Text/call ${PHONE}
+      Also accepts Venmo &amp; Cash App · Local pickup available in Neenah, WI · Ships nationwide
     </p>
   </div>
 </div>
