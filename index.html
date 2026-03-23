@@ -11,7 +11,80 @@
   gtag('config', 'G-Z2NFK2Z8Q3');
 </script>
 <meta charset="UTF-8" />
-<title>Light Boxes Catalog - Lit Layer Creations</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Custom LED Light Boxes | Automotive, Sports &amp; Pop Culture | Lit Layer Creations – Neenah, WI</title>
+<meta name="description" content="Custom 3D-printed LED light boxes for cars, sports teams, and pop culture. Ghostbusters, Milwaukee Bucks, Corvette, Batman, and 150+ more designs. Made to order in Neenah, Wisconsin. Starting at $20." />
+<meta name="keywords" content="custom LED light box, 3D printed light box, custom neon sign, Milwaukee Bucks light, Ghostbusters LED light, Corvette light box, custom car light, Neenah Wisconsin, Lit Layer Creations" />
+<link rel="canonical" href="https://litlayercreations.com/" />
+
+<!-- Open Graph / Social Sharing -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://litlayercreations.com/" />
+<meta property="og:title" content="Lit Layer Creations – Custom 3D Printed LED Light Boxes" />
+<meta property="og:description" content="Custom LED light boxes for cars, sports teams, and pop culture. 150+ designs. Made to order in Neenah, WI. Starting at $20." />
+<meta property="og:image" content="https://litlayercreations.com/Images/Logo.png" />
+<meta property="og:site_name" content="Lit Layer Creations" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Lit Layer Creations – Custom 3D Printed LED Light Boxes" />
+<meta name="twitter:description" content="Custom LED light boxes for cars, sports teams, and pop culture. 150+ designs. Made to order in Neenah, WI." />
+<meta name="twitter:image" content="https://litlayercreations.com/Images/Logo.png" />
+
+<!-- Structured Data: Local Business -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Lit Layer Creations",
+  "description": "Custom 3D-printed LED light boxes for automotive, sports, and pop culture themes. Made to order in Neenah, Wisconsin. Ships nationwide.",
+  "url": "https://litlayercreations.com",
+  "image": "https://litlayercreations.com/Images/Logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Neenah",
+    "addressRegion": "WI",
+    "addressCountry": "US"
+  },
+  "priceRange": "$20–$65",
+  "currenciesAccepted": "USD",
+  "paymentAccepted": "PayPal, Venmo, Cash App",
+  "areaServed": "US",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "LED Light Box Collection",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Automotive LED Light Boxes",
+          "description": "Custom 3D-printed LED light boxes featuring automotive logos and designs including Corvette, Mustang, MOPAR, Shelby Cobra, BMW, Mercedes, Harley Davidson, and more."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Sports LED Light Boxes",
+          "description": "Custom LED light boxes for sports fans — Milwaukee Bucks, Green Bay Packers, Chicago Bulls, Milwaukee Brewers, and more. Color changing with remote."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Pop Culture LED Light Boxes",
+          "description": "Custom LED light boxes featuring pop culture icons — Ghostbusters, Batman, Jurassic Park, Donkey Kong, Sonic, Killer Klowns, and 50+ more designs."
+        }
+      }
+    ]
+  },
+  "sameAs": [
+    "https://www.facebook.com/marketplace/profile/208200551/"
+  ]
+}
+</script>
 
 <style>
 body {
@@ -199,10 +272,12 @@ fetch("catalog.json")
             const v = document.createElement("video");
             v.src = src;
             v.controls = true;
+            v.setAttribute("title", `${item.name} LED light box – Lit Layer Creations`);
             media.appendChild(v);
           } else {
             const img = document.createElement("img");
             img.src = src;
+            img.alt = `${item.name} LED light box – custom 3D printed – Lit Layer Creations`;
             img.onclick = () => window.open(src, "_blank");
             media.appendChild(img);
           }
