@@ -42,6 +42,13 @@
       {
         "name": "Chevy",
         "file": "Automotive/Chevy.3mf",
+        "media": [
+          "Automotive/media/Chevy/610515714_1363681291650205_663965644784147595_n.png"
+        ]
+      },
+      {
+        "name": "Chrysler_Plymouth",
+        "file": "Automotive/Chrysler_Plymouth.3mf",
         "media": []
       },
       {
@@ -108,7 +115,9 @@
       {
         "name": "Ford Logo",
         "file": "Automotive/Ford Logo.3mf",
-        "media": []
+        "media": [
+          "Automotive/media/Ford Logo/611882149_1985691748654892_2362774175300138870_n.png"
+        ]
       },
       {
         "name": "Ford Mercury Lincoln Light",
@@ -135,6 +144,11 @@
           "Automotive/media/Ford Motor Sport Light/Ford_Motor_Sport_Light bw.png",
           "Automotive/media/Ford Motor Sport Light/Ford_Motor_Sport_Light.png"
         ]
+      },
+      {
+        "name": "GM_retro",
+        "file": "Automotive/GM_retro.3mf",
+        "media": []
       },
       {
         "name": "Harley Black and White",
@@ -211,6 +225,11 @@
         ]
       },
       {
+        "name": "Mitsubishi",
+        "file": "Automotive/Mitsubishi.3mf",
+        "media": []
+      },
+      {
         "name": "Mopar Blue",
         "file": "Automotive/Mopar Blue.3mf",
         "media": [
@@ -271,7 +290,9 @@
       {
         "name": "Pontiac",
         "file": "Automotive/Pontiac.3mf",
-        "media": []
+        "media": [
+          "Automotive/media/Pontiac/624097335_1398439751926076_3794841489569383862_n.png"
+        ]
       },
       {
         "name": "Porsche Color With Difusion",
@@ -337,7 +358,9 @@
       {
         "name": "Wolkswagon",
         "file": "Automotive/Wolkswagon.3mf",
-        "media": []
+        "media": [
+          "Automotive/media/Wolkswagon/619870090_1586459612692219_9138325595889573873_n.png"
+        ]
       }
     ]
   },
