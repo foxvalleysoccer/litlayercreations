@@ -327,20 +327,6 @@ ${productPageStyles}
     <p>${description}</p>
     <div class="price">$${DEFAULT_PRICE}.00</div>
 
-    <div class="options">
-      <label for="size">Size:</label>
-      <select id="size">
-        <option>7-8 inch</option>
-        <option>9 inch</option>
-      </select>
-
-      <label for="thickness">Thickness:</label>
-      <select id="thickness">
-        <option>20mm</option>
-        <option>25mm</option>
-      </select>
-    </div>
-
     <div class="cta-buttons">
       <a href="${FB_PROFILE}" target="_blank" class="btn btn-fb">📬 Message on Facebook</a>
     </div>
