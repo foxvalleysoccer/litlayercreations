@@ -227,7 +227,12 @@
       {
         "name": "Mitsubishi",
         "file": "Automotive/Mitsubishi.3mf",
-        "media": []
+        "media": [
+          "Automotive/media/Mitsubishi/mitsubishi_light_front_1.jpg",
+          "Automotive/media/Mitsubishi/mitsubishi_light_front_2.jpg",
+          "Automotive/media/Mitsubishi/mitsubishi_light_front_3.jpg",
+          "Automotive/media/Mitsubishi/mitsubishi_light_back.jpg"
+        ]
       },
       {
         "name": "Mopar Blue",
@@ -349,6 +354,16 @@
         ]
       },
       {
+        "name": "Toyota",
+        "file": "Automotive/Toyota.3mf",
+        "media": [
+          "Automotive/media/Toyota/toyota_light_front_1.jpg",
+          "Automotive/media/Toyota/toyota_light_front_2.jpg",
+          "Automotive/media/Toyota/toyota_light_front_3.jpg",
+          "Automotive/media/Toyota/toyota_light_back.jpg"
+        ]
+      },
+      {
         "name": "Trans Am",
         "file": "Automotive/Trans Am.3mf",
         "media": [
@@ -370,7 +385,13 @@
       {
         "name": "America",
         "file": "Bands/America.3mf",
-        "media": []
+        "media": [
+          "Bands/media/America/america_front_1.jpg",
+          "Bands/media/America/america_front_2.jpg",
+          "Bands/media/America/america_front_3.jpg",
+          "Bands/media/America/america_angle_1.jpg",
+          "Bands/media/America/america_back.jpg"
+        ]
       }
     ]
   },
@@ -745,7 +766,9 @@
       {
         "name": "Cobra CB",
         "file": "Old Labels/Cobra CB.3mf",
-        "media": []
+        "media": [
+          "Old Labels/media/Cobra CB/cobra_cb_front_1.jpg"
+        ]
       }
     ]
   },
@@ -795,7 +818,13 @@
       {
         "name": "BillyClownSaw",
         "file": "Pop Culture/BillyClownSaw.3mf",
-        "media": []
+        "media": [
+          "Pop Culture/media/BillyClownSaw/clown_front_1.jpg",
+          "Pop Culture/media/BillyClownSaw/clown_front_2.jpg",
+          "Pop Culture/media/BillyClownSaw/clown_angle_1.jpg",
+          "Pop Culture/media/BillyClownSaw/clown_unlit.jpg",
+          "Pop Culture/media/BillyClownSaw/clown_back.jpg"
+        ]
       },
       {
         "name": "Coffee Girl",
@@ -843,7 +872,12 @@
       {
         "name": "Golden Axe Light Box",
         "file": "Pop Culture/Golden Axe Light Box.3mf",
-        "media": []
+        "media": [
+          "Pop Culture/media/Golden Axe Light Box/golden_axe_front_1.jpg",
+          "Pop Culture/media/Golden Axe Light Box/golden_axe_front_2.jpg",
+          "Pop Culture/media/Golden Axe Light Box/golden_axe_angle_1.jpg",
+          "Pop Culture/media/Golden Axe Light Box/golden_axe_back.jpg"
+        ]
       },
       {
         "name": "Guitar Hero Light Box",
@@ -853,7 +887,24 @@
       {
         "name": "GuyFawkes",
         "file": "Pop Culture/GuyFawkes.3mf",
-        "media": []
+        "media": [
+          "Pop Culture/media/GuyFawkes/guyfawkes_front_1.jpg",
+          "Pop Culture/media/GuyFawkes/guyfawkes_front_2.jpg",
+          "Pop Culture/media/GuyFawkes/guyfawkes_front_3.jpg",
+          "Pop Culture/media/GuyFawkes/guyfawkes_angle_1.jpg",
+          "Pop Culture/media/GuyFawkes/guyfawkes_back.jpg"
+        ]
+      },
+      {
+        "name": "Kingdom Hearts",
+        "file": "Pop Culture/Kingdom Hearts.3mf",
+        "media": [
+          "Pop Culture/media/Kingdom Hearts/kingdom_hearts_front_1.jpg",
+          "Pop Culture/media/Kingdom Hearts/kingdom_hearts_front_2.jpg",
+          "Pop Culture/media/Kingdom Hearts/kingdom_hearts_front_3.jpg",
+          "Pop Culture/media/Kingdom Hearts/kingdom_hearts_front_4.jpg",
+          "Pop Culture/media/Kingdom Hearts/kingdom_hearts_front_5.jpg"
+        ]
       },
       {
         "name": "Jack Daniels",
@@ -879,7 +930,12 @@
       {
         "name": "Jurassic Park (1)",
         "file": "Pop Culture/Jurassic Park (1).3mf",
-        "media": []
+        "media": [
+          "Pop Culture/media/Jurassic Park (1)/jurassic_park_front_1.jpg",
+          "Pop Culture/media/Jurassic Park (1)/jurassic_park_front_2.jpg",
+          "Pop Culture/media/Jurassic Park (1)/jurassic_park_angle_1.jpg",
+          "Pop Culture/media/Jurassic Park (1)/jurassic_park_back.jpg"
+        ]
       },
       {
         "name": "JurassicPark",
@@ -895,7 +951,12 @@
       {
         "name": "Kerby",
         "file": "Pop Culture/Kerby.3mf",
-        "media": []
+        "media": [
+          "Pop Culture/media/Kerby/kirby_front_1.jpg",
+          "Pop Culture/media/Kerby/kirby_front_2.jpg",
+          "Pop Culture/media/Kerby/kirby_angle_1.jpg",
+          "Pop Culture/media/Kerby/kirby_back.jpg"
+        ]
       },
       {
         "name": "Killer Klowns",
@@ -965,12 +1026,22 @@
       {
         "name": "Metal Gear Solid Light Box",
         "file": "Pop Culture/Metal Gear Solid Light Box.3mf",
-        "media": []
+        "media": [
+          "Pop Culture/media/Metal Gear Solid Light Box/metal_gear_front_1.jpg",
+          "Pop Culture/media/Metal Gear Solid Light Box/metal_gear_angle_1.jpg",
+          "Pop Culture/media/Metal Gear Solid Light Box/metal_gear_angle_2.jpg",
+          "Pop Culture/media/Metal Gear Solid Light Box/metal_gear_back.jpg"
+        ]
       },
       {
         "name": "Mini Trucking",
         "file": "Pop Culture/Mini Trucking.3mf",
-        "media": []
+        "media": [
+          "Pop Culture/media/Mini Trucking/mini_trucking_front_1.jpg",
+          "Pop Culture/media/Mini Trucking/mini_trucking_front_2.jpg",
+          "Pop Culture/media/Mini Trucking/mini_trucking_angle_1.jpg",
+          "Pop Culture/media/Mini Trucking/mini_trucking_back.jpg"
+        ]
       },
       {
         "name": "MTV",
@@ -980,6 +1051,17 @@
           "Pop Culture/media/MTV/30a84b55-e084-4e1b-92ac-06c1e9c90a91.mp4",
           "Pop Culture/media/MTV/57d6eaac-7f65-4e13-92c9-c03a038b9017.jpg",
           "Pop Culture/media/MTV/ef53d749-f423-4530-8bae-bbd19eecb6ea.jpg"
+        ]
+      },
+      {
+        "name": "Munsters",
+        "file": "Pop Culture/Munsters.3mf",
+        "media": [
+          "Pop Culture/media/Munsters/munsters_front_1.jpg",
+          "Pop Culture/media/Munsters/munsters_front_2.jpg",
+          "Pop Culture/media/Munsters/munsters_front_3.jpg",
+          "Pop Culture/media/Munsters/munsters_angle_1.jpg",
+          "Pop Culture/media/Munsters/munsters_back.jpg"
         ]
       },
       {
@@ -1072,7 +1154,12 @@
       {
         "name": "Spiderman Face",
         "file": "Pop Culture/Spiderman Face.3mf",
-        "media": []
+        "media": [
+          "Pop Culture/media/Spiderman Face/spiderman_face_front_1.jpg",
+          "Pop Culture/media/Spiderman Face/spiderman_face_front_2.jpg",
+          "Pop Culture/media/Spiderman Face/spiderman_face_angle_1.jpg",
+          "Pop Culture/media/Spiderman Face/spiderman_face_back.jpg"
+        ]
       },
       {
         "name": "Spiderman",
@@ -1113,7 +1200,13 @@
       {
         "name": "Stranger Things",
         "file": "Pop Culture/Stranger Things.3mf",
-        "media": []
+        "media": [
+          "Pop Culture/media/Stranger Things/stranger_things_front_1.jpg",
+          "Pop Culture/media/Stranger Things/stranger_things_front_2.jpg",
+          "Pop Culture/media/Stranger Things/stranger_things_angle_1.jpg",
+          "Pop Culture/media/Stranger Things/stranger_things_angle_2.jpg",
+          "Pop Culture/media/Stranger Things/stranger_things_back.jpg"
+        ]
       },
       {
         "name": "Street Fighter",
@@ -1123,7 +1216,13 @@
       {
         "name": "Streets Of Rage Light Box",
         "file": "Pop Culture/Streets Of Rage Light Box.3mf",
-        "media": []
+        "media": [
+          "Pop Culture/media/Streets Of Rage Light Box/streets_of_rage_front_1.jpg",
+          "Pop Culture/media/Streets Of Rage Light Box/streets_of_rage_front_2.jpg",
+          "Pop Culture/media/Streets Of Rage Light Box/streets_of_rage_angle_1.jpg",
+          "Pop Culture/media/Streets Of Rage Light Box/streets_of_rage_angle_2.jpg",
+          "Pop Culture/media/Streets Of Rage Light Box/streets_of_rage_back.jpg"
+        ]
       },
       {
         "name": "Super Nintendo",
@@ -1190,7 +1289,13 @@
       {
         "name": "Thefast And The Furious Light",
         "file": "Pop Culture/Thefast And The Furious Light.3mf",
-        "media": []
+        "media": [
+          "Pop Culture/media/Thefast And The Furious Light/fast_furious_front_1.jpg",
+          "Pop Culture/media/Thefast And The Furious Light/fast_furious_front_2.jpg",
+          "Pop Culture/media/Thefast And The Furious Light/fast_furious_front_3.jpg",
+          "Pop Culture/media/Thefast And The Furious Light/fast_furious_angle_1.jpg",
+          "Pop Culture/media/Thefast And The Furious Light/fast_furious_back.jpg"
+        ]
       },
       {
         "name": "Thrasher Logo Light",
@@ -1201,6 +1306,16 @@
         "name": "Thunder Cats Light Box",
         "file": "Pop Culture/Thunder Cats Light Box.3mf",
         "media": []
+      },
+      {
+        "name": "The Walking Dead",
+        "file": "Pop Culture/The Walking Dead.3mf",
+        "media": [
+          "Pop Culture/media/The Walking Dead/walking_dead_front_1.jpg",
+          "Pop Culture/media/The Walking Dead/walking_dead_front_2.jpg",
+          "Pop Culture/media/The Walking Dead/walking_dead_angle_1.jpg",
+          "Pop Culture/media/The Walking Dead/walking_dead_angle_2.jpg"
+        ]
       }
     ]
   },
@@ -1459,7 +1574,12 @@
       {
         "name": "Titleist",
         "file": "Sports/Titleist.3mf",
-        "media": []
+        "media": [
+          "Sports/Media/Titleist/titleist_front_1.jpg",
+          "Sports/Media/Titleist/titleist_angle_1.jpg",
+          "Sports/Media/Titleist/titleist_angle_2.jpg",
+          "Sports/Media/Titleist/titleist_back.jpg"
+        ]
       },
       {
         "name": "Vikings Helmet",
