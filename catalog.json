@@ -903,7 +903,12 @@
           "Pop Culture/media/Kingdom Hearts/kingdom_hearts_front_2.jpg",
           "Pop Culture/media/Kingdom Hearts/kingdom_hearts_front_3.jpg",
           "Pop Culture/media/Kingdom Hearts/kingdom_hearts_front_4.jpg",
-          "Pop Culture/media/Kingdom Hearts/kingdom_hearts_front_5.jpg"
+          "Pop Culture/media/Kingdom Hearts/kingdom_hearts_front_5.jpg",
+          "Pop Culture/media/Kingdom Hearts/kingdom_hearts_blue_front_1.jpg",
+          "Pop Culture/media/Kingdom Hearts/kingdom_hearts_blue_front_2.jpg",
+          "Pop Culture/media/Kingdom Hearts/kingdom_hearts_blue_front_3.jpg",
+          "Pop Culture/media/Kingdom Hearts/kingdom_hearts_blue_front_4.jpg",
+          "Pop Culture/media/Kingdom Hearts/kingdom_hearts_blue_angle_1.jpg"
         ]
       },
       {
@@ -1101,6 +1106,17 @@
           "Pop Culture/media/Qbert/Qbert Light (2).mp4",
           "Pop Culture/media/Qbert/Qbert Light (3).jpg",
           "Pop Culture/media/Qbert/Qbert Light (4).jpg"
+        ]
+      },
+      {
+        "name": "RatFink",
+        "file": "Pop Culture/RatFink.3mf",
+        "media": [
+          "Pop Culture/media/RatFink/ratfink_front_1.jpg",
+          "Pop Culture/media/RatFink/ratfink_front_2.jpg",
+          "Pop Culture/media/RatFink/ratfink_angle_1.jpg",
+          "Pop Culture/media/RatFink/ratfink_back.jpg",
+          "Pop Culture/media/RatFink/ratfink_back_2.jpg"
         ]
       },
       {

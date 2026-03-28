@@ -16,6 +16,10 @@ const path = require('path');
 const BASE_URL        = 'https://litlayercreations.com';
 const FB_PROFILE      = 'https://www.facebook.com/marketplace/profile/208200551/';
 const PAYPAL_EMAIL    = 'foxvalleysoccer@gmail.com';
+const CASHAPP_TAG     = '$itsmejoshj';
+const CASHAPP_URL     = 'https://cash.app/$itsmejoshj';
+const VENMO_HANDLE    = 'LitLayerCreations';
+const VENMO_URL       = 'https://venmo.com/u/LitLayerCreations';
 const PHONE           = '';
 const DEFAULT_PRICE   = '25';
 const PRODUCTS_DIR    = path.join(__dirname, 'products');
@@ -86,6 +90,24 @@ const sharedStyles = `
   .btn:hover { background: #0099cc; color: #fff; }
   .btn-fb { background: #1877f2; color: #fff; }
   .btn-fb:hover { background: #0d5fbd; }
+  .btn-cashapp { background: #00D632; color: #000; }
+  .btn-cashapp:hover { background: #00b029; color: #000; }
+  .btn-venmo { background: #3D95CE; color: #fff; }
+  .btn-venmo:hover { background: #2d7ab5; color: #fff; }
+  .payment-strip {
+    display: flex; flex-wrap: wrap; justify-content: center;
+    align-items: center; gap: 10px; margin: 12px 0 4px;
+    font-size: 13px; color: #aaa;
+  }
+  .payment-strip a {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 5px 12px; border-radius: 20px;
+    font-weight: bold; font-size: 13px; text-decoration: none;
+  }
+  .payment-strip .ps-cashapp { background: #00D632; color: #000; }
+  .payment-strip .ps-venmo   { background: #3D95CE; color: #fff; }
+  .payment-strip .ps-paypal  { background: #003087; color: #fff; }
+  .payment-strip .ps-fb      { background: #1877f2; color: #fff; }
 `;
 
 const catalogStyles = `
@@ -310,6 +332,12 @@ ${productPageStyles}
 <header>
   <a href="../index.html"><img src="../Images/Logo.png" alt="Lit Layer Creations Logo" style="max-width:160px;height:auto;margin-bottom:8px;"></a>
   <h1>Lit Layer Creations</h1>
+  <div class="payment-strip">
+    <span>💳 We accept:</span>
+    <a href="${CASHAPP_URL}" target="_blank" class="ps-cashapp">💵 Cash App ${CASHAPP_TAG}</a>
+    <a href="${VENMO_URL}" target="_blank" class="ps-venmo">💜 Venmo @${VENMO_HANDLE}</a>
+    <a href="${FB_PROFILE}" target="_blank" class="ps-fb">📬 Message on FB for PayPal</a>
+  </div>
 </header>
 
 <div class="product-details">
@@ -329,10 +357,12 @@ ${productPageStyles}
 
     <div class="cta-buttons">
       <a href="${FB_PROFILE}" target="_blank" class="btn btn-fb">📬 Message on Facebook</a>
+      <a href="${CASHAPP_URL}" target="_blank" class="btn btn-cashapp">💵 Pay with Cash App</a>
+      <a href="${VENMO_URL}" target="_blank" class="btn btn-venmo">💜 Pay with Venmo</a>
     </div>
 
     <p class="shipping-note">
-      Also accepts Venmo &amp; Cash App · Local pickup available in Neenah, WI · Ships nationwide
+      Also accepts PayPal · Message on FB to pay · Local pickup available in Neenah, WI · Ships nationwide
     </p>
   </div>
 </div>
@@ -470,6 +500,12 @@ ${catalogStyles}
   <img src="Images/Logo.png" alt="Lit Layer Creations Logo" style="max-width:200px;height:auto;margin-bottom:10px;">
   <h1>Lit Layer Creations</h1>
   <p>Custom 3D Printed LED Light Boxes · Neenah, WI · Ships Nationwide</p>
+  <div class="payment-strip">
+    <span>💳 We accept:</span>
+    <a href="${CASHAPP_URL}" target="_blank" class="ps-cashapp">💵 Cash App ${CASHAPP_TAG}</a>
+    <a href="${VENMO_URL}" target="_blank" class="ps-venmo">💜 Venmo @${VENMO_HANDLE}</a>
+    <a href="${FB_PROFILE}" target="_blank" class="ps-fb">📬 Message on FB for PayPal</a>
+  </div>
 </header>
 
 <div id="catalog">
