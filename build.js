@@ -18,8 +18,8 @@ const FB_PROFILE      = 'https://www.facebook.com/marketplace/profile/208200551/
 const PAYPAL_EMAIL    = 'foxvalleysoccer@gmail.com';
 const CASHAPP_TAG     = '$itsmejoshj';
 const CASHAPP_URL     = 'https://cash.app/$itsmejoshj';
-const VENMO_HANDLE    = 'LitLayerCreations';
-const VENMO_URL       = 'https://venmo.com/u/LitLayerCreations';
+const WHATSAPP_PHONE  = '19207076185';
+const WHATSAPP_URL    = WHATSAPP_PHONE ? `https://wa.me/${WHATSAPP_PHONE}` : '#';
 const PHONE           = '';
 const DEFAULT_PRICE   = '25';
 const PRODUCTS_DIR    = path.join(__dirname, 'products');
@@ -90,10 +90,10 @@ const sharedStyles = `
   .btn:hover { background: #0099cc; color: #fff; }
   .btn-fb { background: #1877f2; color: #fff; }
   .btn-fb:hover { background: #0d5fbd; }
-  .btn-cashapp { background: #00D632; color: #000; }
+  .btn-cashapp   { background: #00D632; color: #000; }
   .btn-cashapp:hover { background: #00b029; color: #000; }
-  .btn-venmo { background: #3D95CE; color: #fff; }
-  .btn-venmo:hover { background: #2d7ab5; color: #fff; }
+  .btn-whatsapp  { background: #25D366; color: #000; }
+  .btn-whatsapp:hover { background: #1ebe5d; color: #000; }
   .payment-strip {
     display: flex; flex-wrap: wrap; justify-content: center;
     align-items: center; gap: 10px; margin: 12px 0 4px;
@@ -104,10 +104,10 @@ const sharedStyles = `
     padding: 5px 12px; border-radius: 20px;
     font-weight: bold; font-size: 13px; text-decoration: none;
   }
-  .payment-strip .ps-cashapp { background: #00D632; color: #000; }
-  .payment-strip .ps-venmo   { background: #3D95CE; color: #fff; }
-  .payment-strip .ps-paypal  { background: #003087; color: #fff; }
-  .payment-strip .ps-fb      { background: #1877f2; color: #fff; }
+  .payment-strip .ps-cashapp   { background: #00D632; color: #000; }
+  .payment-strip .ps-whatsapp  { background: #25D366; color: #000; }
+  .payment-strip .ps-paypal    { background: #003087; color: #fff; }
+  .payment-strip .ps-fb        { background: #1877f2; color: #fff; }
 `;
 
 const catalogStyles = `
@@ -335,7 +335,7 @@ ${productPageStyles}
   <div class="payment-strip">
     <span>💳 We accept:</span>
     <a href="${CASHAPP_URL}" target="_blank" class="ps-cashapp">💵 Cash App ${CASHAPP_TAG}</a>
-    <a href="${VENMO_URL}" target="_blank" class="ps-venmo">💜 Venmo @${VENMO_HANDLE}</a>
+    <a href="${WHATSAPP_URL}" target="_blank" class="ps-whatsapp">💬 WhatsApp Us</a>
     <a href="${FB_PROFILE}" target="_blank" class="ps-fb">📬 Message on FB for PayPal</a>
   </div>
 </header>
@@ -358,7 +358,7 @@ ${productPageStyles}
     <div class="cta-buttons">
       <a href="${FB_PROFILE}" target="_blank" class="btn btn-fb">📬 Message on Facebook</a>
       <a href="${CASHAPP_URL}" target="_blank" class="btn btn-cashapp">💵 Pay with Cash App</a>
-      <a href="${VENMO_URL}" target="_blank" class="btn btn-venmo">💜 Pay with Venmo</a>
+      <a href="${WHATSAPP_URL}" target="_blank" class="btn btn-whatsapp">💬 WhatsApp Us</a>
     </div>
 
     <p class="shipping-note">
@@ -483,7 +483,7 @@ function generateIndex() {
     },
     "priceRange": "$${DEFAULT_PRICE}–$65",
     "currenciesAccepted": "USD",
-    "paymentAccepted": "PayPal, Venmo, Cash App",
+    "paymentAccepted": "PayPal, Cash App",
     "areaServed": "US",
     "sameAs": ["${FB_PROFILE}"]
   }
@@ -503,7 +503,7 @@ ${catalogStyles}
   <div class="payment-strip">
     <span>💳 We accept:</span>
     <a href="${CASHAPP_URL}" target="_blank" class="ps-cashapp">💵 Cash App ${CASHAPP_TAG}</a>
-    <a href="${VENMO_URL}" target="_blank" class="ps-venmo">💜 Venmo @${VENMO_HANDLE}</a>
+    <a href="${WHATSAPP_URL}" target="_blank" class="ps-whatsapp">💬 WhatsApp Us</a>
     <a href="${FB_PROFILE}" target="_blank" class="ps-fb">📬 Message on FB for PayPal</a>
   </div>
 </header>
