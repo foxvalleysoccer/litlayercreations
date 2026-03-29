@@ -18,8 +18,7 @@ const FB_PROFILE      = 'https://www.facebook.com/marketplace/profile/208200551/
 const PAYPAL_EMAIL    = 'foxvalleysoccer@gmail.com';
 const CASHAPP_TAG     = '$itsmejoshj';
 const CASHAPP_URL     = 'https://cash.app/$itsmejoshj';
-const WHATSAPP_PHONE  = '19207076185';
-const WHATSAPP_URL    = WHATSAPP_PHONE ? `https://wa.me/${WHATSAPP_PHONE}` : '#';
+const WHATSAPP_URL    = '';   // ← add WhatsApp Business short link when ready (wa.me/message/XXXXX)
 const PHONE           = '';
 const DEFAULT_PRICE   = '25';
 const PRODUCTS_DIR    = path.join(__dirname, 'products');
@@ -335,7 +334,6 @@ ${productPageStyles}
   <div class="payment-strip">
     <span>💳 We accept:</span>
     <a href="${CASHAPP_URL}" target="_blank" class="ps-cashapp">💵 Cash App ${CASHAPP_TAG}</a>
-    <a href="${WHATSAPP_URL}" target="_blank" class="ps-whatsapp">💬 WhatsApp Us</a>
     <a href="${FB_PROFILE}" target="_blank" class="ps-fb">📬 Message on FB for PayPal</a>
   </div>
 </header>
@@ -358,7 +356,6 @@ ${productPageStyles}
     <div class="cta-buttons">
       <a href="${FB_PROFILE}" target="_blank" class="btn btn-fb">📬 Message on Facebook</a>
       <a href="${CASHAPP_URL}" target="_blank" class="btn btn-cashapp">💵 Pay with Cash App</a>
-      <a href="${WHATSAPP_URL}" target="_blank" class="btn btn-whatsapp">💬 WhatsApp Us</a>
     </div>
 
     <p class="shipping-note">
@@ -503,7 +500,6 @@ ${catalogStyles}
   <div class="payment-strip">
     <span>💳 We accept:</span>
     <a href="${CASHAPP_URL}" target="_blank" class="ps-cashapp">💵 Cash App ${CASHAPP_TAG}</a>
-    <a href="${WHATSAPP_URL}" target="_blank" class="ps-whatsapp">💬 WhatsApp Us</a>
     <a href="${FB_PROFILE}" target="_blank" class="ps-fb">📬 Message on FB for PayPal</a>
   </div>
 </header>
