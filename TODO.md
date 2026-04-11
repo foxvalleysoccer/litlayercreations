@@ -32,3 +32,11 @@
 - [ ] Post America (CustomRequests) to Facebook Marketplace — listing ready
 - [ ] Post BloodyKlown (CustomRequests) to Facebook Marketplace — listing ready
 - [ ] Post jurassicPark (Pop Culture) to Facebook Marketplace — listing ready
+- [ ] Post HarleyGasTank (Automotive) to Facebook Marketplace — listing ready
+- [ ] Post FIFIWorldCup (Sports) to Facebook Marketplace — listing ready
+- [ ] Post HarleyColored (Automotive) to Facebook Marketplace — listing ready
+- [ ] Post HarleyColored (Automotive) to Facebook Marketplace — listing ready
+- [ ] Post WisconsinBrewers (Sports) to Facebook Marketplace — listing ready
+- [ ] Post BrewersWI (Sports) to Facebook Marketplace — listing ready
+- [ ] Post badgersWisconsinHelmet (Sports) to Facebook Marketplace — listing ready
+- [ ] Post Titlist (Sports) to Facebook Marketplace — listing ready

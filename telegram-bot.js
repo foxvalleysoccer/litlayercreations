@@ -180,7 +180,7 @@ const DEFAULT_MEMORY = {
   user: {
     name: 'Josh',
     location: 'Neenah, Wisconsin',
-    business: 'Lit Layer Creations — custom 3D-printed LED light boxes sold on Etsy, Facebook Marketplace, and TikTok Shop.',
+    business: 'Lit Layer Creations — custom 3D-printed LED light boxes sold on Etsy, Facebook Marketplace, and eBay.',
     otherProjects: [
       'VR/XR developer at a technical college — builds Unity simulations and Meta Quest training apps',
       'Custom fishing bait designer and YouTube content creator (bigbitecrankbaits.com)',
@@ -535,32 +535,147 @@ async function appendTodo(productName, category) {
   await fsp.appendFile(todoPath, line, 'utf8');
 }
 
-function buildListingPrompt({ category, productName, visionDesc }) {
+function buildListingPrompt({ category, productName, visionDesc, platform = 'facebook' }) {
   const visionHint = visionDesc
     ? `PHOTO NOTES (use for mood/lighting details only — the product name below is the authoritative subject):\n${visionDesc}\n`
     : '';
 
+  if (platform === 'etsy') {
+    return (
+      `You are writing an Etsy product listing for Josh's custom LED light box business "Lit Layer Creations" based in Neenah, Wisconsin.\n\n` +
+      `PRODUCT NAME: ${productName}\n` +
+      `CATEGORY: ${category}\n` +
+      `${visionHint}\n` +
+      `Etsy format: enthusiastic but professional tone. Emphasize handmade, custom, unique, and gift potential. Use relevant keywords naturally. Include a bulleted details section.\n\n` +
+      `Write the listing now using EXACTLY this structure. Output nothing else:\n\n` +
+      `${productName} LED Light Box – Custom Handmade Neon-Style Night Light\n\n` +
+      `Write 2-3 sentences describing the ${productName} light box — how it looks lit up, the mood it creates, why fans will love it as a gift or display piece.\n\n` +
+      `✨ PRODUCT DETAILS:\n` +
+      `▸ Approximately 9 inches wide\n` +
+      `▸ Bright multi-color LED lighting with smooth glow effect\n` +
+      `▸ Freestanding or wall-mountable display\n` +
+      `▸ Lightweight — easy to place on shelves, desks, or display areas\n` +
+      `▸ USB powered (cable included)\n` +
+      `▸ 5 ft USB extension cord included\n\n` +
+      `Write a "Perfect gift for..." sentence naming 2-3 fan audiences or occasions for ${productName}.\n\n` +
+      `🚚 Ships from Neenah, Wisconsin.\n\n` +
+      `🏷️ TAGS:\n` +
+      `Write exactly 13 comma-separated Etsy tags for ${productName}. Mix specific (the character/brand name, fandom) and broad (led light box, neon sign alternative, man cave decor, gamer gift, handmade gift, night light, custom light box, desk decor). Each tag max 20 characters. No hashtags.\n\n` +
+      `RULES: Output ONLY the finished listing text. Replace all instruction lines with real written content. Keep all ▸ bullet lines exactly as shown. The tags section must appear exactly as: 🏷️ TAGS: followed by a newline and the 13 comma-separated tags. No extra commentary.\n`
+    );
+  }
+
+  if (platform === 'ebay') {
+    return (
+      `You are writing an eBay product listing for Josh's custom LED light box business "Lit Layer Creations" based in Neenah, Wisconsin.\n\n` +
+      `PRODUCT NAME: ${productName}\n` +
+      `CATEGORY: ${category}\n` +
+      `${visionHint}\n` +
+      `eBay format: clear, descriptive, keyword-rich. Buyers are searching specifically for this item. Lead with the title, then a short description, then bullet specs. Professional but approachable tone.\n\n` +
+      `Write the listing now using EXACTLY this structure. Output nothing else:\n\n` +
+      `${productName} LED Light Box – Custom Handmade Neon-Style Night Light\n\n` +
+      `Write 2-3 sentences describing the ${productName} light box — what it looks like lit up, who it's perfect for, and why it makes a great display piece or gift.\n\n` +
+      `ITEM SPECIFICS:\n` +
+      `• Approximately 9 inches wide\n` +
+      `• Bright multi-color LED lighting with smooth glow effect\n` +
+      `[If remote controlled, add: • Remote Controlled]\n` +
+      `[If sound reactive, add: • Sound Reactive]\n` +
+      `• Freestanding or wall-mountable\n` +
+      `• USB powered — 5 ft cord included\n` +
+      `• Handmade in Neenah, Wisconsin\n\n` +
+      `Write a "Perfect for..." sentence naming 2-3 specific audiences or room types for ${productName}.\n\n` +
+      `Ships from Neenah, WI. Combined shipping available.\n\n` +
+      `RULES: Output ONLY the finished listing text. Replace instruction lines in [brackets] with the actual bullet if applicable, or omit if not. Replace all other placeholder lines with real written content. Keep all fixed bullet lines exactly as shown. No hashtags. No extra commentary.\n`
+    );
+  }
+
+  // Default: Facebook Marketplace
   return (
     `You are writing a Facebook Marketplace listing for Josh's custom LED light box business "Lit Layer Creations" based in Neenah, Wisconsin.\n\n` +
     `PRODUCT NAME: ${productName}\n` +
     `CATEGORY: ${category}\n` +
     `${visionHint}\n` +
     `The product name is the subject of this listing. Always write about "${productName}" specifically.\n\n` +
-    `Write the listing now using EXACTLY this structure. The first line is the title, then a blank line, then the opening sentences, then the rest. Output nothing else — no intro, no explanation, no angle brackets, no labels:\n\n` +
+    `Write the listing now using EXACTLY this structure. Output nothing else — no intro, no explanation, no angle brackets, no labels:\n\n` +
     `${productName} LED Light Box\n\n` +
-    `Write 2-3 vivid sentences here describing the ${productName} light box specifically — how it looks lit up, the mood it creates, why fans will love it.\n\n` +
+    `Write 2-3 vivid sentences here describing the ${productName} light box specifically — how it looks lit up, the mood it creates, why fans will love it. Do NOT start with the product name. Start with action or atmosphere.\n\n` +
     `✅ Approximately 9 inches wide\n` +
     `✅ Bright multi-color LED lighting with smooth glow effect\n` +
+    `[If this product has a remote control, add: ✅ Remote Controlled]\n` +
+    `[If this product has sound reactive lighting, add: ✅ Sound Reactive Lights]\n` +
     `✅ Freestanding display design or can be hung on a wall\n` +
     `✅ Lightweight and easy to place on shelves, desks, or display areas\n` +
     `✅ USB powered\n\n` +
-    `Write a "Perfect for..." sentence naming 2-3 room types or fan audiences for ${productName}.\n\n` +
+    `Write a "Perfect for..." sentence naming 2-3 specific room types or fan audiences for ${productName}.\n\n` +
     `5 foot USB extension cord +$3\n\n` +
-    `📍 Porch pickup in Neenah or shipping available\n` +
+    `📍 Porch pickup in Neenah or shipping available\n\n` +
     `📩 Message me if interested or if you'd like a custom character, automotive, sports, or themed light box!\n\n` +
     `www.litlayercreations.com\n\n` +
-    `RULES: Output ONLY the finished listing text. Replace the italic instruction lines above with real written content. Keep all ✅ checklist lines exactly as shown. No hashtags. No extra commentary.\n`
+    `RULES: Output ONLY the finished listing text. Replace instruction lines in [brackets] with the actual ✅ line if applicable, or omit them entirely if not. Replace all other placeholder instruction lines with real written content. Keep all fixed ✅ lines exactly as shown. No hashtags. No extra commentary.\n`
   );
+}
+
+// ----------------------------
+// AD WORKFLOW — generate marketplace listing only, no file save
+// ----------------------------
+async function runAdWorkflow(chatId) {
+  const s = getState(chatId);
+  if (s.stage === 'running') return;
+  s.stage = 'running';
+
+  const category = s.adCategory;
+  const productName = s.adProductName;
+  const platform = s.adPlatform || 'facebook';
+
+  const platformLabels = { facebook: 'Facebook Marketplace', etsy: 'Etsy', ebay: 'eBay' };
+  const label = platformLabels[platform] || 'Facebook Marketplace';
+
+  try {
+    // Vision — use already-captured desc from name confirmation step, or run fresh if missing
+    let visionDesc = s.adVisionDesc || '';
+    if (!visionDesc) {
+      const firstImage = s.pendingImages.find(p => /\.(jpg|jpeg|png|webp)$/i.test(p.tempPath));
+      if (VISION_MODEL && firstImage) {
+        try {
+          await bot.sendMessage(chatId, `🔍 Analyzing image...`);
+          const b64 = await imageToBase64(firstImage.tempPath);
+          visionDesc = await ollamaGenerate({
+            model: VISION_MODEL,
+            prompt: 'Describe what this LED light box depicts. Read any text or words shown exactly as written. Identify any band names, brand logos, sports teams, musicians, movie/TV characters, or pop culture references by their real name. Describe colors, lighting style, and overall theme. Be specific and accurate.',
+            imagesBase64: [b64],
+            options: { num_ctx: 1024, num_predict: 250 },
+          });
+        } catch {
+          visionDesc = '';
+        }
+      }
+    }
+
+    // Generate listing
+    await bot.sendMessage(chatId, `✍️ Writing ${label} ad...`);
+    const listingPrompt = buildListingPrompt({ category, productName, visionDesc, platform });
+    const listing = await ollamaGenerate({
+      model: LISTING_MODEL,
+      prompt: listingPrompt,
+      options: { num_ctx: 2048, num_predict: 500 },
+    });
+
+    // Save to memory
+    addRecentListing(productName, category, listing);
+    await saveMemory();
+
+    await bot.sendMessage(chatId, `📄 ${label} listing for ${productName}:\n\n${listing}`);
+
+    // Clean up temp files
+    for (const item of s.pendingImages) {
+      try { await fsp.unlink(item.tempPath); } catch { /* ignore */ }
+    }
+
+  } catch (err) {
+    await bot.sendMessage(chatId, `❌ Ad generation failed:\n${err && err.message ? err.message : String(err)}\n\nSend /reset to start over.`);
+  } finally {
+    resetWorkflow(chatId);
+  }
 }
 
 // ----------------------------
@@ -1377,7 +1492,7 @@ bot.on('message', async (msg) => {
         s.pendingImages.push({ tempPath, originalName: path.basename(tempPath), fileType: 'image' });
         await bot.sendMessage(
           chatId,
-          `📸 Got it! Is this:\n\n1️⃣ new — New listing\n2️⃣ update — Fix/replace media for existing product\n\nReply: new or update`
+          `📸 Got it! Is this:\n\n1️⃣ new — New listing (save files + generate ad)\n2️⃣ update — Fix/replace media for existing product\n3️⃣ ad — Generate marketplace ad only (no file save)\n\nReply: new, update, or ad`
         );
         return;
       }
@@ -1423,6 +1538,72 @@ bot.on('message', async (msg) => {
     return;
   }
 
+  // Document handler — fires when images are sent as files ("OPEN WITH") instead of compressed photos
+  if (msg.document && !orderStates[chatId]) {
+    const mime = msg.document.mime_type || '';
+    if (/^image\/(jpeg|jpg|png|webp)$/i.test(mime)) {
+      try {
+        const tempPath = await downloadTelegramPhotoToTemp(msg.document.file_id, chatId);
+
+        if (s.stage === 'idle') {
+          s.stage = 'awaitingMode';
+          s.firstImageArrived = true;
+          s.pendingImages.push({ tempPath, originalName: msg.document.file_name || path.basename(tempPath), fileType: 'image' });
+          await bot.sendMessage(
+            chatId,
+            `📸 Got it! Is this:\n\n1️⃣ new — New listing (save files + generate ad)\n2️⃣ update — Fix/replace media for existing product\n3️⃣ ad — Generate marketplace ad only (no file save)\n\nReply: new, update, or ad`
+          );
+          return;
+        }
+
+        if (s.stage === 'awaitingMode') {
+          s.pendingImages.push({ tempPath, fileType: 'image' });
+          await bot.sendMessage(chatId, `File buffered (${s.pendingImages.length}). Reply new, update, or ad to continue.`);
+          return;
+        }
+
+        if (s.stage === 'awaitingMeta') {
+          s.pendingImages.push({ tempPath, fileType: 'image' });
+          await bot.sendMessage(chatId, `Image buffered (${s.pendingImages.length}). Still need Category + Name.`);
+          return;
+        }
+
+        if (s.stage === 'awaitingUpdateMeta') {
+          s.pendingImages.push({ tempPath, fileType: 'image' });
+          await bot.sendMessage(chatId, `Image buffered (${s.pendingImages.length}). Still need the product name to update.`);
+          return;
+        }
+
+        if (s.stage === 'awaitingAdMeta') {
+          s.pendingImages.push({ tempPath, fileType: 'image' });
+          await bot.sendMessage(chatId, `Image buffered (${s.pendingImages.length}). Still need Category + Name.`);
+          return;
+        }
+
+        if (s.stage === 'collectingImages') {
+          s.pendingImages.push({ tempPath, fileType: 'image' });
+          await bot.sendMessage(chatId, `✅ Got it (${s.pendingImages.length} so far). Send more or type "done".`);
+          return;
+        }
+
+        if (s.stage === 'collectingUpdateImages') {
+          s.pendingImages.push({ tempPath, fileType: 'image' });
+          await bot.sendMessage(chatId, `✅ Got it (${s.pendingImages.length} so far). Send more or type "done".`);
+          return;
+        }
+
+        if (s.stage === 'running') {
+          await bot.sendMessage(chatId, `Still working on the last one — hang tight.`);
+          return;
+        }
+
+      } catch (err) {
+        await bot.sendMessage(chatId, `❌ Image download failed:\n${err.message}`);
+      }
+      return;
+    }
+  }
+
   // Video handler
   if (msg.video) {
     try {
@@ -1434,7 +1615,7 @@ bot.on('message', async (msg) => {
         s.pendingImages.push({ tempPath, originalName: path.basename(tempPath), fileType: 'video' });
         await bot.sendMessage(
           chatId,
-          `🎥 Got it! Is this:\n\n1️⃣ new — New listing\n2️⃣ update — Fix/replace media for existing product\n\nReply: new or update`
+          `🎥 Got it! Is this:\n\n1️⃣ new — New listing (save files + generate ad)\n2️⃣ update — Fix/replace media for existing product\n3️⃣ ad — Generate marketplace ad only (no file save)\n\nReply: new, update, or ad`
         );
         return;
       }
@@ -1505,8 +1686,32 @@ bot.on('message', async (msg) => {
           chatId,
           `Update existing product ✅\n\nWhich product? Reply with:\nCategory: Pop Culture\nName: SpaceInvaders`
         );
+      } else if (lower === 'ad' || lower === '3') {
+        s.mode = 'ad';
+        s.stage = 'awaitingAdMeta';
+        // Run vision immediately so the bot can suggest the product name
+        const firstImage = s.pendingImages.find(p => p.fileType === 'image');
+        if (VISION_MODEL && firstImage) {
+          try {
+            await bot.sendMessage(chatId, `🔍 Looking at the image...`);
+            const b64 = await imageToBase64(firstImage.tempPath);
+            const visionGuess = await ollamaGenerate({
+              model: VISION_MODEL,
+              prompt: 'In 5 words or less, what product or character is shown in this LED light box? Just name it — no explanation.',
+              imagesBase64: [b64],
+              options: { num_ctx: 1024, num_predict: 30 },
+            });
+            s.adVisionDesc = visionGuess;
+            s.adVisionGuess = visionGuess.trim();
+            await bot.sendMessage(chatId, `Looks like: ${s.adVisionGuess}\n\nWhat do you want to call it? (Just type the name, or "yes" if that's right)`);
+          } catch {
+            await bot.sendMessage(chatId, `What's this one called?`);
+          }
+        } else {
+          await bot.sendMessage(chatId, `What's this one called?`);
+        }
       } else {
-        await bot.sendMessage(chatId, `Reply new or update.`);
+        await bot.sendMessage(chatId, `Reply new, update, or ad.`);
       }
       return;
     }
@@ -1643,6 +1848,45 @@ bot.on('message', async (msg) => {
         return;
       }
       await bot.sendMessage(chatId, `${s.pendingImages.length} file(s) buffered. Send more or type "done" to run.`);
+      return;
+    }
+
+    if (s.stage === 'awaitingAdMeta') {
+      // Accept "yes" to use the vision guess, or anything else as the product name
+      const isYes = /^(yes|yep|yeah|yup|y)$/i.test(text.trim());
+      const productName = isYes ? (s.adVisionGuess || text.trim()) : text.trim();
+
+      if (!productName) {
+        await bot.sendMessage(chatId, `Just type the name for this one.`);
+        return;
+      }
+
+      s.adProductName = productName;
+      s.adCategory = 'General';
+      s.stage = 'awaitingAdPlatform';
+      await bot.sendMessage(
+        chatId,
+        `✅ ${productName}\n\nWhich platform?\n\n1️⃣ facebook — Facebook Marketplace\n2️⃣ etsy — Etsy\n3️⃣ ebay — eBay\n\nReply: facebook, etsy, or ebay`
+      );
+      return;
+    }
+
+    if (s.stage === 'awaitingAdPlatform') {
+      const lower = text.toLowerCase().trim();
+      let platform = null;
+      if (lower === 'facebook' || lower === 'fb' || lower === '1') platform = 'facebook';
+      else if (lower === 'etsy' || lower === '2') platform = 'etsy';
+      else if (lower === 'ebay' || lower === 'e bay' || lower === '3') platform = 'ebay';
+
+      if (!platform) {
+        await bot.sendMessage(chatId, `Reply facebook, etsy, or ebay.`);
+        return;
+      }
+
+      s.adPlatform = platform;
+      const platformLabels = { facebook: 'Facebook Marketplace', etsy: 'Etsy', ebay: 'eBay' };
+      await bot.sendMessage(chatId, `⏳ Generating ${platformLabels[platform]} ad for ${s.adProductName}...`);
+      await runAdWorkflow(chatId);
       return;
     }
 
