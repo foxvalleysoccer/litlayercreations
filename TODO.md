@@ -40,3 +40,8 @@
 - [ ] Post BrewersWI (Sports) to Facebook Marketplace — listing ready
 - [ ] Post badgersWisconsinHelmet (Sports) to Facebook Marketplace — listing ready
 - [ ] Post Titlist (Sports) to Facebook Marketplace — listing ready
+- [ ] Post GoneFishing (Sports) to Facebook Marketplace — listing ready
+- [ ] Post fishingLakeWinnebago (CustomRequests) to Facebook Marketplace — listing ready
+- [ ] Post SnoopAMG (Automotive) to Facebook Marketplace — listing ready
+- [ ] Post brewersNoLabel (Sports) to Facebook Marketplace — listing ready
+- [ ] Post DodgeGray (Automotive) to Facebook Marketplace — listing ready

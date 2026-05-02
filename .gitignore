@@ -1,0 +1,19 @@
+# Node
+node_modules/
+
+# Windows metadata
+desktop.ini
+Thumbs.db
+
+# Telegram incoming queue (processed manually - do not auto-commit)
+_incoming/
+
+# Temp build artifacts
+scan_results.json
+rename-plan.json
+
+# Git lock files
+*.lock
+
+# OS files
+.DS_Store

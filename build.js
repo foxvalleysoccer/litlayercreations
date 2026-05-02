@@ -20,7 +20,7 @@ const CASHAPP_TAG     = '$itsmejoshj';
 const CASHAPP_URL     = 'https://cash.app/$itsmejoshj';
 const WHATSAPP_URL    = '';   // ← add WhatsApp Business short link when ready (wa.me/message/XXXXX)
 const PHONE           = '';
-const DEFAULT_PRICE   = '25';
+const DEFAULT_PRICE   = '30';
 const PRODUCTS_DIR    = path.join(__dirname, 'products');
 // ──────────────────────────────────────────────────────────────────────────────
 

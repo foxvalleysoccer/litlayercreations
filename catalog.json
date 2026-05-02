@@ -106,6 +106,11 @@
         ]
       },
       {
+        "name": "FIFA World Cup",
+        "file": "Automotive/FifaWorldCup.3mf",
+        "media": []
+      },
+      {
         "name": "FireBird",
         "file": "Automotive/FireBird.3mf",
         "media": [
@@ -188,13 +193,6 @@
         ]
       },
       {
-        "name": "Hell Cat Blue",
-        "file": "Automotive/Hell Cat Blue.3mf",
-        "media": [
-          "Automotive/media/Hell Cat Blue/Screenshot 2026-01-18 095254.png"
-        ]
-      },
-      {
         "name": "Hell Cat",
         "file": "Automotive/Hell Cat.3mf",
         "media": [
@@ -205,6 +203,13 @@
           "Automotive/media/Hell Cat/helcat_Light (4).jpg",
           "Automotive/media/Hell Cat/helcat_Light (5).jpg",
           "Automotive/media/Hell Cat/helcat_Light (6).jpg"
+        ]
+      },
+      {
+        "name": "Hell Cat Blue",
+        "file": "Automotive/Hell Cat Blue.3mf",
+        "media": [
+          "Automotive/media/Hell Cat Blue/Screenshot 2026-01-18 095254.png"
         ]
       },
       {
@@ -290,17 +295,17 @@
         ]
       },
       {
-        "name": "MOPAR Red On Red",
-        "file": "Automotive/MOPAR Red On Red.3mf",
-        "media": [
-          "Automotive/media/MOPAR Red On Red/610520131_1878879396349519_3865075599857095906_n.jpg"
-        ]
-      },
-      {
         "name": "MOPAR Red",
         "file": "Automotive/MOPAR Red.3mf",
         "media": [
           "Automotive/media/MOPAR Red/MOPAR_RED.png"
+        ]
+      },
+      {
+        "name": "MOPAR Red On Red",
+        "file": "Automotive/MOPAR Red On Red.3mf",
+        "media": [
+          "Automotive/media/MOPAR Red On Red/610520131_1878879396349519_3865075599857095906_n.jpg"
         ]
       },
       {
@@ -318,13 +323,6 @@
         ]
       },
       {
-        "name": "Porsche Color With Difusion",
-        "file": "Automotive/Porsche Color With Difusion.3mf",
-        "media": [
-          "Automotive/media/Porsche Color With Difusion/661e841a-0503-4acb-8aa1-9e9386938f03.mp4"
-        ]
-      },
-      {
         "name": "Porsche Color",
         "file": "Automotive/Porsche Color.3mf",
         "media": [
@@ -332,6 +330,13 @@
           "Automotive/media/Porsche Color/5bc0f34a-b444-4f32-a74c-b3706f6179cd.jpg",
           "Automotive/media/Porsche Color/661e841a-0503-4acb-8aa1-9e9386938f03.mp4",
           "Automotive/media/Porsche Color/6f2d3243-bed7-4a67-9eaa-f181bb8c7a0e.jpg"
+        ]
+      },
+      {
+        "name": "Porsche Color With Difusion",
+        "file": "Automotive/Porsche Color With Difusion.3mf",
+        "media": [
+          "Automotive/media/Porsche Color With Difusion/661e841a-0503-4acb-8aa1-9e9386938f03.mp4"
         ]
       },
       {
@@ -353,6 +358,11 @@
         ]
       },
       {
+        "name": "S10 Life",
+        "file": "Automotive/s10Life.3mf",
+        "media": []
+      },
+      {
         "name": "shelbyGreen",
         "file": "Automotive/shelbyGreen.3mf",
         "media": [
@@ -361,6 +371,17 @@
           "Automotive/media/shelbyGreen/img_03.jpg",
           "Automotive/media/shelbyGreen/img_04.jpg",
           "Automotive/media/shelbyGreen/vid_01.mp4"
+        ]
+      },
+      {
+        "name": "SnoopAMG",
+        "file": "Automotive/SnoopAMG.3mf",
+        "media": [
+          "Automotive/media/SnoopAMG/img_01.jpg",
+          "Automotive/media/SnoopAMG/img_02.jpg",
+          "Automotive/media/SnoopAMG/img_03.jpg",
+          "Automotive/media/SnoopAMG/img_04.jpg",
+          "Automotive/media/SnoopAMG/vid_01.mp4"
         ]
       },
       {
@@ -416,18 +437,6 @@
     "category": "Christmas",
     "items": [
       {
-        "name": "Christmas Tree Wall Hole",
-        "file": "Christmas/Christmas Tree Wall Hole.3mf",
-        "media": [
-          "Christmas/Media/Christmas Tree Wall Hole/Christmas Tree Light  (1).jpg",
-          "Christmas/Media/Christmas Tree Wall Hole/Christmas Tree Light  (1).png",
-          "Christmas/Media/Christmas Tree Wall Hole/Christmas Tree Light  (2).jpg",
-          "Christmas/Media/Christmas Tree Wall Hole/Christmas Tree Light  (2).png",
-          "Christmas/Media/Christmas Tree Wall Hole/Christmas Tree Light  (3).jpg",
-          "Christmas/Media/Christmas Tree Wall Hole/WeWishYouAMerryChristmas.mp4"
-        ]
-      },
-      {
         "name": "Christmas Tree",
         "file": "Christmas/Christmas Tree.3mf",
         "media": [
@@ -437,6 +446,18 @@
           "Christmas/Media/Christmas Tree/Christmas Tree Light  (2).png",
           "Christmas/Media/Christmas Tree/Christmas Tree Light  (3).jpg",
           "Christmas/Media/Christmas Tree/WeWishYouAMerryChristmas.mp4"
+        ]
+      },
+      {
+        "name": "Christmas Tree Wall Hole",
+        "file": "Christmas/Christmas Tree Wall Hole.3mf",
+        "media": [
+          "Christmas/Media/Christmas Tree Wall Hole/Christmas Tree Light  (1).jpg",
+          "Christmas/Media/Christmas Tree Wall Hole/Christmas Tree Light  (1).png",
+          "Christmas/Media/Christmas Tree Wall Hole/Christmas Tree Light  (2).jpg",
+          "Christmas/Media/Christmas Tree Wall Hole/Christmas Tree Light  (2).png",
+          "Christmas/Media/Christmas Tree Wall Hole/Christmas Tree Light  (3).jpg",
+          "Christmas/Media/Christmas Tree Wall Hole/WeWishYouAMerryChristmas.mp4"
         ]
       },
       {
@@ -454,6 +475,21 @@
           "Christmas/Media/Frosty The Snowman/f61fe5ec-d2f6-4da5-994b-da0f22f23b26.jpg",
           "Christmas/Media/Frosty The Snowman/f87e50c2-1688-4a3d-99c0-25a3eba3911d.jpg",
           "Christmas/Media/Frosty The Snowman/frosty.mp4"
+        ]
+      },
+      {
+        "name": "Grinch",
+        "file": "Christmas/Grinch.3mf",
+        "media": [
+          "Christmas/Media/Grinch/004fcd7c-a25f-455c-9c8c-f6c8e8f84bbc.jpg",
+          "Christmas/Media/Grinch/07aa53b9-52bb-478e-bf76-2651ca944795.mp4",
+          "Christmas/Media/Grinch/1.jpg",
+          "Christmas/Media/Grinch/11.jpg",
+          "Christmas/Media/Grinch/12.jpg",
+          "Christmas/Media/Grinch/123.mp4",
+          "Christmas/Media/Grinch/817fc8a6-cb68-467e-9049-3ad882db5235.jpg",
+          "Christmas/Media/Grinch/b79c9095-26d6-4c48-9a41-29d4e60c8cc6.jpg",
+          "Christmas/Media/Grinch/GrinchFace.mp4"
         ]
       },
       {
@@ -477,21 +513,6 @@
           "Christmas/Media/Grinch Stink/cc6d5dbf-2e21-43bc-b660-18858cbfb2d1.jpg",
           "Christmas/Media/Grinch Stink/e0b82982-747a-4329-8b6c-c005917894f3.jpg",
           "Christmas/Media/Grinch Stink/ffbf3638-bf92-4917-9bbb-ec3aa26c26f7.mp4"
-        ]
-      },
-      {
-        "name": "Grinch",
-        "file": "Christmas/Grinch.3mf",
-        "media": [
-          "Christmas/Media/Grinch/004fcd7c-a25f-455c-9c8c-f6c8e8f84bbc.jpg",
-          "Christmas/Media/Grinch/07aa53b9-52bb-478e-bf76-2651ca944795.mp4",
-          "Christmas/Media/Grinch/1.jpg",
-          "Christmas/Media/Grinch/11.jpg",
-          "Christmas/Media/Grinch/12.jpg",
-          "Christmas/Media/Grinch/123.mp4",
-          "Christmas/Media/Grinch/817fc8a6-cb68-467e-9049-3ad882db5235.jpg",
-          "Christmas/Media/Grinch/b79c9095-26d6-4c48-9a41-29d4e60c8cc6.jpg",
-          "Christmas/Media/Grinch/GrinchFace.mp4"
         ]
       },
       {
@@ -524,17 +545,6 @@
         ]
       },
       {
-        "name": "Snowman Family lg",
-        "file": "Christmas/Snowman Family lg.3mf",
-        "media": [
-          "Christmas/Media/Snowman Family lg/7a491e29-0b25-4ffa-acd0-db0c8e15b042.jpg",
-          "Christmas/Media/Snowman Family lg/a341acab-6d8e-4850-97f1-ffda245dc234.jpg",
-          "Christmas/Media/Snowman Family lg/a754bde4-f877-48c2-aee8-6bba090c8fad.jpg",
-          "Christmas/Media/Snowman Family lg/d6ec93d2-d78e-48a7-9311-be3ca9765c68.mp4",
-          "Christmas/Media/Snowman Family lg/snowmanfamily.mp4"
-        ]
-      },
-      {
         "name": "Snowman Family",
         "file": "Christmas/Snowman Family.3mf",
         "media": [
@@ -546,13 +556,14 @@
         ]
       },
       {
-        "name": "Yoda With Gift lg",
-        "file": "Christmas/Yoda With Gift lg.3mf",
+        "name": "Snowman Family lg",
+        "file": "Christmas/Snowman Family lg.3mf",
         "media": [
-          "Christmas/Media/Yoda With Gift lg/429e36f6-088a-4426-83e8-58fa08b43be9.mp4",
-          "Christmas/Media/Yoda With Gift lg/598765329_1537324784147871_5669641388217718279_n.jpg",
-          "Christmas/Media/Yoda With Gift lg/600449649_1425321962295394_5942373490188453208_n.jpg",
-          "Christmas/Media/Yoda With Gift lg/602150472_1521140182457186_4249531871388561037_n.jpg"
+          "Christmas/Media/Snowman Family lg/7a491e29-0b25-4ffa-acd0-db0c8e15b042.jpg",
+          "Christmas/Media/Snowman Family lg/a341acab-6d8e-4850-97f1-ffda245dc234.jpg",
+          "Christmas/Media/Snowman Family lg/a754bde4-f877-48c2-aee8-6bba090c8fad.jpg",
+          "Christmas/Media/Snowman Family lg/d6ec93d2-d78e-48a7-9311-be3ca9765c68.mp4",
+          "Christmas/Media/Snowman Family lg/snowmanfamily.mp4"
         ]
       },
       {
@@ -563,6 +574,16 @@
           "Christmas/Media/Yoda With Gift/598765329_1537324784147871_5669641388217718279_n.jpg",
           "Christmas/Media/Yoda With Gift/600449649_1425321962295394_5942373490188453208_n.jpg",
           "Christmas/Media/Yoda With Gift/602150472_1521140182457186_4249531871388561037_n.jpg"
+        ]
+      },
+      {
+        "name": "Yoda With Gift lg",
+        "file": "Christmas/Yoda With Gift lg.3mf",
+        "media": [
+          "Christmas/Media/Yoda With Gift lg/429e36f6-088a-4426-83e8-58fa08b43be9.mp4",
+          "Christmas/Media/Yoda With Gift lg/598765329_1537324784147871_5669641388217718279_n.jpg",
+          "Christmas/Media/Yoda With Gift lg/600449649_1425321962295394_5942373490188453208_n.jpg",
+          "Christmas/Media/Yoda With Gift lg/602150472_1521140182457186_4249531871388561037_n.jpg"
         ]
       }
     ]
@@ -588,6 +609,11 @@
         "media": []
       },
       {
+        "name": "Clown",
+        "file": "CustomRequests/Clown.3mf",
+        "media": []
+      },
+      {
         "name": "Crowe Thrifts",
         "file": "CustomRequests/Crowe Thrifts.3mf",
         "media": []
@@ -603,6 +629,18 @@
         "media": []
       },
       {
+        "name": "Fishing Lake Winnebago",
+        "file": "CustomRequests/fishingLakeWinnebago.3mf",
+        "media": [
+          "CustomRequests/Media/fishingLakeWinnebago/img_01.jpg",
+          "CustomRequests/Media/fishingLakeWinnebago/img_02.jpg",
+          "CustomRequests/Media/fishingLakeWinnebago/img_03.jpg",
+          "CustomRequests/Media/fishingLakeWinnebago/img_04.jpg",
+          "CustomRequests/Media/fishingLakeWinnebago/img_05.jpg",
+          "CustomRequests/Media/fishingLakeWinnebago/vid_01.mp4"
+        ]
+      },
+      {
         "name": "Hawk Hunter",
         "file": "CustomRequests/Hawk Hunter.3mf",
         "media": []
@@ -613,9 +651,23 @@
         "media": []
       },
       {
+        "name": "Homestead Bicycles",
+        "file": "CustomRequests/homesteadBicycles.3mf",
+        "media": []
+      },
+      {
         "name": "ItsFuckThisChitOclock",
         "file": "CustomRequests/ItsFuckThisChitOclock.3mf",
-        "media": []
+        "media": [
+          "CustomRequests/Media/ItsFuckThisChitOclock/1b0a9063-6363-4155-8838-0108d4f3b07e.jpg",
+          "CustomRequests/Media/ItsFuckThisChitOclock/2580175c-c43a-475c-bbd9-1b2ab51a37b6.jpg",
+          "CustomRequests/Media/ItsFuckThisChitOclock/3aabe229-306f-4006-a533-3b7d63aeb55d.jpg",
+          "CustomRequests/Media/ItsFuckThisChitOclock/49775657-fcde-440a-a426-0a33b0153ed5.jpg",
+          "CustomRequests/Media/ItsFuckThisChitOclock/869574df-01d5-4bff-90f8-9685f5249575.jpg",
+          "CustomRequests/Media/ItsFuckThisChitOclock/900dd8dd-6346-4f32-820a-b28ab3d57927 (1).mp4",
+          "CustomRequests/Media/ItsFuckThisChitOclock/900dd8dd-6346-4f32-820a-b28ab3d57927.mp4",
+          "CustomRequests/Media/ItsFuckThisChitOclock/c90940d5-30f7-4799-b436-2b373e037d39.jpg"
+        ]
       },
       {
         "name": "Jody2",
@@ -643,6 +695,11 @@
       {
         "name": "Racecar Driver Logo Light",
         "file": "CustomRequests/Racecar Driver Logo Light.3mf",
+        "media": []
+      },
+      {
+        "name": "RAD",
+        "file": "CustomRequests/RAD.3mf",
         "media": []
       },
       {
@@ -710,6 +767,15 @@
         ]
       },
       {
+        "name": "Pumpkin",
+        "file": "halloween/Pumpkin.3mf",
+        "media": [
+          "halloween/media/Pumpkin/53eecaec-4f9f-4804-adaf-4a1035831b21.mp4",
+          "halloween/media/Pumpkin/e1bbe4e1-0644-498a-a143-77af8022bd0b.jpg",
+          "halloween/media/Pumpkin/f2ff3be7-9223-4bf6-9763-dc9bc72cdf2a.jpg"
+        ]
+      },
+      {
         "name": "Pumpkin Witch",
         "file": "halloween/Pumpkin Witch.3mf",
         "media": [
@@ -720,12 +786,13 @@
         ]
       },
       {
-        "name": "Pumpkin",
-        "file": "halloween/Pumpkin.3mf",
+        "name": "Skull Face",
+        "file": "halloween/Skull Face.3mf",
         "media": [
-          "halloween/media/Pumpkin/53eecaec-4f9f-4804-adaf-4a1035831b21.mp4",
-          "halloween/media/Pumpkin/e1bbe4e1-0644-498a-a143-77af8022bd0b.jpg",
-          "halloween/media/Pumpkin/f2ff3be7-9223-4bf6-9763-dc9bc72cdf2a.jpg"
+          "halloween/media/Skull Face/1deefb4d-a1b0-48ff-b302-122d5427793a.jpg",
+          "halloween/media/Skull Face/d0c4528c-d7aa-406d-aaa0-374d4a52f22a.mp4",
+          "halloween/media/Skull Face/e94a761c-cda4-49fd-805d-29754d9824f7.jpg",
+          "halloween/media/Skull Face/f68e4686-671f-4a8b-add6-500257f6fbe5.jpg"
         ]
       },
       {
@@ -736,16 +803,6 @@
           "halloween/media/Skull Face lg/d0c4528c-d7aa-406d-aaa0-374d4a52f22a.mp4",
           "halloween/media/Skull Face lg/e94a761c-cda4-49fd-805d-29754d9824f7.jpg",
           "halloween/media/Skull Face lg/f68e4686-671f-4a8b-add6-500257f6fbe5.jpg"
-        ]
-      },
-      {
-        "name": "Skull Face",
-        "file": "halloween/Skull Face.3mf",
-        "media": [
-          "halloween/media/Skull Face/1deefb4d-a1b0-48ff-b302-122d5427793a.jpg",
-          "halloween/media/Skull Face/d0c4528c-d7aa-406d-aaa0-374d4a52f22a.mp4",
-          "halloween/media/Skull Face/e94a761c-cda4-49fd-805d-29754d9824f7.jpg",
-          "halloween/media/Skull Face/f68e4686-671f-4a8b-add6-500257f6fbe5.jpg"
         ]
       },
       {
@@ -763,21 +820,21 @@
         ]
       },
       {
-        "name": "Yoda Pumpkin lg",
-        "file": "halloween/Yoda Pumpkin lg.3mf",
-        "media": [
-          "halloween/media/Yoda Pumpkin lg/0ce804a4-e3ab-44a7-918c-200cbd90fff7.jpg",
-          "halloween/media/Yoda Pumpkin lg/17515c72-8e53-4bb9-8216-9f4f1224e11d.jpg",
-          "halloween/media/Yoda Pumpkin lg/e3ece855-0ec2-4896-9bc2-c07c88f5e9b7.mp4"
-        ]
-      },
-      {
         "name": "Yoda Pumpkin",
         "file": "halloween/Yoda Pumpkin.3mf",
         "media": [
           "halloween/media/Yoda Pumpkin/0ce804a4-e3ab-44a7-918c-200cbd90fff7.jpg",
           "halloween/media/Yoda Pumpkin/17515c72-8e53-4bb9-8216-9f4f1224e11d.jpg",
           "halloween/media/Yoda Pumpkin/e3ece855-0ec2-4896-9bc2-c07c88f5e9b7.mp4"
+        ]
+      },
+      {
+        "name": "Yoda Pumpkin lg",
+        "file": "halloween/Yoda Pumpkin lg.3mf",
+        "media": [
+          "halloween/media/Yoda Pumpkin lg/0ce804a4-e3ab-44a7-918c-200cbd90fff7.jpg",
+          "halloween/media/Yoda Pumpkin lg/17515c72-8e53-4bb9-8216-9f4f1224e11d.jpg",
+          "halloween/media/Yoda Pumpkin lg/e3ece855-0ec2-4896-9bc2-c07c88f5e9b7.mp4"
         ]
       }
     ]
@@ -810,19 +867,6 @@
         ]
       },
       {
-        "name": "Batman Bat Wing",
-        "file": "Pop Culture/Batman Bat Wing.3mf",
-        "media": [
-          "Pop Culture/media/Batman Bat Wing/06b0ca05-4d4e-46f7-8723-8459ae547164.jpg",
-          "Pop Culture/media/Batman Bat Wing/108b0052-9c90-486c-8bc4-099c36961c53.jpg",
-          "Pop Culture/media/Batman Bat Wing/27ff5bc3-ba9b-4be1-b1d9-a9a691c3a5d0.jpg",
-          "Pop Culture/media/Batman Bat Wing/3ca514b5-7b1c-41a6-b5de-81f8ae6191ae.jpg",
-          "Pop Culture/media/Batman Bat Wing/61d9ea9d-28af-4c6c-bd73-f3f7056d81fd.mp4",
-          "Pop Culture/media/Batman Bat Wing/656d5365-9bf5-433f-8405-8856b3841341.jpg",
-          "Pop Culture/media/Batman Bat Wing/8559cb11-2a6b-4ba7-bc02-216af6602ba2.jpg"
-        ]
-      },
-      {
         "name": "Batman",
         "file": "Pop Culture/Batman.3mf",
         "media": [
@@ -835,6 +879,19 @@
           "Pop Culture/media/Batman/c21d4815-94fd-4e2a-bae4-7e1de9ba1ecc.mp4",
           "Pop Culture/media/Batman/cccf386f-e0ba-417b-8f60-2b6af5ddc00f.jpg",
           "Pop Culture/media/Batman/dec5ee45-ae16-4541-ad9e-f1080e0574e9.jpg"
+        ]
+      },
+      {
+        "name": "Batman Bat Wing",
+        "file": "Pop Culture/Batman Bat Wing.3mf",
+        "media": [
+          "Pop Culture/media/Batman Bat Wing/06b0ca05-4d4e-46f7-8723-8459ae547164.jpg",
+          "Pop Culture/media/Batman Bat Wing/108b0052-9c90-486c-8bc4-099c36961c53.jpg",
+          "Pop Culture/media/Batman Bat Wing/27ff5bc3-ba9b-4be1-b1d9-a9a691c3a5d0.jpg",
+          "Pop Culture/media/Batman Bat Wing/3ca514b5-7b1c-41a6-b5de-81f8ae6191ae.jpg",
+          "Pop Culture/media/Batman Bat Wing/61d9ea9d-28af-4c6c-bd73-f3f7056d81fd.mp4",
+          "Pop Culture/media/Batman Bat Wing/656d5365-9bf5-433f-8405-8856b3841341.jpg",
+          "Pop Culture/media/Batman Bat Wing/8559cb11-2a6b-4ba7-bc02-216af6602ba2.jpg"
         ]
       },
       {
@@ -984,16 +1041,16 @@
         "name": "KingdomOfHearts",
         "file": "Pop Culture/KingdomOfHearts.3mf",
         "media": [
-          "Pop Culture/media/KingdomOfHearts/kingdom_hearts_front_1.jpg",
-          "Pop Culture/media/KingdomOfHearts/kingdom_hearts_front_2.jpg",
-          "Pop Culture/media/KingdomOfHearts/kingdom_hearts_front_3.jpg",
-          "Pop Culture/media/KingdomOfHearts/kingdom_hearts_front_4.jpg",
-          "Pop Culture/media/KingdomOfHearts/kingdom_hearts_front_5.jpg",
+          "Pop Culture/media/KingdomOfHearts/kingdom_hearts_blue_angle_1.jpg",
           "Pop Culture/media/KingdomOfHearts/kingdom_hearts_blue_front_1.jpg",
           "Pop Culture/media/KingdomOfHearts/kingdom_hearts_blue_front_2.jpg",
           "Pop Culture/media/KingdomOfHearts/kingdom_hearts_blue_front_3.jpg",
           "Pop Culture/media/KingdomOfHearts/kingdom_hearts_blue_front_4.jpg",
-          "Pop Culture/media/KingdomOfHearts/kingdom_hearts_blue_angle_1.jpg"
+          "Pop Culture/media/KingdomOfHearts/kingdom_hearts_front_1.jpg",
+          "Pop Culture/media/KingdomOfHearts/kingdom_hearts_front_2.jpg",
+          "Pop Culture/media/KingdomOfHearts/kingdom_hearts_front_3.jpg",
+          "Pop Culture/media/KingdomOfHearts/kingdom_hearts_front_4.jpg",
+          "Pop Culture/media/KingdomOfHearts/kingdom_hearts_front_5.jpg"
         ]
       },
       {
@@ -1014,17 +1071,17 @@
         ]
       },
       {
-        "name": "LV Letters",
-        "file": "Pop Culture/LV Letters.3mf",
-        "media": [
-          "Pop Culture/media/LV Letters/Screenshot 2026-01-18 102101.png"
-        ]
-      },
-      {
         "name": "LV",
         "file": "Pop Culture/LV.3mf",
         "media": [
           "Pop Culture/media/LV/Screenshot 2026-01-18 102634.png"
+        ]
+      },
+      {
+        "name": "LV Letters",
+        "file": "Pop Culture/LV Letters.3mf",
+        "media": [
+          "Pop Culture/media/LV Letters/Screenshot 2026-01-18 102101.png"
         ]
       },
       {
@@ -1037,6 +1094,11 @@
           "Pop Culture/media/Mario Flying/img_03.jpg",
           "Pop Culture/media/Mario Flying/img_04.jpg"
         ]
+      },
+      {
+        "name": "Mario On Yoshi",
+        "file": "Pop Culture/MarioOnYoshi.3mf",
+        "media": []
       },
       {
         "name": "Mario Yoshi",
@@ -1131,11 +1193,6 @@
         ]
       },
       {
-        "name": "RatFink (1)",
-        "file": "Pop Culture/RatFink (1).3mf",
-        "media": []
-      },
-      {
         "name": "RatFink",
         "file": "Pop Culture/RatFink.3mf",
         "media": [
@@ -1145,6 +1202,11 @@
           "Pop Culture/media/RatFink/ratfink_front_1.jpg",
           "Pop Culture/media/RatFink/ratfink_front_2.jpg"
         ]
+      },
+      {
+        "name": "RatFink (1)",
+        "file": "Pop Culture/RatFink (1).3mf",
+        "media": []
       },
       {
         "name": "Resident Evil",
@@ -1195,16 +1257,6 @@
         "media": []
       },
       {
-        "name": "Spiderman Face",
-        "file": "Pop Culture/Spiderman Face.3mf",
-        "media": [
-          "Pop Culture/media/Spiderman Face/spiderman_face_angle_1.jpg",
-          "Pop Culture/media/Spiderman Face/spiderman_face_back.jpg",
-          "Pop Culture/media/Spiderman Face/spiderman_face_front_1.jpg",
-          "Pop Culture/media/Spiderman Face/spiderman_face_front_2.jpg"
-        ]
-      },
-      {
         "name": "Spiderman",
         "file": "Pop Culture/Spiderman.3mf",
         "media": [
@@ -1215,6 +1267,16 @@
           "Pop Culture/media/Spiderman/ca8c5bb7-60e8-431c-b439-05635dffe72f.jpg",
           "Pop Culture/media/Spiderman/e4eb9e7d-5c90-4d2a-b19d-866660937683.mp4",
           "Pop Culture/media/Spiderman/e61af085-a50d-4dbf-b065-28828f632aa9.jpg"
+        ]
+      },
+      {
+        "name": "Spiderman Face",
+        "file": "Pop Culture/Spiderman Face.3mf",
+        "media": [
+          "Pop Culture/media/Spiderman Face/spiderman_face_angle_1.jpg",
+          "Pop Culture/media/Spiderman Face/spiderman_face_back.jpg",
+          "Pop Culture/media/Spiderman Face/spiderman_face_front_1.jpg",
+          "Pop Culture/media/Spiderman Face/spiderman_face_front_2.jpg"
         ]
       },
       {
@@ -1278,6 +1340,20 @@
         ]
       },
       {
+        "name": "Tales From The Crypt",
+        "file": "Pop Culture/Tales From The Crypt.3mf",
+        "media": [
+          "Pop Culture/media/Tales From The Crypt/38e69ff9-93d4-425e-87ef-f9ae4bc48191.jpg",
+          "Pop Culture/media/Tales From The Crypt/50b52bda-c921-4f09-8ad1-8e052c1bbaea.jpg",
+          "Pop Culture/media/Tales From The Crypt/567745836_1134401128859188_7162612975532323201_n.jpg",
+          "Pop Culture/media/Tales From The Crypt/567749080_1130855112090745_7589146802457188767_n.jpg",
+          "Pop Culture/media/Tales From The Crypt/567751548_3134491973395529_5992999261165912934_n.jpg",
+          "Pop Culture/media/Tales From The Crypt/57f73833-8648-4a6f-95a9-999118a4b94d.mp4",
+          "Pop Culture/media/Tales From The Crypt/659dc8c6-2516-47ad-adf8-706e16526919.jpg",
+          "Pop Culture/media/Tales From The Crypt/8613f605-d052-49ca-9581-a58876bc0038.mp4"
+        ]
+      },
+      {
         "name": "Tales From The Crypt Default",
         "file": "Pop Culture/Tales From The Crypt Default.3mf",
         "media": [
@@ -1292,18 +1368,9 @@
         ]
       },
       {
-        "name": "Tales From The Crypt",
-        "file": "Pop Culture/Tales From The Crypt.3mf",
-        "media": [
-          "Pop Culture/media/Tales From The Crypt/38e69ff9-93d4-425e-87ef-f9ae4bc48191.jpg",
-          "Pop Culture/media/Tales From The Crypt/50b52bda-c921-4f09-8ad1-8e052c1bbaea.jpg",
-          "Pop Culture/media/Tales From The Crypt/567745836_1134401128859188_7162612975532323201_n.jpg",
-          "Pop Culture/media/Tales From The Crypt/567749080_1130855112090745_7589146802457188767_n.jpg",
-          "Pop Culture/media/Tales From The Crypt/567751548_3134491973395529_5992999261165912934_n.jpg",
-          "Pop Culture/media/Tales From The Crypt/57f73833-8648-4a6f-95a9-999118a4b94d.mp4",
-          "Pop Culture/media/Tales From The Crypt/659dc8c6-2516-47ad-adf8-706e16526919.jpg",
-          "Pop Culture/media/Tales From The Crypt/8613f605-d052-49ca-9581-a58876bc0038.mp4"
-        ]
+        "name": "Teenage Mutant Ninja Turtles",
+        "file": "Pop Culture/TeenageMuntantNinjaTurtles.3mf",
+        "media": []
       },
       {
         "name": "The Mystery Machine",
@@ -1365,6 +1432,11 @@
   {
     "category": "Sports",
     "items": [
+      {
+        "name": "Abby's Wakeboarder",
+        "file": "Sports/AbbysWakeboarder.3mf",
+        "media": []
+      },
       {
         "name": "badgersWisconsinHelmet",
         "file": "Sports/badgersWisconsinHelmet.3mf",
@@ -1441,17 +1513,6 @@
         ]
       },
       {
-        "name": "BrewersWI",
-        "file": "Sports/BrewersWI.3mf",
-        "media": [
-          "Sports/Media/BrewersWI/img_01.jpg",
-          "Sports/Media/BrewersWI/img_02.jpg",
-          "Sports/Media/BrewersWI/img_03.jpg",
-          "Sports/Media/BrewersWI/img_04.jpg",
-          "Sports/Media/BrewersWI/vid_01.mp4"
-        ]
-      },
-      {
         "name": "Bucks Mascot",
         "file": "Sports/Bucks Mascot.3mf",
         "media": [
@@ -1513,6 +1574,11 @@
         ]
       },
       {
+        "name": "Bucky Badger",
+        "file": "Sports/BuckyBadger.3mf",
+        "media": []
+      },
+      {
         "name": "ChicagoBulls",
         "file": "Sports/ChicagoBulls.3mf",
         "media": [
@@ -1537,6 +1603,32 @@
         ]
       },
       {
+        "name": "Gone Fishing",
+        "file": "Sports/GoneFishing.3mf",
+        "media": [
+          "Sports/Media/GoneFishing/img_01.jpg",
+          "Sports/Media/GoneFishing/img_02.jpg",
+          "Sports/Media/GoneFishing/img_03.jpg",
+          "Sports/Media/GoneFishing/img_04.jpg",
+          "Sports/Media/GoneFishing/vid_01.mp4"
+        ]
+      },
+      {
+        "name": "Haro Racing",
+        "file": "Sports/HaroRacing.3mf",
+        "media": []
+      },
+      {
+        "name": "Kayaking",
+        "file": "Sports/Kayaking.3mf",
+        "media": [
+          "Sports/Media/Kayaking/image1.jpg",
+          "Sports/Media/Kayaking/image2.jpg",
+          "Sports/Media/Kayaking/image3.jpg",
+          "Sports/Media/Kayaking/image4.jpg"
+        ]
+      },
+      {
         "name": "Kayaking Blue",
         "file": "Sports/Kayaking Blue.3mf",
         "media": [
@@ -1548,16 +1640,6 @@
           "Sports/Media/Kayaking Blue/img_02.jpg",
           "Sports/Media/Kayaking Blue/img_03.jpg",
           "Sports/Media/Kayaking Blue/img_04.jpg"
-        ]
-      },
-      {
-        "name": "Kayaking",
-        "file": "Sports/Kayaking.3mf",
-        "media": [
-          "Sports/Media/Kayaking/image1.jpg",
-          "Sports/Media/Kayaking/image2.jpg",
-          "Sports/Media/Kayaking/image3.jpg",
-          "Sports/Media/Kayaking/image4.jpg"
         ]
       },
       {
@@ -1573,6 +1655,11 @@
         "media": [
           "Sports/Media/Michigan Wolverines/Michigan Wolverines.png"
         ]
+      },
+      {
+        "name": "Mongoose",
+        "file": "Sports/Mongoose.3mf",
+        "media": []
       },
       {
         "name": "NE Patriots Fan Light",
@@ -1614,13 +1701,6 @@
         ]
       },
       {
-        "name": "Packers Helmet 225 Width",
-        "file": "Sports/Packers Helmet 225 Width.3mf",
-        "media": [
-          "Sports/Media/Packers Helmet 225 Width/8cf2887a-1ae2-4268-8026-3b14c02a19c8 (1).jpg"
-        ]
-      },
-      {
         "name": "Packers Helmet",
         "file": "Sports/Packers Helmet.3mf",
         "media": [
@@ -1640,6 +1720,13 @@
           "Sports/Media/Packers Helmet/packers Light.jpg",
           "Sports/Media/Packers Helmet/Packers Light.mp4",
           "Sports/Media/Packers Helmet/Packers LightBox.mp4"
+        ]
+      },
+      {
+        "name": "Packers Helmet 225 Width",
+        "file": "Sports/Packers Helmet 225 Width.3mf",
+        "media": [
+          "Sports/Media/Packers Helmet 225 Width/8cf2887a-1ae2-4268-8026-3b14c02a19c8 (1).jpg"
         ]
       },
       {
