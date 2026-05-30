@@ -387,10 +387,11 @@ function generateIndex() {
   let catalogHtml = '';
 
   catalog.forEach(cat => {
+    if (['Old Labels'].includes(cat.category)) return; // internal — skip entirely
     const catSlug = toSlug(cat.category);
     let itemsHtml = '';
 
-    cat.items.forEach(item => {
+    cat.items.filter(item => (item.media || []).some(m => !m.endsWith('.mp4'))).forEach(item => {
       const productPath = getProductPath(cat.category, item.name);
       const description = item.description || generateDescription(item.name, cat.category);
       const allMedia = (item.media || []);
@@ -558,9 +559,9 @@ let skippedCount = 0;
 // Generate product pages
 catalog.forEach(cat => {
   // Skip utility/internal categories from getting public pages
-  const skip = ['Old Labels', 'CustomRequests'].includes(cat.category);
+  const skip = ['Old Labels'].includes(cat.category);
 
-  cat.items.forEach(item => {
+  cat.items.filter(item => (item.media || []).some(m => !m.endsWith('.mp4'))).forEach(item => {
     productSlugs.push({ category: cat.category, name: item.name });
 
     if (!skip) {
@@ -584,7 +585,7 @@ console.log('✅ Generated index.html (fully static, no JS fetch)');
 
 // Generate sitemap.xml
 const sitemapXml = generateSitemap(productSlugs.filter(p =>
-  !['Old Labels', 'CustomRequests'].includes(p.category)
+  !['Old Labels'].includes(p.category)
 ));
 fs.writeFileSync(path.join(__dirname, 'sitemap.xml'), sitemapXml, 'utf8');
 console.log('✅ Generated sitemap.xml');
