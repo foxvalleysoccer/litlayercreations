@@ -22,7 +22,11 @@ function scanCategory(categoryPath, categoryName) {
     if (dirent.isFile() && dirent.name.endsWith(".3mf")) {
       const baseName = dirent.name.replace(".3mf", "");
 
-      const mediaDir = path.join(categoryPath, mediaFolderName, baseName);
+      const mediaRoot = path.join(categoryPath, mediaFolderName);
+      const mediaSubfolder = fs.readdirSync(mediaRoot, { withFileTypes: true })
+        .find(d => d.isDirectory() && d.name.toLowerCase() === baseName.toLowerCase());
+      const mediaSubfolderName = mediaSubfolder ? mediaSubfolder.name : baseName;
+      const mediaDir = path.join(mediaRoot, mediaSubfolderName);
       let media = [];
 
       if (fs.existsSync(mediaDir)) {
@@ -32,7 +36,7 @@ function scanCategory(categoryPath, categoryName) {
           .map(f => path.join(
             categoryName,
             mediaFolderName,
-            baseName,
+            mediaSubfolderName,
             f
           ).replace(/\\/g, "/"));
       }
