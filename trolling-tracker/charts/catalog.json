@@ -3,19 +3,6 @@
   "updated": "2026-07-01",
   "charts": [
     {
-      "id": "wi-green-green-lake",
-      "name": "Green Lake",
-      "county": "Green Lake",
-      "state": "WI",
-      "source": "Wisconsin DNR",
-      "sourceUrl": "https://apps.dnr.wi.gov/lakes/lakepages/LakeDetail.aspx?wbic=146100",
-      "imageUrl": "https://litlayercreations.com/trolling-tracker/charts/wisconsin/green-lake.png",
-      "south": 43.7604855,
-      "west": -89.0693001,
-      "north": 43.8481290,
-      "east": -88.9080868
-    },
-    {
       "id": "wi-winnebago-lake-winnebago",
       "name": "Lake Winnebago",
       "county": "Fond du Lac, Calumet, Winnebago",
@@ -27,19 +14,6 @@
       "west": -88.5375638,
       "north": 44.2090472,
       "east": -88.2941969
-    },
-    {
-      "id": "wi-vilas-trout-lake",
-      "name": "Trout Lake",
-      "county": "Vilas",
-      "state": "WI",
-      "source": "Wisconsin DNR",
-      "sourceUrl": "https://apps.dnr.wi.gov/lakes/lakepages/LakeDetail.aspx?wbic=2331600",
-      "imageUrl": "https://litlayercreations.com/trolling-tracker/charts/wisconsin/trout-lake-vilas.png",
-      "south": 46.0129355,
-      "west": -89.7039277,
-      "north": 46.0791132,
-      "east": -89.6467726
     }
   ]
 }
