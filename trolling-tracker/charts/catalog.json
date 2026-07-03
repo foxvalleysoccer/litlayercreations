@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-01",
+  "updated": "2026-07-03",
   "charts": [
     {
       "id": "wi-winnebago-lake-winnebago",
@@ -14,6 +14,40 @@
       "west": -88.5375638,
       "north": 44.2090472,
       "east": -88.2941969
+    },
+    {
+      "id": "wi-dane-lake-mendota",
+      "name": "Lake Mendota",
+      "county": "Dane",
+      "state": "WI",
+      "source": "NTL-LTER (North Temperate Lakes Long-Term Ecological Research), UW-Madison Center for Limnology / Environmental Data Initiative",
+      "sourceUrl": "https://doi.org/10.6073/pasta/d2169aa8f69918a5b5644f8248345807",
+      "shorelineSourceUrl": "https://apps.dnr.wi.gov/lakes/lakepages/LakeDetail.aspx?wbic=805400",
+      "imageUrl": "https://litlayercreations.com/trolling-tracker/charts/wisconsin/lake-mendota.png",
+      "south": 43.073845,
+      "west": -89.483684,
+      "north": 43.147059,
+      "east": -89.367372,
+      "chartType": "bathymetry",
+      "depthUnit": "feet",
+      "depthBands": [0, 10, 20, 30, 40, 50, 60, 70, 80]
+    },
+    {
+      "id": "wi-vilas-trout-lake",
+      "name": "Trout Lake",
+      "county": "Vilas",
+      "state": "WI",
+      "source": "NTL-LTER (North Temperate Lakes Long-Term Ecological Research), UW-Madison Center for Limnology / Environmental Data Initiative",
+      "sourceUrl": "https://doi.org/10.6073/pasta/5f353d9114aa9f3f13986e19b1cfcf5a",
+      "shorelineSourceUrl": "https://apps.dnr.wi.gov/lakes/lakepages/LakeDetail.aspx?wbic=2331600",
+      "imageUrl": "https://litlayercreations.com/trolling-tracker/charts/wisconsin/trout-lake.png",
+      "south": 46.0129355,
+      "west": -89.7039277,
+      "north": 46.0791132,
+      "east": -89.6467726,
+      "chartType": "bathymetry",
+      "depthUnit": "feet",
+      "depthBands": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110]
     }
   ]
 }
