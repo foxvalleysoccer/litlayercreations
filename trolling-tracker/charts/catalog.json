@@ -65,6 +65,57 @@
       "chartType": "bathymetry",
       "depthUnit": "feet",
       "depthBands": [0, 10, 20, 30]
+    },
+    {
+      "id": "wi-green-lake-little-green-lake",
+      "name": "Little Green Lake",
+      "county": "Green Lake",
+      "state": "WI",
+      "source": "Wisconsin Department of Natural Resources lake survey map",
+      "sourceUrl": "https://apps.dnr.wi.gov/swims/Documents/DownloadDocument?id=29814294",
+      "shorelineSourceUrl": "https://apps.dnr.wi.gov/lakes/lakepages/LakeDetail.aspx?wbic=162500",
+      "imageUrl": "https://litlayercreations.com/trolling-tracker/charts/wisconsin/little-green-lake.png",
+      "south": 43.72931338574505,
+      "west": -88.99778273063282,
+      "north": 43.744910931814296,
+      "east": -88.97282182610704,
+      "chartType": "bathymetry",
+      "depthUnit": "feet",
+      "depthBands": [0, 3, 6, 9, 12, 15, 18, 21, 24, 28]
+    },
+    {
+      "id": "wi-oconto-leigh-flowage",
+      "name": "Leigh Flowage",
+      "county": "Oconto",
+      "state": "WI",
+      "source": "Wisconsin Department of Natural Resources lake survey map",
+      "sourceUrl": "https://apps.dnr.wi.gov/swims/Documents/DownloadDocument?id=29814887",
+      "shorelineSourceUrl": "https://apps.dnr.wi.gov/lakes/lakepages/LakeDetail.aspx?wbic=519500",
+      "imageUrl": "https://litlayercreations.com/trolling-tracker/charts/wisconsin/leigh-flowage.png",
+      "south": 45.04015081261751,
+      "west": -88.24599335193963,
+      "north": 45.052215949015896,
+      "east": -88.22001934833813,
+      "chartType": "bathymetry",
+      "depthUnit": "feet",
+      "depthBands": [0, 3, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 52]
+    },
+    {
+      "id": "wi-marinette-caldron-falls",
+      "name": "Caldron Falls Reservoir",
+      "county": "Marinette, Oconto",
+      "state": "WI",
+      "source": "Wisconsin Department of Natural Resources lake survey map",
+      "sourceUrl": "https://apps.dnr.wi.gov/swims/Documents/DownloadDocument?id=29814911",
+      "shorelineSourceUrl": "https://apps.dnr.wi.gov/lakes/lakepages/LakeDetail.aspx?wbic=545400",
+      "imageUrl": "https://litlayercreations.com/trolling-tracker/charts/wisconsin/caldron-falls.png",
+      "south": 45.34293590187708,
+      "west": -88.30866559673285,
+      "north": 45.37495532888012,
+      "east": -88.23057387709358,
+      "chartType": "bathymetry",
+      "depthUnit": "feet",
+      "depthBands": [0, 5, 10, 15, 20, 25, 30, 35, 40]
     }
   ]
 }
