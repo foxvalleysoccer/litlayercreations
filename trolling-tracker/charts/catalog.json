@@ -16,7 +16,7 @@
       "east": -88.2941969
     },
     {
-      "id": "wi-dane-lake-mendota",
+      "id": "wi-dane-lake-mendota-kelly-v2",
       "name": "Lake Mendota",
       "county": "Dane",
       "state": "WI",
@@ -33,7 +33,7 @@
       "depthBands": [0, 10, 20, 30, 40, 50, 60, 70, 80]
     },
     {
-      "id": "wi-vilas-trout-lake",
+      "id": "wi-vilas-trout-lake-kelly-v2",
       "name": "Trout Lake",
       "county": "Vilas",
       "state": "WI",
@@ -50,7 +50,7 @@
       "depthBands": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110]
     },
     {
-      "id": "wi-green-lake-little-green-lake",
+      "id": "wi-green-lake-little-green-lake-kelly-v2",
       "name": "Little Green Lake",
       "county": "Green Lake",
       "state": "WI",
@@ -67,7 +67,7 @@
       "depthBands": [0, 3, 6, 9, 12, 15, 18, 21, 24, 28]
     },
     {
-      "id": "wi-oconto-leigh-flowage",
+      "id": "wi-oconto-leigh-flowage-kelly-v2",
       "name": "Leigh Flowage",
       "county": "Oconto",
       "state": "WI",
@@ -84,7 +84,7 @@
       "depthBands": [0, 3, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 52]
     },
     {
-      "id": "wi-marinette-caldron-falls",
+      "id": "wi-marinette-caldron-falls-kelly-v2",
       "name": "Caldron Falls Reservoir",
       "county": "Marinette, Oconto",
       "state": "WI",
