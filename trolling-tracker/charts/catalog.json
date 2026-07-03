@@ -48,6 +48,40 @@
       "chartType": "bathymetry",
       "depthUnit": "feet",
       "depthBands": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110]
+    },
+    {
+      "id": "wi-vilas-long-lake-phelps-georef-v1",
+      "name": "Long Lake",
+      "county": "Vilas",
+      "state": "WI",
+      "source": "Wisconsin Department of Natural Resources lake survey map, multi-point georeferenced to the modern DNR shoreline",
+      "sourceUrl": "https://apps.dnr.wi.gov/swims/Documents/DownloadDocument?id=29815905",
+      "shorelineSourceUrl": "https://apps.dnr.wi.gov/lakes/lakepages/LakeDetail.aspx?wbic=1602300",
+      "imageUrl": "https://litlayercreations.com/trolling-tracker/charts/wisconsin/long-lake-vilas.png",
+      "south": 46.0447769,
+      "west": -89.0440362,
+      "north": 46.0811894,
+      "east": -88.993463,
+      "chartType": "bathymetry",
+      "depthUnit": "feet",
+      "depthBands": [0, 5, 10, 20, 30, 40, 50, 60, 70, 80, 85, 88]
+    },
+    {
+      "id": "wi-vilas-forest-kentuck-lake-georef-v1",
+      "name": "Kentuck Lake",
+      "county": "Vilas, Forest",
+      "state": "WI",
+      "source": "Wisconsin Department of Natural Resources lake survey map, multi-point georeferenced to the modern DNR shoreline",
+      "sourceUrl": "https://apps.dnr.wi.gov/swims/Documents/DownloadDocument?id=29815079",
+      "shorelineSourceUrl": "https://apps.dnr.wi.gov/lakes/lakepages/LakeDetail.aspx?wbic=716800",
+      "imageUrl": "https://litlayercreations.com/trolling-tracker/charts/wisconsin/kentuck-lake.png",
+      "south": 45.9700153,
+      "west": -89.0175921,
+      "north": 45.9990968,
+      "east": -88.9818086,
+      "chartType": "bathymetry",
+      "depthUnit": "feet",
+      "depthBands": [0, 5, 10, 15, 20, 25, 30, 35, 40]
     }
   ]
 }
