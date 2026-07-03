@@ -50,23 +50,6 @@
       "depthBands": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110]
     },
     {
-      "id": "wi-vilas-lac-vieux-desert",
-      "name": "Lac Vieux Desert",
-      "county": "Vilas, WI / Gogebic, MI",
-      "state": "WI",
-      "source": "U.S. Geological Survey Scientific Investigations Report 2005-5237",
-      "sourceUrl": "https://pubs.usgs.gov/sir/2005/5237/",
-      "shorelineSourceUrl": "https://apps.dnr.wi.gov/lakes/lakepages/LakeDetail.aspx?wbic=1631900",
-      "imageUrl": "https://litlayercreations.com/trolling-tracker/charts/wisconsin/lac-vieux-desert.png",
-      "south": 46.118543390378775,
-      "west": -89.15266787546805,
-      "north": 46.16265240824304,
-      "east": -89.06236788262196,
-      "chartType": "bathymetry",
-      "depthUnit": "feet",
-      "depthBands": [0, 10, 20, 30]
-    },
-    {
       "id": "wi-green-lake-little-green-lake",
       "name": "Little Green Lake",
       "county": "Green Lake",
