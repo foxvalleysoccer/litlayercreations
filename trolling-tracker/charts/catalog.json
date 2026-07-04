@@ -82,23 +82,6 @@
       "chartType": "bathymetry",
       "depthUnit": "feet",
       "depthBands": [0, 5, 10, 15, 20, 25, 30, 35, 40]
-    },
-    {
-      "id": "wi-shawano-shawano-lake-georef-v1",
-      "name": "Shawano Lake",
-      "county": "Shawano",
-      "state": "WI",
-      "source": "Wisconsin Department of Natural Resources three-sheet lake survey map, mosaicked and multi-point georeferenced to the modern DNR shoreline",
-      "sourceUrl": "https://apps.dnr.wi.gov/doclink/lakes_maps/0322800a.pdf",
-      "shorelineSourceUrl": "https://apps.dnr.wi.gov/lakes/lakepages/LakeDetail.aspx?wbic=322800",
-      "imageUrl": "https://litlayercreations.com/trolling-tracker/charts/wisconsin/shawano-lake.png",
-      "south": 44.7844586,
-      "west": -88.5684915,
-      "north": 44.8277686,
-      "east": -88.4503282,
-      "chartType": "bathymetry",
-      "depthUnit": "feet",
-      "depthBands": [0, 3, 5, 10, 15, 20, 25, 30, 35, 39.5]
     }
   ]
 }
