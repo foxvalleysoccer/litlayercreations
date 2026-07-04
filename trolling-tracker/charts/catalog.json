@@ -99,6 +99,23 @@
       "chartType": "bathymetry",
       "depthUnit": "feet",
       "depthBands": [0, 3, 5, 10, 15, 20, 25, 30, 35, 39.5]
+    },
+    {
+      "id": "wi-oconto-archibald-lake-georef-v1",
+      "name": "Archibald Lake",
+      "county": "Oconto",
+      "state": "WI",
+      "source": "Wisconsin Department of Natural Resources lake survey map, multi-point georeferenced to the modern DNR shoreline and islands",
+      "sourceUrl": "https://apps.dnr.wi.gov/doclink/lakes_maps/0417400a.pdf",
+      "shorelineSourceUrl": "https://apps.dnr.wi.gov/lakes/lakepages/LakeDetail.aspx?wbic=417400",
+      "imageUrl": "https://litlayercreations.com/trolling-tracker/charts/wisconsin/archibald-lake.png",
+      "south": 45.2768549,
+      "west": -88.6012306,
+      "north": 45.2901534,
+      "east": -88.5713085,
+      "chartType": "bathymetry",
+      "depthUnit": "feet",
+      "depthBands": [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
     }
   ]
 }
