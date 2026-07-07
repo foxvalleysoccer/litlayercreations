@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-03",
+  "updated": "2026-07-06",
   "charts": [
     {
       "id": "wi-winnebago-lake-winnebago",
@@ -99,6 +99,23 @@
       "chartType": "bathymetry",
       "depthUnit": "feet",
       "depthBands": [0, 3, 5, 10, 15, 20, 25, 30, 35, 39.5]
+    },
+    {
+      "id": "wi-oconto-leigh-flowage-georef-v1",
+      "name": "Leigh Flowage",
+      "county": "Oconto",
+      "state": "WI",
+      "source": "Wisconsin Department of Natural Resources lake survey map, cropped and fitted to the modern DNR shoreline",
+      "sourceUrl": "https://apps.dnr.wi.gov/doclink/lakes_maps/0519500a.pdf",
+      "shorelineSourceUrl": "https://apps.dnr.wi.gov/lakes/lakepages/LakeDetail.aspx?wbic=519500",
+      "imageUrl": "https://litlayercreations.com/trolling-tracker/charts/wisconsin/leigh-flowage.png",
+      "south": 45.0401508,
+      "west": -88.2459934,
+      "north": 45.0522159,
+      "east": -88.2200193,
+      "chartType": "bathymetry",
+      "depthUnit": "feet",
+      "depthBands": [0, 3, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 52]
     },
     {
       "id": "wi-oconto-archibald-lake-georef-v1",
