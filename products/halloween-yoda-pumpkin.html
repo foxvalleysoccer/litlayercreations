@@ -4,21 +4,21 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Yoda Pumpkin LED Light Box | Custom 3D Printed | Lit Layer Creations</title>
-<meta name="description" content="Custom 3D-printed Yoda Pumpkin LED light box. A spooky handcrafted display for Halloween fans. Color-changing LEDs with remote control. Available in 7-8 inch or 9 inch sizes. Made to order in Neenah, Wisconsin. Ships nationwide." />
+<meta name="description" content="Custom 3D-printed Yoda Pumpkin LED light box. A spooky handcrafted display for Halloween fans. About 9 inches at the largest dimension. USB powered with full remote control — color-changing LEDs, sound-reactive mode, and smooth fade effects. Made to order in Neenah, Wisconsin. Ships nationwide." />
 <link rel="canonical" href="https://litlayercreations.com/products/halloween-yoda-pumpkin.html" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="product" />
 <meta property="og:url" content="https://litlayercreations.com/products/halloween-yoda-pumpkin.html" />
 <meta property="og:title" content="Yoda Pumpkin LED Light Box – Lit Layer Creations" />
-<meta property="og:description" content="Custom 3D-printed Yoda Pumpkin LED light box. A spooky handcrafted display for Halloween fans. Color-changing LEDs with remote control. Available in 7-8 inch or 9 inch sizes. Made to order in Neenah, Wisconsin. Ships nationwide." />
+<meta property="og:description" content="Custom 3D-printed Yoda Pumpkin LED light box. A spooky handcrafted display for Halloween fans. About 9 inches at the largest dimension. USB powered with full remote control — color-changing LEDs, sound-reactive mode, and smooth fade effects. Made to order in Neenah, Wisconsin. Ships nationwide." />
 <meta property="og:image" content="https://litlayercreations.com/halloween/media/Yoda Pumpkin/0ce804a4-e3ab-44a7-918c-200cbd90fff7.jpg" />
 <meta property="og:site_name" content="Lit Layer Creations" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Yoda Pumpkin LED Light Box – Lit Layer Creations" />
-<meta name="twitter:description" content="Custom 3D-printed Yoda Pumpkin LED light box. A spooky handcrafted display for Halloween fans. Color-changing LEDs with remote control. Available in 7-8 inch or 9 inch sizes. Made to order in Neenah, Wisconsin. Ships nationwide." />
+<meta name="twitter:description" content="Custom 3D-printed Yoda Pumpkin LED light box. A spooky handcrafted display for Halloween fans. About 9 inches at the largest dimension. USB powered with full remote control — color-changing LEDs, sound-reactive mode, and smooth fade effects. Made to order in Neenah, Wisconsin. Ships nationwide." />
 <meta name="twitter:image" content="https://litlayercreations.com/halloween/media/Yoda Pumpkin/0ce804a4-e3ab-44a7-918c-200cbd90fff7.jpg" />
 
 <!-- Structured Data: Product -->
@@ -27,7 +27,7 @@
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "Yoda Pumpkin LED Light Box",
-  "description": "Custom 3D-printed Yoda Pumpkin LED light box. A spooky handcrafted display for Halloween fans. Color-changing LEDs with remote control. Available in 7-8 inch or 9 inch sizes. Made to order in Neenah, Wisconsin. Ships nationwide.",
+  "description": "Custom 3D-printed Yoda Pumpkin LED light box. A spooky handcrafted display for Halloween fans. About 9 inches at the largest dimension. USB powered with full remote control — color-changing LEDs, sound-reactive mode, and smooth fade effects. Made to order in Neenah, Wisconsin. Ships nationwide.",
   "image": "https://litlayercreations.com/halloween/media/Yoda Pumpkin/0ce804a4-e3ab-44a7-918c-200cbd90fff7.jpg",
   "brand": { "@type": "Brand", "name": "Lit Layer Creations" },
   "offers": {
@@ -89,18 +89,19 @@
     font-weight: bold;
   }
   .btn:hover { background: #0099cc; color: #fff; }
-  .btn-fb { background: #1877f2; color: #fff; }
-  .btn-fb:hover { background: #0d5fbd; }
   .btn-cashapp   { background: #00D632; color: #000; }
   .btn-cashapp:hover { background: #00b029; color: #000; }
   .btn-whatsapp  { background: #25D366; color: #000; }
   .btn-whatsapp:hover { background: #1ebe5d; color: #000; }
+  .btn-paypal    { background: #0070ba; color: #fff; border: none; font-family: inherit; }
+  .btn-paypal:hover { background: #003087; color: #fff; }
+  .paypal-form   { display: inline-block; margin: 0; }
   .payment-strip {
     display: flex; flex-wrap: wrap; justify-content: center;
     align-items: center; gap: 10px; margin: 12px 0 4px;
     font-size: 13px; color: #aaa;
   }
-  .payment-strip a {
+  .payment-strip a, .payment-strip span.ps-paypal {
     display: inline-flex; align-items: center; gap: 5px;
     padding: 5px 12px; border-radius: 20px;
     font-weight: bold; font-size: 13px; text-decoration: none;
@@ -108,7 +109,17 @@
   .payment-strip .ps-cashapp   { background: #00D632; color: #000; }
   .payment-strip .ps-whatsapp  { background: #25D366; color: #000; }
   .payment-strip .ps-paypal    { background: #003087; color: #fff; }
-  .payment-strip .ps-fb        { background: #1877f2; color: #fff; }
+  .feature-list { list-style: disc; margin: 12px 0; padding-left: 22px; }
+  .feature-list li { margin: 6px 0; font-size: 14px; color: #ddd; font-weight: 600; }
+  .fl-size::marker   { color: #8ecfff; }
+  .fl-usb::marker    { color: #ffd54a; }
+  .fl-remote::marker { color: #c792ff; }
+  .fl-sound::marker  { color: #ff7ab8; }
+  .fl-fade::marker   { color: #47cf73; }
+  .fl-fade {
+    background: linear-gradient(90deg, #ff5f6d, #ffc371, #47cf73, #2196f3, #9b59b6);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
 
 
   body { max-width: 1200px; margin: 0 auto; padding: 20px; }
@@ -188,8 +199,8 @@
   <h1>Lit Layer Creations</h1>
   <div class="payment-strip">
     <span>💳 We accept:</span>
+    <span class="ps-paypal">🅿️ PayPal</span>
     <a href="https://cash.app/$itsmejoshj" target="_blank" class="ps-cashapp">💵 Cash App $itsmejoshj</a>
-    <a href="https://www.facebook.com/marketplace/profile/208200551/" target="_blank" class="ps-fb">📬 Message on FB for PayPal</a>
   </div>
 </header>
 
@@ -207,16 +218,31 @@
 
   <div class="details">
     <h2>Yoda Pumpkin LED Light Box</h2>
-    <p>Custom 3D-printed Yoda Pumpkin LED light box. A spooky handcrafted display for Halloween fans. Color-changing LEDs with remote control. Available in 7-8 inch or 9 inch sizes. Made to order in Neenah, Wisconsin. Ships nationwide.</p>
-    <div class="price">$30.00</div>
+    <p>Custom 3D-printed Yoda Pumpkin LED light box. A spooky handcrafted display for Halloween fans. About 9 inches at the largest dimension. USB powered with full remote control — color-changing LEDs, sound-reactive mode, and smooth fade effects. Made to order in Neenah, Wisconsin. Ships nationwide.</p>
+    <ul class="feature-list">
+        <li class="fl-size">📏 About 9" at the largest dimension</li>
+        <li class="fl-usb">🔌 USB powered</li>
+        <li class="fl-remote">📡 Full remote control</li>
+        <li class="fl-sound">🎵 Sound-reactive mode</li>
+        <li class="fl-fade">🌈 Smooth fade effects</li>
+      </ul>
+    <div class="price">$30.00 <span style="font-size:14px;color:#aaa;">+ $9 shipping</span></div>
 
     <div class="cta-buttons">
-      <a href="https://www.facebook.com/marketplace/profile/208200551/" target="_blank" class="btn btn-fb">📬 Message on Facebook</a>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="paypal-form">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="foxvalleysoccer@gmail.com">
+        <input type="hidden" name="item_name" value="Yoda Pumpkin LED Light Box">
+        <input type="hidden" name="amount" value="30.00">
+        <input type="hidden" name="shipping" value="9.00">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="submit" class="btn btn-paypal" value="🅿️ Buy Now – PayPal">
+      </form>
       <a href="https://cash.app/$itsmejoshj" target="_blank" class="btn btn-cashapp">💵 Pay with Cash App</a>
     </div>
 
     <p class="shipping-note">
-      Also accepts PayPal · Message on FB to pay · Local pickup available in Neenah, WI · Ships nationwide
+      Local pickup available in Neenah, WI · Ships nationwide
     </p>
   </div>
 </div>

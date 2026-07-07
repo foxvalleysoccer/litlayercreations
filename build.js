@@ -21,6 +21,7 @@ const CASHAPP_URL     = 'https://cash.app/$itsmejoshj';
 const WHATSAPP_URL    = '';   // ← add WhatsApp Business short link when ready (wa.me/message/XXXXX)
 const PHONE           = '';
 const DEFAULT_PRICE   = '30';
+const SHIPPING_COST   = '9';
 const PRODUCTS_DIR    = path.join(__dirname, 'products');
 // ──────────────────────────────────────────────────────────────────────────────
 
@@ -46,9 +47,31 @@ function getProductPath(category, name) {
   return `products/${getSlug(category, name)}.html`;
 }
 
+function paypalBuyNowButton(itemName, btnClass) {
+  return `<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="paypal-form">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="${PAYPAL_EMAIL}">
+        <input type="hidden" name="item_name" value="${itemName} LED Light Box">
+        <input type="hidden" name="amount" value="${DEFAULT_PRICE}.00">
+        <input type="hidden" name="shipping" value="${SHIPPING_COST}.00">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="submit" class="${btnClass || 'btn btn-paypal'}" value="🅿️ Buy Now – PayPal">
+      </form>`;
+}
+
+function featureListHtml() {
+  return `<ul class="feature-list">
+        <li class="fl-size">📏 About 9" at the largest dimension</li>
+        <li class="fl-usb">🔌 USB powered</li>
+        <li class="fl-remote">📡 Full remote control</li>
+        <li class="fl-sound">🎵 Sound-reactive mode</li>
+        <li class="fl-fade">🌈 Smooth fade effects</li>
+      </ul>`;
+}
+
 function generateDescription(name, category) {
   const cat = category.toLowerCase().replace(/\s+/g, '');
-  const suffix = 'Color-changing LEDs with remote control. Available in 7-8 inch or 9 inch sizes. Made to order in Neenah, Wisconsin. Ships nationwide.';
+  const suffix = 'About 9 inches at the largest dimension. USB powered with full remote control — color-changing LEDs, sound-reactive mode, and smooth fade effects. Made to order in Neenah, Wisconsin. Ships nationwide.';
   const map = {
     automotive:     `Custom 3D-printed ${name} LED light box. ${suffix}`,
     sports:         `Custom 3D-printed ${name} LED light box. Show your team pride with this handcrafted display. ${suffix}`,
@@ -87,18 +110,19 @@ const sharedStyles = `
     font-weight: bold;
   }
   .btn:hover { background: #0099cc; color: #fff; }
-  .btn-fb { background: #1877f2; color: #fff; }
-  .btn-fb:hover { background: #0d5fbd; }
   .btn-cashapp   { background: #00D632; color: #000; }
   .btn-cashapp:hover { background: #00b029; color: #000; }
   .btn-whatsapp  { background: #25D366; color: #000; }
   .btn-whatsapp:hover { background: #1ebe5d; color: #000; }
+  .btn-paypal    { background: #0070ba; color: #fff; border: none; font-family: inherit; }
+  .btn-paypal:hover { background: #003087; color: #fff; }
+  .paypal-form   { display: inline-block; margin: 0; }
   .payment-strip {
     display: flex; flex-wrap: wrap; justify-content: center;
     align-items: center; gap: 10px; margin: 12px 0 4px;
     font-size: 13px; color: #aaa;
   }
-  .payment-strip a {
+  .payment-strip a, .payment-strip span.ps-paypal {
     display: inline-flex; align-items: center; gap: 5px;
     padding: 5px 12px; border-radius: 20px;
     font-weight: bold; font-size: 13px; text-decoration: none;
@@ -106,7 +130,17 @@ const sharedStyles = `
   .payment-strip .ps-cashapp   { background: #00D632; color: #000; }
   .payment-strip .ps-whatsapp  { background: #25D366; color: #000; }
   .payment-strip .ps-paypal    { background: #003087; color: #fff; }
-  .payment-strip .ps-fb        { background: #1877f2; color: #fff; }
+  .feature-list { list-style: disc; margin: 12px 0; padding-left: 22px; }
+  .feature-list li { margin: 6px 0; font-size: 14px; color: #ddd; font-weight: 600; }
+  .fl-size::marker   { color: #8ecfff; }
+  .fl-usb::marker    { color: #ffd54a; }
+  .fl-remote::marker { color: #c792ff; }
+  .fl-sound::marker  { color: #ff7ab8; }
+  .fl-fade::marker   { color: #47cf73; }
+  .fl-fade {
+    background: linear-gradient(90deg, #ff5f6d, #ffc371, #47cf73, #2196f3, #9b59b6);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
 `;
 
 const catalogStyles = `
@@ -333,8 +367,8 @@ ${productPageStyles}
   <h1>Lit Layer Creations</h1>
   <div class="payment-strip">
     <span>💳 We accept:</span>
+    <span class="ps-paypal">🅿️ PayPal</span>
     <a href="${CASHAPP_URL}" target="_blank" class="ps-cashapp">💵 Cash App ${CASHAPP_TAG}</a>
-    <a href="${FB_PROFILE}" target="_blank" class="ps-fb">📬 Message on FB for PayPal</a>
   </div>
 </header>
 
@@ -351,15 +385,16 @@ ${productPageStyles}
   <div class="details">
     <h2>${item.name} LED Light Box</h2>
     <p>${description}</p>
-    <div class="price">$${DEFAULT_PRICE}.00</div>
+    ${featureListHtml()}
+    <div class="price">$${DEFAULT_PRICE}.00 <span style="font-size:14px;color:#aaa;">+ $${SHIPPING_COST} shipping</span></div>
 
     <div class="cta-buttons">
-      <a href="${FB_PROFILE}" target="_blank" class="btn btn-fb">📬 Message on Facebook</a>
+      ${paypalBuyNowButton(item.name)}
       <a href="${CASHAPP_URL}" target="_blank" class="btn btn-cashapp">💵 Pay with Cash App</a>
     </div>
 
     <p class="shipping-note">
-      Also accepts PayPal · Message on FB to pay · Local pickup available in Neenah, WI · Ships nationwide
+      Local pickup available in Neenah, WI · Ships nationwide
     </p>
   </div>
 </div>
@@ -413,12 +448,12 @@ function generateIndex() {
       <div class="card">
         <h3>${item.name}</h3>
         <p>${description}</p>
-        <p style="font-size:13px;color:#aaa;">Sizes: ${item.sizes ? item.sizes.join(', ') : '7-8 inch, 9 inch'}</p>
+        ${featureListHtml()}
         <div class="${mediaClass}">${mediaHtml}
         </div>
         <div class="card-footer">
           <a href="${productPath}" class="btn">View Details</a>
-          <a href="${FB_PROFILE}" target="_blank" class="btn btn-fb" style="font-size:13px;">Message on FB</a>
+          ${paypalBuyNowButton(item.name, 'btn btn-paypal')}
         </div>
       </div>`;
     });
@@ -500,8 +535,8 @@ ${catalogStyles}
   <p>Custom 3D Printed LED Light Boxes · Neenah, WI · Ships Nationwide</p>
   <div class="payment-strip">
     <span>💳 We accept:</span>
+    <span class="ps-paypal">🅿️ PayPal</span>
     <a href="${CASHAPP_URL}" target="_blank" class="ps-cashapp">💵 Cash App ${CASHAPP_TAG}</a>
-    <a href="${FB_PROFILE}" target="_blank" class="ps-fb">📬 Message on FB for PayPal</a>
   </div>
 </header>
 
