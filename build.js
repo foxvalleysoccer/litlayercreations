@@ -15,6 +15,10 @@ const path = require('path');
 // ─── Config ───────────────────────────────────────────────────────────────────
 const BASE_URL        = 'https://litlayercreations.com';
 const FB_PROFILE      = 'https://www.facebook.com/marketplace/profile/208200551/';
+const BIG_BITE_URL    = 'https://www.bigbitecrankbaits.com/';
+const YOUTUBE_URL     = 'https://www.youtube.com/@wisconsinfishing772';
+const PANFISH_URL     = 'https://play.google.com/store/apps/details?id=com.bluegilllife.dodge';
+const TROLLING_URL    = 'https://litlayercreations.com/trolling-tracker/';
 const PAYPAL_EMAIL    = 'foxvalleysoccer@gmail.com';
 const CASHAPP_TAG     = '$itsmejoshj';
 const CASHAPP_URL     = 'https://cash.app/$itsmejoshj';
@@ -130,6 +134,20 @@ const sharedStyles = `
   .payment-strip .ps-cashapp   { background: #00D632; color: #000; }
   .payment-strip .ps-whatsapp  { background: #25D366; color: #000; }
   .payment-strip .ps-paypal    { background: #003087; color: #fff; }
+  .ecosystem {
+    max-width: 1100px; margin: 0 auto 32px; padding: 18px;
+    border: 1px solid #18384a; background: #0a2230; border-radius: 8px;
+  }
+  .ecosystem h2 { margin: 0 0 8px; color: #ffd35c; }
+  .ecosystem p { margin: 0 0 14px; color: #cfe7ef; }
+  .ecosystem-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+  .ecosystem-card {
+    display: block; min-height: 116px; padding: 12px; border-radius: 8px;
+    border: 1px solid #1f5268; background: #071925; color: #fff; text-decoration: none;
+  }
+  .ecosystem-card strong { display: block; color: #00d4ff; margin-bottom: 6px; }
+  .ecosystem-card span { color: #bdd6de; font-size: 13px; line-height: 1.35; }
+  .ecosystem-card:hover { border-color: #ffd35c; }
   .feature-list { list-style: disc; margin: 12px 0; padding-left: 22px; }
   .feature-list li { margin: 6px 0; font-size: 14px; color: #ddd; font-weight: 600; }
   .fl-size::marker   { color: #8ecfff; }
@@ -185,6 +203,8 @@ const catalogStyles = `
   .media.has-more::-webkit-scrollbar-track { background: #0b1220; border-radius: 3px; }
   .media.has-more::-webkit-scrollbar-thumb { background: #00d4ff; border-radius: 3px; }
   .media img, .media video { width: 80px; height: 80px; object-fit: cover; border-radius: 6px; cursor: pointer; flex-shrink: 0; }
+  @media (max-width: 900px) { .ecosystem-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 560px) { .ecosystem-grid { grid-template-columns: 1fr; } }
 `;
 
 const productPageStyles = `
@@ -517,7 +537,7 @@ function generateIndex() {
     "currenciesAccepted": "USD",
     "paymentAccepted": "PayPal, Cash App",
     "areaServed": "US",
-    "sameAs": ["${FB_PROFILE}"]
+    "sameAs": ["${FB_PROFILE}", "${BIG_BITE_URL}", "${YOUTUBE_URL}"]
   }
   </script>
 
@@ -538,6 +558,29 @@ ${catalogStyles}
     <a href="${CASHAPP_URL}" target="_blank" class="ps-cashapp">💵 Cash App ${CASHAPP_TAG}</a>
   </div>
 </header>
+
+<section class="ecosystem" aria-label="Connected Wisconsin fishing and maker projects">
+  <h2>Also From This Wisconsin Maker</h2>
+  <p>Lit Layer Creations connects with our fishing projects, mobile tools, videos, and handmade crankbait work.</p>
+  <div class="ecosystem-grid">
+    <a class="ecosystem-card" href="${BIG_BITE_URL}" target="_blank">
+      <strong>Big Bite Crankbaits</strong>
+      <span>Hand-crafted crankbaits, bait builds, and fishing products.</span>
+    </a>
+    <a class="ecosystem-card" href="${YOUTUBE_URL}" target="_blank">
+      <strong>Wisconsin Fishing YouTube</strong>
+      <span>Underwater footage, bait tests, and local Wisconsin fishing videos.</span>
+    </a>
+    <a class="ecosystem-card" href="${PANFISH_URL}" target="_blank">
+      <strong>Panfish Panic</strong>
+      <span>Android bluegill game. Dodge bigger fish and chase a high score.</span>
+    </a>
+    <a class="ecosystem-card" href="${TROLLING_URL}" target="_blank">
+      <strong>Trolling Speed App</strong>
+      <span>GPS speed, trip tracking, lake maps, and waypoint tools.</span>
+    </a>
+  </div>
+</section>
 
 <div id="catalog">
 ${catalogHtml}
