@@ -448,7 +448,6 @@ function generateIndex() {
       <div class="card">
         <h3>${item.name}</h3>
         <p>${description}</p>
-        ${featureListHtml()}
         <div class="${mediaClass}">${mediaHtml}
         </div>
         <div class="card-footer">
