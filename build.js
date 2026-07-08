@@ -559,6 +559,10 @@ ${catalogStyles}
   </div>
 </header>
 
+<div id="catalog">
+${catalogHtml}
+</div>
+
 <section class="ecosystem" aria-label="Connected Wisconsin fishing and maker projects">
   <h2>Also From This Wisconsin Maker</h2>
   <p>Lit Layer Creations connects with our fishing projects, mobile tools, videos, and handmade crankbait work.</p>
@@ -581,10 +585,6 @@ ${catalogStyles}
     </a>
   </div>
 </section>
-
-<div id="catalog">
-${catalogHtml}
-</div>
 
 <script>
   // Category collapse/expand
