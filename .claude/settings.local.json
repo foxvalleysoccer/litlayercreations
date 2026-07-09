@@ -30,7 +30,8 @@
       "Bash(rm -rf \"Automotive/media/Challenger RT\")",
       "Bash(mkdir -p \"Automotive/media/Challenger RT\")",
       "Bash(cp \"/root/.claude/uploads/16522d77-8e25-52a5-aafa-1557a5f7a611/fe17064f-996.jpg\" \"Automotive/media/Challenger RT/fe17064f-996.jpg\")",
-      "Bash(cp \"/root/.claude/uploads/16522d77-8e25-52a5-aafa-1557a5f7a611/c24da63d-995.jpg\" \"Automotive/media/Challenger RT/c24da63d-995.jpg\")"
+      "Bash(cp \"/root/.claude/uploads/16522d77-8e25-52a5-aafa-1557a5f7a611/c24da63d-995.jpg\" \"Automotive/media/Challenger RT/c24da63d-995.jpg\")",
+      "Bash(cp \"/root/.claude/uploads/16522d77-8e25-52a5-aafa-1557a5f7a611/993b9cef-challengerRT.3mf\" \"Automotive/Challenger RT.3mf\" *)"
     ]
   }
 }
