@@ -15,7 +15,12 @@
       "Bash(grep -r \"moveSpeed\\\\|ContinuousMoveProvider\\\\|forwardSource\" 'D:/Users/josh/Source/Repos/Dementia/Assets/Samples/XR Interaction Toolkit' --include=*.cs)",
       "Bash(xargs grep:*)",
       "Bash(grep -r \"moveSpeed\\\\|forwardSource\" D:/Users/josh/Source/Repos/Dementia/Assets --include=*.cs)",
-      "Bash(ollama list:*)"
+      "Bash(ollama list:*)",
+      "Bash(mkdir -p \"Automotive/media/CityChevy\")",
+      "Bash(cp \"/root/.claude/uploads/16522d77-8e25-52a5-aafa-1557a5f7a611/02b60559-957.jpg\" \"Automotive/media/CityChevy/02b60559-957.jpg\")",
+      "Bash(cp \"/root/.claude/uploads/16522d77-8e25-52a5-aafa-1557a5f7a611/06f1390e-954.jpg\" \"Automotive/media/CityChevy/06f1390e-954.jpg\")",
+      "Bash(cp \"/root/.claude/uploads/16522d77-8e25-52a5-aafa-1557a5f7a611/3d76e014-956.jpg\" \"Automotive/media/CityChevy/3d76e014-956.jpg\")",
+      "Bash(cp \"/root/.claude/uploads/16522d77-8e25-52a5-aafa-1557a5f7a611/e2476701-955.jpg\" \"Automotive/media/CityChevy/e2476701-955.jpg\")"
     ]
   }
 }
