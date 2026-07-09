@@ -40,10 +40,26 @@
         ]
       },
       {
+        "name": "Challenger RT",
+        "file": "Automotive/Challenger RT.3mf",
+        "media": [
+          "Automotive/media/Challenger RT/c24da63d-995.jpg",
+          "Automotive/media/Challenger RT/fe17064f-996.jpg",
+          "Automotive/media/Challenger RT/5101835a-993.jpg",
+          "Automotive/media/Challenger RT/20306b87-992.jpg",
+          "Automotive/media/Challenger RT/e3bdd231-991.jpg",
+          "Automotive/media/Challenger RT/0e353384-994.jpg"
+        ]
+      },
+      {
         "name": "Chevy",
         "file": "Automotive/Chevy.3mf",
         "media": [
-          "Automotive/media/Chevy/610515714_1363681291650205_663965644784147595_n.png"
+          "Automotive/media/Chevy/35ff50e0-962.jpg",
+          "Automotive/media/Chevy/6a93e70c-959.jpg",
+          "Automotive/media/Chevy/d612454b-961.jpg",
+          "Automotive/media/Chevy/8299add7-958.jpg",
+          "Automotive/media/Chevy/4faa6361-960.jpg"
         ]
       },
       {
