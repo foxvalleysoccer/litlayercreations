@@ -329,6 +329,44 @@ async function imageToBase64(filePath) {
   return Buffer.from(bytes).toString('base64');
 }
 
+async function claudeVisionGuess(imagePath) {
+  const imageBuffer = await fsp.readFile(imagePath);
+  const base64Image = imageBuffer.toString('base64');
+  const ext = path.extname(imagePath).toLowerCase();
+  const mediaType = ext === '.png' ? 'image/png' : ext === '.webp' ? 'image/webp' : 'image/jpeg';
+  const response = await anthropic.messages.create({
+    model: 'claude-haiku-4-5-20251001',
+    max_tokens: 50,
+    messages: [{
+      role: 'user',
+      content: [
+        { type: 'image', source: { type: 'base64', media_type: mediaType, data: base64Image } },
+        { type: 'text', text: 'What product or character is shown in this LED light box? Give a short name in PascalCase (no spaces). Examples: HarleyGasTank, SpaceInvaders, BlackPanther. Output only the name, nothing else.' }
+      ]
+    }]
+  });
+  return (response.content[0].text || '').trim();
+}
+
+async function claudeVisionDescribe(imagePath) {
+  const imageBuffer = await fsp.readFile(imagePath);
+  const base64Image = imageBuffer.toString('base64');
+  const ext = path.extname(imagePath).toLowerCase();
+  const mediaType = ext === '.png' ? 'image/png' : ext === '.webp' ? 'image/webp' : 'image/jpeg';
+  const response = await anthropic.messages.create({
+    model: 'claude-haiku-4-5-20251001',
+    max_tokens: 300,
+    messages: [{
+      role: 'user',
+      content: [
+        { type: 'image', source: { type: 'base64', media_type: mediaType, data: base64Image } },
+        { type: 'text', text: 'Describe what this LED light box depicts. Read any text or words shown exactly as written. Identify any band names, brand logos, sports teams, musicians, movie/TV characters, or pop culture references by their real name. Describe colors, lighting style, and overall theme. Be specific and accurate.' }
+      ]
+    }]
+  });
+  return (response.content[0].text || '').trim();
+}
+
 // ----------------------------
 // Bot Initialization — Self-naming
 // ----------------------------
@@ -625,46 +663,43 @@ async function runAdWorkflow(chatId) {
 
   const category = s.adCategory;
   const productName = s.adProductName;
-  const platform = s.adPlatform || 'facebook';
-
-  const platformLabels = { facebook: 'Facebook Marketplace', etsy: 'Etsy', ebay: 'eBay' };
-  const label = platformLabels[platform] || 'Facebook Marketplace';
 
   try {
     // Vision — use already-captured desc from name confirmation step, or run fresh if missing
     let visionDesc = s.adVisionDesc || '';
     if (!visionDesc) {
       const firstImage = s.pendingImages.find(p => /\.(jpg|jpeg|png|webp)$/i.test(p.tempPath));
-      if (VISION_MODEL && firstImage) {
+      if (ANTHROPIC_API_KEY && firstImage) {
         try {
           await bot.sendMessage(chatId, `🔍 Analyzing image...`);
-          const b64 = await imageToBase64(firstImage.tempPath);
-          visionDesc = await ollamaGenerate({
-            model: VISION_MODEL,
-            prompt: 'Describe what this LED light box depicts. Read any text or words shown exactly as written. Identify any band names, brand logos, sports teams, musicians, movie/TV characters, or pop culture references by their real name. Describe colors, lighting style, and overall theme. Be specific and accurate.',
-            imagesBase64: [b64],
-            options: { num_ctx: 1024, num_predict: 250 },
-          });
+          visionDesc = await claudeVisionDescribe(firstImage.tempPath);
         } catch {
           visionDesc = '';
         }
       }
     }
 
-    // Generate listing
-    await bot.sendMessage(chatId, `✍️ Writing ${label} ad...`);
-    const listingPrompt = buildListingPrompt({ category, productName, visionDesc, platform });
-    const listing = await ollamaGenerate({
-      model: LISTING_MODEL,
-      prompt: listingPrompt,
-      options: { num_ctx: 2048, num_predict: 500 },
-    });
+    // Generate all 3 platform listings
+    const platforms = [
+      { key: 'facebook', label: 'Facebook Marketplace' },
+      { key: 'etsy',     label: 'Etsy' },
+      { key: 'ebay',     label: 'eBay' },
+    ];
 
-    // Save to memory
-    addRecentListing(productName, category, listing);
+    for (const { key, label } of platforms) {
+      await bot.sendMessage(chatId, `✍️ Writing ${label} ad...`);
+      const listingPrompt = buildListingPrompt({ category, productName, visionDesc, platform: key });
+      const listing = await ollamaGenerate({
+        model: LISTING_MODEL,
+        prompt: listingPrompt,
+        options: { num_ctx: 2048, num_predict: 500 },
+      });
+      await bot.sendMessage(chatId, `📄 ${label} listing for ${productName}:\n\n${listing}`);
+    }
+
+    // Save to memory (use first listing preview)
+    addRecentListing(productName, category, `All platforms generated`);
     await saveMemory();
-
-    await bot.sendMessage(chatId, `📄 ${label} listing for ${productName}:\n\n${listing}`);
 
     // Clean up temp files
     for (const item of s.pendingImages) {
@@ -756,50 +791,53 @@ async function runWorkflow(chatId) {
     await bot.sendMessage(chatId, `⏳ Scanning catalog...`);
     await runNodeScript(scanScript, ROOT);
 
-    // STEP 5 — Vision (images only — bakllava cannot analyze video)
+    // STEP 5 — Vision (images only)
     let visionDesc = '';
     const firstImagePath = movedPaths.find(p => /\.(jpg|jpeg|png|webp)$/i.test(p));
-    if (VISION_MODEL && firstImagePath) {
+    if (ANTHROPIC_API_KEY && firstImagePath) {
       try {
         await bot.sendMessage(chatId, `🔍 Analyzing image...`);
-        const b64 = await imageToBase64(firstImagePath);
-        visionDesc = await ollamaGenerate({
-          model: VISION_MODEL,
-          prompt: 'Describe what this LED light box depicts. Read any text or words shown exactly as written. Identify any band names, brand logos, sports teams, musicians, movie/TV characters, or pop culture references by their real name. Describe colors, lighting style, and overall theme. Be specific and accurate.',
-          imagesBase64: [b64],
-          options: { num_ctx: 1024, num_predict: 250 },
-        });
+        visionDesc = await claudeVisionDescribe(firstImagePath);
       } catch {
         visionDesc = '';
       }
     }
 
-    // STEP 5 cont — Generate listing
-    await bot.sendMessage(chatId, `✍️ Writing listing...`);
-    const listingPrompt = buildListingPrompt({ category, productName, visionDesc });
-    const listing = await ollamaGenerate({
-      model: LISTING_MODEL,
-      prompt: listingPrompt,
-      options: { num_ctx: 2048, num_predict: 500 },
-    });
+    // STEP 5 cont — Generate listings for all 3 platforms
+    const platforms = [
+      { key: 'facebook', label: 'Facebook Marketplace' },
+      { key: 'etsy',     label: 'Etsy' },
+      { key: 'ebay',     label: 'eBay' },
+    ];
 
     // STEP 6 — TODO
     await appendTodo(productName, category);
 
     // Save to memory
-    addRecentListing(productName, category, listing);
+    addRecentListing(productName, category, `All platforms generated`);
     await saveMemory();
 
-    // STEP 7 — Report
+    // STEP 7 — Report header
     const summary =
       `✅ Media saved to: ${mediaDir}\n` +
       `   (${imgCount} image(s), ${vidCount} video(s))\n` +
       `${renameNote}\n` +
       `✅ Catalog updated\n` +
       `✅ TODO.md updated\n\n` +
-      `📄 Facebook Marketplace listing:\n\n${listing}`;
+      `Generating listings for all platforms...`;
 
     await bot.sendMessage(chatId, summary);
+
+    for (const { key, label } of platforms) {
+      await bot.sendMessage(chatId, `✍️ Writing ${label} listing...`);
+      const listingPrompt = buildListingPrompt({ category, productName, visionDesc, platform: key });
+      const listing = await ollamaGenerate({
+        model: LISTING_MODEL,
+        prompt: listingPrompt,
+        options: { num_ctx: 2048, num_predict: 500 },
+      });
+      await bot.sendMessage(chatId, `📄 ${label} listing:\n\n${listing}`);
+    }
 
   } catch (err) {
     await bot.sendMessage(chatId, `❌ Workflow failed:\n${err && err.message ? err.message : String(err)}\n\nSend /reset to start over.`);
@@ -1691,16 +1729,10 @@ bot.on('message', async (msg) => {
         s.stage = 'awaitingAdMeta';
         // Run vision immediately so the bot can suggest the product name
         const firstImage = s.pendingImages.find(p => p.fileType === 'image');
-        if (VISION_MODEL && firstImage) {
+        if (ANTHROPIC_API_KEY && firstImage) {
           try {
             await bot.sendMessage(chatId, `🔍 Looking at the image...`);
-            const b64 = await imageToBase64(firstImage.tempPath);
-            const visionGuess = await ollamaGenerate({
-              model: VISION_MODEL,
-              prompt: 'In 5 words or less, what product or character is shown in this LED light box? Just name it — no explanation.',
-              imagesBase64: [b64],
-              options: { num_ctx: 1024, num_predict: 30 },
-            });
+            const visionGuess = await claudeVisionGuess(firstImage.tempPath);
             s.adVisionDesc = visionGuess;
             s.adVisionGuess = visionGuess.trim();
             await bot.sendMessage(chatId, `Looks like: ${s.adVisionGuess}\n\nWhat do you want to call it? (Just type the name, or "yes" if that's right)`);
@@ -1863,11 +1895,8 @@ bot.on('message', async (msg) => {
 
       s.adProductName = productName;
       s.adCategory = 'General';
-      s.stage = 'awaitingAdPlatform';
-      await bot.sendMessage(
-        chatId,
-        `✅ ${productName}\n\nWhich platform?\n\n1️⃣ facebook — Facebook Marketplace\n2️⃣ etsy — Etsy\n3️⃣ ebay — eBay\n\nReply: facebook, etsy, or ebay`
-      );
+      await bot.sendMessage(chatId, `⏳ Generating listings for ${productName} on all platforms...`);
+      await runAdWorkflow(chatId);
       return;
     }
 

@@ -45,3 +45,6 @@
 - [ ] Post SnoopAMG (Automotive) to Facebook Marketplace — listing ready
 - [ ] Post brewersNoLabel (Sports) to Facebook Marketplace — listing ready
 - [ ] Post DodgeGray (Automotive) to Facebook Marketplace — listing ready
+- [ ] Post BettyBoop (Pop Culture) to Facebook Marketplace — listing ready
+- [ ] Post BuckyBadger (Sports) to Facebook Marketplace — listing ready
+- [ ] Post CorvetteRacing (Automotive) to Facebook Marketplace — listing ready
