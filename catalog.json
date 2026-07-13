@@ -65,7 +65,12 @@
       {
         "name": "Chrysler_Plymouth",
         "file": "Automotive/Chrysler_Plymouth.3mf",
-        "media": []
+        "media": [
+          "Automotive/Media/Chrysler_Plymouth/chrysler_plymouth_front_1.jpg",
+          "Automotive/Media/Chrysler_Plymouth/chrysler_plymouth_angle_1.jpg",
+          "Automotive/Media/Chrysler_Plymouth/chrysler_plymouth_angle_2.jpg",
+          "Automotive/Media/Chrysler_Plymouth/chrysler_plymouth_back.jpg"
+        ]
       },
       {
         "name": "CityChevy",

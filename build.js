@@ -124,18 +124,21 @@ function getResolvedMedia(item) {
   const embeddedPreview = getEmbeddedPreviewPath(item);
   const combined = [];
   const seen = new Set();
+  const explicitMedia = item.media || [];
+  const hasExplicitImages = explicitMedia.some(src => !src.toLowerCase().endsWith('.mp4'));
 
-  if (embeddedPreview) {
-    combined.push(embeddedPreview);
-    seen.add(embeddedPreview);
-  }
-
-  (item.media || []).forEach(src => {
+  explicitMedia.forEach(src => {
     if (!seen.has(src)) {
       combined.push(src);
       seen.add(src);
     }
   });
+
+  // Use the embedded 3MF preview as a fallback when a product has no real images yet.
+  if (embeddedPreview && !hasExplicitImages && !seen.has(embeddedPreview)) {
+    combined.push(embeddedPreview);
+    seen.add(embeddedPreview);
+  }
 
   return combined.sort((a, b) => scoreMedia(b, embeddedPreview) - scoreMedia(a, embeddedPreview));
 }
