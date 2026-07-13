@@ -55,6 +55,28 @@ function fileExists(relPath) {
   return fs.existsSync(path.join(__dirname, relPath.replace(/\//g, path.sep)));
 }
 
+function resolveActualRelativePath(relPath) {
+  const parts = relPath.replace(/\\/g, '/').split('/').filter(Boolean);
+  let absPath = __dirname;
+  const resolved = [];
+
+  for (const part of parts) {
+    if (!fs.existsSync(absPath) || !fs.statSync(absPath).isDirectory()) {
+      return null;
+    }
+
+    const match = fs.readdirSync(absPath).find(entry => entry.toLowerCase() === part.toLowerCase());
+    if (!match) {
+      return null;
+    }
+
+    resolved.push(match);
+    absPath = path.join(absPath, match);
+  }
+
+  return resolved.join('/');
+}
+
 function getEmbeddedPreviewPath(item) {
   if (!item.file) return null;
 
@@ -69,7 +91,14 @@ function getEmbeddedPreviewPath(item) {
     `${categoryDir}/Media/${modelName}/3mf-preview.png`
   ];
 
-  return candidates.find(fileExists) || null;
+  for (const candidate of candidates) {
+    const resolved = resolveActualRelativePath(candidate);
+    if (resolved) {
+      return resolved;
+    }
+  }
+
+  return null;
 }
 
 function scoreMedia(src, embeddedPreview) {
