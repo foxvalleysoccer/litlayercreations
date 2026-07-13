@@ -51,6 +51,66 @@ function getProductPath(category, name) {
   return `products/${getSlug(category, name)}.html`;
 }
 
+function fileExists(relPath) {
+  return fs.existsSync(path.join(__dirname, relPath.replace(/\//g, path.sep)));
+}
+
+function getEmbeddedPreviewPath(item) {
+  if (!item.file) return null;
+
+  const filePath = item.file.replace(/\\/g, '/');
+  const slash = filePath.lastIndexOf('/');
+  if (slash === -1) return null;
+
+  const categoryDir = filePath.slice(0, slash);
+  const modelName = path.posix.basename(filePath, path.posix.extname(filePath));
+  const candidates = [
+    `${categoryDir}/media/${modelName}/3mf-preview.png`,
+    `${categoryDir}/Media/${modelName}/3mf-preview.png`
+  ];
+
+  return candidates.find(fileExists) || null;
+}
+
+function scoreMedia(src, embeddedPreview) {
+  const lower = src.toLowerCase();
+  const isVideo = lower.endsWith('.mp4');
+  if (isVideo) return -1000;
+
+  let score = 0;
+  if (embeddedPreview && src === embeddedPreview) score += 10000;
+  if (lower.endsWith('.png')) score += 100;
+  if (lower.endsWith('.webp')) score += 80;
+  if (lower.endsWith('.jpg') || lower.endsWith('.jpeg')) score += 40;
+
+  if (/(render|mockup|preview|generated|thumb)/.test(lower)) score += 500;
+  if (/(screenshot|plate_1|plate-1)/.test(lower)) score += 220;
+  if (/(front|angle|lit|light|on)/.test(lower)) score += 120;
+  if (/(top|bed|layout|sheet|artwork|source|flat|label)/.test(lower)) score -= 350;
+
+  return score;
+}
+
+function getResolvedMedia(item) {
+  const embeddedPreview = getEmbeddedPreviewPath(item);
+  const combined = [];
+  const seen = new Set();
+
+  if (embeddedPreview) {
+    combined.push(embeddedPreview);
+    seen.add(embeddedPreview);
+  }
+
+  (item.media || []).forEach(src => {
+    if (!seen.has(src)) {
+      combined.push(src);
+      seen.add(src);
+    }
+  });
+
+  return combined.sort((a, b) => scoreMedia(b, embeddedPreview) - scoreMedia(a, embeddedPreview));
+}
+
 function paypalBuyNowButton(itemName, btnClass) {
   return `<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="paypal-form">
         <input type="hidden" name="cmd" value="_xclick">
@@ -277,7 +337,7 @@ function generateProductPage(item, category) {
   const description = item.description || generateDescription(item.name, category);
   const catSlug    = toSlug(category);
 
-  const allMedia   = (item.media || []);
+  const allMedia   = getResolvedMedia(item);
   const firstImage = allMedia.find(m => !m.endsWith('.mp4'));
   const ogImage    = firstImage ? `${BASE_URL}/${firstImage}` : `${BASE_URL}/Images/Logo.png`;
 
@@ -446,10 +506,10 @@ function generateIndex() {
     const catSlug = toSlug(cat.category);
     let itemsHtml = '';
 
-    cat.items.filter(item => (item.media || []).some(m => !m.endsWith('.mp4'))).forEach(item => {
+    cat.items.filter(item => getResolvedMedia(item).some(m => !m.endsWith('.mp4'))).forEach(item => {
       const productPath = getProductPath(cat.category, item.name);
       const description = item.description || generateDescription(item.name, cat.category);
-      const allMedia = (item.media || []);
+      const allMedia = getResolvedMedia(item);
       const maxVisible = 9;
       const hasMore = allMedia.length > maxVisible;
       const mediaClass = hasMore ? 'media has-more' : 'media';
@@ -638,7 +698,7 @@ catalog.forEach(cat => {
   // Skip utility/internal categories from getting public pages
   const skip = ['Old Labels'].includes(cat.category);
 
-  cat.items.filter(item => (item.media || []).some(m => !m.endsWith('.mp4'))).forEach(item => {
+  cat.items.filter(item => getResolvedMedia(item).some(m => !m.endsWith('.mp4'))).forEach(item => {
     productSlugs.push({ category: cat.category, name: item.name });
 
     if (!skip) {
