@@ -75,6 +75,13 @@
         ]
       },
       {
+        "name": "ChevyBowTieBigger red",
+        "file": "Automotive/ChevyBowTieBigger red.3mf",
+        "media": [
+          "Automotive/media/ChevyBowTieBigger red/3mf-preview.png"
+        ]
+      },
+      {
         "name": "ChevyBowTieBigger",
         "file": "Automotive/ChevyBowTieBigger.3mf",
         "media": [
@@ -227,6 +234,13 @@
           "Automotive/media/Ford Motor Sport Light/Ford_Motor_Sport_Light black.png",
           "Automotive/media/Ford Motor Sport Light/Ford_Motor_Sport_Light bw.png",
           "Automotive/media/Ford Motor Sport Light/Ford_Motor_Sport_Light.png"
+        ]
+      },
+      {
+        "name": "GMC",
+        "file": "Automotive/GMC.3mf",
+        "media": [
+          "Automotive/media/GMC/3mf-preview.png"
         ]
       },
       {
@@ -555,6 +569,15 @@
           "Bands/media/America/america_front_2.jpg",
           "Bands/media/America/america_front_3.jpg"
         ]
+      },
+      {
+        "name": "KORN",
+        "file": "Bands/KORN.3mf",
+        "media": [
+          "Bands/media/KORN/3mf-preview.png",
+          "Bands/media/KORN/904b57bd-bf2b-45d9-ae90-24d0cd1291ee.png",
+          "Bands/media/KORN/Korn.png"
+        ]
       }
     ]
   },
@@ -771,6 +794,13 @@
         ]
       },
       {
+        "name": "Depere",
+        "file": "CustomRequests/Depere.3mf",
+        "media": [
+          "CustomRequests/Media/Depere/3mf-preview.png"
+        ]
+      },
+      {
         "name": "ELI",
         "file": "CustomRequests/ELI.3mf",
         "media": [
@@ -863,10 +893,31 @@
         ]
       },
       {
+        "name": "MIDwestWheelsOfSoul (1)",
+        "file": "CustomRequests/MIDwestWheelsOfSoul (1).3mf",
+        "media": [
+          "CustomRequests/Media/MIDwestWheelsOfSoul (1)/3mf-preview.png"
+        ]
+      },
+      {
         "name": "Morrison Fabrication",
         "file": "CustomRequests/Morrison Fabrication.3mf",
         "media": [
           "CustomRequests/Media/Morrison Fabrication/3mf-preview.png"
+        ]
+      },
+      {
+        "name": "Neenah22",
+        "file": "CustomRequests/Neenah22.3mf",
+        "media": [
+          "CustomRequests/Media/Neenah22/3mf-preview.png"
+        ]
+      },
+      {
+        "name": "NorthTexasMeanGreenEagles",
+        "file": "CustomRequests/NorthTexasMeanGreenEagles.3mf",
+        "media": [
+          "CustomRequests/Media/NorthTexasMeanGreenEagles/3mf-preview.png"
         ]
       },
       {
@@ -906,6 +957,13 @@
         "file": "CustomRequests/WheelsOFSoul.3mf",
         "media": [
           "CustomRequests/Media/WheelsOFSoul/3mf-preview.png"
+        ]
+      },
+      {
+        "name": "wheelsOfSoulNomad",
+        "file": "CustomRequests/wheelsOfSoulNomad.3mf",
+        "media": [
+          "CustomRequests/Media/wheelsOfSoulNomad/3mf-preview.png"
         ]
       }
     ]
@@ -2112,6 +2170,27 @@
         ]
       },
       {
+        "name": "PackersHelmetname",
+        "file": "Sports/PackersHelmetname.3mf",
+        "media": [
+          "Sports/Media/PackersHelmetname/3mf-preview.png"
+        ]
+      },
+      {
+        "name": "PackersNameNg",
+        "file": "Sports/PackersNameNg.3mf",
+        "media": [
+          "Sports/Media/PackersNameNg/3mf-preview.png"
+        ]
+      },
+      {
+        "name": "TimberRattlers",
+        "file": "Sports/TimberRattlers.3mf",
+        "media": [
+          "Sports/Media/TimberRattlers/3mf-preview.png"
+        ]
+      },
+      {
         "name": "Titleist",
         "file": "Sports/Titleist.3mf",
         "media": [
@@ -2183,6 +2262,13 @@
         "file": "Sports/WisconsinBadgersNameAndHelmet.3mf",
         "media": [
           "Sports/Media/WisconsinBadgersNameAndHelmet/3mf-preview.png"
+        ]
+      },
+      {
+        "name": "WisconsinProSportsMachup",
+        "file": "Sports/WisconsinProSportsMachup.3mf",
+        "media": [
+          "Sports/Media/WisconsinProSportsMachup/3mf-preview.png"
         ]
       }
     ]
