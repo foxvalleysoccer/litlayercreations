@@ -13,7 +13,7 @@ const fs   = require('fs');
 const path = require('path');
 
 // ─── Config ───────────────────────────────────────────────────────────────────
-const BASE_URL        = 'https://www.litlayercreations.com';
+const BASE_URL        = 'https://litlayercreations.com';
 const FB_PROFILE      = 'https://www.facebook.com/marketplace/profile/208200551/';
 const BIG_BITE_URL    = 'https://www.bigbitecrankbaits.com/';
 const YOUTUBE_URL     = 'https://www.youtube.com/@wisconsinfishing772';

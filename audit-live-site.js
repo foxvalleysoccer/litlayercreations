@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const BASE = 'https://www.litlayercreations.com';
-const CANONICAL_HOST = 'www.litlayercreations.com';
+const CANONICAL_HOST = 'litlayercreations.com';
 const MAX_PAGES = 1200;
 const CONCURRENCY = 8;
 
