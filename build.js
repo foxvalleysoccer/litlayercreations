@@ -13,12 +13,11 @@ const fs   = require('fs');
 const path = require('path');
 
 // ─── Config ───────────────────────────────────────────────────────────────────
-const BASE_URL        = 'https://litlayercreations.com';
+const BASE_URL        = 'https://www.litlayercreations.com';
 const FB_PROFILE      = 'https://www.facebook.com/marketplace/profile/208200551/';
 const BIG_BITE_URL    = 'https://www.bigbitecrankbaits.com/';
 const YOUTUBE_URL     = 'https://www.youtube.com/@wisconsinfishing772';
-const PANFISH_URL     = 'https://play.google.com/store/apps/details?id=com.bluegilllife.dodge';
-const TROLLING_URL    = 'https://litlayercreations.com/trolling-tracker/';
+const TROLLING_URL    = `${BASE_URL}/trolling-tracker/`;
 const PAYPAL_EMAIL    = 'foxvalleysoccer@gmail.com';
 const CASHAPP_TAG     = '$itsmejoshj';
 const CASHAPP_URL     = 'https://cash.app/$itsmejoshj';
@@ -667,10 +666,6 @@ ${catalogHtml}
       <strong>Wisconsin Fishing YouTube</strong>
       <span>Underwater footage, bait tests, and local Wisconsin fishing videos.</span>
     </a>
-    <a class="ecosystem-card" href="${PANFISH_URL}" target="_blank">
-      <strong>Panfish Panic</strong>
-      <span>Android bluegill game. Dodge bigger fish and chase a high score.</span>
-    </a>
     <a class="ecosystem-card" href="${TROLLING_URL}" target="_blank">
       <strong>Trolling Speed App</strong>
       <span>GPS speed, trip tracking, lake maps, and waypoint tools.</span>
@@ -791,6 +786,7 @@ ${urls}</urlset>`;
 console.log('Building Lit Layer Creations...\n');
 
 const productSlugs = [];
+const generatedProductFiles = new Set();
 let pageCount = 0;
 let skippedCount = 0;
 
@@ -807,6 +803,7 @@ catalog.forEach(cat => {
       const slug     = getSlug(cat.category, item.name);
       const filePath = path.join(PRODUCTS_DIR, `${slug}.html`);
       fs.writeFileSync(filePath, html, 'utf8');
+      generatedProductFiles.add(`${slug}.html`);
       pageCount++;
     } else {
       skippedCount++;
@@ -815,6 +812,10 @@ catalog.forEach(cat => {
 });
 
 console.log(`✅ Generated ${pageCount} product pages (${skippedCount} internal items skipped)`);
+
+fs.readdirSync(PRODUCTS_DIR)
+  .filter(file => file.endsWith('.html') && !generatedProductFiles.has(file))
+  .forEach(file => fs.unlinkSync(path.join(PRODUCTS_DIR, file)));
 
 // Generate index.html
 const indexHtml = generateIndex();
