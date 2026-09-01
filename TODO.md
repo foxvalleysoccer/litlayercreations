@@ -1,5 +1,6 @@
 # TODO
 
+- [ ] Product idea: modular trailer hitch insert system. Make a base receiver insert for my current test vehicle, then design swappable/custom face plates customers can buy as inserts or replacements with car logos and custom statements for when the trailer hitch is not being used.
 - [ ] Post and (Automotive) to Facebook Marketplace — listing ready
 - [ ] Post ShelbyGreen (Automotive) to Facebook Marketplace — listing ready
 - [ ] Post kayakingBlue (Sports) to Facebook Marketplace — listing ready

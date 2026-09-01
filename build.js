@@ -679,10 +679,79 @@ ${catalogHtml}
 </section>
 
 <script>
+  const catalogStateKey = 'litlayerCatalogState';
+  const categories = Array.from(document.querySelectorAll('.category'));
+
+  function saveCatalogState(activeCategory) {
+    const openCategories = categories
+      .filter(category => !category.classList.contains('collapsed'))
+      .map(category => category.id);
+
+    sessionStorage.setItem(catalogStateKey, JSON.stringify({
+      activeCategory,
+      openCategories,
+      scrollY: window.scrollY
+    }));
+  }
+
+  function restoreCatalogState() {
+    let savedState = null;
+
+    try {
+      savedState = JSON.parse(sessionStorage.getItem(catalogStateKey) || 'null');
+    } catch (error) {
+      savedState = null;
+    }
+
+    const hashCategory = window.location.hash
+      ? document.getElementById(window.location.hash.slice(1))
+      : null;
+    const activeCategory = hashCategory || (savedState && savedState.activeCategory
+      ? document.getElementById(savedState.activeCategory)
+      : null);
+
+    if (savedState && Array.isArray(savedState.openCategories)) {
+      categories.forEach(category => {
+        category.classList.toggle('collapsed', !savedState.openCategories.includes(category.id));
+      });
+    }
+
+    if (activeCategory && activeCategory.classList.contains('category')) {
+      activeCategory.classList.remove('collapsed');
+      requestAnimationFrame(() => {
+        if (hashCategory) {
+          activeCategory.scrollIntoView({ block: 'start' });
+        } else if (Number.isFinite(savedState && savedState.scrollY)) {
+          window.scrollTo(0, savedState.scrollY);
+        } else {
+          activeCategory.scrollIntoView({ block: 'start' });
+        }
+      });
+    }
+  }
+
+  restoreCatalogState();
+
   // Category collapse/expand
   document.querySelectorAll('.category h2').forEach(h2 => {
     h2.addEventListener('click', () => {
-      h2.closest('.category').classList.toggle('collapsed');
+      const category = h2.closest('.category');
+      category.classList.toggle('collapsed');
+
+      if (!category.classList.contains('collapsed')) {
+        history.replaceState(null, '', '#' + category.id);
+      }
+
+      saveCatalogState(category.id);
+    });
+  });
+
+  document.querySelectorAll('.category a[href^="products/"]').forEach(link => {
+    link.addEventListener('click', () => {
+      const category = link.closest('.category');
+      if (category) {
+        saveCatalogState(category.id);
+      }
     });
   });
 </script>
