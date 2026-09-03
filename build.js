@@ -106,14 +106,18 @@ function scoreMedia(src, embeddedPreview) {
   if (isVideo) return -1000;
 
   let score = 0;
-  if (embeddedPreview && src === embeddedPreview) score += 10000;
   if (lower.endsWith('.png')) score += 100;
   if (lower.endsWith('.webp')) score += 80;
   if (lower.endsWith('.jpg') || lower.endsWith('.jpeg')) score += 40;
 
-  if (/(render|mockup|preview|generated|thumb)/.test(lower)) score += 500;
-  if (/(screenshot|plate_1|plate-1)/.test(lower)) score += 220;
-  if (/(front|angle|lit|light|on)/.test(lower)) score += 120;
+  if (/(front|angle|lit|light|on)/.test(lower)) score += 220;
+  if (/(img[_-]?0?2|photo[_ -]?0?2|\(2\))/.test(lower)) score += 160;
+  if (/(img[_-]?0?3|photo[_ -]?0?3|\(3\))/.test(lower)) score += 120;
+
+  if (/(back|rear|cord|plug|remote|controller|inside|unlit|off)/.test(lower)) score -= 700;
+  if (/(render|mockup|preview|generated|thumb|screenshot)/.test(lower)) score -= 450;
+  if (/3mf-preview/.test(lower)) score -= 250;
+  if (/(img[_-]?0?1|photo[_ -]?0?1|\(1\))/.test(lower)) score -= 220;
   if (/(top|bed|layout|sheet|artwork|source|flat|label)/.test(lower)) score -= 350;
 
   return score;
