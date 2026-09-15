@@ -2154,6 +2154,17 @@
         ]
       },
       {
+        "name": "Cowboy Joe",
+        "file": "Sports/Cowboy Joe.3mf",
+        "media": [
+          "Sports/Media/Cowboy Joe/img_01.jpg",
+          "Sports/Media/Cowboy Joe/img_02.jpg",
+          "Sports/Media/Cowboy Joe/img_03.jpg",
+          "Sports/Media/Cowboy Joe/img_04.jpg",
+          "Sports/Media/Cowboy Joe/img_05.jpg"
+        ]
+      },
+      {
         "name": "FIFIWorldCup",
         "file": "Sports/FIFIWorldCup.3mf",
         "media": [
@@ -2342,6 +2353,16 @@
         "file": "Sports/PackersNameNg.3mf",
         "media": [
           "Sports/Media/PackersNameNg/3mf-preview.png"
+        ]
+      },
+      {
+        "name": "Packy Packer",
+        "file": "Sports/PackyPacker.3mf",
+        "media": [
+          "Sports/Media/PackyPacker/img_01.jpg",
+          "Sports/Media/PackyPacker/img_02.jpg",
+          "Sports/Media/PackyPacker/img_03.jpg",
+          "Sports/Media/PackyPacker/img_04.jpg"
         ]
       },
       {
