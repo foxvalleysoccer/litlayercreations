@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { createDisplayName } = require("./product-naming");
 
 const ROOT = __dirname;
 const OUTPUT = path.join(ROOT, "catalog.json");
@@ -43,6 +44,7 @@ function scanCategory(categoryPath, categoryName) {
 
       items.push({
         name: baseName,
+        displayName: createDisplayName(baseName, categoryName),
         file: path.join(categoryName, dirent.name).replace(/\\/g, "/"),
         media
       });

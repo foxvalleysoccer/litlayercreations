@@ -11,6 +11,7 @@
 
 const fs   = require('fs');
 const path = require('path');
+const { getDisplayName } = require('./product-naming');
 
 // ─── Config ───────────────────────────────────────────────────────────────────
 const BASE_URL        = 'https://litlayercreations.com';
@@ -150,7 +151,7 @@ function paypalBuyNowButton(itemName, btnClass) {
   return `<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="paypal-form">
         <input type="hidden" name="cmd" value="_xclick">
         <input type="hidden" name="business" value="${PAYPAL_EMAIL}">
-        <input type="hidden" name="item_name" value="${itemName} LED Light Box">
+        <input type="hidden" name="item_name" value="${itemName}">
         <input type="hidden" name="amount" value="${DEFAULT_PRICE}.00">
         <input type="hidden" name="shipping" value="${SHIPPING_COST}.00">
         <input type="hidden" name="currency_code" value="USD">
@@ -172,15 +173,15 @@ function generateDescription(name, category) {
   const cat = category.toLowerCase().replace(/\s+/g, '');
   const suffix = 'About 9 inches at the largest dimension. USB powered with full remote control — color-changing LEDs, sound-reactive mode, and smooth fade effects. Made to order in Neenah, Wisconsin. Ships nationwide.';
   const map = {
-    automotive:     `Custom 3D-printed ${name} LED light box. ${suffix}`,
-    sports:         `Custom 3D-printed ${name} LED light box. Show your team pride with this handcrafted display. ${suffix}`,
-    popculture:     `Custom 3D-printed ${name} LED light box. A unique display piece for fans and collectors. ${suffix}`,
-    bands:          `Custom 3D-printed ${name} LED light box. A handcrafted display for music fans. ${suffix}`,
-    christmas:      `Custom 3D-printed ${name} LED light box. A festive handcrafted holiday display. ${suffix}`,
-    halloween:      `Custom 3D-printed ${name} LED light box. A spooky handcrafted display for Halloween fans. ${suffix}`,
-    customrequests: `Custom 3D-printed ${name} LED light box. A one-of-a-kind handcrafted display made to order. ${suffix}`,
+    automotive:     `Custom 3D-printed ${name}. ${suffix}`,
+    sports:         `Custom 3D-printed ${name}. Show your team pride with this handcrafted display. ${suffix}`,
+    popculture:     `Custom 3D-printed ${name}. A unique display piece for fans and collectors. ${suffix}`,
+    bands:          `Custom 3D-printed ${name}. A handcrafted display for music fans. ${suffix}`,
+    christmas:      `Custom 3D-printed ${name}. A festive handcrafted holiday display. ${suffix}`,
+    halloween:      `Custom 3D-printed ${name}. A spooky handcrafted display for Halloween fans. ${suffix}`,
+    customrequests: `Custom 3D-printed ${name}. A one-of-a-kind handcrafted display made to order. ${suffix}`,
   };
-  return map[cat] || `Custom 3D-printed ${name} LED light box. ${suffix}`;
+  return map[cat] || `Custom 3D-printed ${name}. ${suffix}`;
 }
 
 // Shared CSS used by both index.html and product pages
@@ -369,7 +370,8 @@ const productPageStyles = `
 function generateProductPage(item, category) {
   const slug       = getSlug(category, item.name);
   const pageUrl    = `${BASE_URL}/products/${slug}.html`;
-  const description = item.description || generateDescription(item.name, category);
+  const displayName = getDisplayName(item, category);
+  const description = item.description || generateDescription(displayName, category);
   const catSlug    = toSlug(category);
 
   const allMedia   = getResolvedMedia(item);
@@ -382,15 +384,15 @@ function generateProductPage(item, category) {
     const fromRoot = `../${src}`;
     const active   = i === 0 ? ' active' : '';
     if (isVideo) {
-      return `<video class="thumbnail${active}" src="${fromRoot}" onclick="changeMedia(this, true)" title="${item.name} LED light box video – Lit Layer Creations"></video>`;
+      return `<video class="thumbnail${active}" src="${fromRoot}" onclick="changeMedia(this, true)" title="${displayName} video – Lit Layer Creations"></video>`;
     }
-    return `<img class="thumbnail${active}" src="${fromRoot}" onclick="changeMedia(this, false)" alt="${item.name} LED light box photo ${i + 1} – Lit Layer Creations" loading="lazy">`;
+    return `<img class="thumbnail${active}" src="${fromRoot}" onclick="changeMedia(this, false)" alt="${displayName} photo ${i + 1} – Lit Layer Creations" loading="lazy">`;
   }).join('\n      ');
 
   // Main media element
   let mainMediaHtml;
   if (firstImage) {
-    mainMediaHtml = `<img id="main-media" class="main-image" src="../${firstImage}" alt="${item.name} LED light box – custom 3D printed – Lit Layer Creations">`;
+    mainMediaHtml = `<img id="main-media" class="main-image" src="../${firstImage}" alt="${displayName} – custom 3D printed – Lit Layer Creations">`;
   } else if (allMedia.length > 0) {
     mainMediaHtml = `<video id="main-media" class="main-video" controls><source src="../${allMedia[0]}" type="video/mp4"></video>`;
   } else {
@@ -402,21 +404,21 @@ function generateProductPage(item, category) {
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>${item.name} LED Light Box | Custom 3D Printed | Lit Layer Creations</title>
+<title>${displayName} | Custom 3D Printed | Lit Layer Creations</title>
 <meta name="description" content="${description}" />
 <link rel="canonical" href="${pageUrl}" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="product" />
 <meta property="og:url" content="${pageUrl}" />
-<meta property="og:title" content="${item.name} LED Light Box – Lit Layer Creations" />
+<meta property="og:title" content="${displayName} – Lit Layer Creations" />
 <meta property="og:description" content="${description}" />
 <meta property="og:image" content="${ogImage}" />
 <meta property="og:site_name" content="Lit Layer Creations" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="${item.name} LED Light Box – Lit Layer Creations" />
+<meta name="twitter:title" content="${displayName} – Lit Layer Creations" />
 <meta name="twitter:description" content="${description}" />
 <meta name="twitter:image" content="${ogImage}" />
 
@@ -425,7 +427,7 @@ function generateProductPage(item, category) {
 {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "${item.name} LED Light Box",
+  "name": "${displayName}",
   "description": "${description.replace(/"/g, '\\"')}",
   "image": "${ogImage}",
   "brand": { "@type": "Brand", "name": "Lit Layer Creations" },
@@ -457,7 +459,7 @@ function generateProductPage(item, category) {
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "${BASE_URL}/" },
     { "@type": "ListItem", "position": 2, "name": "${category}", "item": "${BASE_URL}/#${catSlug}" },
-    { "@type": "ListItem", "position": 3, "name": "${item.name} LED Light Box", "item": "${pageUrl}" }
+    { "@type": "ListItem", "position": 3, "name": "${displayName}", "item": "${pageUrl}" }
   ]
 }
 </script>
@@ -474,7 +476,7 @@ ${productPageStyles}
   <span>›</span>
   <a href="../index.html#${catSlug}">${category}</a>
   <span>›</span>
-  ${item.name} LED Light Box
+  ${displayName}
 </nav>
 
 <header>
@@ -498,13 +500,13 @@ ${productPageStyles}
   </div>
 
   <div class="details">
-    <h2>${item.name} LED Light Box</h2>
+    <h2>${displayName}</h2>
     <p>${description}</p>
     ${featureListHtml()}
     <div class="price">$${DEFAULT_PRICE}.00 <span style="font-size:14px;color:#aaa;">+ $${SHIPPING_COST} shipping</span></div>
 
     <div class="cta-buttons">
-      ${paypalBuyNowButton(item.name)}
+      ${paypalBuyNowButton(displayName)}
       <a href="${CASHAPP_URL}" target="_blank" class="btn btn-cashapp">💵 Pay with Cash App</a>
     </div>
 
@@ -520,7 +522,7 @@ function changeMedia(thumb, isVideo) {
   if (isVideo) {
     wrap.innerHTML = '<video id="main-media" class="main-video" controls autoplay><source src="' + thumb.src + '" type="video/mp4"></video>';
   } else {
-    wrap.innerHTML = '<img id="main-media" class="main-image" src="' + thumb.src + '" alt="${item.name} LED light box – Lit Layer Creations">';
+    wrap.innerHTML = '<img id="main-media" class="main-image" src="' + thumb.src + '" alt="${displayName} – Lit Layer Creations">';
   }
   document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
   thumb.classList.add('active');
@@ -543,7 +545,8 @@ function generateIndex() {
 
     cat.items.filter(item => getResolvedMedia(item).some(m => !m.endsWith('.mp4'))).forEach(item => {
       const productPath = getProductPath(cat.category, item.name);
-      const description = item.description || generateDescription(item.name, cat.category);
+      const displayName = getDisplayName(item, cat.category);
+      const description = item.description || generateDescription(displayName, cat.category);
       const allMedia = getResolvedMedia(item);
       const maxVisible = 9;
       const hasMore = allMedia.length > maxVisible;
@@ -553,21 +556,21 @@ function generateIndex() {
       allMedia.forEach((src, index) => {
         if (!hasMore && index >= maxVisible) return;
         if (src.endsWith('.mp4')) {
-          mediaHtml += `\n          <video src="${src}" controls title="${item.name} LED light box – Lit Layer Creations"></video>`;
+          mediaHtml += `\n          <video src="${src}" controls title="${displayName} – Lit Layer Creations"></video>`;
         } else {
-          mediaHtml += `\n          <img src="${src}" alt="${item.name} LED light box – custom 3D printed – Lit Layer Creations" onclick="window.open('${src}','_blank')" loading="lazy">`;
+          mediaHtml += `\n          <img src="${src}" alt="${displayName} – custom 3D printed – Lit Layer Creations" onclick="window.open('${src}','_blank')" loading="lazy">`;
         }
       });
 
       itemsHtml += `
       <div class="card">
-        <h3>${item.name}</h3>
+        <h3>${displayName}</h3>
         <p>${description}</p>
         <div class="${mediaClass}">${mediaHtml}
         </div>
         <div class="card-footer">
           <a href="${productPath}" class="btn">View Details</a>
-          ${paypalBuyNowButton(item.name, 'btn btn-paypal')}
+          ${paypalBuyNowButton(displayName, 'btn btn-paypal')}
         </div>
       </div>`;
     });

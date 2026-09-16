@@ -1,0 +1,2046 @@
+[
+  {
+    "category": "Anime",
+    "sourceName": "Vegeta and Goku",
+    "file": "Anime/Vegeta and Goku.3mf",
+    "displayName": "Vegeta and Goku LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "American Motors",
+    "file": "Automotive/American Motors.3mf",
+    "displayName": "American Motors Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "BMW",
+    "file": "Automotive/BMW.3mf",
+    "displayName": "BMW Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "BWM Stripes",
+    "file": "Automotive/BWM Stripes.3mf",
+    "displayName": "BMW Stripes Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "challengerRT",
+    "file": "Automotive/challengerRT.3mf",
+    "displayName": "Challenger RT Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Chevy",
+    "file": "Automotive/Chevy.3mf",
+    "displayName": "Chevy Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "ChevyBowTieBigger red",
+    "file": "Automotive/ChevyBowTieBigger red.3mf",
+    "displayName": "Red Chevy Bowtie Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "ChevyBowTieBigger",
+    "file": "Automotive/ChevyBowTieBigger.3mf",
+    "displayName": "Chevy Bowtie Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Chrysler_Plymouth",
+    "file": "Automotive/Chrysler_Plymouth.3mf",
+    "displayName": "Chrysler Plymouth Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "CityChevy",
+    "file": "Automotive/CityChevy.3mf",
+    "displayName": "City Chevrolet Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Cobra Round Black Snake",
+    "file": "Automotive/Cobra Round Black Snake.3mf",
+    "displayName": "Cobra Round Black Snake Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Cobra Snake",
+    "file": "Automotive/Cobra Snake.3mf",
+    "displayName": "Cobra Snake Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Corvette",
+    "file": "Automotive/Corvette.3mf",
+    "displayName": "Corvette Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "CorvetteRacing",
+    "file": "Automotive/CorvetteRacing.3mf",
+    "displayName": "Corvette Racing Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Dodge Ram",
+    "file": "Automotive/Dodge Ram.3mf",
+    "displayName": "Dodge Ram Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "F1",
+    "file": "Automotive/F1.3mf",
+    "displayName": "F 1 Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "FerrariRacing",
+    "file": "Automotive/FerrariRacing.3mf",
+    "displayName": "Ferrari Racing Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "FireBird",
+    "file": "Automotive/FireBird.3mf",
+    "displayName": "Fire Bird Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Ford Logo",
+    "file": "Automotive/Ford Logo.3mf",
+    "displayName": "Ford Logo Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Ford Mercury Lincoln Light",
+    "file": "Automotive/Ford Mercury Lincoln Light.3mf",
+    "displayName": "Ford Mercury Lincoln Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Ford Motor Sport Light",
+    "file": "Automotive/Ford Motor Sport Light.3mf",
+    "displayName": "Ford Motor Sport Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "GMC",
+    "file": "Automotive/GMC.3mf",
+    "displayName": "GMC Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "GM_retro",
+    "file": "Automotive/GM_retro.3mf",
+    "displayName": "GM Retro Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Harley Black and White",
+    "file": "Automotive/Harley Black and White.3mf",
+    "displayName": "Black and White Harley-Davidson Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "HarleyColored",
+    "file": "Automotive/HarleyColored.3mf",
+    "displayName": "Harley-Davidson Color Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "HarleyGasTank",
+    "file": "Automotive/HarleyGasTank.3mf",
+    "displayName": "Harley Gas Tank Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Hell Cat Blue",
+    "file": "Automotive/Hell Cat Blue.3mf",
+    "displayName": "Hell Cat Blue Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Hell Cat",
+    "file": "Automotive/Hell Cat.3mf",
+    "displayName": "Hell Cat Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Lincoln",
+    "file": "Automotive/Lincoln.3mf",
+    "displayName": "Lincoln Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Low Rider",
+    "file": "Automotive/Low Rider.3mf",
+    "displayName": "Low Rider Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "MelloYelloColeTrickle",
+    "file": "Automotive/MelloYelloColeTrickle.3mf",
+    "displayName": "Mello Yello Cole Trickle Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Mercedes",
+    "file": "Automotive/Mercedes.3mf",
+    "displayName": "Mercedes Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Mitsubishi",
+    "file": "Automotive/Mitsubishi.3mf",
+    "displayName": "Mitsubishi Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Mopar Blue",
+    "file": "Automotive/Mopar Blue.3mf",
+    "displayName": "Mopar Blue Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "MOPAR BOX",
+    "file": "Automotive/MOPAR BOX.3mf",
+    "displayName": "Mopar Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Mopar Diagnol",
+    "file": "Automotive/Mopar Diagnol.3mf",
+    "displayName": "Mopar Diagnol Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "MOPAR Green Yellow",
+    "file": "Automotive/MOPAR Green Yellow.3mf",
+    "displayName": "Mopar Green Yellow Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "MOPAR Red On Red",
+    "file": "Automotive/MOPAR Red On Red.3mf",
+    "displayName": "Mopar Red On Red Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "MOPAR Red",
+    "file": "Automotive/MOPAR Red.3mf",
+    "displayName": "Mopar Red Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Mopar Square",
+    "file": "Automotive/Mopar Square.3mf",
+    "displayName": "Mopar Square Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Pontiac",
+    "file": "Automotive/Pontiac.3mf",
+    "displayName": "Pontiac Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Porsche Color With Difusion",
+    "file": "Automotive/Porsche Color With Difusion.3mf",
+    "displayName": "Porsche Color with Difusion Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Porsche Color",
+    "file": "Automotive/Porsche Color.3mf",
+    "displayName": "Porsche Color Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Porsche Good BW",
+    "file": "Automotive/Porsche Good BW.3mf",
+    "displayName": "Porsche Good Bw Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Road America",
+    "file": "Automotive/Road America.3mf",
+    "displayName": "Road America Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "s10Life",
+    "file": "Automotive/s10Life.3mf",
+    "displayName": "S 10 Life Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "ScatPack",
+    "file": "Automotive/ScatPack.3mf",
+    "displayName": "Scat Pack Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "ShelbyGreen",
+    "file": "Automotive/ShelbyGreen.3mf",
+    "displayName": "Shelby Green Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "ShelbyRacing",
+    "file": "Automotive/ShelbyRacing.3mf",
+    "displayName": "Shelby Racing Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Shelby_Carrol",
+    "file": "Automotive/Shelby_Carrol.3mf",
+    "displayName": "Shelby Carrol Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Shelby_Carrol_whitelettering",
+    "file": "Automotive/Shelby_Carrol_whitelettering.3mf",
+    "displayName": "Shelby Carrol Whitelettering Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "SnoopAMG",
+    "file": "Automotive/SnoopAMG.3mf",
+    "displayName": "Snoop Amg Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "SS Camaro",
+    "file": "Automotive/SS Camaro.3mf",
+    "displayName": "Ss Camaro Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Toyota",
+    "file": "Automotive/Toyota.3mf",
+    "displayName": "Toyota Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Trans Am",
+    "file": "Automotive/Trans Am.3mf",
+    "displayName": "Trans Am Garage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Automotive",
+    "sourceName": "Wolkswagon",
+    "file": "Automotive/Wolkswagon.3mf",
+    "displayName": "Wolkswagon Garage LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Bands",
+    "sourceName": "America",
+    "file": "Bands/America.3mf",
+    "displayName": "America Music LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Bands",
+    "sourceName": "KORN",
+    "file": "Bands/KORN.3mf",
+    "displayName": "Korn Music LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Christmas",
+    "sourceName": "Christmas Tree Wall Hole",
+    "file": "Christmas/Christmas Tree Wall Hole.3mf",
+    "displayName": "Christmas Tree Wall Hole LED Light Box Decor",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Christmas",
+    "sourceName": "Christmas Tree",
+    "file": "Christmas/Christmas Tree.3mf",
+    "displayName": "Christmas Tree LED Light Box Decor",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Christmas",
+    "sourceName": "Frosty The Snowman",
+    "file": "Christmas/Frosty The Snowman.3mf",
+    "displayName": "Frosty the Snowman Christmas LED Light Box Decor",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Christmas",
+    "sourceName": "Grinch Filthy Animal",
+    "file": "Christmas/Grinch Filthy Animal.3mf",
+    "displayName": "Grinch Filthy Animal Christmas LED Light Box Decor",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Christmas",
+    "sourceName": "Grinch Stink",
+    "file": "Christmas/Grinch Stink.3mf",
+    "displayName": "Grinch Stink Christmas LED Light Box Decor",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Christmas",
+    "sourceName": "Grinch",
+    "file": "Christmas/Grinch.3mf",
+    "displayName": "Grinch Christmas LED Light Box Decor",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Christmas",
+    "sourceName": "Knomes",
+    "file": "Christmas/Knomes.3mf",
+    "displayName": "Gnomes Christmas LED Light Box Decor",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Christmas",
+    "sourceName": "Santa",
+    "file": "Christmas/Santa.3mf",
+    "displayName": "Santa Christmas LED Light Box Decor",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Christmas",
+    "sourceName": "Snoopy",
+    "file": "Christmas/Snoopy.3mf",
+    "displayName": "Snoopy Christmas LED Light Box Decor",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Christmas",
+    "sourceName": "Snowman Family lg",
+    "file": "Christmas/Snowman Family lg.3mf",
+    "displayName": "Snowman Family Large Christmas LED Light Box Decor",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Christmas",
+    "sourceName": "Snowman Family",
+    "file": "Christmas/Snowman Family.3mf",
+    "displayName": "Snowman Family Christmas LED Light Box Decor",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Christmas",
+    "sourceName": "Yoda With Gift lg",
+    "file": "Christmas/Yoda With Gift lg.3mf",
+    "displayName": "Yoda with Gift Large Christmas LED Light Box Decor",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Christmas",
+    "sourceName": "Yoda With Gift",
+    "file": "Christmas/Yoda With Gift.3mf",
+    "displayName": "Yoda with Gift Christmas LED Light Box Decor",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "America",
+    "file": "CustomRequests/America.3mf",
+    "displayName": "America Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "BrothersConstruction",
+    "file": "CustomRequests/BrothersConstruction.3mf",
+    "displayName": "Brothers Construction Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "Chilton High School Logo",
+    "file": "CustomRequests/Chilton High School Logo.3mf",
+    "displayName": "Chilton High School Logo Custom LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "Clown",
+    "file": "CustomRequests/Clown.3mf",
+    "displayName": "Clown Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "Crowe Thrifts",
+    "file": "CustomRequests/Crowe Thrifts.3mf",
+    "displayName": "Crowe Thrifts Custom LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "Depere",
+    "file": "CustomRequests/Depere.3mf",
+    "displayName": "Depere Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "ELI",
+    "file": "CustomRequests/ELI.3mf",
+    "displayName": "ELI Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "Filmation Ghostbusters",
+    "file": "CustomRequests/Filmation Ghostbusters.3mf",
+    "displayName": "Filmation Ghostbusters Custom LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "fishingLakeWinnebago",
+    "file": "CustomRequests/fishingLakeWinnebago.3mf",
+    "displayName": "Fishing Lake Winnebago Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "Hawk Hunter",
+    "file": "CustomRequests/Hawk Hunter.3mf",
+    "displayName": "Hawk Hunter Custom LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "Homer On Donut (1)",
+    "file": "CustomRequests/Homer On Donut (1).3mf",
+    "displayName": "Homer On Donut Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "homesteadBicycles",
+    "file": "CustomRequests/homesteadBicycles.3mf",
+    "displayName": "Homestead Bicycles Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "HornyMonkRestoration",
+    "file": "CustomRequests/HornyMonkRestoration.3mf",
+    "displayName": "Horny Monk Restoration Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "Jody2",
+    "file": "CustomRequests/Jody2.3mf",
+    "displayName": "Jody 2 Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "JVC",
+    "file": "CustomRequests/JVC.3mf",
+    "displayName": "JVC Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "KBLandscaping",
+    "file": "CustomRequests/KBLandscaping.3mf",
+    "displayName": "Kb Landscaping Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "kbPressureWashing",
+    "file": "CustomRequests/kbPressureWashing.3mf",
+    "displayName": "Kb Pressure Washing Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "KellyLakeLove",
+    "file": "CustomRequests/KellyLakeLove.3mf",
+    "displayName": "Kelly Lake Love Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "MIDwestWheelsOfSoul (1)",
+    "file": "CustomRequests/MIDwestWheelsOfSoul (1).3mf",
+    "displayName": "Mi Dwest Wheels of Soul Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "Morrison Fabrication",
+    "file": "CustomRequests/Morrison Fabrication.3mf",
+    "displayName": "Morrison Fabrication Custom LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "Neenah13",
+    "file": "CustomRequests/Neenah13.3mf",
+    "displayName": "Neenah 13 Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "Neenah22",
+    "file": "CustomRequests/Neenah22.3mf",
+    "displayName": "Neenah 22 Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "NorthTexasMeanGreenEagles",
+    "file": "CustomRequests/NorthTexasMeanGreenEagles.3mf",
+    "displayName": "North Texas Mean Green Eagles Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "Racecar Driver Logo Light",
+    "file": "CustomRequests/Racecar Driver Logo Light.3mf",
+    "displayName": "Racecar Driver Logo Custom LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "RAD",
+    "file": "CustomRequests/RAD.3mf",
+    "displayName": "RAD Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "Semi",
+    "file": "CustomRequests/Semi.3mf",
+    "displayName": "Semi Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "WFFW1",
+    "file": "CustomRequests/WFFW1.3mf",
+    "displayName": "WFFW 1 Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "WheelsOFSoul",
+    "file": "CustomRequests/WheelsOFSoul.3mf",
+    "displayName": "Wheels of Soul Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "CustomRequests",
+    "sourceName": "wheelsOfSoulNomad",
+    "file": "CustomRequests/wheelsOfSoulNomad.3mf",
+    "displayName": "Wheels of Soul Nomad Custom LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Fishing",
+    "sourceName": "CaptinCraig",
+    "file": "Fishing/CaptinCraig.3mf",
+    "displayName": "Captin Craig Fishing LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Fishing",
+    "sourceName": "CaptinCraigRect",
+    "file": "Fishing/CaptinCraigRect.3mf",
+    "displayName": "Captin Craig Rect Fishing LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Fishing",
+    "sourceName": "GoneFishingKellyLakeWi",
+    "file": "Fishing/GoneFishingKellyLakeWi.3mf",
+    "displayName": "Gone Fishing Kelly Lake Wi Fishing LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "halloween",
+    "sourceName": "Bleading Heart Coffin",
+    "file": "halloween/Bleading Heart Coffin.3mf",
+    "displayName": "Bleading Heart Coffin Halloween LED Light Box Decor",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "halloween",
+    "sourceName": "Cat Coffin",
+    "file": "halloween/Cat Coffin.3mf",
+    "displayName": "Cat Coffin Halloween LED Light Box Decor",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "halloween",
+    "sourceName": "GoofySkeleton Coffin",
+    "file": "halloween/GoofySkeleton Coffin.3mf",
+    "displayName": "Goofy Skeleton Coffin Halloween LED Light Box Decor",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "halloween",
+    "sourceName": "Gothic Girl",
+    "file": "halloween/Gothic Girl.3mf",
+    "displayName": "Gothic Girl Halloween LED Light Box Decor",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "halloween",
+    "sourceName": "Halloween Scene",
+    "file": "halloween/Halloween Scene.3mf",
+    "displayName": "Halloween Scene LED Light Box Decor",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "halloween",
+    "sourceName": "Orange Moon Skeleton",
+    "file": "halloween/Orange Moon Skeleton.3mf",
+    "displayName": "Orange Moon Skeleton Halloween LED Light Box Decor",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "halloween",
+    "sourceName": "Pumpkin Witch",
+    "file": "halloween/Pumpkin Witch.3mf",
+    "displayName": "Pumpkin Witch Halloween LED Light Box Decor",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "halloween",
+    "sourceName": "Pumpkin",
+    "file": "halloween/Pumpkin.3mf",
+    "displayName": "Pumpkin Halloween LED Light Box Decor",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "halloween",
+    "sourceName": "Scarry Cat Coffin",
+    "file": "halloween/Scarry Cat Coffin.3mf",
+    "displayName": "Scarry Cat Coffin Halloween LED Light Box Decor",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "halloween",
+    "sourceName": "Scarry Dog Coffin",
+    "file": "halloween/Scarry Dog Coffin.3mf",
+    "displayName": "Scarry Dog Coffin Halloween LED Light Box Decor",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "halloween",
+    "sourceName": "ScarrySkull",
+    "file": "halloween/ScarrySkull.3mf",
+    "displayName": "Scarry Skull Halloween LED Light Box Decor",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "halloween",
+    "sourceName": "Skull Face lg",
+    "file": "halloween/Skull Face lg.3mf",
+    "displayName": "Skull Face Large Halloween LED Light Box Decor",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "halloween",
+    "sourceName": "Skull Face",
+    "file": "halloween/Skull Face.3mf",
+    "displayName": "Skull Face Halloween LED Light Box Decor",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "halloween",
+    "sourceName": "Vamp Dog",
+    "file": "halloween/Vamp Dog.3mf",
+    "displayName": "Vamp Dog Halloween LED Light Box Decor",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "halloween",
+    "sourceName": "Yoda Pumpkin lg",
+    "file": "halloween/Yoda Pumpkin lg.3mf",
+    "displayName": "Yoda Pumpkin Large Halloween LED Light Box Decor",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "halloween",
+    "sourceName": "Yoda Pumpkin",
+    "file": "halloween/Yoda Pumpkin.3mf",
+    "displayName": "Yoda Pumpkin Halloween LED Light Box Decor",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Old Labels",
+    "sourceName": "Cobra CB",
+    "file": "Old Labels/Cobra CB.3mf",
+    "displayName": "Cobra CB LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "67",
+    "file": "Pop Culture/67.3mf",
+    "displayName": "67 LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Batman Bat Wing",
+    "file": "Pop Culture/Batman Bat Wing.3mf",
+    "displayName": "Batman Bat Wing LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Batman",
+    "file": "Pop Culture/Batman.3mf",
+    "displayName": "Batman LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "BettyBoop",
+    "file": "Pop Culture/BettyBoop.3mf",
+    "displayName": "Betty Boop LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "BillyClownSaw",
+    "file": "Pop Culture/BillyClownSaw.3mf",
+    "displayName": "Billy Clown Saw LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Coffee Girl",
+    "file": "Pop Culture/Coffee Girl.3mf",
+    "displayName": "Coffee Girl LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Donkey Kong",
+    "file": "Pop Culture/Donkey Kong.3mf",
+    "displayName": "Donkey Kong LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Ghostbusters Logo",
+    "file": "Pop Culture/Ghostbusters Logo.3mf",
+    "displayName": "Ghostbusters Logo LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Golden Axe Light Box",
+    "file": "Pop Culture/Golden Axe Light Box.3mf",
+    "displayName": "Golden Axe LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Guitar Hero Light Box",
+    "file": "Pop Culture/Guitar Hero Light Box.3mf",
+    "displayName": "Guitar Hero LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "GuyFawkes",
+    "file": "Pop Culture/GuyFawkes.3mf",
+    "displayName": "Guy Fawkes LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "ItsFuckThisChitOclock",
+    "file": "Pop Culture/ItsFuckThisChitOclock.3mf",
+    "displayName": "Its Fuck This Chit Oclock LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Jack Daniels",
+    "file": "Pop Culture/Jack Daniels.3mf",
+    "displayName": "Jack Daniels LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Jordan Shoe",
+    "file": "Pop Culture/Jordan Shoe.3mf",
+    "displayName": "Jordan Shoe LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Jurassic Park (1)",
+    "file": "Pop Culture/Jurassic Park (1).3mf",
+    "displayName": "Jurassic Park LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "JurassicPark",
+    "file": "Pop Culture/JurassicPark.3mf",
+    "displayName": "Jurassic Park LED Light Box Sign Variant 2",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": "Pop Culture/Jurassic Park (1)"
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Kerby",
+    "file": "Pop Culture/Kerby.3mf",
+    "displayName": "Kirby LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Killer Klowns",
+    "file": "Pop Culture/Killer Klowns.3mf",
+    "displayName": "Killer Klowns LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "KingdomOfHearts",
+    "file": "Pop Culture/KingdomOfHearts.3mf",
+    "displayName": "Kingdom of Hearts LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Lightbox Draft",
+    "file": "Pop Culture/Lightbox Draft.3mf",
+    "displayName": "Lightbox Draft LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Lips",
+    "file": "Pop Culture/Lips.3mf",
+    "displayName": "Lips LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "LV Letters",
+    "file": "Pop Culture/LV Letters.3mf",
+    "displayName": "Lv Letters LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "LV",
+    "file": "Pop Culture/LV.3mf",
+    "displayName": "Lv LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Mario Flying",
+    "file": "Pop Culture/Mario Flying.3mf",
+    "displayName": "Mario Flying LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Mario Yoshi",
+    "file": "Pop Culture/Mario Yoshi.3mf",
+    "displayName": "Mario Yoshi LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "MarioOnYoshi",
+    "file": "Pop Culture/MarioOnYoshi.3mf",
+    "displayName": "Mario On Yoshi LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Metal Gear Solid Light Box",
+    "file": "Pop Culture/Metal Gear Solid Light Box.3mf",
+    "displayName": "Metal Gear Solid LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Mini Trucking",
+    "file": "Pop Culture/Mini Trucking.3mf",
+    "displayName": "Mini Trucking LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "MTV",
+    "file": "Pop Culture/MTV.3mf",
+    "displayName": "Mtv LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Munsters",
+    "file": "Pop Culture/Munsters.3mf",
+    "displayName": "Munsters LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Pacman",
+    "file": "Pop Culture/Pacman.3mf",
+    "displayName": "Pacman LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Playstation Logo",
+    "file": "Pop Culture/Playstation Logo.3mf",
+    "displayName": "Playstation Logo LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Puzzle Bobble",
+    "file": "Pop Culture/Puzzle Bobble.3mf",
+    "displayName": "Puzzle Bobble LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "qbert",
+    "file": "Pop Culture/qbert.3mf",
+    "displayName": "Qbert LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "RatFink (1)",
+    "file": "Pop Culture/RatFink (1).3mf",
+    "displayName": "Rat Fink LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "RatFink",
+    "file": "Pop Culture/RatFink.3mf",
+    "displayName": "Rat Fink LED Light Box Sign Variant 2",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": "Pop Culture/RatFink (1)"
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Resident Evil",
+    "file": "Pop Culture/Resident Evil.3mf",
+    "displayName": "Resident Evil LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Sega",
+    "file": "Pop Culture/Sega.3mf",
+    "displayName": "Sega LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "slimer",
+    "file": "Pop Culture/slimer.3mf",
+    "displayName": "Slimer LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Sonic",
+    "file": "Pop Culture/Sonic.3mf",
+    "displayName": "Sonic LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Space Invaders",
+    "file": "Pop Culture/Space Invaders.3mf",
+    "displayName": "Space Invaders LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Spiderman Face",
+    "file": "Pop Culture/Spiderman Face.3mf",
+    "displayName": "Spider-Man Face LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "spiderman",
+    "file": "Pop Culture/spiderman.3mf",
+    "displayName": "Spider-Man LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Star Wars",
+    "file": "Pop Culture/Star Wars.3mf",
+    "displayName": "Star Wars LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Stay Puff",
+    "file": "Pop Culture/Stay Puff.3mf",
+    "displayName": "Stay Puff LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Stranger Things",
+    "file": "Pop Culture/Stranger Things.3mf",
+    "displayName": "Stranger Things LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Street Fighter",
+    "file": "Pop Culture/Street Fighter.3mf",
+    "displayName": "Street Fighter LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Streets Of Rage Light Box",
+    "file": "Pop Culture/Streets Of Rage Light Box.3mf",
+    "displayName": "Streets of Rage LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Super Nintendo",
+    "file": "Pop Culture/Super Nintendo.3mf",
+    "displayName": "Super Nintendo LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Tales From The Crypt Default",
+    "file": "Pop Culture/Tales From The Crypt Default.3mf",
+    "displayName": "Tales From the Crypt Default LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Tales From The Crypt",
+    "file": "Pop Culture/Tales From The Crypt.3mf",
+    "displayName": "Tales From the Crypt LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "TeenageMuntantNinjaTurtles",
+    "file": "Pop Culture/TeenageMuntantNinjaTurtles.3mf",
+    "displayName": "Teenage Muntant Ninja Turtles LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "The Mystery Machine",
+    "file": "Pop Culture/The Mystery Machine.3mf",
+    "displayName": "The Mystery Machine LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "The Simpsons Light",
+    "file": "Pop Culture/The Simpsons Light.3mf",
+    "displayName": "The Simpsons LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Thefast And The Furious Light",
+    "file": "Pop Culture/Thefast And The Furious Light.3mf",
+    "displayName": "The Fast and the Furious LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "TheWalkingDead",
+    "file": "Pop Culture/TheWalkingDead.3mf",
+    "displayName": "The Walking Dead LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Thrasher Logo Light",
+    "file": "Pop Culture/Thrasher Logo Light.3mf",
+    "displayName": "Thrasher Logo LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Pop Culture",
+    "sourceName": "Thunder Cats Light Box",
+    "file": "Pop Culture/Thunder Cats Light Box.3mf",
+    "displayName": "Thunder Cats LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "AbbysWakeboarder",
+    "file": "Sports/AbbysWakeboarder.3mf",
+    "displayName": "Abbys Wakeboarder Fan LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "AO_Oshkosh",
+    "file": "Sports/AO_Oshkosh.3mf",
+    "displayName": "AO Oshkosh Fan LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "badgersWisconsinHelmet",
+    "file": "Sports/badgersWisconsinHelmet.3mf",
+    "displayName": "Wisconsin Badgers Helmet LED Helmet Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Bears Helmet",
+    "file": "Sports/Bears Helmet.3mf",
+    "displayName": "Bears Helmet LED Helmet Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Bears224",
+    "file": "Sports/Bears224.3mf",
+    "displayName": "Bears 224 Fan LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Brewers Barrelman",
+    "file": "Sports/Brewers Barrelman.3mf",
+    "displayName": "Brewers Barrelman Fan LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Brewers Circle200",
+    "file": "Sports/Brewers Circle200.3mf",
+    "displayName": "Brewers Circle 200 Fan LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "BrewersGlove",
+    "file": "Sports/BrewersGlove.3mf",
+    "displayName": "Brewers Glove Fan LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Bucks Mascot",
+    "file": "Sports/Bucks Mascot.3mf",
+    "displayName": "Bucks Mascot Fan LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Bucks Maskot",
+    "file": "Sports/Bucks Maskot.3mf",
+    "displayName": "Bucks Maskot Fan LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Bucks rectangle",
+    "file": "Sports/Bucks rectangle.3mf",
+    "displayName": "Bucks Rectangle Fan LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Bucks Retro",
+    "file": "Sports/Bucks Retro.3mf",
+    "displayName": "Bucks Retro Fan LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Bucks Special",
+    "file": "Sports/Bucks Special.3mf",
+    "displayName": "Bucks Special Fan LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Bucks Square",
+    "file": "Sports/Bucks Square.3mf",
+    "displayName": "Bucks Square Fan LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "BuckyBadger",
+    "file": "Sports/BuckyBadger.3mf",
+    "displayName": "Bucky Badger Fan LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "ChicagoBulls",
+    "file": "Sports/ChicagoBulls.3mf",
+    "displayName": "Chicago Bulls Fan LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Cowboy Joe",
+    "file": "Sports/Cowboy Joe.3mf",
+    "displayName": "Cowboy Joe Fan LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "FIFIWorldCup",
+    "file": "Sports/FIFIWorldCup.3mf",
+    "displayName": "Fifi World Cup Fan LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "GoneFishing",
+    "file": "Sports/GoneFishing.3mf",
+    "displayName": "Gone Fishing Fan LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "greenbayg",
+    "file": "Sports/greenbayg.3mf",
+    "displayName": "Greenbayg Fan LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "HaroRacing",
+    "file": "Sports/HaroRacing.3mf",
+    "displayName": "Haro Racing Fan LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Kayaking Blue",
+    "file": "Sports/Kayaking Blue.3mf",
+    "displayName": "Kayaking Blue Fan LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Kayaking",
+    "file": "Sports/Kayaking.3mf",
+    "displayName": "Kayaking Fan LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Lions",
+    "file": "Sports/Lions.3mf",
+    "displayName": "Lions Fan LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Michigan Wolverines",
+    "file": "Sports/Michigan Wolverines.3mf",
+    "displayName": "Michigan Wolverines Fan LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Mongoose",
+    "file": "Sports/Mongoose.3mf",
+    "displayName": "Mongoose Fan LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "NE Patriots Fan Light",
+    "file": "Sports/NE Patriots Fan Light.3mf",
+    "displayName": "Ne Patriots Fan Fan LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "New Packer Helmet",
+    "file": "Sports/New Packer Helmet.3mf",
+    "displayName": "New Packer Helmet LED Helmet Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Ohio State Buckeyes",
+    "file": "Sports/Ohio State Buckeyes.3mf",
+    "displayName": "Ohio State Buckeyes Fan LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "OSU Football Helmet",
+    "file": "Sports/OSU Football Helmet.3mf",
+    "displayName": "Osu Football Helmet LED Helmet Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "OSU Helmet Angled",
+    "file": "Sports/OSU Helmet Angled.3mf",
+    "displayName": "Osu Helmet Angled LED Helmet Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Packers Helmet 225 Width",
+    "file": "Sports/Packers Helmet 225 Width.3mf",
+    "displayName": "Packers Helmet 225 Width LED Helmet Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Packers Helmet",
+    "file": "Sports/Packers Helmet.3mf",
+    "displayName": "Packers Helmet LED Helmet Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "PackersHelmetname",
+    "file": "Sports/PackersHelmetname.3mf",
+    "displayName": "Packers Helmetname LED Helmet Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "PackersNameNg",
+    "file": "Sports/PackersNameNg.3mf",
+    "displayName": "Packers Name Ng Fan LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Packy Packer",
+    "file": "Sports/PackyPacker.3mf",
+    "displayName": "Packy Packer Fan LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "TimberRattlers",
+    "file": "Sports/TimberRattlers.3mf",
+    "displayName": "Timber Rattlers Fan LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Titleist",
+    "file": "Sports/Titleist.3mf",
+    "displayName": "Titleist Fan LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Vikings Helmet",
+    "file": "Sports/Vikings Helmet.3mf",
+    "displayName": "Vikings Helmet LED Helmet Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Vikings224",
+    "file": "Sports/Vikings224.3mf",
+    "displayName": "Vikings 224 Fan LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "VikingsMan",
+    "file": "Sports/VikingsMan.3mf",
+    "displayName": "Vikings Man Fan LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "WHiteSox",
+    "file": "Sports/WHiteSox.3mf",
+    "displayName": "W Hite Sox Fan LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "WiBrewers",
+    "file": "Sports/WiBrewers.3mf",
+    "displayName": "Wi Brewers Fan LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Wisconsin Helmet",
+    "file": "Sports/Wisconsin Helmet.3mf",
+    "displayName": "Wisconsin Helmet LED Helmet Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Wisconsin Volleyball",
+    "file": "Sports/Wisconsin Volleyball.3mf",
+    "displayName": "Wisconsin Volleyball Fan LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "Wisconsin W",
+    "file": "Sports/Wisconsin W.3mf",
+    "displayName": "Wisconsin W Fan LED Light Box Sign",
+    "issues": [],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "WisconsinBadgersNameAndHelmet",
+    "file": "Sports/WisconsinBadgersNameAndHelmet.3mf",
+    "displayName": "Wisconsin Badgers Name and Helmet LED Helmet Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  },
+  {
+    "category": "Sports",
+    "sourceName": "WisconsinProSportsMachup",
+    "file": "Sports/WisconsinProSportsMachup.3mf",
+    "displayName": "Wisconsin Pro Sports Machup Fan LED Light Box Sign",
+    "issues": [
+      "source-name-looks-file-like"
+    ],
+    "duplicateOf": null
+  }
+]
