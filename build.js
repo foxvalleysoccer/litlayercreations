@@ -147,12 +147,12 @@ function getResolvedMedia(item) {
   return combined.sort((a, b) => scoreMedia(b, embeddedPreview) - scoreMedia(a, embeddedPreview));
 }
 
-function paypalBuyNowButton(itemName, btnClass) {
+function paypalBuyNowButton(itemName, btnClass, price = DEFAULT_PRICE) {
   return `<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="paypal-form">
         <input type="hidden" name="cmd" value="_xclick">
         <input type="hidden" name="business" value="${PAYPAL_EMAIL}">
         <input type="hidden" name="item_name" value="${itemName}">
-        <input type="hidden" name="amount" value="${DEFAULT_PRICE}.00">
+        <input type="hidden" name="amount" value="${price}.00">
         <input type="hidden" name="shipping" value="${SHIPPING_COST}.00">
         <input type="hidden" name="currency_code" value="USD">
         <input type="submit" class="${btnClass || 'btn btn-paypal'}" value="🅿️ Buy Now – PayPal">
@@ -372,6 +372,7 @@ function generateProductPage(item, category) {
   const pageUrl    = `${BASE_URL}/products/${slug}.html`;
   const displayName = getDisplayName(item, category);
   const description = item.description || generateDescription(displayName, category);
+  const productPrice = item.price || DEFAULT_PRICE;
   const catSlug    = toSlug(category);
 
   const allMedia   = getResolvedMedia(item);
@@ -433,7 +434,7 @@ function generateProductPage(item, category) {
   "brand": { "@type": "Brand", "name": "Lit Layer Creations" },
   "offers": {
     "@type": "Offer",
-    "price": "${DEFAULT_PRICE}.00",
+    "price": "${productPrice}.00",
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock",
     "url": "${pageUrl}",
@@ -503,10 +504,10 @@ ${productPageStyles}
     <h2>${displayName}</h2>
     <p>${description}</p>
     ${featureListHtml()}
-    <div class="price">$${DEFAULT_PRICE}.00 <span style="font-size:14px;color:#aaa;">+ $${SHIPPING_COST} shipping</span></div>
+    <div class="price">$${productPrice}.00 <span style="font-size:14px;color:#aaa;">+ $${SHIPPING_COST} shipping</span></div>
 
     <div class="cta-buttons">
-      ${paypalBuyNowButton(displayName)}
+      ${paypalBuyNowButton(displayName, undefined, productPrice)}
       <a href="${CASHAPP_URL}" target="_blank" class="btn btn-cashapp">💵 Pay with Cash App</a>
     </div>
 
@@ -547,6 +548,7 @@ function generateIndex() {
       const productPath = getProductPath(cat.category, item.name);
       const displayName = getDisplayName(item, cat.category);
       const description = item.description || generateDescription(displayName, cat.category);
+      const productPrice = item.price || DEFAULT_PRICE;
       const allMedia = getResolvedMedia(item);
       const maxVisible = 9;
       const hasMore = allMedia.length > maxVisible;
@@ -570,7 +572,7 @@ function generateIndex() {
         </div>
         <div class="card-footer">
           <a href="${productPath}" class="btn">View Details</a>
-          ${paypalBuyNowButton(displayName, 'btn btn-paypal')}
+          ${paypalBuyNowButton(displayName, 'btn btn-paypal', productPrice)}
         </div>
       </div>`;
     });

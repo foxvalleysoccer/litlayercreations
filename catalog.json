@@ -2580,6 +2580,20 @@
         "displayName": "Packy Packer Fan LED Light Box Sign"
       },
       {
+        "name": "Steelers Steel City",
+        "file": "Sports/Steelers_SteelCity.3mf",
+        "media": [
+          "Sports/Media/Steelers_SteelCity/img_01.jpg",
+          "Sports/Media/Steelers_SteelCity/img_02.jpg",
+          "Sports/Media/Steelers_SteelCity/img_03.jpg",
+          "Sports/Media/Steelers_SteelCity/img_04.jpg",
+          "Sports/Media/Steelers_SteelCity/img_05.jpg"
+        ],
+        "displayName": "Steelers Steel City Fan LED Light Box Sign",
+        "description": "A unique, one-of-a-kind Steel City fan LED light box with bold black and gold artwork, bright illumination, and a clean 3D printed frame you won't find anywhere else.",
+        "price": "35"
+      },
+      {
         "name": "TimberRattlers",
         "file": "Sports/TimberRattlers.3mf",
         "media": [
