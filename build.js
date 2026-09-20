@@ -285,6 +285,7 @@ const catalogStyles = `
   .card:hover { transform: translateY(-5px); }
   .card h3 { margin: 0 0 8px; color: #00d4ff; }
   .card p { margin: 4px 0; font-size: 14px; flex-grow: 1; }
+  .card-price { color: #ffcc00; font-weight: 800; margin: 8px 0 4px; }
   .card-footer { margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap; }
   .media {
     display: flex;
@@ -568,6 +569,7 @@ function generateIndex() {
       <div class="card">
         <h3>${displayName}</h3>
         <p>${description}</p>
+        <div class="card-price">$${productPrice}.00</div>
         <div class="${mediaClass}">${mediaHtml}
         </div>
         <div class="card-footer">
