@@ -2578,7 +2578,7 @@
           "Sports/Media/PackyPacker/img_04.jpg"
         ],
         "displayName": "Packy Packer Fan LED Light Box Sign",
-        "arModel": "ar-models/packy-packer.glb",
+        "arModel": "ar-models/packy-packer-ar-v3.glb",
         "arPoster": "Sports/Media/PackyPacker/img_01.jpg"
       },
       {

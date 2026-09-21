@@ -124,10 +124,11 @@ def main() -> None:
             },
             {
                 "name": "Matte black shell",
+                "emissiveFactor": [0.02, 0.35, 0.08],
                 "pbrMetallicRoughness": {
-                    "baseColorFactor": [0.01, 0.01, 0.012, 1],
+                    "baseColorFactor": [0.0, 0.28, 0.06, 1],
                     "metallicFactor": 0,
-                    "roughnessFactor": 0.75,
+                    "roughnessFactor": 0.55,
                 },
             },
         ],
