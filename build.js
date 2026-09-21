@@ -361,8 +361,25 @@ const productPageStyles = `
   .cta-buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
   .cta-buttons .btn { padding: 12px 20px; font-size: 15px; }
   .shipping-note { font-size: 13px; color: #aaa; margin-top: 16px; }
+  .ar-preview {
+    margin: 24px 0;
+    padding: 16px;
+    background: #141c2f;
+    border: 1px solid rgba(0, 212, 255, 0.35);
+    border-radius: 10px;
+  }
+  .ar-preview h3 { color: #00d4ff; margin: 0 0 6px; }
+  .ar-preview p { color: #c8d4e6; font-size: 14px; margin: 0 0 12px; }
+  model-viewer {
+    width: 100%;
+    max-width: 500px;
+    height: 360px;
+    background: #0b1220;
+    border-radius: 10px;
+  }
   @media (max-width: 600px) {
     .product-details { flex-direction: column; }
+    model-viewer { height: 300px; }
   }
 `;
 
@@ -375,9 +392,11 @@ function generateProductPage(item, category) {
   const description = item.description || generateDescription(displayName, category);
   const productPrice = item.price || DEFAULT_PRICE;
   const catSlug    = toSlug(category);
+  const arModel = item.arModel || '';
 
   const allMedia   = getResolvedMedia(item);
   const firstImage = allMedia.find(m => !m.endsWith('.mp4'));
+  const arPoster = item.arPoster || firstImage || '';
   const ogImage    = firstImage ? `${BASE_URL}/${firstImage}` : `${BASE_URL}/Images/Logo.png`;
 
   // Build thumbnail HTML
@@ -401,6 +420,25 @@ function generateProductPage(item, category) {
     mainMediaHtml = `<div class="no-image">No photo yet — coming soon</div>`;
   }
 
+  const arHtml = arModel ? `
+    <div class="ar-preview" id="ar-preview">
+      <h3>View In Your Room</h3>
+      <p>Try this light as a phone-friendly 3D preview. On supported Android phones, tap the AR button to place it in your space.</p>
+      <model-viewer
+        src="../${arModel}"
+        ${arPoster ? `poster="../${arPoster}"` : ''}
+        alt="${displayName} 3D preview"
+        camera-controls
+        touch-action="pan-y"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        shadow-intensity="0.6"
+        exposure="1">
+        <button slot="ar-button" class="btn">View In Your Room</button>
+      </model-viewer>
+    </div>` : '';
+  const arScript = arModel ? '\n<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>' : '';
+
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -423,6 +461,7 @@ function generateProductPage(item, category) {
 <meta name="twitter:title" content="${displayName} – Lit Layer Creations" />
 <meta name="twitter:description" content="${description}" />
 <meta name="twitter:image" content="${ogImage}" />
+${arScript}
 
 <!-- Structured Data: Product -->
 <script type="application/ld+json">
@@ -504,6 +543,7 @@ ${productPageStyles}
   <div class="details">
     <h2>${displayName}</h2>
     <p>${description}</p>
+    ${arHtml}
     ${featureListHtml()}
     <div class="price">$${productPrice}.00 <span style="font-size:14px;color:#aaa;">+ $${SHIPPING_COST} shipping</span></div>
 
@@ -574,6 +614,7 @@ function generateIndex() {
         </div>
         <div class="card-footer">
           <a href="${productPath}" class="btn">View Details</a>
+          ${item.arModel ? `<a href="${productPath}#ar-preview" class="btn">View In Room</a>` : ''}
           ${paypalBuyNowButton(displayName, 'btn btn-paypal', productPrice)}
         </div>
       </div>`;
@@ -680,6 +721,10 @@ ${catalogHtml}
     <a class="ecosystem-card" href="${TROLLING_URL}" target="_blank">
       <strong>Trolling Speed App</strong>
       <span>GPS speed, trip tracking, lake maps, and waypoint tools.</span>
+    </a>
+    <a class="ecosystem-card" href="products/sports-packy-packer.html#ar-preview">
+      <strong>AR Preview Pilot</strong>
+      <span>Try the Packy Packer light in a phone-friendly 3D room preview.</span>
     </a>
   </div>
 </section>

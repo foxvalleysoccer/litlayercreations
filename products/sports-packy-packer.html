@@ -21,6 +21,8 @@
 <meta name="twitter:description" content="Custom 3D-printed Packy Packer Fan LED Light Box Sign. Show your team pride with this handcrafted display. About 9 inches at the largest dimension. USB powered with full remote control — color-changing LEDs, sound-reactive mode, and smooth fade effects. Made to order in Neenah, Wisconsin. Ships nationwide." />
 <meta name="twitter:image" content="https://litlayercreations.com/Sports/Media/PackyPacker/img_02.jpg" />
 
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
 <!-- Structured Data: Product -->
 <script type="application/ld+json">
 {
@@ -192,8 +194,25 @@
   .cta-buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
   .cta-buttons .btn { padding: 12px 20px; font-size: 15px; }
   .shipping-note { font-size: 13px; color: #aaa; margin-top: 16px; }
+  .ar-preview {
+    margin: 24px 0;
+    padding: 16px;
+    background: #141c2f;
+    border: 1px solid rgba(0, 212, 255, 0.35);
+    border-radius: 10px;
+  }
+  .ar-preview h3 { color: #00d4ff; margin: 0 0 6px; }
+  .ar-preview p { color: #c8d4e6; font-size: 14px; margin: 0 0 12px; }
+  model-viewer {
+    width: 100%;
+    max-width: 500px;
+    height: 360px;
+    background: #0b1220;
+    border-radius: 10px;
+  }
   @media (max-width: 600px) {
     .product-details { flex-direction: column; }
+    model-viewer { height: 300px; }
   }
 
 </style>
@@ -234,6 +253,23 @@
   <div class="details">
     <h2>Packy Packer Fan LED Light Box Sign</h2>
     <p>Custom 3D-printed Packy Packer Fan LED Light Box Sign. Show your team pride with this handcrafted display. About 9 inches at the largest dimension. USB powered with full remote control — color-changing LEDs, sound-reactive mode, and smooth fade effects. Made to order in Neenah, Wisconsin. Ships nationwide.</p>
+    
+    <div class="ar-preview" id="ar-preview">
+      <h3>View In Your Room</h3>
+      <p>Try this light as a phone-friendly 3D preview. On supported Android phones, tap the AR button to place it in your space.</p>
+      <model-viewer
+        src="../ar-models/packy-packer.glb"
+        poster="../Sports/Media/PackyPacker/img_01.jpg"
+        alt="Packy Packer Fan LED Light Box Sign 3D preview"
+        camera-controls
+        touch-action="pan-y"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        shadow-intensity="0.6"
+        exposure="1">
+        <button slot="ar-button" class="btn">View In Your Room</button>
+      </model-viewer>
+    </div>
     <ul class="feature-list">
         <li class="fl-size">📏 About 9" at the largest dimension</li>
         <li class="fl-usb">🔌 USB powered</li>
