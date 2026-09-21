@@ -430,10 +430,12 @@ function generateProductPage(item, category) {
         alt="${displayName} 3D preview"
         camera-controls
         touch-action="pan-y"
-        ar
-        ar-modes="webxr scene-viewer quick-look"
-        shadow-intensity="0.6"
-        exposure="1">
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          ar-placement="floor"
+          ar-scale="fixed"
+          shadow-intensity="0.6"
+          exposure="1">
         <button slot="ar-button" class="btn">View In Your Room</button>
       </model-viewer>
     </div>` : '';

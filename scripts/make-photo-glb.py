@@ -26,30 +26,60 @@ def main() -> None:
         aspect = image.height / image.width
 
     height_m = width_m * aspect
-    positions = [
-        -width_m / 2, 0.0, 0.0,
-        width_m / 2, 0.0, 0.0,
-        width_m / 2, height_m, 0.0,
-        -width_m / 2, height_m, 0.0,
-    ]
-    normals = [0.0, 0.0, 1.0] * 4
-    uvs = [0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0]
-    indices = [0, 1, 2, 0, 2, 3]
+    depth_m = 0.035
+    x0, x1 = -width_m / 2, width_m / 2
+    y0, y1 = 0.0, height_m
+    z0, z1 = -depth_m / 2, depth_m / 2
 
-    position_bytes = struct.pack("<" + "f" * len(positions), *positions)
-    normal_bytes = struct.pack("<" + "f" * len(normals), *normals)
-    uv_bytes = struct.pack("<" + "f" * len(uvs), *uvs)
-    index_bytes = struct.pack("<" + "H" * len(indices), *indices)
+    # Front face carries the product photo. A real depth box makes Android AR
+    # placement more reliable than a zero-thickness plane.
+    front_positions = [
+        x0, y0, z1,
+        x1, y0, z1,
+        x1, y1, z1,
+        x0, y1, z1,
+    ]
+    front_normals = [0.0, 0.0, 1.0] * 4
+    front_uvs = [0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0]
+    front_indices = [0, 1, 2, 0, 2, 3]
+
+    body_positions = []
+    body_normals = []
+    body_indices = []
+
+    def add_face(corners, normal):
+        base = len(body_positions) // 3
+        for corner in corners:
+            body_positions.extend(corner)
+            body_normals.extend(normal)
+        body_indices.extend([base, base + 1, base + 2, base, base + 2, base + 3])
+
+    add_face([(x1, y0, z0), (x0, y0, z0), (x0, y1, z0), (x1, y1, z0)], [0, 0, -1])
+    add_face([(x0, y0, z0), (x0, y0, z1), (x0, y1, z1), (x0, y1, z0)], [-1, 0, 0])
+    add_face([(x1, y0, z1), (x1, y0, z0), (x1, y1, z0), (x1, y1, z1)], [1, 0, 0])
+    add_face([(x0, y1, z1), (x1, y1, z1), (x1, y1, z0), (x0, y1, z0)], [0, 1, 0])
+    add_face([(x0, y0, z0), (x1, y0, z0), (x1, y0, z1), (x0, y0, z1)], [0, -1, 0])
+
+    front_position_bytes = struct.pack("<" + "f" * len(front_positions), *front_positions)
+    front_normal_bytes = struct.pack("<" + "f" * len(front_normals), *front_normals)
+    front_uv_bytes = struct.pack("<" + "f" * len(front_uvs), *front_uvs)
+    front_index_bytes = struct.pack("<" + "H" * len(front_indices), *front_indices)
+    body_position_bytes = struct.pack("<" + "f" * len(body_positions), *body_positions)
+    body_normal_bytes = struct.pack("<" + "f" * len(body_normals), *body_normals)
+    body_index_bytes = struct.pack("<" + "H" * len(body_indices), *body_indices)
     image_bytes = image_path.read_bytes()
 
     buffer_parts = []
     views = []
     offset = 0
     for data, target in [
-        (position_bytes, 34962),
-        (normal_bytes, 34962),
-        (uv_bytes, 34962),
-        (index_bytes, 34963),
+        (front_position_bytes, 34962),
+        (front_normal_bytes, 34962),
+        (front_uv_bytes, 34962),
+        (front_index_bytes, 34963),
+        (body_position_bytes, 34962),
+        (body_normal_bytes, 34962),
+        (body_index_bytes, 34963),
         (image_bytes, None),
     ]:
         padded = align4(data, b"\x00")
@@ -68,24 +98,41 @@ def main() -> None:
         "scenes": [{"nodes": [0]}],
         "nodes": [{"mesh": 0, "name": image_path.stem}],
         "meshes": [{
-            "primitives": [{
-                "attributes": {"POSITION": 0, "NORMAL": 1, "TEXCOORD_0": 2},
-                "indices": 3,
-                "material": 0,
-            }]
+            "primitives": [
+                {
+                    "attributes": {"POSITION": 0, "NORMAL": 1, "TEXCOORD_0": 2},
+                    "indices": 3,
+                    "material": 0,
+                },
+                {
+                    "attributes": {"POSITION": 4, "NORMAL": 5},
+                    "indices": 6,
+                    "material": 1,
+                },
+            ]
         }],
-        "materials": [{
-            "name": "Product photo",
-            "doubleSided": True,
-            "pbrMetallicRoughness": {
-                "baseColorTexture": {"index": 0},
-                "metallicFactor": 0,
-                "roughnessFactor": 0.9,
+        "materials": [
+            {
+                "name": "Product photo",
+                "doubleSided": True,
+                "pbrMetallicRoughness": {
+                    "baseColorTexture": {"index": 0},
+                    "metallicFactor": 0,
+                    "roughnessFactor": 0.9,
+                },
+                "extensions": {"KHR_materials_unlit": {}},
             },
-            "extensions": {"KHR_materials_unlit": {}},
-        }],
+            {
+                "name": "Matte black shell",
+                "pbrMetallicRoughness": {
+                    "baseColorFactor": [0.01, 0.01, 0.012, 1],
+                    "metallicFactor": 0,
+                    "roughnessFactor": 0.75,
+                },
+            },
+        ],
         "textures": [{"source": 0}],
-        "images": [{"bufferView": 4, "mimeType": "image/jpeg"}],
+        "images": [{"bufferView": 7, "mimeType": "image/jpeg"}],
         "buffers": [{"byteLength": len(bin_blob)}],
         "bufferViews": views,
         "accessors": [
@@ -94,12 +141,22 @@ def main() -> None:
                 "componentType": 5126,
                 "count": 4,
                 "type": "VEC3",
-                "min": [-width_m / 2, 0, 0],
-                "max": [width_m / 2, height_m, 0],
+                "min": [x0, y0, z1],
+                "max": [x1, y1, z1],
             },
             {"bufferView": 1, "componentType": 5126, "count": 4, "type": "VEC3"},
             {"bufferView": 2, "componentType": 5126, "count": 4, "type": "VEC2"},
             {"bufferView": 3, "componentType": 5123, "count": 6, "type": "SCALAR"},
+            {
+                "bufferView": 4,
+                "componentType": 5126,
+                "count": len(body_positions) // 3,
+                "type": "VEC3",
+                "min": [x0, y0, z0],
+                "max": [x1, y1, z1],
+            },
+            {"bufferView": 5, "componentType": 5126, "count": len(body_normals) // 3, "type": "VEC3"},
+            {"bufferView": 6, "componentType": 5123, "count": len(body_indices), "type": "SCALAR"},
         ],
     }
 
