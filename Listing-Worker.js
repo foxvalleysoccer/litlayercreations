@@ -121,7 +121,6 @@ function buildListingPrompt({ productName, category, platform, visionDesc = '' }
       `• Approximately 9 inches wide\n` +
       `• Bright multi-color LED lighting with smooth glow effect\n` +
       `[If remote controlled, add: • Remote Controlled]\n` +
-      `[If sound reactive, add: • Sound Reactive]\n` +
       `• Freestanding or wall-mountable\n` +
       `• USB powered — 5 ft cord included\n` +
       `• Handmade in Neenah, Wisconsin\n\n` +
@@ -144,7 +143,6 @@ function buildListingPrompt({ productName, category, platform, visionDesc = '' }
     `✅ Approximately 9 inches wide\n` +
     `✅ Bright multi-color LED lighting with smooth glow effect\n` +
     `[If this product has a remote control, add: ✅ Remote Controlled]\n` +
-    `[If this product has sound reactive lighting, add: ✅ Sound Reactive Lights]\n` +
     `✅ Freestanding display design or can be hung on a wall\n` +
     `✅ Lightweight and easy to place on shelves, desks, or display areas\n` +
     `✅ USB powered\n\n` +

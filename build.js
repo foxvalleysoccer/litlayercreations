@@ -164,14 +164,13 @@ function featureListHtml() {
         <li class="fl-size">📏 About 9" at the largest dimension</li>
         <li class="fl-usb">🔌 USB powered</li>
         <li class="fl-remote">📡 Full remote control</li>
-        <li class="fl-sound">🎵 Sound-reactive mode</li>
         <li class="fl-fade">🌈 Smooth fade effects</li>
       </ul>`;
 }
 
 function generateDescription(name, category) {
   const cat = category.toLowerCase().replace(/\s+/g, '');
-  const suffix = 'About 9 inches at the largest dimension. USB powered with full remote control — color-changing LEDs, sound-reactive mode, and smooth fade effects. Made to order in Neenah, Wisconsin. Ships nationwide.';
+  const suffix = 'About 9 inches at the largest dimension. USB powered with full remote control — color-changing LEDs and smooth fade effects. Made to order in Neenah, Wisconsin. Ships nationwide.';
   const map = {
     automotive:     `Custom 3D-printed ${name}. ${suffix}`,
     sports:         `Custom 3D-printed ${name}. Show your team pride with this handcrafted display. ${suffix}`,
