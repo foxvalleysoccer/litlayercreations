@@ -87,20 +87,20 @@
         "displayName": "Chevy Garage LED Light Box Sign"
       },
       {
-        "name": "ChevyBowTieBigger red",
-        "file": "Automotive/ChevyBowTieBigger red.3mf",
-        "media": [
-          "Automotive/media/ChevyBowTieBigger red/3mf-preview.png"
-        ],
-        "displayName": "Red Chevy Bowtie Garage LED Light Box Sign"
-      },
-      {
         "name": "ChevyBowTieBigger",
         "file": "Automotive/ChevyBowTieBigger.3mf",
         "media": [
           "Automotive/media/ChevyBowTieBigger/3mf-preview.png"
         ],
         "displayName": "Chevy Bowtie Garage LED Light Box Sign"
+      },
+      {
+        "name": "ChevyBowTieBigger red",
+        "file": "Automotive/ChevyBowTieBigger red.3mf",
+        "media": [
+          "Automotive/media/ChevyBowTieBigger red/3mf-preview.png"
+        ],
+        "displayName": "Red Chevy Bowtie Garage LED Light Box Sign"
       },
       {
         "name": "Chrysler_Plymouth",
@@ -267,20 +267,20 @@
         "displayName": "Ford Motor Sport Garage LED Light Box Sign"
       },
       {
-        "name": "GMC",
-        "file": "Automotive/GMC.3mf",
-        "media": [
-          "Automotive/media/GMC/3mf-preview.png"
-        ],
-        "displayName": "GMC Garage LED Light Box Sign"
-      },
-      {
         "name": "GM_retro",
         "file": "Automotive/GM_retro.3mf",
         "media": [
           "Automotive/media/GM_retro/3mf-preview.png"
         ],
         "displayName": "GM Retro Garage LED Light Box Sign"
+      },
+      {
+        "name": "GMC",
+        "file": "Automotive/GMC.3mf",
+        "media": [
+          "Automotive/media/GMC/3mf-preview.png"
+        ],
+        "displayName": "GMC Garage LED Light Box Sign"
       },
       {
         "name": "Harley Black and White",
@@ -295,6 +295,12 @@
           "Automotive/media/Harley Black and White/c195fa06-1e42-4f15-acbb-060a98e22ca2.mp4"
         ],
         "displayName": "Black and White Harley-Davidson Garage LED Light Box Sign"
+      },
+      {
+        "name": "Harley GasTank Red and Blue",
+        "displayName": "Harley Gas Tank Red and Blue Garage LED Light Box Sign",
+        "file": "Automotive/Harley GasTank Red and Blue.3mf",
+        "media": []
       },
       {
         "name": "HarleyColored",
@@ -327,15 +333,6 @@
         "displayName": "Harley Gas Tank Garage LED Light Box Sign"
       },
       {
-        "name": "Hell Cat Blue",
-        "file": "Automotive/Hell Cat Blue.3mf",
-        "media": [
-          "Automotive/media/Hell Cat Blue/3mf-preview.png",
-          "Automotive/media/Hell Cat Blue/Screenshot 2026-01-18 095254.png"
-        ],
-        "displayName": "Hell Cat Blue Garage LED Light Box Sign"
-      },
-      {
         "name": "Hell Cat",
         "file": "Automotive/Hell Cat.3mf",
         "media": [
@@ -349,6 +346,15 @@
           "Automotive/media/Hell Cat/helcat_Light (6).jpg"
         ],
         "displayName": "Hell Cat Garage LED Light Box Sign"
+      },
+      {
+        "name": "Hell Cat Blue",
+        "file": "Automotive/Hell Cat Blue.3mf",
+        "media": [
+          "Automotive/media/Hell Cat Blue/3mf-preview.png",
+          "Automotive/media/Hell Cat Blue/Screenshot 2026-01-18 095254.png"
+        ],
+        "displayName": "Hell Cat Blue Garage LED Light Box Sign"
       },
       {
         "name": "Lincoln",
@@ -466,15 +472,6 @@
         "displayName": "Mopar Green Yellow Garage LED Light Box Sign"
       },
       {
-        "name": "MOPAR Red On Red",
-        "file": "Automotive/MOPAR Red On Red.3mf",
-        "media": [
-          "Automotive/media/MOPAR Red On Red/3mf-preview.png",
-          "Automotive/media/MOPAR Red On Red/610520131_1878879396349519_3865075599857095906_n.jpg"
-        ],
-        "displayName": "Mopar Red On Red Garage LED Light Box Sign"
-      },
-      {
         "name": "MOPAR Red",
         "file": "Automotive/MOPAR Red.3mf",
         "media": [
@@ -482,6 +479,15 @@
           "Automotive/media/MOPAR Red/MOPAR_RED.png"
         ],
         "displayName": "Mopar Red Garage LED Light Box Sign"
+      },
+      {
+        "name": "MOPAR Red On Red",
+        "file": "Automotive/MOPAR Red On Red.3mf",
+        "media": [
+          "Automotive/media/MOPAR Red On Red/3mf-preview.png",
+          "Automotive/media/MOPAR Red On Red/610520131_1878879396349519_3865075599857095906_n.jpg"
+        ],
+        "displayName": "Mopar Red On Red Garage LED Light Box Sign"
       },
       {
         "name": "Mopar Square",
@@ -503,15 +509,6 @@
         "displayName": "Pontiac Garage LED Light Box Sign"
       },
       {
-        "name": "Porsche Color With Difusion",
-        "file": "Automotive/Porsche Color With Difusion.3mf",
-        "media": [
-          "Automotive/media/Porsche Color With Difusion/3mf-preview.png",
-          "Automotive/media/Porsche Color With Difusion/661e841a-0503-4acb-8aa1-9e9386938f03.mp4"
-        ],
-        "displayName": "Porsche Color with Difusion Garage LED Light Box Sign"
-      },
-      {
         "name": "Porsche Color",
         "file": "Automotive/Porsche Color.3mf",
         "media": [
@@ -522,6 +519,15 @@
           "Automotive/media/Porsche Color/6f2d3243-bed7-4a67-9eaa-f181bb8c7a0e.jpg"
         ],
         "displayName": "Porsche Color Garage LED Light Box Sign"
+      },
+      {
+        "name": "Porsche Color With Difusion",
+        "file": "Automotive/Porsche Color With Difusion.3mf",
+        "media": [
+          "Automotive/media/Porsche Color With Difusion/3mf-preview.png",
+          "Automotive/media/Porsche Color With Difusion/661e841a-0503-4acb-8aa1-9e9386938f03.mp4"
+        ],
+        "displayName": "Porsche Color with Difusion Garage LED Light Box Sign"
       },
       {
         "name": "Porsche Good BW",
@@ -562,6 +568,24 @@
         "displayName": "Scat Pack Garage LED Light Box Sign"
       },
       {
+        "name": "Shelby_Carrol",
+        "file": "Automotive/Shelby_Carrol.3mf",
+        "media": [
+          "Automotive/media/Shelby_Carrol/img_01.jpg",
+          "Automotive/media/Shelby_Carrol/img_02.jpg",
+          "Automotive/media/Shelby_Carrol/img_03.jpg"
+        ],
+        "displayName": "Shelby Carrol Garage LED Light Box Sign"
+      },
+      {
+        "name": "Shelby_Carrol_whitelettering",
+        "file": "Automotive/Shelby_Carrol_whitelettering.3mf",
+        "media": [
+          "Automotive/media/Shelby_Carrol_whitelettering/img_01.jpg"
+        ],
+        "displayName": "Shelby Carrol Whitelettering Garage LED Light Box Sign"
+      },
+      {
         "name": "ShelbyGreen",
         "file": "Automotive/ShelbyGreen.3mf",
         "media": [
@@ -586,24 +610,6 @@
           "Automotive/media/ShelbyRacing/img_01.jpg"
         ],
         "displayName": "Shelby Racing Garage LED Light Box Sign"
-      },
-      {
-        "name": "Shelby_Carrol",
-        "file": "Automotive/Shelby_Carrol.3mf",
-        "media": [
-          "Automotive/media/Shelby_Carrol/img_01.jpg",
-          "Automotive/media/Shelby_Carrol/img_02.jpg",
-          "Automotive/media/Shelby_Carrol/img_03.jpg"
-        ],
-        "displayName": "Shelby Carrol Garage LED Light Box Sign"
-      },
-      {
-        "name": "Shelby_Carrol_whitelettering",
-        "file": "Automotive/Shelby_Carrol_whitelettering.3mf",
-        "media": [
-          "Automotive/media/Shelby_Carrol_whitelettering/img_01.jpg"
-        ],
-        "displayName": "Shelby Carrol Whitelettering Garage LED Light Box Sign"
       },
       {
         "name": "SnoopAMG",
@@ -691,20 +697,6 @@
     "category": "Christmas",
     "items": [
       {
-        "name": "Christmas Tree Wall Hole",
-        "file": "Christmas/Christmas Tree Wall Hole.3mf",
-        "media": [
-          "Christmas/Media/Christmas Tree Wall Hole/3mf-preview.png",
-          "Christmas/Media/Christmas Tree Wall Hole/Christmas Tree Light  (1).jpg",
-          "Christmas/Media/Christmas Tree Wall Hole/Christmas Tree Light  (1).png",
-          "Christmas/Media/Christmas Tree Wall Hole/Christmas Tree Light  (2).jpg",
-          "Christmas/Media/Christmas Tree Wall Hole/Christmas Tree Light  (2).png",
-          "Christmas/Media/Christmas Tree Wall Hole/Christmas Tree Light  (3).jpg",
-          "Christmas/Media/Christmas Tree Wall Hole/WeWishYouAMerryChristmas.mp4"
-        ],
-        "displayName": "Christmas Tree Wall Hole LED Light Box Decor"
-      },
-      {
         "name": "Christmas Tree",
         "file": "Christmas/Christmas Tree.3mf",
         "media": [
@@ -717,6 +709,20 @@
           "Christmas/Media/Christmas Tree/WeWishYouAMerryChristmas.mp4"
         ],
         "displayName": "Christmas Tree LED Light Box Decor"
+      },
+      {
+        "name": "Christmas Tree Wall Hole",
+        "file": "Christmas/Christmas Tree Wall Hole.3mf",
+        "media": [
+          "Christmas/Media/Christmas Tree Wall Hole/3mf-preview.png",
+          "Christmas/Media/Christmas Tree Wall Hole/Christmas Tree Light  (1).jpg",
+          "Christmas/Media/Christmas Tree Wall Hole/Christmas Tree Light  (1).png",
+          "Christmas/Media/Christmas Tree Wall Hole/Christmas Tree Light  (2).jpg",
+          "Christmas/Media/Christmas Tree Wall Hole/Christmas Tree Light  (2).png",
+          "Christmas/Media/Christmas Tree Wall Hole/Christmas Tree Light  (3).jpg",
+          "Christmas/Media/Christmas Tree Wall Hole/WeWishYouAMerryChristmas.mp4"
+        ],
+        "displayName": "Christmas Tree Wall Hole LED Light Box Decor"
       },
       {
         "name": "Frosty The Snowman",
@@ -749,6 +755,23 @@
         "displayName": "Frosty the Snowman Christmas LED Light Box Decor"
       },
       {
+        "name": "Grinch",
+        "file": "Christmas/Grinch.3mf",
+        "media": [
+          "Christmas/Media/Grinch/004fcd7c-a25f-455c-9c8c-f6c8e8f84bbc.jpg",
+          "Christmas/Media/Grinch/07aa53b9-52bb-478e-bf76-2651ca944795.mp4",
+          "Christmas/Media/Grinch/1.jpg",
+          "Christmas/Media/Grinch/11.jpg",
+          "Christmas/Media/Grinch/12.jpg",
+          "Christmas/Media/Grinch/123.mp4",
+          "Christmas/Media/Grinch/3mf-preview.png",
+          "Christmas/Media/Grinch/817fc8a6-cb68-467e-9049-3ad882db5235.jpg",
+          "Christmas/Media/Grinch/b79c9095-26d6-4c48-9a41-29d4e60c8cc6.jpg",
+          "Christmas/Media/Grinch/GrinchFace.mp4"
+        ],
+        "displayName": "Grinch Christmas LED Light Box Decor"
+      },
+      {
         "name": "Grinch Filthy Animal",
         "file": "Christmas/Grinch Filthy Animal.3mf",
         "media": [
@@ -774,23 +797,6 @@
           "Christmas/Media/Grinch Stink/ffbf3638-bf92-4917-9bbb-ec3aa26c26f7.mp4"
         ],
         "displayName": "Grinch Stink Christmas LED Light Box Decor"
-      },
-      {
-        "name": "Grinch",
-        "file": "Christmas/Grinch.3mf",
-        "media": [
-          "Christmas/Media/Grinch/004fcd7c-a25f-455c-9c8c-f6c8e8f84bbc.jpg",
-          "Christmas/Media/Grinch/07aa53b9-52bb-478e-bf76-2651ca944795.mp4",
-          "Christmas/Media/Grinch/1.jpg",
-          "Christmas/Media/Grinch/11.jpg",
-          "Christmas/Media/Grinch/12.jpg",
-          "Christmas/Media/Grinch/123.mp4",
-          "Christmas/Media/Grinch/3mf-preview.png",
-          "Christmas/Media/Grinch/817fc8a6-cb68-467e-9049-3ad882db5235.jpg",
-          "Christmas/Media/Grinch/b79c9095-26d6-4c48-9a41-29d4e60c8cc6.jpg",
-          "Christmas/Media/Grinch/GrinchFace.mp4"
-        ],
-        "displayName": "Grinch Christmas LED Light Box Decor"
       },
       {
         "name": "Knomes",
@@ -831,19 +837,6 @@
         "displayName": "Snoopy Christmas LED Light Box Decor"
       },
       {
-        "name": "Snowman Family lg",
-        "file": "Christmas/Snowman Family lg.3mf",
-        "media": [
-          "Christmas/Media/Snowman Family lg/3mf-preview.png",
-          "Christmas/Media/Snowman Family lg/7a491e29-0b25-4ffa-acd0-db0c8e15b042.jpg",
-          "Christmas/Media/Snowman Family lg/a341acab-6d8e-4850-97f1-ffda245dc234.jpg",
-          "Christmas/Media/Snowman Family lg/a754bde4-f877-48c2-aee8-6bba090c8fad.jpg",
-          "Christmas/Media/Snowman Family lg/d6ec93d2-d78e-48a7-9311-be3ca9765c68.mp4",
-          "Christmas/Media/Snowman Family lg/snowmanfamily.mp4"
-        ],
-        "displayName": "Snowman Family Large Christmas LED Light Box Decor"
-      },
-      {
         "name": "Snowman Family",
         "file": "Christmas/Snowman Family.3mf",
         "media": [
@@ -857,16 +850,17 @@
         "displayName": "Snowman Family Christmas LED Light Box Decor"
       },
       {
-        "name": "Yoda With Gift lg",
-        "file": "Christmas/Yoda With Gift lg.3mf",
+        "name": "Snowman Family lg",
+        "file": "Christmas/Snowman Family lg.3mf",
         "media": [
-          "Christmas/Media/Yoda With Gift lg/3mf-preview.png",
-          "Christmas/Media/Yoda With Gift lg/429e36f6-088a-4426-83e8-58fa08b43be9.mp4",
-          "Christmas/Media/Yoda With Gift lg/598765329_1537324784147871_5669641388217718279_n.jpg",
-          "Christmas/Media/Yoda With Gift lg/600449649_1425321962295394_5942373490188453208_n.jpg",
-          "Christmas/Media/Yoda With Gift lg/602150472_1521140182457186_4249531871388561037_n.jpg"
+          "Christmas/Media/Snowman Family lg/3mf-preview.png",
+          "Christmas/Media/Snowman Family lg/7a491e29-0b25-4ffa-acd0-db0c8e15b042.jpg",
+          "Christmas/Media/Snowman Family lg/a341acab-6d8e-4850-97f1-ffda245dc234.jpg",
+          "Christmas/Media/Snowman Family lg/a754bde4-f877-48c2-aee8-6bba090c8fad.jpg",
+          "Christmas/Media/Snowman Family lg/d6ec93d2-d78e-48a7-9311-be3ca9765c68.mp4",
+          "Christmas/Media/Snowman Family lg/snowmanfamily.mp4"
         ],
-        "displayName": "Yoda with Gift Large Christmas LED Light Box Decor"
+        "displayName": "Snowman Family Large Christmas LED Light Box Decor"
       },
       {
         "name": "Yoda With Gift",
@@ -879,6 +873,18 @@
           "Christmas/Media/Yoda With Gift/602150472_1521140182457186_4249531871388561037_n.jpg"
         ],
         "displayName": "Yoda with Gift Christmas LED Light Box Decor"
+      },
+      {
+        "name": "Yoda With Gift lg",
+        "file": "Christmas/Yoda With Gift lg.3mf",
+        "media": [
+          "Christmas/Media/Yoda With Gift lg/3mf-preview.png",
+          "Christmas/Media/Yoda With Gift lg/429e36f6-088a-4426-83e8-58fa08b43be9.mp4",
+          "Christmas/Media/Yoda With Gift lg/598765329_1537324784147871_5669641388217718279_n.jpg",
+          "Christmas/Media/Yoda With Gift lg/600449649_1425321962295394_5942373490188453208_n.jpg",
+          "Christmas/Media/Yoda With Gift lg/602150472_1521140182457186_4249531871388561037_n.jpg"
+        ],
+        "displayName": "Yoda with Gift Large Christmas LED Light Box Decor"
       }
     ]
   },
@@ -1050,6 +1056,12 @@
         "displayName": "Kelly Lake Love Custom LED Light Box Sign"
       },
       {
+        "name": "Made in America",
+        "displayName": "Made In America Custom LED Light Box Sign",
+        "file": "CustomRequests/Made in America.3mf",
+        "media": []
+      },
+      {
         "name": "MIDwestWheelsOfSoul (1)",
         "file": "CustomRequests/MIDwestWheelsOfSoul (1).3mf",
         "media": [
@@ -1161,6 +1173,19 @@
         "displayName": "Captin Craig Rect Fishing LED Light Box Sign"
       },
       {
+        "name": "GoneFishing",
+        "displayName": "Gone Fishing Fishing LED Light Box Sign",
+        "file": "Fishing/GoneFishing.3mf",
+        "media": [
+          "Fishing/Media/GoneFishing/3mf-preview.png",
+          "Fishing/Media/GoneFishing/img_01.jpg",
+          "Fishing/Media/GoneFishing/img_02.jpg",
+          "Fishing/Media/GoneFishing/img_03.jpg",
+          "Fishing/Media/GoneFishing/img_04.jpg",
+          "Fishing/Media/GoneFishing/vid_01.mp4"
+        ]
+      },
+      {
         "name": "GoneFishingKellyLakeWi",
         "file": "Fishing/GoneFishingKellyLakeWi.3mf",
         "media": [
@@ -1254,6 +1279,17 @@
         "displayName": "Orange Moon Skeleton Halloween LED Light Box Decor"
       },
       {
+        "name": "Pumpkin",
+        "file": "halloween/Pumpkin.3mf",
+        "media": [
+          "halloween/media/Pumpkin/3mf-preview.png",
+          "halloween/media/Pumpkin/53eecaec-4f9f-4804-adaf-4a1035831b21.mp4",
+          "halloween/media/Pumpkin/e1bbe4e1-0644-498a-a143-77af8022bd0b.jpg",
+          "halloween/media/Pumpkin/f2ff3be7-9223-4bf6-9763-dc9bc72cdf2a.jpg"
+        ],
+        "displayName": "Pumpkin Halloween LED Light Box Decor"
+      },
+      {
         "name": "Pumpkin Witch",
         "file": "halloween/Pumpkin Witch.3mf",
         "media": [
@@ -1268,17 +1304,6 @@
           "halloween/media/Pumpkin Witch/Pumpkin_Witch_225_e63b1af3-704a-4644-8044-f7b5f237f98b.mp4"
         ],
         "displayName": "Pumpkin Witch Halloween LED Light Box Decor"
-      },
-      {
-        "name": "Pumpkin",
-        "file": "halloween/Pumpkin.3mf",
-        "media": [
-          "halloween/media/Pumpkin/3mf-preview.png",
-          "halloween/media/Pumpkin/53eecaec-4f9f-4804-adaf-4a1035831b21.mp4",
-          "halloween/media/Pumpkin/e1bbe4e1-0644-498a-a143-77af8022bd0b.jpg",
-          "halloween/media/Pumpkin/f2ff3be7-9223-4bf6-9763-dc9bc72cdf2a.jpg"
-        ],
-        "displayName": "Pumpkin Halloween LED Light Box Decor"
       },
       {
         "name": "Scarry Cat Coffin",
@@ -1316,18 +1341,6 @@
         "displayName": "Scarry Skull Halloween LED Light Box Decor"
       },
       {
-        "name": "Skull Face lg",
-        "file": "halloween/Skull Face lg.3mf",
-        "media": [
-          "halloween/media/Skull Face lg/1deefb4d-a1b0-48ff-b302-122d5427793a.jpg",
-          "halloween/media/Skull Face lg/3mf-preview.png",
-          "halloween/media/Skull Face lg/d0c4528c-d7aa-406d-aaa0-374d4a52f22a.mp4",
-          "halloween/media/Skull Face lg/e94a761c-cda4-49fd-805d-29754d9824f7.jpg",
-          "halloween/media/Skull Face lg/f68e4686-671f-4a8b-add6-500257f6fbe5.jpg"
-        ],
-        "displayName": "Skull Face Large Halloween LED Light Box Decor"
-      },
-      {
         "name": "Skull Face",
         "file": "halloween/Skull Face.3mf",
         "media": [
@@ -1338,6 +1351,18 @@
           "halloween/media/Skull Face/f68e4686-671f-4a8b-add6-500257f6fbe5.jpg"
         ],
         "displayName": "Skull Face Halloween LED Light Box Decor"
+      },
+      {
+        "name": "Skull Face lg",
+        "file": "halloween/Skull Face lg.3mf",
+        "media": [
+          "halloween/media/Skull Face lg/1deefb4d-a1b0-48ff-b302-122d5427793a.jpg",
+          "halloween/media/Skull Face lg/3mf-preview.png",
+          "halloween/media/Skull Face lg/d0c4528c-d7aa-406d-aaa0-374d4a52f22a.mp4",
+          "halloween/media/Skull Face lg/e94a761c-cda4-49fd-805d-29754d9824f7.jpg",
+          "halloween/media/Skull Face lg/f68e4686-671f-4a8b-add6-500257f6fbe5.jpg"
+        ],
+        "displayName": "Skull Face Large Halloween LED Light Box Decor"
       },
       {
         "name": "Vamp Dog",
@@ -1364,17 +1389,6 @@
         "displayName": "Vamp Dog Halloween LED Light Box Decor"
       },
       {
-        "name": "Yoda Pumpkin lg",
-        "file": "halloween/Yoda Pumpkin lg.3mf",
-        "media": [
-          "halloween/media/Yoda Pumpkin lg/0ce804a4-e3ab-44a7-918c-200cbd90fff7.jpg",
-          "halloween/media/Yoda Pumpkin lg/17515c72-8e53-4bb9-8216-9f4f1224e11d.jpg",
-          "halloween/media/Yoda Pumpkin lg/3mf-preview.png",
-          "halloween/media/Yoda Pumpkin lg/e3ece855-0ec2-4896-9bc2-c07c88f5e9b7.mp4"
-        ],
-        "displayName": "Yoda Pumpkin Large Halloween LED Light Box Decor"
-      },
-      {
         "name": "Yoda Pumpkin",
         "file": "halloween/Yoda Pumpkin.3mf",
         "media": [
@@ -1384,6 +1398,17 @@
           "halloween/media/Yoda Pumpkin/e3ece855-0ec2-4896-9bc2-c07c88f5e9b7.mp4"
         ],
         "displayName": "Yoda Pumpkin Halloween LED Light Box Decor"
+      },
+      {
+        "name": "Yoda Pumpkin lg",
+        "file": "halloween/Yoda Pumpkin lg.3mf",
+        "media": [
+          "halloween/media/Yoda Pumpkin lg/0ce804a4-e3ab-44a7-918c-200cbd90fff7.jpg",
+          "halloween/media/Yoda Pumpkin lg/17515c72-8e53-4bb9-8216-9f4f1224e11d.jpg",
+          "halloween/media/Yoda Pumpkin lg/3mf-preview.png",
+          "halloween/media/Yoda Pumpkin lg/e3ece855-0ec2-4896-9bc2-c07c88f5e9b7.mp4"
+        ],
+        "displayName": "Yoda Pumpkin Large Halloween LED Light Box Decor"
       }
     ]
   },
@@ -1419,21 +1444,6 @@
         "displayName": "67 LED Light Box Sign"
       },
       {
-        "name": "Batman Bat Wing",
-        "file": "Pop Culture/Batman Bat Wing.3mf",
-        "media": [
-          "Pop Culture/media/Batman Bat Wing/06b0ca05-4d4e-46f7-8723-8459ae547164.jpg",
-          "Pop Culture/media/Batman Bat Wing/108b0052-9c90-486c-8bc4-099c36961c53.jpg",
-          "Pop Culture/media/Batman Bat Wing/27ff5bc3-ba9b-4be1-b1d9-a9a691c3a5d0.jpg",
-          "Pop Culture/media/Batman Bat Wing/3ca514b5-7b1c-41a6-b5de-81f8ae6191ae.jpg",
-          "Pop Culture/media/Batman Bat Wing/3mf-preview.png",
-          "Pop Culture/media/Batman Bat Wing/61d9ea9d-28af-4c6c-bd73-f3f7056d81fd.mp4",
-          "Pop Culture/media/Batman Bat Wing/656d5365-9bf5-433f-8405-8856b3841341.jpg",
-          "Pop Culture/media/Batman Bat Wing/8559cb11-2a6b-4ba7-bc02-216af6602ba2.jpg"
-        ],
-        "displayName": "Batman Bat Wing LED Light Box Sign"
-      },
-      {
         "name": "Batman",
         "file": "Pop Culture/Batman.3mf",
         "media": [
@@ -1449,6 +1459,21 @@
           "Pop Culture/media/Batman/dec5ee45-ae16-4541-ad9e-f1080e0574e9.jpg"
         ],
         "displayName": "Batman LED Light Box Sign"
+      },
+      {
+        "name": "Batman Bat Wing",
+        "file": "Pop Culture/Batman Bat Wing.3mf",
+        "media": [
+          "Pop Culture/media/Batman Bat Wing/06b0ca05-4d4e-46f7-8723-8459ae547164.jpg",
+          "Pop Culture/media/Batman Bat Wing/108b0052-9c90-486c-8bc4-099c36961c53.jpg",
+          "Pop Culture/media/Batman Bat Wing/27ff5bc3-ba9b-4be1-b1d9-a9a691c3a5d0.jpg",
+          "Pop Culture/media/Batman Bat Wing/3ca514b5-7b1c-41a6-b5de-81f8ae6191ae.jpg",
+          "Pop Culture/media/Batman Bat Wing/3mf-preview.png",
+          "Pop Culture/media/Batman Bat Wing/61d9ea9d-28af-4c6c-bd73-f3f7056d81fd.mp4",
+          "Pop Culture/media/Batman Bat Wing/656d5365-9bf5-433f-8405-8856b3841341.jpg",
+          "Pop Culture/media/Batman Bat Wing/8559cb11-2a6b-4ba7-bc02-216af6602ba2.jpg"
+        ],
+        "displayName": "Batman Bat Wing LED Light Box Sign"
       },
       {
         "name": "BettyBoop",
@@ -1698,15 +1723,6 @@
         "displayName": "Lips LED Light Box Sign"
       },
       {
-        "name": "LV Letters",
-        "file": "Pop Culture/LV Letters.3mf",
-        "media": [
-          "Pop Culture/media/LV Letters/3mf-preview.png",
-          "Pop Culture/media/LV Letters/Screenshot 2026-01-18 102101.png"
-        ],
-        "displayName": "Lv Letters LED Light Box Sign"
-      },
-      {
         "name": "LV",
         "file": "Pop Culture/LV.3mf",
         "media": [
@@ -1714,6 +1730,15 @@
           "Pop Culture/media/LV/Screenshot 2026-01-18 102634.png"
         ],
         "displayName": "Lv LED Light Box Sign"
+      },
+      {
+        "name": "LV Letters",
+        "file": "Pop Culture/LV Letters.3mf",
+        "media": [
+          "Pop Culture/media/LV Letters/3mf-preview.png",
+          "Pop Culture/media/LV Letters/Screenshot 2026-01-18 102101.png"
+        ],
+        "displayName": "Lv Letters LED Light Box Sign"
       },
       {
         "name": "Mario Flying",
@@ -1848,14 +1873,6 @@
         "displayName": "Qbert LED Light Box Sign"
       },
       {
-        "name": "RatFink (1)",
-        "file": "Pop Culture/RatFink (1).3mf",
-        "media": [
-          "Pop Culture/media/RatFink (1)/3mf-preview.png"
-        ],
-        "displayName": "Rat Fink LED Light Box Sign"
-      },
-      {
         "name": "RatFink",
         "file": "Pop Culture/RatFink.3mf",
         "media": [
@@ -1867,6 +1884,14 @@
           "Pop Culture/media/RatFink/ratfink_front_2.jpg"
         ],
         "displayName": "Rat Fink LED Light Box Sign Variant 2"
+      },
+      {
+        "name": "RatFink (1)",
+        "file": "Pop Culture/RatFink (1).3mf",
+        "media": [
+          "Pop Culture/media/RatFink (1)/3mf-preview.png"
+        ],
+        "displayName": "Rat Fink LED Light Box Sign"
       },
       {
         "name": "Resident Evil",
@@ -1929,18 +1954,6 @@
         "displayName": "Space Invaders LED Light Box Sign"
       },
       {
-        "name": "Spiderman Face",
-        "file": "Pop Culture/Spiderman Face.3mf",
-        "media": [
-          "Pop Culture/media/Spiderman Face/3mf-preview.png",
-          "Pop Culture/media/Spiderman Face/spiderman_face_angle_1.jpg",
-          "Pop Culture/media/Spiderman Face/spiderman_face_back.jpg",
-          "Pop Culture/media/Spiderman Face/spiderman_face_front_1.jpg",
-          "Pop Culture/media/Spiderman Face/spiderman_face_front_2.jpg"
-        ],
-        "displayName": "Spider-Man Face LED Light Box Sign"
-      },
-      {
         "name": "spiderman",
         "file": "Pop Culture/spiderman.3mf",
         "media": [
@@ -1954,6 +1967,18 @@
           "Pop Culture/media/spiderman/e61af085-a50d-4dbf-b065-28828f632aa9.jpg"
         ],
         "displayName": "Spider-Man LED Light Box Sign"
+      },
+      {
+        "name": "Spiderman Face",
+        "file": "Pop Culture/Spiderman Face.3mf",
+        "media": [
+          "Pop Culture/media/Spiderman Face/3mf-preview.png",
+          "Pop Culture/media/Spiderman Face/spiderman_face_angle_1.jpg",
+          "Pop Culture/media/Spiderman Face/spiderman_face_back.jpg",
+          "Pop Culture/media/Spiderman Face/spiderman_face_front_1.jpg",
+          "Pop Culture/media/Spiderman Face/spiderman_face_front_2.jpg"
+        ],
+        "displayName": "Spider-Man Face LED Light Box Sign"
       },
       {
         "name": "Star Wars",
@@ -2029,22 +2054,6 @@
         "displayName": "Super Nintendo LED Light Box Sign"
       },
       {
-        "name": "Tales From The Crypt Default",
-        "file": "Pop Culture/Tales From The Crypt Default.3mf",
-        "media": [
-          "Pop Culture/media/Tales From The Crypt Default/38e69ff9-93d4-425e-87ef-f9ae4bc48191.jpg",
-          "Pop Culture/media/Tales From The Crypt Default/3mf-preview.png",
-          "Pop Culture/media/Tales From The Crypt Default/50b52bda-c921-4f09-8ad1-8e052c1bbaea.jpg",
-          "Pop Culture/media/Tales From The Crypt Default/567745836_1134401128859188_7162612975532323201_n.jpg",
-          "Pop Culture/media/Tales From The Crypt Default/567749080_1130855112090745_7589146802457188767_n.jpg",
-          "Pop Culture/media/Tales From The Crypt Default/567751548_3134491973395529_5992999261165912934_n.jpg",
-          "Pop Culture/media/Tales From The Crypt Default/57f73833-8648-4a6f-95a9-999118a4b94d.mp4",
-          "Pop Culture/media/Tales From The Crypt Default/659dc8c6-2516-47ad-adf8-706e16526919.jpg",
-          "Pop Culture/media/Tales From The Crypt Default/8613f605-d052-49ca-9581-a58876bc0038.mp4"
-        ],
-        "displayName": "Tales From the Crypt Default LED Light Box Sign"
-      },
-      {
         "name": "Tales From The Crypt",
         "file": "Pop Culture/Tales From The Crypt.3mf",
         "media": [
@@ -2067,6 +2076,22 @@
           "Pop Culture/media/Tales From The Crypt/TalesFromTheCrypt_225mm_8613f605-d052-49ca-9581-a58876bc0038.mp4"
         ],
         "displayName": "Tales From the Crypt LED Light Box Sign"
+      },
+      {
+        "name": "Tales From The Crypt Default",
+        "file": "Pop Culture/Tales From The Crypt Default.3mf",
+        "media": [
+          "Pop Culture/media/Tales From The Crypt Default/38e69ff9-93d4-425e-87ef-f9ae4bc48191.jpg",
+          "Pop Culture/media/Tales From The Crypt Default/3mf-preview.png",
+          "Pop Culture/media/Tales From The Crypt Default/50b52bda-c921-4f09-8ad1-8e052c1bbaea.jpg",
+          "Pop Culture/media/Tales From The Crypt Default/567745836_1134401128859188_7162612975532323201_n.jpg",
+          "Pop Culture/media/Tales From The Crypt Default/567749080_1130855112090745_7589146802457188767_n.jpg",
+          "Pop Culture/media/Tales From The Crypt Default/567751548_3134491973395529_5992999261165912934_n.jpg",
+          "Pop Culture/media/Tales From The Crypt Default/57f73833-8648-4a6f-95a9-999118a4b94d.mp4",
+          "Pop Culture/media/Tales From The Crypt Default/659dc8c6-2516-47ad-adf8-706e16526919.jpg",
+          "Pop Culture/media/Tales From The Crypt Default/8613f605-d052-49ca-9581-a58876bc0038.mp4"
+        ],
+        "displayName": "Tales From the Crypt Default LED Light Box Sign"
       },
       {
         "name": "TeenageMuntantNinjaTurtles",
@@ -2403,6 +2428,18 @@
         "displayName": "Haro Racing Fan LED Light Box Sign"
       },
       {
+        "name": "Kayaking",
+        "file": "Sports/Kayaking.3mf",
+        "media": [
+          "Sports/Media/Kayaking/3mf-preview.png",
+          "Sports/Media/Kayaking/image1.jpg",
+          "Sports/Media/Kayaking/image2.jpg",
+          "Sports/Media/Kayaking/image3.jpg",
+          "Sports/Media/Kayaking/image4.jpg"
+        ],
+        "displayName": "Kayaking Fan LED Light Box Sign"
+      },
+      {
         "name": "Kayaking Blue",
         "file": "Sports/Kayaking Blue.3mf",
         "media": [
@@ -2417,18 +2454,6 @@
           "Sports/Media/Kayaking Blue/img_04.jpg"
         ],
         "displayName": "Kayaking Blue Fan LED Light Box Sign"
-      },
-      {
-        "name": "Kayaking",
-        "file": "Sports/Kayaking.3mf",
-        "media": [
-          "Sports/Media/Kayaking/3mf-preview.png",
-          "Sports/Media/Kayaking/image1.jpg",
-          "Sports/Media/Kayaking/image2.jpg",
-          "Sports/Media/Kayaking/image3.jpg",
-          "Sports/Media/Kayaking/image4.jpg"
-        ],
-        "displayName": "Kayaking Fan LED Light Box Sign"
       },
       {
         "name": "Lions",
@@ -2455,6 +2480,12 @@
           "Sports/Media/Michigan Wolverines/Michigan Wolverines.png"
         ],
         "displayName": "Michigan Wolverines Fan LED Light Box Sign"
+      },
+      {
+        "name": "MinnesotaTimberWolves",
+        "displayName": "Minnesota Timber Wolves Fan LED Light Box Sign",
+        "file": "Sports/MinnesotaTimberWolves.3mf",
+        "media": []
       },
       {
         "name": "Mongoose",
@@ -2515,15 +2546,6 @@
         "displayName": "Osu Helmet Angled LED Helmet Sign"
       },
       {
-        "name": "Packers Helmet 225 Width",
-        "file": "Sports/Packers Helmet 225 Width.3mf",
-        "media": [
-          "Sports/Media/Packers Helmet 225 Width/3mf-preview.png",
-          "Sports/Media/Packers Helmet 225 Width/8cf2887a-1ae2-4268-8026-3b14c02a19c8 (1).jpg"
-        ],
-        "displayName": "Packers Helmet 225 Width LED Helmet Sign"
-      },
-      {
         "name": "Packers Helmet",
         "file": "Sports/Packers Helmet.3mf",
         "media": [
@@ -2546,6 +2568,15 @@
           "Sports/Media/Packers Helmet/Packers LightBox.mp4"
         ],
         "displayName": "Packers Helmet LED Helmet Sign"
+      },
+      {
+        "name": "Packers Helmet 225 Width",
+        "file": "Sports/Packers Helmet 225 Width.3mf",
+        "media": [
+          "Sports/Media/Packers Helmet 225 Width/3mf-preview.png",
+          "Sports/Media/Packers Helmet 225 Width/8cf2887a-1ae2-4268-8026-3b14c02a19c8 (1).jpg"
+        ],
+        "displayName": "Packers Helmet 225 Width LED Helmet Sign"
       },
       {
         "name": "PackersHelmetname",
@@ -2582,6 +2613,18 @@
         "arPoster": "Sports/Media/PackyPacker/img_01.jpg"
       },
       {
+        "name": "Staley Bears Mascot",
+        "displayName": "Staley Bears Mascot Fan LED Light Box Sign",
+        "file": "Sports/Staley Bears Mascot.3mf",
+        "media": [
+          "Sports/Media/Staley Bears Mascot/img_01.jpg",
+          "Sports/Media/Staley Bears Mascot/img_02.jpg",
+          "Sports/Media/Staley Bears Mascot/img_03.jpg",
+          "Sports/Media/Staley Bears Mascot/img_04.jpg",
+          "Sports/Media/Staley Bears Mascot/img_05.jpg"
+        ]
+      },
+      {
         "name": "Steelers Steel City",
         "file": "Sports/Steelers_SteelCity.3mf",
         "media": [
@@ -2593,6 +2636,12 @@
         ],
         "displayName": "Steelers Steel City Fan LED Light Box Sign",
         "description": "A unique, one-of-a-kind Steel City fan LED light box with bold black and gold artwork, bright illumination, and a clean 3D printed frame you won't find anywhere else."
+      },
+      {
+        "name": "Steelers_Aron_Rodgers",
+        "displayName": "Steelers Aron Rodgers Fan LED Light Box Sign",
+        "file": "Sports/Steelers_Aron_Rodgers.3mf",
+        "media": []
       },
       {
         "name": "TimberRattlers",
@@ -2645,6 +2694,12 @@
         "file": "Sports/VikingsMan.3mf",
         "media": [],
         "displayName": "Vikings Man Fan LED Light Box Sign"
+      },
+      {
+        "name": "VintageCowBoys",
+        "displayName": "Vintage Cow Boys Fan LED Light Box Sign",
+        "file": "Sports/VintageCowBoys.3mf",
+        "media": []
       },
       {
         "name": "WHiteSox",
