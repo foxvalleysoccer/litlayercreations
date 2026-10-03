@@ -35,6 +35,32 @@ if (!fs.existsSync(PRODUCTS_DIR)) fs.mkdirSync(PRODUCTS_DIR);
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
+function analyticsHtml(product) {
+  const productJson = JSON.stringify(product || null).replace(/</g, '\\u003c');
+  return `<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2NFK2Z8Q3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z2NFK2Z8Q3');
+  const analyticsProduct = ${productJson};
+  if (analyticsProduct) {
+    gtag('event', 'view_item', {currency: 'USD', value: analyticsProduct.price, items: [analyticsProduct]});
+  }
+  document.addEventListener('submit', function(event) {
+    const form = event.target;
+    if (!form.matches('form.paypal-form')) return;
+    const itemName = form.elements.namedItem('item_name').value;
+    const price = Number(form.elements.namedItem('amount').value);
+    gtag('event', 'buy_click', {
+      payment_provider: 'paypal', currency: 'USD', value: price,
+      items: [analyticsProduct || {item_name: itemName, price: price}],
+      transport_type: 'beacon'
+    });
+  });
+</script>`;
+}
+
 function toSlug(str) {
   return str.toLowerCase()
     .replace(/[^a-z0-9\s-]/g, '')
@@ -443,6 +469,7 @@ function generateProductPage(item, category) {
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
+${analyticsHtml({item_id: slug, item_name: displayName, item_category: category, price: Number(productPrice)})}
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>${displayName} | Custom 3D Printed | Lit Layer Creations</title>
@@ -632,14 +659,7 @@ function generateIndex() {
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2NFK2Z8Q3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-Z2NFK2Z8Q3');
-  </script>
+  ${analyticsHtml()}
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />

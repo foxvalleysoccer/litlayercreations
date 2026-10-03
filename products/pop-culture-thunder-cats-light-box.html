@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2NFK2Z8Q3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z2NFK2Z8Q3');
+  const analyticsProduct = {"item_id":"pop-culture-thunder-cats-light-box","item_name":"Thunder Cats LED Light Box Sign","item_category":"Pop Culture","price":30};
+  if (analyticsProduct) {
+    gtag('event', 'view_item', {currency: 'USD', value: analyticsProduct.price, items: [analyticsProduct]});
+  }
+  document.addEventListener('submit', function(event) {
+    const form = event.target;
+    if (!form.matches('form.paypal-form')) return;
+    const itemName = form.elements.namedItem('item_name').value;
+    const price = Number(form.elements.namedItem('amount').value);
+    gtag('event', 'buy_click', {
+      payment_provider: 'paypal', currency: 'USD', value: price,
+      items: [analyticsProduct || {item_name: itemName, price: price}],
+      transport_type: 'beacon'
+    });
+  });
+</script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Thunder Cats LED Light Box Sign | Custom 3D Printed | Lit Layer Creations</title>
