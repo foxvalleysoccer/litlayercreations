@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2NFK2Z8Q3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z2NFK2Z8Q3');
+  const analyticsProduct = {"item_id":"sports-staley-bears-mascot","item_name":"Staley Bears Mascot Fan LED Light Box Sign","item_category":"Sports","price":30};
+  if (analyticsProduct) {
+    gtag('event', 'view_item', {currency: 'USD', value: analyticsProduct.price, items: [analyticsProduct]});
+  }
+  document.addEventListener('submit', function(event) {
+    const form = event.target;
+    if (!form.matches('form.paypal-form')) return;
+    const itemName = form.elements.namedItem('item_name').value;
+    const price = Number(form.elements.namedItem('amount').value);
+    gtag('event', 'buy_click', {
+      payment_provider: 'paypal', currency: 'USD', value: price,
+      items: [analyticsProduct || {item_name: itemName, price: price}],
+      transport_type: 'beacon'
+    });
+  });
+</script>
+<script src="../cart.js" defer></script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Staley Bears Mascot Fan LED Light Box Sign | Custom 3D Printed | Lit Layer Creations</title>
@@ -260,18 +283,10 @@
         <li class="fl-remote">📡 Full remote control</li>
         <li class="fl-fade">🌈 Smooth fade effects</li>
       </ul>
-    <div class="price">$30.00 <span style="font-size:14px;color:#aaa;">+ $9 shipping</span></div>
+    <div class="price">$30.00 <span style="font-size:14px;color:#aaa;">Shipping: $10 per order; free with 4+ lights</span></div>
 
     <div class="cta-buttons">
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="paypal-form">
-        <input type="hidden" name="cmd" value="_xclick">
-        <input type="hidden" name="business" value="foxvalleysoccer@gmail.com">
-        <input type="hidden" name="item_name" value="Staley Bears Mascot Fan LED Light Box Sign">
-        <input type="hidden" name="amount" value="30.00">
-        <input type="hidden" name="shipping" value="9.00">
-        <input type="hidden" name="currency_code" value="USD">
-        <input type="submit" class="btn btn-paypal" value="🅿️ Buy Now – PayPal">
-      </form>
+      <button type="button" class="btn btn-paypal" data-cart-item="{&quot;name&quot;:&quot;Staley Bears Mascot Fan LED Light Box Sign&quot;,&quot;price&quot;:30}">Add to Cart</button>
       <a href="https://cash.app/$itsmejoshj" target="_blank" class="btn btn-cashapp">💵 Pay with Cash App</a>
     </div>
 

@@ -25,8 +25,8 @@ const CASHAPP_URL     = 'https://cash.app/$itsmejoshj';
 const WHATSAPP_URL    = '';   // ← add WhatsApp Business short link when ready (wa.me/message/XXXXX)
 const PHONE           = '';
 const DEFAULT_PRICE   = '30';
-const SHIPPING_COST   = '9';
-const PRODUCTS_DIR    = path.join(__dirname, 'products');
+const SHIPPING_COST   = '10';
+const PRODUCTS_DIR = path.join(__dirname, 'products');
 // ──────────────────────────────────────────────────────────────────────────────
 
 const catalog = JSON.parse(fs.readFileSync('catalog.json', 'utf8'));
@@ -174,15 +174,8 @@ function getResolvedMedia(item) {
 }
 
 function paypalBuyNowButton(itemName, btnClass, price = DEFAULT_PRICE) {
-  return `<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="paypal-form">
-        <input type="hidden" name="cmd" value="_xclick">
-        <input type="hidden" name="business" value="${PAYPAL_EMAIL}">
-        <input type="hidden" name="item_name" value="${itemName}">
-        <input type="hidden" name="amount" value="${price}.00">
-        <input type="hidden" name="shipping" value="${SHIPPING_COST}.00">
-        <input type="hidden" name="currency_code" value="USD">
-        <input type="submit" class="${btnClass || 'btn btn-paypal'}" value="🅿️ Buy Now – PayPal">
-      </form>`;
+ const data = JSON.stringify({name:itemName,price:Number(price)}).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+ return `<button type="button" class="${btnClass || 'btn btn-paypal'}" data-cart-item="${data}">Add to Cart</button>`;
 }
 
 function featureListHtml() {
@@ -470,6 +463,7 @@ function generateProductPage(item, category) {
 <html lang="en">
 <head>
 ${analyticsHtml({item_id: slug, item_name: displayName, item_category: category, price: Number(productPrice)})}
+<script src="../cart.js" defer></script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>${displayName} | Custom 3D Printed | Lit Layer Creations</title>
@@ -573,7 +567,7 @@ ${productPageStyles}
     <p>${description}</p>
     ${arHtml}
     ${featureListHtml()}
-    <div class="price">$${productPrice}.00 <span style="font-size:14px;color:#aaa;">+ $${SHIPPING_COST} shipping</span></div>
+    <div class="price">$${productPrice}.00 <span style="font-size:14px;color:#aaa;">Shipping: $10 per order; free with 4+ lights</span></div>
 
     <div class="cta-buttons">
       ${paypalBuyNowButton(displayName, undefined, productPrice)}
@@ -619,19 +613,9 @@ function generateIndex() {
       const description = item.description || generateDescription(displayName, cat.category);
       const productPrice = item.price || DEFAULT_PRICE;
       const allMedia = getResolvedMedia(item);
-      const maxVisible = 9;
-      const hasMore = allMedia.length > maxVisible;
-      const mediaClass = hasMore ? 'media has-more' : 'media';
-
-      let mediaHtml = '';
-      allMedia.forEach((src, index) => {
-        if (!hasMore && index >= maxVisible) return;
-        if (src.endsWith('.mp4')) {
-          mediaHtml += `\n          <video src="${src}" controls title="${displayName} – Lit Layer Creations"></video>`;
-        } else {
-          mediaHtml += `\n          <img src="${src}" alt="${displayName} – custom 3D printed – Lit Layer Creations" onclick="window.open('${src}','_blank')" loading="lazy">`;
-        }
-      });
+      const cover=allMedia.find(src=>!src.endsWith('.mp4'));
+      const mediaClass='media';
+      const mediaHtml=cover ? `<img data-src="${cover}" alt="${displayName}" width="160" height="160" loading="lazy" decoding="async">` : '';
 
       itemsHtml += `
       <div class="card">
@@ -649,9 +633,9 @@ function generateIndex() {
     });
 
     catalogHtml += `
-  <section class="category" id="${catSlug}">
-    <h2>${cat.category}</h2>
-    <div class="items">${itemsHtml}
+  <section class="category collapsed" id="${catSlug}">
+    <h2><button type="button" class="category-toggle" aria-expanded="false">${cat.category}</button></h2>
+    <div class="items" hidden>${itemsHtml}
     </div>
   </section>`;
   });
@@ -660,6 +644,7 @@ function generateIndex() {
 <html lang="en">
 <head>
   ${analyticsHtml()}
+  <script src="cart.js" defer></script>
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -708,6 +693,9 @@ function generateIndex() {
   <style>
 ${sharedStyles}
 ${catalogStyles}
+.category-toggle{font:inherit;color:inherit;background:none;border:0;cursor:pointer;width:100%;text-align:left;padding:8px;}
+.category .items[hidden]{display:none;}
+.media img{width:160px;height:160px;}
   </style>
 </head>
 <body>
@@ -751,81 +739,18 @@ ${catalogHtml}
 </section>
 
 <script>
-  const catalogStateKey = 'litlayerCatalogState';
-  const categories = Array.from(document.querySelectorAll('.category'));
-
-  function saveCatalogState(activeCategory) {
-    const openCategories = categories
-      .filter(category => !category.classList.contains('collapsed'))
-      .map(category => category.id);
-
-    sessionStorage.setItem(catalogStateKey, JSON.stringify({
-      activeCategory,
-      openCategories,
-      scrollY: window.scrollY
-    }));
-  }
-
-  function restoreCatalogState() {
-    let savedState = null;
-
-    try {
-      savedState = JSON.parse(sessionStorage.getItem(catalogStateKey) || 'null');
-    } catch (error) {
-      savedState = null;
-    }
-
-    const hashCategory = window.location.hash
-      ? document.getElementById(window.location.hash.slice(1))
-      : null;
-    const activeCategory = hashCategory || (savedState && savedState.activeCategory
-      ? document.getElementById(savedState.activeCategory)
-      : null);
-
-    if (savedState && Array.isArray(savedState.openCategories)) {
-      categories.forEach(category => {
-        category.classList.toggle('collapsed', !savedState.openCategories.includes(category.id));
-      });
-    }
-
-    if (activeCategory && activeCategory.classList.contains('category')) {
-      activeCategory.classList.remove('collapsed');
-      requestAnimationFrame(() => {
-        if (hashCategory) {
-          activeCategory.scrollIntoView({ block: 'start' });
-        } else if (Number.isFinite(savedState && savedState.scrollY)) {
-          window.scrollTo(0, savedState.scrollY);
-        } else {
-          activeCategory.scrollIntoView({ block: 'start' });
-        }
-      });
-    }
-  }
-
-  restoreCatalogState();
-
-  // Category collapse/expand
-  document.querySelectorAll('.category h2').forEach(h2 => {
-    h2.addEventListener('click', () => {
-      const category = h2.closest('.category');
-      category.classList.toggle('collapsed');
-
-      if (!category.classList.contains('collapsed')) {
-        history.replaceState(null, '', '#' + category.id);
-      }
-
-      saveCatalogState(category.id);
-    });
-  });
-
-  document.querySelectorAll('.category a[href^="products/"]').forEach(link => {
-    link.addEventListener('click', () => {
-      const category = link.closest('.category');
-      if (category) {
-        saveCatalogState(category.id);
-      }
-    });
-  });
+const categories=Array.from(document.querySelectorAll('.category'));
+const chicagoDate=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',year:'numeric',month:'numeric'}).formatToParts(new Date());
+const year=Number(chicagoDate.find(p=>p.type==='year').value);
+const month=Number(chicagoDate.find(p=>p.type==='month').value);
+const seasonalDefault=year>=2027?'sports':month>=11?'christmas':'halloween';
+function openCategory(id){
+ const selected=categories.find(c=>c.id===id)||categories.find(c=>c.id===seasonalDefault)||categories[0];
+ categories.forEach(c=>{const open=c===selected;c.classList.toggle('collapsed',!open);c.querySelector('.items').hidden=!open;c.querySelector('button').setAttribute('aria-expanded',String(open));if(open)c.querySelectorAll('img[data-src]').forEach((img,i)=>{img.loading=i<4?'eager':'lazy';img.fetchPriority=i<4?'high':'auto';img.src=img.dataset.src;img.removeAttribute('data-src');});});
+}
+categories.forEach(c=>c.querySelector('button').addEventListener('click',()=>{openCategory(c.id);history.replaceState(null,'','#'+c.id);}));
+window.addEventListener('hashchange',()=>openCategory(location.hash.slice(1)));
+openCategory(location.hash.slice(1)||seasonalDefault);
 </script>
 
 </body>
