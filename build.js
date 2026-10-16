@@ -29,7 +29,21 @@ const SHIPPING_COST   = '10';
 const PRODUCTS_DIR = path.join(__dirname, 'products');
 // ──────────────────────────────────────────────────────────────────────────────
 
-const catalog = JSON.parse(fs.readFileSync('catalog.json', 'utf8'));
+const EXCLUDED_PRODUCT_NAMES = new Set([
+  'Bucks Mascot',
+  'Bucks Maskot',
+  'Bucks rectangle',
+  'Bucks Retro',
+  'Bucks Special',
+  'Bucks Square'
+]);
+
+const catalog = JSON.parse(fs.readFileSync('catalog.json', 'utf8'))
+  .map(category => ({
+    ...category,
+    items: (category.items || []).filter(item => !EXCLUDED_PRODUCT_NAMES.has(item.name))
+  }))
+  .filter(category => category.items.length > 0);
 
 if (!fs.existsSync(PRODUCTS_DIR)) fs.mkdirSync(PRODUCTS_DIR);
 
@@ -649,8 +663,8 @@ function generateIndex() {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Custom LED Light Boxes | Automotive, Sports &amp; Pop Culture | Lit Layer Creations – Neenah, WI</title>
-  <meta name="description" content="Custom 3D-printed LED light boxes for cars, sports teams, and pop culture. Ghostbusters, Milwaukee Bucks, Corvette, Batman, and 150+ more designs. Made to order in Neenah, Wisconsin. Starting at $${DEFAULT_PRICE}." />
-  <meta name="keywords" content="custom LED light box, 3D printed light box, custom neon sign, Milwaukee Bucks light, Ghostbusters LED light, Corvette light box, custom car light, Neenah Wisconsin, Lit Layer Creations" />
+  <meta name="description" content="Custom 3D-printed LED light boxes for cars, sports teams, and pop culture. Ghostbusters, Corvette, Batman, and 150+ more designs. Made to order in Neenah, Wisconsin. Starting at $${DEFAULT_PRICE}." />
+  <meta name="keywords" content="custom LED light box, 3D printed light box, custom neon sign, Ghostbusters LED light, Corvette light box, custom car light, Neenah Wisconsin, Lit Layer Creations" />
   <link rel="canonical" href="${BASE_URL}/" />
 
   <!-- Open Graph -->
