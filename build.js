@@ -64,8 +64,11 @@ function analyticsHtml(product) {
   document.addEventListener('submit', function(event) {
     const form = event.target;
     if (!form.matches('form.paypal-form')) return;
-    const itemName = form.elements.namedItem('item_name').value;
-    const price = Number(form.elements.namedItem('amount').value);
+    const itemNameField = form.elements.namedItem('item_name');
+    const amountField = form.elements.namedItem('amount');
+    if (!itemNameField || !amountField) return;
+    const itemName = itemNameField.value;
+    const price = Number(amountField.value);
     gtag('event', 'buy_click', {
       payment_provider: 'paypal', currency: 'USD', value: price,
       items: [analyticsProduct || {item_name: itemName, price: price}],
@@ -262,6 +265,7 @@ const sharedStyles = `
   .payment-strip .ps-cashapp   { background: #00D632; color: #000; }
   .payment-strip .ps-whatsapp  { background: #25D366; color: #000; }
   .payment-strip .ps-paypal    { background: #003087; color: #fff; }
+  .site-actions { display: flex; justify-content: center; gap: 10px; margin-top: 14px; }
   .ecosystem {
     max-width: 1100px; margin: 0 auto 32px; padding: 18px;
     border: 1px solid #18384a; background: #0a2230; border-radius: 8px;
@@ -415,6 +419,50 @@ const productPageStyles = `
   }
 `;
 
+const cartPageStyles = `
+  body { max-width: 1200px; margin: 0 auto; padding: 20px; }
+  .cart-page { max-width: 1050px; margin: 0 auto 48px; }
+  .cart-page > h1 { margin-bottom: 24px; }
+  .cart-layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 24px; align-items: start; }
+  .cart-items { display: grid; gap: 12px; }
+  .cart-row, .cart-summary, .cart-empty {
+    background: #141c2f;
+    border: 1px solid #263650;
+    border-radius: 8px;
+    padding: 18px;
+  }
+  .cart-row { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+  .cart-row h2 { color: #00d4ff; font-size: 18px; margin: 0 0 6px; }
+  .cart-row p { color: #c8d4e6; margin: 0; }
+  .cart-controls { display: flex; align-items: end; gap: 10px; }
+  .cart-controls label { color: #c8d4e6; font-size: 13px; }
+  .cart-controls input {
+    display: block;
+    width: 72px;
+    margin-top: 4px;
+    padding: 8px;
+    color: #fff;
+    background: #0b1220;
+    border: 1px solid #00d4ff;
+    border-radius: 5px;
+  }
+  .btn-secondary { background: #334155; color: #fff; }
+  .btn-secondary:hover { background: #475569; }
+  .cart-summary { position: sticky; top: 20px; }
+  .cart-summary h2 { color: #00d4ff; margin-top: 0; }
+  .cart-summary > div { display: flex; justify-content: space-between; gap: 16px; margin: 10px 0; }
+  .cart-summary .cart-total { border-top: 1px solid #40516c; padding-top: 12px; font-size: 19px; }
+  .cart-summary p { color: #c8d4e6; font-size: 13px; line-height: 1.45; }
+  .cart-checkout, .cart-checkout .btn { width: 100%; }
+  .cart-empty { text-align: center; padding: 44px 20px; }
+  .cart-empty h2 { color: #00d4ff; }
+  @media (max-width: 760px) {
+    .cart-layout { grid-template-columns: 1fr; }
+    .cart-summary { position: static; }
+    .cart-row { align-items: flex-start; flex-direction: column; }
+  }
+`;
+
 // ─── Generate individual product page ─────────────────────────────────────────
 
 function generateProductPage(item, category) {
@@ -477,7 +525,7 @@ function generateProductPage(item, category) {
 <html lang="en">
 <head>
 ${analyticsHtml({item_id: slug, item_name: displayName, item_category: category, price: Number(productPrice)})}
-<script src="../cart.js" defer></script>
+<script src="../cart.js?v=2" defer></script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>${displayName} | Custom 3D Printed | Lit Layer Creations</title>
@@ -563,6 +611,9 @@ ${productPageStyles}
     <span>💳 We accept:</span>
     <span class="ps-paypal">🅿️ PayPal</span>
     <a href="${CASHAPP_URL}" target="_blank" class="ps-cashapp">💵 Cash App ${CASHAPP_TAG}</a>
+  </div>
+  <div class="site-actions">
+    <a href="../cart.html" class="btn" data-cart-link>Cart<span data-cart-count></span></a>
   </div>
 </header>
 
@@ -658,7 +709,7 @@ function generateIndex() {
 <html lang="en">
 <head>
   ${analyticsHtml()}
-  <script src="cart.js" defer></script>
+  <script src="cart.js?v=2" defer></script>
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -723,6 +774,9 @@ ${catalogStyles}
     <span class="ps-paypal">🅿️ PayPal</span>
     <a href="${CASHAPP_URL}" target="_blank" class="ps-cashapp">💵 Cash App ${CASHAPP_TAG}</a>
   </div>
+  <div class="site-actions">
+    <a href="cart.html" class="btn" data-cart-link>Cart<span data-cart-count></span></a>
+  </div>
 </header>
 
 <div id="catalog">
@@ -767,6 +821,39 @@ window.addEventListener('hashchange',()=>openCategory(location.hash.slice(1)));
 openCategory(location.hash.slice(1)||seasonalDefault);
 </script>
 
+</body>
+</html>`;
+}
+
+function generateCartPage() {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  ${analyticsHtml()}
+  <script src="cart.js?v=2" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart | Lit Layer Creations</title>
+  <meta name="description" content="Review your Lit Layer Creations light box order and continue to secure PayPal checkout." />
+  <link rel="canonical" href="${BASE_URL}/cart.html" />
+  <style>
+${sharedStyles}
+${cartPageStyles}
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="Images/Logo.png" alt="Lit Layer Creations Logo" style="max-width:160px;height:auto;margin-bottom:8px;"></a>
+    <h1>Lit Layer Creations</h1>
+    <div class="site-actions">
+      <a href="index.html" class="btn">Continue Shopping</a>
+      <a href="cart.html" class="btn" data-cart-link>Cart<span data-cart-count></span></a>
+    </div>
+  </header>
+  <main class="cart-page">
+    <h1>Your Cart</h1>
+    <div data-cart-page></div>
+  </main>
 </body>
 </html>`;
 }
@@ -838,6 +925,10 @@ const indexHtml = generateIndex();
 fs.writeFileSync(path.join(__dirname, 'index.html'), indexHtml, 'utf8');
 console.log('✅ Generated index.html (fully static, no JS fetch)');
 
+const cartHtml = generateCartPage();
+fs.writeFileSync(path.join(__dirname, 'cart.html'), cartHtml, 'utf8');
+console.log('✅ Generated cart.html');
+
 // Generate sitemap.xml
 const sitemapXml = generateSitemap(productSlugs.filter(p =>
   !['Old Labels'].includes(p.category)
@@ -845,5 +936,5 @@ const sitemapXml = generateSitemap(productSlugs.filter(p =>
 fs.writeFileSync(path.join(__dirname, 'sitemap.xml'), sitemapXml, 'utf8');
 console.log('✅ Generated sitemap.xml');
 
-console.log(`\n🚀 Done! ${pageCount + 1} pages total (${pageCount} products + 1 index)`);
+console.log(`\n🚀 Done! ${pageCount + 2} pages total (${pageCount} products + index + cart)`);
 console.log('   Run: git add -A && git commit && git push\n');

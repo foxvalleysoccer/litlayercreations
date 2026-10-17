@@ -14,8 +14,11 @@
   document.addEventListener('submit', function(event) {
     const form = event.target;
     if (!form.matches('form.paypal-form')) return;
-    const itemName = form.elements.namedItem('item_name').value;
-    const price = Number(form.elements.namedItem('amount').value);
+    const itemNameField = form.elements.namedItem('item_name');
+    const amountField = form.elements.namedItem('amount');
+    if (!itemNameField || !amountField) return;
+    const itemName = itemNameField.value;
+    const price = Number(amountField.value);
     gtag('event', 'buy_click', {
       payment_provider: 'paypal', currency: 'USD', value: price,
       items: [analyticsProduct || {item_name: itemName, price: price}],
@@ -23,7 +26,7 @@
     });
   });
 </script>
-  <script src="cart.js" defer></script>
+  <script src="cart.js?v=2" defer></script>
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -115,6 +118,7 @@
   .payment-strip .ps-cashapp   { background: #00D632; color: #000; }
   .payment-strip .ps-whatsapp  { background: #25D366; color: #000; }
   .payment-strip .ps-paypal    { background: #003087; color: #fff; }
+  .site-actions { display: flex; justify-content: center; gap: 10px; margin-top: 14px; }
   .ecosystem {
     max-width: 1100px; margin: 0 auto 32px; padding: 18px;
     border: 1px solid #18384a; background: #0a2230; border-radius: 8px;
@@ -202,6 +206,9 @@
     <span>💳 We accept:</span>
     <span class="ps-paypal">🅿️ PayPal</span>
     <a href="https://cash.app/$itsmejoshj" target="_blank" class="ps-cashapp">💵 Cash App $itsmejoshj</a>
+  </div>
+  <div class="site-actions">
+    <a href="cart.html" class="btn" data-cart-link>Cart<span data-cart-count></span></a>
   </div>
 </header>
 
@@ -1501,90 +1508,6 @@
         </div>
       </div>
       <div class="card">
-        <h3>Goofy Skeleton Coffin Halloween LED Light Box Decor</h3>
-        <p>Custom 3D-printed Goofy Skeleton Coffin Halloween LED Light Box Decor. A spooky handcrafted display for Halloween fans. About 9 inches at the largest dimension. USB powered with full remote control — color-changing LEDs and smooth fade effects. Made to order in Neenah, Wisconsin. Ships nationwide.</p>
-        <div class="card-price">$30.00</div>
-        <div class="media"><img data-src="halloween/media/GoofySkeleton Coffin/chat_asset_40.jpg" alt="Goofy Skeleton Coffin Halloween LED Light Box Decor" width="160" height="160" loading="lazy" decoding="async">
-        </div>
-        <div class="card-footer">
-          <a href="products/halloween-goofyskeleton-coffin.html" class="btn">View Details</a>
-          
-          <button type="button" class="btn btn-paypal" data-cart-item="{&quot;name&quot;:&quot;Goofy Skeleton Coffin Halloween LED Light Box Decor&quot;,&quot;price&quot;:30}">Add to Cart</button>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Gothic Girl Halloween LED Light Box Decor</h3>
-        <p>Custom 3D-printed Gothic Girl Halloween LED Light Box Decor. A spooky handcrafted display for Halloween fans. About 9 inches at the largest dimension. USB powered with full remote control — color-changing LEDs and smooth fade effects. Made to order in Neenah, Wisconsin. Ships nationwide.</p>
-        <div class="card-price">$30.00</div>
-        <div class="media"><img data-src="halloween/media/Gothic Girl/598030234_884598043996962_3364829823640586517_n.jpg" alt="Gothic Girl Halloween LED Light Box Decor" width="160" height="160" loading="lazy" decoding="async">
-        </div>
-        <div class="card-footer">
-          <a href="products/halloween-gothic-girl.html" class="btn">View Details</a>
-          
-          <button type="button" class="btn btn-paypal" data-cart-item="{&quot;name&quot;:&quot;Gothic Girl Halloween LED Light Box Decor&quot;,&quot;price&quot;:30}">Add to Cart</button>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Halloween Scene LED Light Box Decor</h3>
-        <p>Custom 3D-printed Halloween Scene LED Light Box Decor. A spooky handcrafted display for Halloween fans. About 9 inches at the largest dimension. USB powered with full remote control — color-changing LEDs and smooth fade effects. Made to order in Neenah, Wisconsin. Ships nationwide.</p>
-        <div class="card-price">$30.00</div>
-        <div class="media"><img data-src="halloween/media/Halloween Scene/78a90868-32fb-4749-b407-decb44af1a20.jpg" alt="Halloween Scene LED Light Box Decor" width="160" height="160" loading="lazy" decoding="async">
-        </div>
-        <div class="card-footer">
-          <a href="products/halloween-halloween-scene.html" class="btn">View Details</a>
-          
-          <button type="button" class="btn btn-paypal" data-cart-item="{&quot;name&quot;:&quot;Halloween Scene LED Light Box Decor&quot;,&quot;price&quot;:30}">Add to Cart</button>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Orange Moon Skeleton Halloween LED Light Box Decor</h3>
-        <p>Custom 3D-printed Orange Moon Skeleton Halloween LED Light Box Decor. A spooky handcrafted display for Halloween fans. About 9 inches at the largest dimension. USB powered with full remote control — color-changing LEDs and smooth fade effects. Made to order in Neenah, Wisconsin. Ships nationwide.</p>
-        <div class="card-price">$30.00</div>
-        <div class="media"><img data-src="halloween/media/Orange Moon Skeleton/30b54bd0-f445-491a-bf4c-d533d520a801.jpg" alt="Orange Moon Skeleton Halloween LED Light Box Decor" width="160" height="160" loading="lazy" decoding="async">
-        </div>
-        <div class="card-footer">
-          <a href="products/halloween-orange-moon-skeleton.html" class="btn">View Details</a>
-          
-          <button type="button" class="btn btn-paypal" data-cart-item="{&quot;name&quot;:&quot;Orange Moon Skeleton Halloween LED Light Box Decor&quot;,&quot;price&quot;:30}">Add to Cart</button>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Pumpkin Halloween LED Light Box Decor</h3>
-        <p>Custom 3D-printed Pumpkin Halloween LED Light Box Decor. A spooky handcrafted display for Halloween fans. About 9 inches at the largest dimension. USB powered with full remote control — color-changing LEDs and smooth fade effects. Made to order in Neenah, Wisconsin. Ships nationwide.</p>
-        <div class="card-price">$30.00</div>
-        <div class="media"><img data-src="halloween/media/Pumpkin/e1bbe4e1-0644-498a-a143-77af8022bd0b.jpg" alt="Pumpkin Halloween LED Light Box Decor" width="160" height="160" loading="lazy" decoding="async">
-        </div>
-        <div class="card-footer">
-          <a href="products/halloween-pumpkin.html" class="btn">View Details</a>
-          
-          <button type="button" class="btn btn-paypal" data-cart-item="{&quot;name&quot;:&quot;Pumpkin Halloween LED Light Box Decor&quot;,&quot;price&quot;:30}">Add to Cart</button>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Pumpkin Witch Halloween LED Light Box Decor</h3>
-        <p>Custom 3D-printed Pumpkin Witch Halloween LED Light Box Decor. A spooky handcrafted display for Halloween fans. About 9 inches at the largest dimension. USB powered with full remote control — color-changing LEDs and smooth fade effects. Made to order in Neenah, Wisconsin. Ships nationwide.</p>
-        <div class="card-price">$30.00</div>
-        <div class="media"><img data-src="halloween/media/Pumpkin Witch/33440b96-cd3f-43d4-b5c2-ebcddd885677.jpg" alt="Pumpkin Witch Halloween LED Light Box Decor" width="160" height="160" loading="lazy" decoding="async">
-        </div>
-        <div class="card-footer">
-          <a href="products/halloween-pumpkin-witch.html" class="btn">View Details</a>
-          
-          <button type="button" class="btn btn-paypal" data-cart-item="{&quot;name&quot;:&quot;Pumpkin Witch Halloween LED Light Box Decor&quot;,&quot;price&quot;:30}">Add to Cart</button>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Scarry Cat Coffin Halloween LED Light Box Decor</h3>
-        <p>Custom 3D-printed Scarry Cat Coffin Halloween LED Light Box Decor. A spooky handcrafted display for Halloween fans. About 9 inches at the largest dimension. USB powered with full remote control — color-changing LEDs and smooth fade effects. Made to order in Neenah, Wisconsin. Ships nationwide.</p>
-        <div class="card-price">$30.00</div>
-        <div class="media"><img data-src="halloween/media/Scarry Cat Coffin/chat_asset_25.jpg" alt="Scarry Cat Coffin Halloween LED Light Box Decor" width="160" height="160" loading="lazy" decoding="async">
-        </div>
-        <div class="card-footer">
-          <a href="products/halloween-scarry-cat-coffin.html" class="btn">View Details</a>
-          
-          <button type="button" class="btn btn-paypal" data-cart-item="{&quot;name&quot;:&quot;Scarry Cat Coffin Halloween LED Light Box Decor&quot;,&quot;price&quot;:30}">Add to Cart</button>
-        </div>
-      </div>
-      <div class="card">
         <h3>Scarry Dog Coffin Halloween LED Light Box Decor</h3>
         <p>Custom 3D-printed Scarry Dog Coffin Halloween LED Light Box Decor. A spooky handcrafted display for Halloween fans. About 9 inches at the largest dimension. USB powered with full remote control — color-changing LEDs and smooth fade effects. Made to order in Neenah, Wisconsin. Ships nationwide.</p>
         <div class="card-price">$30.00</div>
@@ -1630,18 +1553,6 @@
           <a href="products/halloween-skull-face-lg.html" class="btn">View Details</a>
           
           <button type="button" class="btn btn-paypal" data-cart-item="{&quot;name&quot;:&quot;Skull Face Large Halloween LED Light Box Decor&quot;,&quot;price&quot;:30}">Add to Cart</button>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Vamp Dog Halloween LED Light Box Decor</h3>
-        <p>Custom 3D-printed Vamp Dog Halloween LED Light Box Decor. A spooky handcrafted display for Halloween fans. About 9 inches at the largest dimension. USB powered with full remote control — color-changing LEDs and smooth fade effects. Made to order in Neenah, Wisconsin. Ships nationwide.</p>
-        <div class="card-price">$30.00</div>
-        <div class="media"><img data-src="halloween/media/Vamp Dog/0299fbbe-e4f8-4c74-957e-f319f9c2b8c9.jpg" alt="Vamp Dog Halloween LED Light Box Decor" width="160" height="160" loading="lazy" decoding="async">
-        </div>
-        <div class="card-footer">
-          <a href="products/halloween-vamp-dog.html" class="btn">View Details</a>
-          
-          <button type="button" class="btn btn-paypal" data-cart-item="{&quot;name&quot;:&quot;Vamp Dog Halloween LED Light Box Decor&quot;,&quot;price&quot;:30}">Add to Cart</button>
         </div>
       </div>
       <div class="card">

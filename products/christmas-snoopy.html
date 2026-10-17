@@ -14,8 +14,11 @@
   document.addEventListener('submit', function(event) {
     const form = event.target;
     if (!form.matches('form.paypal-form')) return;
-    const itemName = form.elements.namedItem('item_name').value;
-    const price = Number(form.elements.namedItem('amount').value);
+    const itemNameField = form.elements.namedItem('item_name');
+    const amountField = form.elements.namedItem('amount');
+    if (!itemNameField || !amountField) return;
+    const itemName = itemNameField.value;
+    const price = Number(amountField.value);
     gtag('event', 'buy_click', {
       payment_provider: 'paypal', currency: 'USD', value: price,
       items: [analyticsProduct || {item_name: itemName, price: price}],
@@ -23,7 +26,7 @@
     });
   });
 </script>
-<script src="../cart.js" defer></script>
+<script src="../cart.js?v=2" defer></script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Snoopy Christmas LED Light Box Decor | Custom 3D Printed | Lit Layer Creations</title>
@@ -133,6 +136,7 @@
   .payment-strip .ps-cashapp   { background: #00D632; color: #000; }
   .payment-strip .ps-whatsapp  { background: #25D366; color: #000; }
   .payment-strip .ps-paypal    { background: #003087; color: #fff; }
+  .site-actions { display: flex; justify-content: center; gap: 10px; margin-top: 14px; }
   .ecosystem {
     max-width: 1100px; margin: 0 auto 32px; padding: 18px;
     border: 1px solid #18384a; background: #0a2230; border-radius: 8px;
@@ -256,6 +260,9 @@
     <span>💳 We accept:</span>
     <span class="ps-paypal">🅿️ PayPal</span>
     <a href="https://cash.app/$itsmejoshj" target="_blank" class="ps-cashapp">💵 Cash App $itsmejoshj</a>
+  </div>
+  <div class="site-actions">
+    <a href="../cart.html" class="btn" data-cart-link>Cart<span data-cart-count></span></a>
   </div>
 </header>
 

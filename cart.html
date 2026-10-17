@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2NFK2Z8Q3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z2NFK2Z8Q3');
+  const analyticsProduct = null;
+  if (analyticsProduct) {
+    gtag('event', 'view_item', {currency: 'USD', value: analyticsProduct.price, items: [analyticsProduct]});
+  }
+  document.addEventListener('submit', function(event) {
+    const form = event.target;
+    if (!form.matches('form.paypal-form')) return;
+    const itemNameField = form.elements.namedItem('item_name');
+    const amountField = form.elements.namedItem('amount');
+    if (!itemNameField || !amountField) return;
+    const itemName = itemNameField.value;
+    const price = Number(amountField.value);
+    gtag('event', 'buy_click', {
+      payment_provider: 'paypal', currency: 'USD', value: price,
+      items: [analyticsProduct || {item_name: itemName, price: price}],
+      transport_type: 'beacon'
+    });
+  });
+</script>
+  <script src="cart.js?v=2" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart | Lit Layer Creations</title>
+  <meta name="description" content="Review your Lit Layer Creations light box order and continue to secure PayPal checkout." />
+  <link rel="canonical" href="https://litlayercreations.com/cart.html" />
+  <style>
+
+  * { box-sizing: border-box; }
+  body {
+    font-family: system-ui, sans-serif;
+    background: #0b1220;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+  }
+  header { text-align: center; margin-bottom: 40px; }
+  h1 { margin-bottom: 10px; color: #00d4ff; }
+  a { color: #00d4ff; }
+  .btn {
+    background: #00d4ff;
+    color: #000;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .btn:hover { background: #0099cc; color: #fff; }
+  .btn-cashapp   { background: #00D632; color: #000; }
+  .btn-cashapp:hover { background: #00b029; color: #000; }
+  .btn-whatsapp  { background: #25D366; color: #000; }
+  .btn-whatsapp:hover { background: #1ebe5d; color: #000; }
+  .btn-paypal    { background: #0070ba; color: #fff; border: none; font-family: inherit; }
+  .btn-paypal:hover { background: #003087; color: #fff; }
+  .paypal-form   { display: inline-block; margin: 0; }
+  .payment-strip {
+    display: flex; flex-wrap: wrap; justify-content: center;
+    align-items: center; gap: 10px; margin: 12px 0 4px;
+    font-size: 13px; color: #aaa;
+  }
+  .payment-strip a, .payment-strip span.ps-paypal {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 5px 12px; border-radius: 20px;
+    font-weight: bold; font-size: 13px; text-decoration: none;
+  }
+  .payment-strip .ps-cashapp   { background: #00D632; color: #000; }
+  .payment-strip .ps-whatsapp  { background: #25D366; color: #000; }
+  .payment-strip .ps-paypal    { background: #003087; color: #fff; }
+  .site-actions { display: flex; justify-content: center; gap: 10px; margin-top: 14px; }
+  .ecosystem {
+    max-width: 1100px; margin: 0 auto 32px; padding: 18px;
+    border: 1px solid #18384a; background: #0a2230; border-radius: 8px;
+  }
+  .ecosystem h2 { margin: 0 0 8px; color: #ffd35c; }
+  .ecosystem p { margin: 0 0 14px; color: #cfe7ef; }
+  .ecosystem-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+  .ecosystem-card {
+    display: block; min-height: 116px; padding: 12px; border-radius: 8px;
+    border: 1px solid #1f5268; background: #071925; color: #fff; text-decoration: none;
+  }
+  .ecosystem-card strong { display: block; color: #00d4ff; margin-bottom: 6px; }
+  .ecosystem-card span { color: #bdd6de; font-size: 13px; line-height: 1.35; }
+  .ecosystem-card:hover { border-color: #ffd35c; }
+  .feature-list { list-style: disc; margin: 12px 0; padding-left: 22px; }
+  .feature-list li { margin: 6px 0; font-size: 14px; color: #ddd; font-weight: 600; }
+  .fl-size::marker   { color: #8ecfff; }
+  .fl-usb::marker    { color: #ffd54a; }
+  .fl-remote::marker { color: #c792ff; }
+  .fl-sound::marker  { color: #ff7ab8; }
+  .fl-fade::marker   { color: #47cf73; }
+  .fl-fade {
+    background: linear-gradient(90deg, #ff5f6d, #ffc371, #47cf73, #2196f3, #9b59b6);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+
+
+  body { max-width: 1200px; margin: 0 auto; padding: 20px; }
+  .cart-page { max-width: 1050px; margin: 0 auto 48px; }
+  .cart-page > h1 { margin-bottom: 24px; }
+  .cart-layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 24px; align-items: start; }
+  .cart-items { display: grid; gap: 12px; }
+  .cart-row, .cart-summary, .cart-empty {
+    background: #141c2f;
+    border: 1px solid #263650;
+    border-radius: 8px;
+    padding: 18px;
+  }
+  .cart-row { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+  .cart-row h2 { color: #00d4ff; font-size: 18px; margin: 0 0 6px; }
+  .cart-row p { color: #c8d4e6; margin: 0; }
+  .cart-controls { display: flex; align-items: end; gap: 10px; }
+  .cart-controls label { color: #c8d4e6; font-size: 13px; }
+  .cart-controls input {
+    display: block;
+    width: 72px;
+    margin-top: 4px;
+    padding: 8px;
+    color: #fff;
+    background: #0b1220;
+    border: 1px solid #00d4ff;
+    border-radius: 5px;
+  }
+  .btn-secondary { background: #334155; color: #fff; }
+  .btn-secondary:hover { background: #475569; }
+  .cart-summary { position: sticky; top: 20px; }
+  .cart-summary h2 { color: #00d4ff; margin-top: 0; }
+  .cart-summary > div { display: flex; justify-content: space-between; gap: 16px; margin: 10px 0; }
+  .cart-summary .cart-total { border-top: 1px solid #40516c; padding-top: 12px; font-size: 19px; }
+  .cart-summary p { color: #c8d4e6; font-size: 13px; line-height: 1.45; }
+  .cart-checkout, .cart-checkout .btn { width: 100%; }
+  .cart-empty { text-align: center; padding: 44px 20px; }
+  .cart-empty h2 { color: #00d4ff; }
+  @media (max-width: 760px) {
+    .cart-layout { grid-template-columns: 1fr; }
+    .cart-summary { position: static; }
+    .cart-row { align-items: flex-start; flex-direction: column; }
+  }
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="Images/Logo.png" alt="Lit Layer Creations Logo" style="max-width:160px;height:auto;margin-bottom:8px;"></a>
+    <h1>Lit Layer Creations</h1>
+    <div class="site-actions">
+      <a href="index.html" class="btn">Continue Shopping</a>
+      <a href="cart.html" class="btn" data-cart-link>Cart<span data-cart-count></span></a>
+    </div>
+  </header>
+  <main class="cart-page">
+    <h1>Your Cart</h1>
+    <div data-cart-page></div>
+  </main>
+</body>
+</html>

@@ -1229,94 +1229,6 @@
         "displayName": "Cat Coffin Halloween LED Light Box Decor"
       },
       {
-        "name": "GoofySkeleton Coffin",
-        "file": "halloween/GoofySkeleton Coffin.3mf",
-        "media": [
-          "halloween/media/GoofySkeleton Coffin/chat_asset_40.jpg",
-          "halloween/media/GoofySkeleton Coffin/chat_asset_41.jpg",
-          "halloween/media/GoofySkeleton Coffin/chat_asset_42.jpg",
-          "halloween/media/GoofySkeleton Coffin/chat_asset_43.jpg"
-        ],
-        "displayName": "Goofy Skeleton Coffin Halloween LED Light Box Decor"
-      },
-      {
-        "name": "Gothic Girl",
-        "file": "halloween/Gothic Girl.3mf",
-        "media": [
-          "halloween/media/Gothic Girl/3mf-preview.png",
-          "halloween/media/Gothic Girl/598030234_884598043996962_3364829823640586517_n.jpg",
-          "halloween/media/Gothic Girl/598604865_2237367483340209_3760083445690681422_n.jpg",
-          "halloween/media/Gothic Girl/598927605_25368417466173202_6062222253690689500_n.jpg",
-          "halloween/media/Gothic Girl/599255675_1411106457117095_7028909542648996908_n.jpg",
-          "halloween/media/Gothic Girl/Gothic_Girl_225_598030234_884598043996962_3364829823640586517_n.jpg",
-          "halloween/media/Gothic Girl/Gothic_Girl_225_598604865_2237367483340209_3760083445690681422_n.jpg",
-          "halloween/media/Gothic Girl/Gothic_Girl_225_598927605_25368417466173202_6062222253690689500_n.jpg",
-          "halloween/media/Gothic Girl/Gothic_Girl_225_599255675_1411106457117095_7028909542648996908_n.jpg"
-        ],
-        "displayName": "Gothic Girl Halloween LED Light Box Decor"
-      },
-      {
-        "name": "Halloween Scene",
-        "file": "halloween/Halloween Scene.3mf",
-        "media": [
-          "halloween/media/Halloween Scene/3mf-preview.png",
-          "halloween/media/Halloween Scene/78a90868-32fb-4749-b407-decb44af1a20.jpg",
-          "halloween/media/Halloween Scene/9d3995c9-c2f1-4104-a790-b4a9ea7057bd.jpg",
-          "halloween/media/Halloween Scene/bbbdd6ad-7428-4d22-a292-1160ee5a5699.mp4",
-          "halloween/media/Halloween Scene/e4dd8b7b-9055-422f-bc02-eb65360a89bb.jpg"
-        ],
-        "displayName": "Halloween Scene LED Light Box Decor"
-      },
-      {
-        "name": "Orange Moon Skeleton",
-        "file": "halloween/Orange Moon Skeleton.3mf",
-        "media": [
-          "halloween/media/Orange Moon Skeleton/28b06254-5b9c-43a5-a86c-ade04bbcc609.mp4",
-          "halloween/media/Orange Moon Skeleton/30b54bd0-f445-491a-bf4c-d533d520a801.jpg",
-          "halloween/media/Orange Moon Skeleton/3mf-preview.png",
-          "halloween/media/Orange Moon Skeleton/f3d04d58-ec66-4391-97cc-77bc01701f88.jpg"
-        ],
-        "displayName": "Orange Moon Skeleton Halloween LED Light Box Decor"
-      },
-      {
-        "name": "Pumpkin",
-        "file": "halloween/Pumpkin.3mf",
-        "media": [
-          "halloween/media/Pumpkin/3mf-preview.png",
-          "halloween/media/Pumpkin/53eecaec-4f9f-4804-adaf-4a1035831b21.mp4",
-          "halloween/media/Pumpkin/e1bbe4e1-0644-498a-a143-77af8022bd0b.jpg",
-          "halloween/media/Pumpkin/f2ff3be7-9223-4bf6-9763-dc9bc72cdf2a.jpg"
-        ],
-        "displayName": "Pumpkin Halloween LED Light Box Decor"
-      },
-      {
-        "name": "Pumpkin Witch",
-        "file": "halloween/Pumpkin Witch.3mf",
-        "media": [
-          "halloween/media/Pumpkin Witch/33440b96-cd3f-43d4-b5c2-ebcddd885677.jpg",
-          "halloween/media/Pumpkin Witch/3mf-preview.png",
-          "halloween/media/Pumpkin Witch/589f0b7c-cc5e-4372-a7be-3cfeb3949c29.jpg",
-          "halloween/media/Pumpkin Witch/71ffe52a-fd0a-4333-958b-0dd42ca63a55.jpg",
-          "halloween/media/Pumpkin Witch/e63b1af3-704a-4644-8044-f7b5f237f98b.mp4",
-          "halloween/media/Pumpkin Witch/Pumpkin_Witch_225_33440b96-cd3f-43d4-b5c2-ebcddd885677.jpg",
-          "halloween/media/Pumpkin Witch/Pumpkin_Witch_225_589f0b7c-cc5e-4372-a7be-3cfeb3949c29.jpg",
-          "halloween/media/Pumpkin Witch/Pumpkin_Witch_225_71ffe52a-fd0a-4333-958b-0dd42ca63a55.jpg",
-          "halloween/media/Pumpkin Witch/Pumpkin_Witch_225_e63b1af3-704a-4644-8044-f7b5f237f98b.mp4"
-        ],
-        "displayName": "Pumpkin Witch Halloween LED Light Box Decor"
-      },
-      {
-        "name": "Scarry Cat Coffin",
-        "file": "halloween/Scarry Cat Coffin.3mf",
-        "media": [
-          "halloween/media/Scarry Cat Coffin/chat_asset_25.jpg",
-          "halloween/media/Scarry Cat Coffin/chat_asset_26.jpg",
-          "halloween/media/Scarry Cat Coffin/chat_asset_27.jpg",
-          "halloween/media/Scarry Cat Coffin/chat_asset_28.jpg"
-        ],
-        "displayName": "Scarry Cat Coffin Halloween LED Light Box Decor"
-      },
-      {
         "name": "Scarry Dog Coffin",
         "file": "halloween/Scarry Dog Coffin.3mf",
         "media": [
@@ -1363,30 +1275,6 @@
           "halloween/media/Skull Face lg/f68e4686-671f-4a8b-add6-500257f6fbe5.jpg"
         ],
         "displayName": "Skull Face Large Halloween LED Light Box Decor"
-      },
-      {
-        "name": "Vamp Dog",
-        "file": "halloween/Vamp Dog.3mf",
-        "media": [
-          "halloween/media/Vamp Dog/0299fbbe-e4f8-4c74-957e-f319f9c2b8c9.jpg",
-          "halloween/media/Vamp Dog/1e3cd07c-0fa2-449f-bbbb-183ceb641d46.mp4",
-          "halloween/media/Vamp Dog/3b67c40f-4349-4a2d-b0bf-ab5a27f7b11b.jpg",
-          "halloween/media/Vamp Dog/3mf-preview.png",
-          "halloween/media/Vamp Dog/561747440_1178600077491053_2319215041396415776_n.jpg",
-          "halloween/media/Vamp Dog/561825055_698137166029173_2266247984206863732_n (1).jpg",
-          "halloween/media/Vamp Dog/561825055_698137166029173_2266247984206863732_n.jpg",
-          "halloween/media/Vamp Dog/562076084_826287383264427_2926002571520079416_n (1).jpg",
-          "halloween/media/Vamp Dog/562076084_826287383264427_2926002571520079416_n.jpg",
-          "halloween/media/Vamp Dog/VampDog_200mm_0299fbbe-e4f8-4c74-957e-f319f9c2b8c9.jpg",
-          "halloween/media/Vamp Dog/VampDog_200mm_1e3cd07c-0fa2-449f-bbbb-183ceb641d46.mp4",
-          "halloween/media/Vamp Dog/VampDog_200mm_3b67c40f-4349-4a2d-b0bf-ab5a27f7b11b.jpg",
-          "halloween/media/Vamp Dog/VampDog_200mm_561747440_1178600077491053_2319215041396415776_n.jpg",
-          "halloween/media/Vamp Dog/VampDog_200mm_561825055_698137166029173_2266247984206863732_n (1).jpg",
-          "halloween/media/Vamp Dog/VampDog_200mm_561825055_698137166029173_2266247984206863732_n.jpg",
-          "halloween/media/Vamp Dog/VampDog_200mm_562076084_826287383264427_2926002571520079416_n (1).jpg",
-          "halloween/media/Vamp Dog/VampDog_200mm_562076084_826287383264427_2926002571520079416_n.jpg"
-        ],
-        "displayName": "Vamp Dog Halloween LED Light Box Decor"
       },
       {
         "name": "Yoda Pumpkin",
