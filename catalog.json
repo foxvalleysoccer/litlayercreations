@@ -1032,6 +1032,18 @@
         "displayName": "JVC Custom LED Light Box Sign"
       },
       {
+        "name": "KimberlyPapermakers",
+        "file": "CustomRequests/KimberlyPapermakers.3mf",
+        "media": [
+          "CustomRequests/Media/KimberlyPapermakers/Kimberly Papermakers - front.jpg",
+          "CustomRequests/Media/KimberlyPapermakers/Kimberly Papermakers - left angle.jpg",
+          "CustomRequests/Media/KimberlyPapermakers/Kimberly Papermakers - right angle.jpg",
+          "CustomRequests/Media/KimberlyPapermakers/Kimberly Papermakers - back.jpg"
+        ],
+        "displayName": "Kimberly Papermakers Custom LED Light Box Sign",
+        "showcaseOnly": true
+      },
+      {
         "name": "KBLandscaping",
         "file": "CustomRequests/KBLandscaping.3mf",
         "media": [
@@ -1090,6 +1102,18 @@
           "CustomRequests/Media/Neenah22/3mf-preview.png"
         ],
         "displayName": "Neenah 22 Custom LED Light Box Sign"
+      },
+      {
+        "name": "NeenahVolleyball",
+        "file": null,
+        "media": [
+          "CustomRequests/Media/NeenahVolleyball/Neenah Volleyball - front.jpg",
+          "CustomRequests/Media/NeenahVolleyball/Neenah Volleyball - left angle.jpg",
+          "CustomRequests/Media/NeenahVolleyball/Neenah Volleyball - right angle.jpg",
+          "CustomRequests/Media/NeenahVolleyball/Neenah Volleyball - back.jpg"
+        ],
+        "displayName": "Neenah Volleyball Custom LED Light Box Sign",
+        "showcaseOnly": true
       },
       {
         "name": "NorthTexasMeanGreenEagles",
@@ -1198,6 +1222,23 @@
   {
     "category": "halloween",
     "items": [
+      {
+        "name": "Chucky",
+        "file": "halloween/ChuckyDoll.3mf",
+        "media": [
+          "halloween/media/Chucky/Chucky - front.jpg",
+          "halloween/media/Chucky/Chucky - left angle.jpg",
+          "halloween/media/Chucky/Chucky - right angle.jpg",
+          "halloween/media/Chucky/Chucky - front detail.jpg",
+          "halloween/media/Chucky/Chucky - back.jpg",
+          "halloween/media/Chucky/20261016_175008.webp",
+          "halloween/media/Chucky/20261016_175027.webp",
+          "halloween/media/Chucky/20261016_175031.webp",
+          "halloween/media/Chucky/20261016_175041.webp",
+          "halloween/media/Chucky/20261016_175047.webp"
+        ],
+        "displayName": "Chucky Doll LED Light Box Sign"
+      },
       {
         "name": "Bleading Heart Coffin",
         "file": "halloween/Bleading Heart Coffin.3mf",
@@ -2129,7 +2170,19 @@
           "Sports/Media/Brewers Barrelman/Brewers Barrel Man (6).jpg",
           "Sports/Media/Brewers Barrelman/Brewers Barrel Man (7).jpg",
           "Sports/Media/Brewers Barrelman/Brewers Barrel Man (8).jpg",
-          "Sports/Media/Brewers Barrelman/Brewers Barrel Man (9).jpg"
+          "Sports/Media/Brewers Barrelman/Brewers Barrel Man (9).jpg",
+          "Sports/Media/Brewers Barrelman/20261015_142110.webp",
+          "Sports/Media/Brewers Barrelman/20261015_142117.webp",
+          "Sports/Media/Brewers Barrelman/20261015_142121.webp",
+          "Sports/Media/Brewers Barrelman/20261015_142125.webp",
+          "Sports/Media/Brewers Barrelman/20261016_132208.webp",
+          "Sports/Media/Brewers Barrelman/20261016_132221.webp",
+          "Sports/Media/Brewers Barrelman/20261016_132229.webp",
+          "Sports/Media/Brewers Barrelman/20261016_132234.webp",
+          "Sports/Media/Brewers Barrelman/20261016_132244.webp",
+          "Sports/Media/Brewers Barrelman/20261016_132249.webp",
+          "Sports/Media/Brewers Barrelman/20261016_132303.webp",
+          "Sports/Media/Brewers Barrelman/20261016_132316.webp"
         ],
         "displayName": "Brewers Barrelman Fan LED Light Box Sign"
       },
@@ -2512,9 +2565,71 @@
       },
       {
         "name": "VintageCowBoys",
-        "displayName": "Vintage Cow Boys Fan LED Light Box Sign",
         "file": "Sports/VintageCowBoys.3mf",
-        "media": []
+        "media": [],
+        "displayName": "Vintage Cow Boys Fan LED Light Box Sign"
+      },
+      {
+        "name": "CowboyStar",
+        "file": null,
+        "media": [
+          "Sports/Media/DallasCowboysStar/Dallas Cowboys Star - front.jpg",
+          "Sports/Media/DallasCowboysStar/Dallas Cowboys Star - left angle.jpg",
+          "Sports/Media/DallasCowboysStar/Dallas Cowboys Star - right angle.jpg",
+          "Sports/Media/DallasCowboysStar/Dallas Cowboys Star - front detail.jpg",
+          "Sports/Media/DallasCowboysStar/Dallas Cowboys Star - back.jpg",
+          "Sports/Media/DallasCowboysStar/20261017_145418.webp",
+          "Sports/Media/DallasCowboysStar/20261017_145424.webp",
+          "Sports/Media/DallasCowboysStar/20261017_145429.webp",
+          "Sports/Media/DallasCowboysStar/20261017_145435.webp",
+          "Sports/Media/DallasCowboysStar/20261017_145441.webp",
+          "Sports/Media/DallasCowboysStar/20261017_145446.webp",
+          "Sports/Media/DallasCowboysStar/20261017_145500.webp"
+        ],
+        "displayName": "Cowboy Star LED Light Box Sign"
+      },
+      {
+        "name": "BriceTurangWorldSeries",
+        "file": "Sports/BriceTurangWorldSeries.3mf",
+        "media": [
+          "Sports/Media/BriceTurangWorldSeries/Brice Turang World Series - front.jpg",
+          "Sports/Media/BriceTurangWorldSeries/Brice Turang World Series - front lit.jpg",
+          "Sports/Media/BriceTurangWorldSeries/Brice Turang World Series - left angle.jpg",
+          "Sports/Media/BriceTurangWorldSeries/Brice Turang World Series - right angle.jpg",
+          "Sports/Media/BriceTurangWorldSeries/Brice Turang World Series - back.jpg",
+          "Sports/Media/BriceTurangWorldSeries/Brice Turang World Series - back detail.jpg"
+        ],
+        "displayName": "Brice Turang World Series Fan LED Light Box Sign"
+      },
+      {
+        "name": "TheMiz",
+        "file": "Sports/TheMiz.3mf",
+        "media": [
+          "Sports/Media/TheMiz/The Miz - front.jpg",
+          "Sports/Media/TheMiz/The Miz - left angle.jpg",
+          "Sports/Media/TheMiz/The Miz - right angle.jpg",
+          "Sports/Media/TheMiz/The Miz - front detail.jpg",
+          "Sports/Media/TheMiz/The Miz - back.jpg",
+          "Sports/Media/TheMiz/20261017_144210.webp",
+          "Sports/Media/TheMiz/20261017_144219.webp",
+          "Sports/Media/TheMiz/20261017_144223.webp",
+          "Sports/Media/TheMiz/20261017_144228.webp",
+          "Sports/Media/TheMiz/20261017_144232.webp",
+          "Sports/Media/TheMiz/20261017_144240.webp"
+        ],
+        "displayName": "The Miz Brewers World Series Fan LED Light Box Sign"
+      },
+      {
+        "name": "WilliamContrerasWorldSeries",
+        "file": "Sports/WilliamContrerasWorldSeries.3mf",
+        "media": [
+          "Sports/Media/WilliamContrerasWorldSeries/William Contreras World Series - front.jpg",
+          "Sports/Media/WilliamContrerasWorldSeries/William Contreras World Series - front detail.jpg",
+          "Sports/Media/WilliamContrerasWorldSeries/William Contreras World Series - left angle.jpg",
+          "Sports/Media/WilliamContrerasWorldSeries/William Contreras World Series - right angle.jpg",
+          "Sports/Media/WilliamContrerasWorldSeries/William Contreras World Series - back.jpg"
+        ],
+        "displayName": "William Contreras World Series Fan LED Light Box Sign"
       },
       {
         "name": "WHiteSox",
